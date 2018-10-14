@@ -36,27 +36,27 @@
 \contentsline {subsection}{\numberline {7.1.1}ESTABILIZADORES \{ID, R\}}{43}
 \contentsline {subsection}{\numberline {7.1.2}ESTABILIZADORES \{ID, RI\}}{43}
 \contentsline {subsection}{\numberline {7.1.3}SUMA COMPLETA}{45}
-\contentsline {section}{\numberline {7.2}ESPECTROS DEL GRUPO COMPLETO}{46}
-\contentsline {section}{\numberline {7.3}MEDEFONISMO, MONOFONISMO Y DIFONISMO}{48}
-\contentsline {part}{III\hspace {1em}MODIFICACIONES}{49}
-\contentsline {chapter}{\numberline {8}EL SERIALISMO EN LA FILOSOF\IeC {\'I}A DEL ARTE}{51}
-\contentsline {section}{\numberline {8.1}LA VISI\IeC {\'O}N ART\IeC {\'I}STICA DE SCHOENBERG}{51}
-\contentsline {section}{\numberline {8.2}EL VALOR INTR\IeC {\'I}NSECO DEL DODECAFONISMO}{53}
-\contentsline {section}{\numberline {8.3}SERIALISMO DE ESCALAS NO CROM\IeC {\'A}TICAS}{54}
-\contentsline {chapter}{\numberline {9}ESTUDIO DE LAS OBRAS Y ESCALAS A MODIFICAR}{57}
-\contentsline {section}{\numberline {9.1}OBRAS A MODIFICAR}{57}
-\contentsline {subsection}{\numberline {9.1.1}SCHOENBERG: \textit {Suite para piano}, OP. 25}{58}
-\contentsline {subsection}{\numberline {9.1.2}BERG: \textit {Lied der Lulu}}{58}
-\contentsline {subsection}{\numberline {9.1.3}BERG: \textit {Der Wein}}{58}
-\contentsline {subsection}{\numberline {9.1.4}WBWERN: \textit {Variations}, OP. 27}{59}
-\contentsline {subsection}{\numberline {9.1.5}WEBERN: \textit {3 Lieder}, OP. 18}{59}
-\contentsline {section}{\numberline {9.2}ESCALAS Y FUNCIONES A UTILIZAR}{60}
-\contentsline {chapter}{\numberline {10}RESULTADOS DE LAS MODIFICACIONES}{63}
-\contentsline {section}{\numberline {10.1}AUX1}{63}
-\contentsline {section}{\numberline {10.2}AUX2}{64}
-\contentsline {section}{\numberline {10.3}AUX3}{64}
-\contentsline {chapter}{ANEXOS}{65}
-\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Series de la Suite Op. 25.}{67}
-\contentsline {chapter}{Ap\'{e}ndice \numberline {B}An\IeC {\'a}lisis serial de la Musette.}{71}
-\contentsline {chapter}{Ap\'{e}ndice \numberline {C}Conmutatividad del grupo D$_{12}$ x D$_{12}$}{75}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{77}
+\contentsline {section}{\numberline {7.2}ESPECTROS DEL GRUPO D$_{n}$ x D$_{n}$}{46}
+\contentsline {section}{\numberline {7.3}MEDEFONISMO, MONOFONISMO Y DIFONISMO}{49}
+\contentsline {part}{III\hspace {1em}MODIFICACIONES}{51}
+\contentsline {chapter}{\numberline {8}EL SERIALISMO EN LA FILOSOF\IeC {\'I}A DEL ARTE}{53}
+\contentsline {section}{\numberline {8.1}LA VISI\IeC {\'O}N ART\IeC {\'I}STICA DE SCHOENBERG}{53}
+\contentsline {section}{\numberline {8.2}EL VALOR INTR\IeC {\'I}NSECO DEL DODECAFONISMO}{55}
+\contentsline {section}{\numberline {8.3}SERIALISMO DE ESCALAS NO CROM\IeC {\'A}TICAS}{56}
+\contentsline {chapter}{\numberline {9}OBRAS Y ESCALAS DEL EXPERIMENTO}{59}
+\contentsline {section}{\numberline {9.1}OBRAS A MODIFICAR}{59}
+\contentsline {subsection}{\numberline {9.1.1}SCHOENBERG: \textit {Suite para piano}, OP. 25}{60}
+\contentsline {subsection}{\numberline {9.1.2}BERG: \textit {Lied der Lulu}}{60}
+\contentsline {subsection}{\numberline {9.1.3}BERG: \textit {Der Wein}}{60}
+\contentsline {subsection}{\numberline {9.1.4}WEBERN: \textit {Variations}, OP. 27}{61}
+\contentsline {subsection}{\numberline {9.1.5}WEBERN: \textit {3 Lieder}, OP. 18}{61}
+\contentsline {section}{\numberline {9.2}ESCALAS Y FUNCIONES A UTILIZAR}{62}
+\contentsline {chapter}{\numberline {10}RESULTADOS DE LAS MODIFICACIONES}{65}
+\contentsline {section}{\numberline {10.1}AUX1}{65}
+\contentsline {section}{\numberline {10.2}AUX2}{66}
+\contentsline {section}{\numberline {10.3}AUX3}{66}
+\contentsline {chapter}{ANEXOS}{67}
+\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Series de la Suite Op. 25.}{69}
+\contentsline {chapter}{Ap\'{e}ndice \numberline {B}An\IeC {\'a}lisis serial de la Musette.}{73}
+\contentsline {chapter}{Ap\'{e}ndice \numberline {C}Conmutatividad del grupo D$_{\textbf {12}}$ x D$_{\textbf {12}}$}{77}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{79}
