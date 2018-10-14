@@ -1,0 +1,62 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {0}INTRODUCCI\IeC {\'O}N MATEM\IeC {\'A}TICA}{1}
+\contentsline {section}{\numberline {0.1}CONJUNTOS Y GRUPOS}{1}
+\contentsline {section}{\numberline {0.2}FUNCIONES Y PERMUTACIONES}{2}
+\contentsline {part}{I\hspace {1em}DODECAFONISMO}{5}
+\contentsline {chapter}{\numberline {1}INTRODUCCI\IeC {\'O}N HIST\IeC {\'O}RICA DEL DODECAFONISMO}{7}
+\contentsline {section}{\numberline {1.1}R. WAGNER Y LA EMANCIPACI\IeC {\'O}N DE LA DISONANCIA}{7}
+\contentsline {section}{\numberline {1.2}POSROMANTICISMO Y ATONALISMO DE SCHOENBERG}{8}
+\contentsline {section}{\numberline {1.3}EL SURGIMIENTO DE UN SISTEMA}{10}
+\contentsline {chapter}{\numberline {2}EL SISTEMA DODECAF\IeC {\'O}NICO DE SCHOENBERG}{11}
+\contentsline {section}{\numberline {2.1}LOS POSTULADOS DEL DODECAFONISMO}{11}
+\contentsline {section}{\numberline {2.2}LAS TRANSFORMACIONES DE UNA SERIE}{13}
+\contentsline {subsection}{\numberline {2.2.1}TRANSPOSICIONES}{13}
+\contentsline {subsection}{\numberline {2.2.2}RETROGRADACI\IeC {\'O}N}{14}
+\contentsline {subsection}{\numberline {2.2.3}INVERSI\IeC {\'O}N}{14}
+\contentsline {chapter}{\numberline {3}AN\IeC {\'A}LISIS DE UNA OBRA DODECAF\IeC {\'O}NICA: OP. 25}{17}
+\contentsline {section}{\numberline {3.1}SERIES DE LA SUITE OP. 25}{17}
+\contentsline {section}{\numberline {3.2}DESCRIPCI\IeC {\'O}N DE LA SUITE OP. 25}{18}
+\contentsline {section}{\numberline {3.3}AN\IeC {\'A}LISIS DE LA MUSETTE}{19}
+\contentsline {chapter}{\numberline {4}EL GRUPO DE LAS TRANSFORMACIONES}{21}
+\contentsline {section}{\numberline {4.1}NUEVAS DEFINICIONES Y NUEVAS TRANSFORMACIONES}{21}
+\contentsline {section}{\numberline {4.2}DIAGRAMAS DE RELOJ}{23}
+\contentsline {section}{\numberline {4.3}EL GRUPO: D$_{12}$ x D$_{12}$}{24}
+\contentsline {section}{\numberline {4.4}CONMUTATIVIDAD ENTRE LOS ELEMENTOS DEL GRUPO}{26}
+\contentsline {part}{II\hspace {1em}ENEFONISMO}{31}
+\contentsline {chapter}{\numberline {5}EL SURGIMIENTO DEL SERIALISMO INTEGRAL}{33}
+\contentsline {section}{\numberline {5.1}ALBAN BERG Y ANTON WEBERN}{33}
+\contentsline {section}{\numberline {5.2}LA ESCUELA DE DARMSTADT}{34}
+\contentsline {section}{\numberline {5.3}PIERRE BOULEZ}{36}
+\contentsline {chapter}{\numberline {6}M\IeC {\'A}S HERRAMIENTAS MATEM\IeC {\'A}TICAS}{37}
+\contentsline {section}{\numberline {6.1}ACCI\IeC {\'O}N DE UN GRUPO SOBRE UN CONJUNTO}{37}
+\contentsline {section}{\numberline {6.2}\IeC {\'O}RBITAS Y ESTABILIZADORES}{38}
+\contentsline {section}{\numberline {6.3}EL LEMA DE BURNSIDE}{39}
+\contentsline {chapter}{\numberline {7}CONTEO DE ESPECTROS SERIALES}{41}
+\contentsline {section}{\numberline {7.1}ESPECTROS DEL GRUPO DE SCHOENBERG: \{I, T, R\}}{41}
+\contentsline {subsection}{\numberline {7.1.1}ESTABILIZADORES \{ID, R\}}{43}
+\contentsline {subsection}{\numberline {7.1.2}ESTABILIZADORES \{ID, RI\}}{43}
+\contentsline {subsection}{\numberline {7.1.3}SUMA COMPLETA}{45}
+\contentsline {section}{\numberline {7.2}ESPECTROS DEL GRUPO COMPLETO}{46}
+\contentsline {section}{\numberline {7.3}MEDEFONISMO, MONOFONISMO Y DIFONISMO}{48}
+\contentsline {part}{III\hspace {1em}MODIFICACIONES}{49}
+\contentsline {chapter}{\numberline {8}EL SERIALISMO EN LA FILOSOF\IeC {\'I}A DEL ARTE}{51}
+\contentsline {section}{\numberline {8.1}LA VISI\IeC {\'O}N ART\IeC {\'I}STICA DE SCHOENBERG}{51}
+\contentsline {section}{\numberline {8.2}EL VALOR INTR\IeC {\'I}NSECO DEL DODECAFONISMO}{53}
+\contentsline {section}{\numberline {8.3}SERIALISMO DE ESCALAS NO CROM\IeC {\'A}TICAS}{54}
+\contentsline {chapter}{\numberline {9}ESTUDIO DE LAS OBRAS Y ESCALAS A MODIFICAR}{57}
+\contentsline {section}{\numberline {9.1}OBRAS A MODIFICAR}{57}
+\contentsline {subsection}{\numberline {9.1.1}SCHOENBERG: \textit {Suite para piano}, OP. 25}{58}
+\contentsline {subsection}{\numberline {9.1.2}BERG: \textit {Lied der Lulu}}{58}
+\contentsline {subsection}{\numberline {9.1.3}BERG: \textit {Der Wein}}{58}
+\contentsline {subsection}{\numberline {9.1.4}WBWERN: \textit {Variations}, OP. 27}{59}
+\contentsline {subsection}{\numberline {9.1.5}WEBERN: \textit {3 Lieder}, OP. 18}{59}
+\contentsline {section}{\numberline {9.2}ESCALAS Y FUNCIONES A UTILIZAR}{60}
+\contentsline {chapter}{\numberline {10}RESULTADOS DE LAS MODIFICACIONES}{63}
+\contentsline {section}{\numberline {10.1}AUX1}{63}
+\contentsline {section}{\numberline {10.2}AUX2}{64}
+\contentsline {section}{\numberline {10.3}AUX3}{64}
+\contentsline {chapter}{ANEXOS}{65}
+\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Series de la Suite Op. 25.}{67}
+\contentsline {chapter}{Ap\'{e}ndice \numberline {B}An\IeC {\'a}lisis serial de la Musette.}{71}
+\contentsline {chapter}{Ap\'{e}ndice \numberline {C}Conmutatividad del grupo D$_{12}$ x D$_{12}$}{75}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{77}

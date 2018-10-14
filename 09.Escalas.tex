@@ -1,0 +1,142 @@
+	\chapter{ESTUDIO DE LAS OBRAS Y ESCALAS A MODIFICAR}
+    % 09.Obras y escalas a utilizar y su estudio: por qué suena mal la hexafónica.
+    \section{OBRAS A MODIFICAR}
+    	El objetivo de este experimento es modificar algunas obras que ya están compuestas mediante el método dodecafónico, y cambiar su serialismo de doce notas por otro pseudoserialismo de menos notas. Para abarcar distintos estilos compositivos y hacer este estudio más riguroso, se han escogido obras de los tres principales compositores dodecafónicos: Schoenberg, Berg y Webern.
+        
+        Sin embargo, no se han escogido obras de compositores posteriores ni serialistas integrales. Uno de los motivos es porque interesa en este estudio la relación entre los sonidos: no se modifican más que las alturas de las notas, y por tanto no importa el resto de elementos musicales. Que estén compuestos serialmente no afecta a las conclusiones de este estudio.
+        
+        Por otro lado, los compositores posteriores a Schoenberg todavía no han pasado al dominio público. Eso impide, por desgracia, que se pueda trabajar libremente con su música.
+        
+        Por último, el hecho de que cada nota tenga su propia dinámica, su propia articulación o su propio timbre hace de las obras serialistas integrales que sean difíciles de manipular. Además, como los audios están hechos mediante ordenador y no con intérpretes reales, la calidad y la intención musical de estas partituras tan complicadas nunca pueden plasmarse a la perfección.
+        
+    	\subsection{SCHOENBERG: \textit{Suite para piano}, OP. 25}
+        	La primera obra que pasará por el algoritmo de modificación serial es la Suite para piano de Schoenberg, ya comentada en el capítulo \ref{suitechapter}. En dicha sección se estudió su serie principal, la estructura general de la obra y su razón de ser, así como su tercer movimiento en profundidad.
+            
+            http://www.ccarh.org/publications/data/humdrum/tonerow/files/schoenberg/schoenberg04.pc.krn
+            
+    	\subsection{BERG: \textit{Lied der Lulu}}
+        	La gran calidad emocional de la música de Alban Berg se refleja en esta segunda obra: es una de las arias más destacadas de su segunda ópera, \textit{Lulu}. El arreglo a voz y piano fue realizado por Erwin Stein, un músico austriaco amigo y discípulo de Schoenberg.
+        	
+        	%argumento de la ópera
+        	
+        	%series utilizadas (por personaje)
+
+BERG: LULU: PRIMARY ROW
+
+{0,4,5,2,7,9,6,8,B,A,3,1} (Jarman)
+
+http://www.ccarh.org/publications/data/humdrum/tonerow/files/berg/berg10.pc.krn
+
+
+BERG: LULU, ACT I , SCENE XX -- PERM. (EVERY 7TH NOTE OF PRIMARY ROW)
+
+{10,6,3,8,5,11,4,2,9,0,1,7}
+
+
+BERG: LULU, ACT II, SCENE 1 -- PERM. (EVERY 5th NOTE OF PRIMARY ROW)
+
+{10,7,1,0,9,2,4,11,5,8,3,6}
+            
+        % argumento de esta aria
+        
+        \subsection{BERG: \textit{Der Wein}}
+        
+        BERG: DER WEIN
+        
+        {2,4,5,7,9,A,1,6,8,0,B,3}
+        
+        http://www.ccarh.org/publications/data/humdrum/tonerow/files/berg/berg09.pc.krn
+        
+        Der Wein (The Wine) (1929), Concert Aria for Soprano and Orchestra
+        
+        Alban Berg's concert aria Der Wein (1929) is a setting of three poems from Charles Baudelaire's "Le Vin" as translated into German by Stephan George: "Die Seele des Weines" (The Wine's Soul), "Der Wein der Liebenden" (The Wine of Lovers), "Der Wein des Einsamen" (The Wine of the Lonely One). The poems express not only the happiness and confidence (real or imagined) of those who enjoy wine's restorative powers, but also wine's celebration of itself as a giver of strength to the weak, pride to the poor, and inspiration to poets.
+
+		Appropriately, Berg's setting is lush, evoking earthly sensations through the use of jazz elements and tango rhythms in the manner so popular in Europe in the 1920s. (Compare, for example, the contemporaneous music of Kurt Weill and Paul Hindemith.) The principal twelve-tone row Berg fashioned for Der Wein lends itself to the construction of diatonic sonorities: the first six pitches comprise most of a D minor scale, while of the row's remaining six, five are part of a G flat major scale. Few of Berg's works place as apparent an emphasis on symmetry as does Der Wein. There are no breaks between the poems, and the two outer songs provide the exposition and recapitulation of a sonata-form movement. "Die Seele des Weines" consists of an orchestral introduction, first and second theme groups with a transition, and closing material. All of this music, albeit abbreviated, returns in "Der Wien des Einsamen" in the same order and is followed by a coda. Where a traditional development section might be expected, Berg instead interpolates the scherzo-like "Der Wein der Liebenden." This middle song itself falls into three sections, the third of which is a retrograde of the second. Extended palindromes of this sort reappear in Berg's opera Lulu (1935), notably in the film music of Act II.
+
+		Der Wein was commissioned by Ruzena Herlinger, who gave the first performance of the work in Frankfurt on June 4, 1930.
+		
+		\subsection{WBWERN: \textit{Variations}, OP. 27}     
+		
+		WEBERN: OP. 27--VARIATIONS FOR PIANO
+		
+		{3,B,A,2,1,0,6,4,7,5,9,8}
+		
+		\subsection{WEBERN: \textit{3 Lieder}, OP. 18}
+		
+		WEBERN: OP. 18, NO. 1, "SCHATZERL KLEIN"
+		
+		{0,B,5,8,A,9,3,4,1,7,2,6}
+		
+		WEBERN: OP. 18, NO. 2, "ERLOSUNG"
+		
+		{6,9,5,8,4,7,3,B,2,A,1,0}
+				
+		WEBERN: OP. 18, NO. 3, "AVE, REGINA COELORUM"
+		
+		{4,3,7,6,5,B,A,2,1,0,9,8}	
+		
+	\section{ESCALAS Y FUNCIONES A UTILIZAR}
+
+        Randomly generated function
+        \begin{lstlisting}
+        #include <iostream>
+        #include <cstdlib>
+        #include <algorithm>
+        
+        using namespace std;
+        using VI = int[12];
+        
+        int main() {
+        	srand (time(NULL));
+        	VI v;
+        	for (size_t i = 0; i < 12; i++)
+        		v[i] = rand()%12;
+        	sort(v, v+12);
+        	for (size_t i = 0; i < 12; i++)
+        		cout << v[i] << " ";
+        	cout << "\n";
+        	return 0;
+        }        
+        \end{lstlisting}
+
+        Chromatic dodecaphonic scales
+        \begin{lstlisting}
+        #include <iostream>
+        #include <cstdlib>
+        
+        using namespace std;
+        using VI = int[12];
+        
+        int main() {
+        	srand (time(NULL));
+        	VI v = {0,1,2,3,4,5,6,7,8,9,10,11};
+        	int a,b;
+        	for (size_t i = 0; i < 24; i++) {
+        		a = rand() % 12;
+        		b = v[i%12];
+        		v[i%12] = v[a];
+        		v[a] = b;
+        	}
+        	for (size_t i = 0; i < 12; i++)
+        		cout << v[i] << " ";
+        	cout << "\n";
+        	return 0;
+        }        
+        \end{lstlisting}
+
+        Diatonic heptaphonic scales
+        2212221
+
+        Whole tone scale
+        222222
+
+        Pentatonic scales
+        22323
+
+        Octotonic scales
+        21212121
+
+        Repetición de notas en las funciones
+                $$
+    \begin{array}{l|rrrrrrrrrrrr}&1&2&3&4&5&6&7&8&9&10&11&12\\\hline1&&&&&&&&&&&&1\\\hline2&&&&&&2\\\hline3&&&&3\\\hline4&&&4\\\hline5&&3&2\\\hline6&&6\\\hline7&2&5\\\hline8&4&4\\\hline9&6&3\\\hline10&8&2\\\hline11&10&1\\\hline12&12&\\\end{array}
+                $$

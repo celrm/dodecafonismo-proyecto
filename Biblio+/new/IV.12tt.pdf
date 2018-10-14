@@ -1,0 +1,4416 @@
+%PDF-1.3
+%‚„œ”
+2 0 obj
+<<
+/Length 5086
+>>
+stream
+BT
+/F1 1 Tf
+12 0 0 12 164.641 38.6571 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+(Morris: Invariance Matrices and 12-Tone Rows)Tj
+/F2 1 Tf
+20.42 0 TD
+0.0007 Tw
+(  page 1)Tj
+/F3 1 Tf
+15.84 0 0 15.84 156.241 705.6171 Tm
+0 Tw
+(Invariance Matrices and Twelve-Tone Rows)Tj
+13.92 0 0 13.92 262.561 674.897 Tm
+(Robert Morris)Tj
+12 0 0 12 172.321 646.817 Tm
+(The ordered intervals between two twelve-tone rows)Tj
+/F4 1 Tf
+-6.86 -2.3 TD
+(Let P and Q be two twelve-tone rows. There are 144 distinct pairs of pcs between P and)Tj
+0 -1.16 TD
+(Q, one pc in P and the other pc in Q.  Let p be a pc in P and q be a pc in Q. The ordered)Tj
+T*
+(interval from p to q is q-p.)Tj
+6.96 0 0 6.96 216.241 596.4171 Tm
+(1)Tj
+12 0 0 12 219.601 591.3771 Tm
+( This is distinct from the interval from q to p, which is p-q;)Tj
+-10.8 -1.16 TD
+(and if the interval from p to q is n, the interval from q to p is Ön.)Tj
+0 -2.3 TD
+(We will now use subscripts to denote the pcs in P and Q. P)Tj
+6.96 0 0 6.96 372.721 547.457 Tm
+(0)Tj
+12 0 0 12 376.321 549.8571 Tm
+( is the first pc on P, P)Tj
+6.96 0 0 6.96 479.041 547.457 Tm
+(1)Tj
+12 0 0 12 482.641 549.8571 Tm
+( is the)Tj
+-32.72 -1.16 TD
+(second pc of P, P)Tj
+6.96 0 0 6.96 173.041 533.537 Tm
+(2)Tj
+12 0 0 12 176.641 535.937 Tm
+( is the third pc of P, P)Tj
+6.96 0 0 6.96 280.639 533.537 Tm
+(B)Tj
+12 0 0 12 285.2813 535.937 Tm
+( is the twelfth pc of P. Likewise for Q. \(So Q)Tj
+6.96 0 0 6.96 500.9122 533.537 Tm
+(6)Tj
+12 0 0 12 504.241 535.937 Tm
+( is)Tj
+-34.52 -1.14 TD
+(the seventh pc of Q.\) So, the interval from P)Tj
+6.96 0 0 6.96 302.401 519.8571 Tm
+(m)Tj
+12 0 0 12 307.921 522.257 Tm
+( to Q)Tj
+6.96 0 0 6.96 331.921 519.8571 Tm
+(n)Tj
+12 0 0 12 335.521 522.257 Tm
+( is Q)Tj
+6.96 0 0 6.96 358.1909 519.8571 Tm
+(n)Tj
+12 0 0 12 361.681 522.257 Tm
+(-P)Tj
+6.96 0 0 6.96 372.3509 519.8571 Tm
+(m)Tj
+12 0 0 12 377.761 522.257 Tm
+(.)Tj
+-23.98 -2.32 TD
+(We use a matrix E\(P,Q\) to list all 144 intervals from P to Q.)Tj
+6.96 0 0 6.96 378.241 499.4571 Tm
+(2)Tj
+12 0 0 12 381.601 494.4171 Tm
+( We label the cells of the)Tj
+-24.3 -1.16 TD
+(matrix in the same way we label the pcs of P and Q. So E)Tj
+6.96 0 0 6.96 365.6026 478.097 Tm
+(0,0 )Tj
+12 0 0 12 376.081 480.4971 Tm
+(is the cell in the first row and)Tj
+-23.84 -1.14 TD
+(the first column of E\(P,Q\). E)Tj
+6.96 0 0 6.96 228.9736 464.4171 Tm
+(3,4)Tj
+12 0 0 12 237.6736 466.817 Tm
+( is the cell in the 4)Tj
+6.96 0 0 6.96 325.681 471.8571 Tm
+(th)Tj
+12 0 0 12 331.201 466.817 Tm
+( row and the 5)Tj
+6.96 0 0 6.96 399.8494 471.8571 Tm
+(th)Tj
+12 0 0 12 405.361 466.817 Tm
+( column of E\(P,Q\).)Tj
+-26.28 -1.16 TD
+(When we want to indicate what interval is in a cell of the matrix, we write h = E)Tj
+6.96 0 0 6.96 474.9737 450.497 Tm
+(x,y)Tj
+12 0 0 12 483.6736 452.8971 Tm
+(, which)Tj
+-32.8061 -1.16 TD
+(means that the interval h is in the xth+1 row and yth+1 column of the matrix E.)Tj
+6.96 0 0 6.96 470.401 444.0171 Tm
+(3)Tj
+12 0 0 12 90.001 411.377 Tm
+(Examples: Using the matrix on the next page, we can indicate that 8 is in the first row)Tj
+T*
+(and column of the matrix by writing 8 = E)Tj
+6.96 0 0 6.96 293.0635 395.057 Tm
+(0,0)Tj
+12 0 0 12 301.7635 397.4571 Tm
+(. 4 is in the top row and 6)Tj
+6.96 0 0 6.96 424.081 402.497 Tm
+(th)Tj
+12 0 0 12 429.601 397.4571 Tm
+( column of the)Tj
+-28.3 -1.16 TD
+(matrix; this is written 4 = E)Tj
+6.96 0 0 6.96 222.0889 381.1371 Tm
+(0,5)Tj
+12 0 0 12 230.7889 383.537 Tm
+(. What is in E)Tj
+6.96 0 0 6.96 296.401 381.1371 Tm
+(9,7)Tj
+12 0 0 12 305.101 383.537 Tm
+(? It is 0, in the 10th row and 8)Tj
+6.96 0 0 6.96 449.041 388.5771 Tm
+(th)Tj
+12 0 0 12 454.561 383.537 Tm
+( column of)Tj
+-30.38 -1.16 TD
+(the matrix. The positions E)Tj
+6.96 0 0 6.96 220.321 367.217 Tm
+0.0172 Tc
+[(x,)17.2(x)8.6( )]TJ
+12 0 0 12 230.941 369.617 Tm
+0 Tc
+(are the set of cells \(for all x\) that lie on the main diagonal of)Tj
+-11.745 -1.14 TD
+(E, from the upper left corner cell to the lower right corner cell, in other words, from E)Tj
+6.96 0 0 6.96 502.561 353.537 Tm
+(0,0)Tj
+12 0 0 12 90.001 342.0171 Tm
+(to E)Tj
+6.96 0 0 6.96 109.681 339.617 Tm
+(B,B)Tj
+12 0 0 12 120.721 342.0171 Tm
+(.)Tj
+-2.56 -2.32 TD
+(The matrix E\(P,Q\) lists the interval from P)Tj
+6.96 0 0 6.96 295.2959 311.777 Tm
+(m)Tj
+12 0 0 12 300.721 314.1771 Tm
+( to Q)Tj
+6.96 0 0 6.96 324.721 311.777 Tm
+(n)Tj
+12 0 0 12 328.321 314.1771 Tm
+( in the cell E)Tj
+6.96 0 0 6.96 389.041 311.777 Tm
+(m,n)Tj
+12 0 0 12 399.6747 314.1771 Tm
+(. We write the row P to)Tj
+-25.8061 -1.14 TD
+(the left of the matrix rows and Q above the matrix columns, as shown on the next page.)Tj
+/F2 1 Tf
+0 -14.22 TD
+(                              )Tj
+7.2 0 TD
+(                    )Tj
+ET
+90.001 132.497 144 0.48 re
+f
+BT
+7.92 0 0 7.92 90.001 121.6971 Tm
+(1)Tj
+12 0 0 12 93.841 116.1771 Tm
+( In this section, all addition and subtraction is done mod-12.)Tj
+7.92 0 0 7.92 90.001 107.7771 Tm
+(2)Tj
+12 0 0 12 93.841 102.2571 Tm
+( Later, we will show that the E\(P,Q\) matrix is the same as the T-matrix between P and)Tj
+-0.32 -1.14 TD
+(Q.)Tj
+7.92 0 0 7.92 90.001 80.1771 Tm
+(3)Tj
+12 0 0 12 93.841 74.6571 Tm
+( When the context is clear, we simply write E for E\(P,Q\) for easier reading.)Tj
+ET
+endstream
+endobj
+3 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F3 6 0 R
+/F4 7 0 R
+>>
+/ExtGState <<
+/GS1 8 0 R
+>>
+>>
+endobj
+11 0 obj
+<<
+/Length 7522
+>>
+stream
+BT
+/F1 1 Tf
+12 0 0 12 164.641 38.6571 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+(Morris: Invariance Matrices and 12-Tone Rows)Tj
+/F2 1 Tf
+20.42 0 TD
+0.0007 Tw
+(  page 2)Tj
+/F4 1 Tf
+-26.64 55.88 TD
+0 Tw
+(Let <038749BA2561> be row P and <8730B495261A > be row Q.  E\(P,Q\) is shown)Tj
+0 -1.16 TD
+(below.)Tj
+/F5 1 Tf
+10.18 -2.22 TD
+0.8999 Tc
+[(8730)-20(B4952)-20(61A)]TJ
+-1.5 -1.14 TD
+[(08730)-20(B4952)-20(61A)]TJ
+ET
+206.161 665.297 217.44 0.48 re
+f
+206.401 652.097 0.48 13.2 re
+f
+423.121 652.097 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 641.777 Tm
+[(35409)-20(8162B)-20(3A7)]TJ
+ET
+206.401 638.897 0.48 13.2 re
+f
+423.121 638.897 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 628.577 Tm
+[(80B74)-20(38196)-20(A52)]TJ
+ET
+206.401 625.457 0.48 13.44 re
+f
+423.121 625.457 0.48 13.44 re
+f
+BT
+12 0 0 12 194.161 615.137 Tm
+[(71085)-20(492A7)-20(B63)]TJ
+ET
+206.401 612.257 0.48 13.2 re
+f
+423.121 612.257 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 601.937 Tm
+[(443B8)-20(7051A)-20(296)]TJ
+ET
+206.401 599.057 0.48 13.2 re
+f
+423.121 599.057 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 588.7371 Tm
+[(9BA63)-20(27085)-20(941)]TJ
+ET
+206.401 585.857 0.48 13.2 re
+f
+423.121 585.857 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 575.537 Tm
+[(B9841)-20(05A63)-20(72B)]TJ
+ET
+206.401 572.657 0.48 13.2 re
+f
+423.121 572.657 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 562.337 Tm
+[(AA952)-20(16B74)-20(830)]TJ
+ET
+206.401 559.217 0.48 13.44 re
+f
+423.121 559.217 0.48 13.44 re
+f
+BT
+12 0 0 12 194.161 548.897 Tm
+[(2651A)-20(92730)-20(4B8)]TJ
+ET
+206.401 546.017 0.48 13.2 re
+f
+423.121 546.017 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 535.697 Tm
+[(532A7)-20(6B409)-20(185)]TJ
+ET
+206.401 532.817 0.48 13.2 re
+f
+423.121 532.817 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 522.4971 Tm
+[(62196)-20(5A3B8)-20(074)]TJ
+ET
+206.401 519.617 0.48 13.2 re
+f
+423.121 519.617 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 509.2971 Tm
+[(1762B)-20(A3841)-20(509)]TJ
+ET
+206.401 505.937 0.48 13.68 re
+f
+206.881 505.937 216.24 0.48 re
+f
+423.121 505.937 0.48 13.68 re
+f
+BT
+/F4 1 Tf
+12 0 0 12 90.001 481.6971 Tm
+0 Tc
+(For instance, the matrix shows the interval 8 from P)Tj
+6.96 0 0 6.96 339.361 479.2971 Tm
+(3)Tj
+12 0 0 12 342.961 481.6971 Tm
+( to Q)Tj
+6.96 0 0 6.96 366.961 479.2971 Tm
+(2)Tj
+12 0 0 12 370.561 481.6971 Tm
+( in cell E)Tj
+6.96 0 0 6.96 413.5453 479.2971 Tm
+(3,2)Tj
+12 0 0 12 422.2454 481.6971 Tm
+(; E)Tj
+6.96 0 0 6.96 435.841 479.2971 Tm
+(3,2 )Tj
+12 0 0 12 446.401 481.6971 Tm
+(= 8 = Q)Tj
+6.96 0 0 6.96 483.6021 479.2971 Tm
+(2)Tj
+12 0 0 12 487.201 481.6971 Tm
+( Ö P)Tj
+6.96 0 0 6.96 505.921 479.2971 Tm
+(3)Tj
+12 0 0 12 509.521 481.6971 Tm
+( =)Tj
+-34.96 -1.14 TD
+(3 Ö 7.)Tj
+0 -2.32 TD
+(Now let us align P and Q pc-to-pc with intervals from corresponding positions in P to Q)Tj
+0 -1.16 TD
+(underneath as shown here.)Tj
+/F5 1 Tf
+0 -2.3 TD
+(038749BA2561 = )Tj
+/F4 1 Tf
+9.0015 0 TD
+(row P)Tj
+/F5 1 Tf
+-9.0015 -1.16 TD
+(8730B495261A = )Tj
+/F4 1 Tf
+9.0015 0 TD
+(row Q)Tj
+/F5 1 Tf
+-9.0015 -1.16 TD
+(847577A70179 = )Tj
+/F4 1 Tf
+9.0015 0 TD
+(intervals from P)Tj
+6.96 0 0 6.96 275.3389 368.4171 Tm
+(n)Tj
+12 0 0 12 278.881 370.817 Tm
+( to Q)Tj
+6.96 0 0 6.96 302.881 368.4171 Tm
+(n)Tj
+12 0 0 12 306.481 370.817 Tm
+( for all n.)Tj
+-18.04 -2.3 TD
+(The bottom line of intervals can be found on the main diagonal of E \(since E)Tj
+6.96 0 0 6.96 458.2276 340.817 Tm
+(n,n)Tj
+12 0 0 12 466.9276 343.217 Tm
+( = intervals)Tj
+-31.4105 -1.16 TD
+(from P)Tj
+6.96 0 0 6.96 123.121 326.897 Tm
+(n)Tj
+12 0 0 12 126.721 329.2971 Tm
+( to Q)Tj
+6.96 0 0 6.96 150.721 326.897 Tm
+(n)Tj
+12 0 0 12 154.321 329.2971 Tm
+(\). This diagonal is shown in bold face in the following copy of the matrix.)Tj
+/F5 1 Tf
+4.82 -3.36 TD
+0.8999 Tc
+[(8730)-20(B4952)-20(61A)]TJ
+-1.5 -1.16 TD
+0 Tc
+(0)Tj
+/F6 1 Tf
+1.5 0 TD
+(8)Tj
+/F5 1 Tf
+1.5 0 TD
+0.8999 Tc
+[(730)-20(B)]TJ
+ET
+284.401 272.177 7.2 0.72 re
+f
+BT
+12 0 0 12 302.401 275.057 Tm
+[(4952)-20(61)]TJ
+/F7 1 Tf
+12 0 2.5507 12 410.641 275.057 Tm
+0 Tc
+(A)Tj
+ET
+206.161 285.377 217.44 0.48 re
+f
+206.401 272.177 0.48 13.2 re
+f
+423.121 272.177 0.48 13.2 re
+f
+BT
+/F5 1 Tf
+12 0 0 12 194.161 261.8571 Tm
+0.8999 Tc
+(35)Tj
+/F6 1 Tf
+3 0 TD
+0 Tc
+(4)Tj
+/F5 1 Tf
+1.5 0 TD
+0.8999 Tc
+[(09)-20(81)]TJ
+ET
+302.401 258.977 7.2 0.72 re
+f
+BT
+12 0 0 12 320.401 261.8571 Tm
+[(62B)-20(3)]TJ
+/F7 1 Tf
+12 0 2.5507 12 392.641 261.8571 Tm
+0 Tc
+(A)Tj
+/F5 1 Tf
+12 0 0 12 410.641 261.8571 Tm
+(7)Tj
+ET
+206.401 258.977 0.48 13.2 re
+f
+423.121 258.977 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 248.6571 Tm
+0.8999 Tc
+(80B)Tj
+/F6 1 Tf
+4.5 0 TD
+0 Tc
+(7)Tj
+/F5 1 Tf
+1.5 0 TD
+0.8999 Tc
+[(4)-20(381)]TJ
+ET
+320.401 245.777 7.2 0.72 re
+f
+BT
+12 0 0 12 338.401 248.6571 Tm
+(96)Tj
+/F7 1 Tf
+12 0 2.5507 12 374.641 248.6571 Tm
+0 Tc
+(A)Tj
+/F5 1 Tf
+12 0 0 12 392.641 248.6571 Tm
+0.8999 Tc
+(52)Tj
+ET
+206.401 245.777 0.48 13.2 re
+f
+423.121 245.777 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 235.4571 Tm
+(7108)Tj
+/F6 1 Tf
+6 0 TD
+0 Tc
+(5)Tj
+/F5 1 Tf
+1.52 0 TD
+0.8999 Tc
+(492A)Tj
+ET
+338.401 232.577 7.2 0.72 re
+f
+BT
+/F7 1 Tf
+12 0 2.5507 12 356.401 235.4571 Tm
+0 Tc
+(7)Tj
+/F5 1 Tf
+12 0 0 12 374.641 235.4571 Tm
+0.8999 Tc
+(B63)Tj
+ET
+206.401 232.337 0.48 13.44 re
+f
+423.121 232.337 0.48 13.44 re
+f
+BT
+12 0 0 12 194.161 222.0171 Tm
+(443B8)Tj
+/F6 1 Tf
+7.52 0 TD
+0 Tc
+(7)Tj
+/F5 1 Tf
+1.5 0 TD
+0.8999 Tc
+(05)Tj
+/F7 1 Tf
+12 0 2.5507 12 338.401 222.0171 Tm
+0 Tc
+(1)Tj
+/F5 1 Tf
+12 0 0 12 356.401 222.0171 Tm
+(A)Tj
+ET
+356.401 219.137 7.2 0.72 re
+f
+BT
+12 0 0 12 374.641 222.0171 Tm
+0.8999 Tc
+(296)Tj
+ET
+206.401 219.137 0.48 13.2 re
+f
+423.121 219.137 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 208.8171 Tm
+[(9BA63)-20(2)]TJ
+/F6 1 Tf
+9.02 0 TD
+0 Tc
+(7)Tj
+/F7 1 Tf
+12 0 2.5507 12 320.401 208.8171 Tm
+(0)Tj
+/F5 1 Tf
+12 0 0 12 338.401 208.8171 Tm
+0.8999 Tc
+[(85)-20(9)]TJ
+ET
+374.641 205.937 7.2 0.72 re
+f
+BT
+12 0 0 12 392.641 208.8171 Tm
+(41)Tj
+ET
+206.401 205.937 0.48 13.2 re
+f
+423.121 205.937 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 195.6171 Tm
+[(B9841)-20(0)]TJ
+/F7 1 Tf
+12 0 2.5507 12 302.401 195.6171 Tm
+0 Tc
+(5)Tj
+/F6 1 Tf
+12 0 0 12 320.401 195.6171 Tm
+(A)Tj
+/F5 1 Tf
+1.5 0 TD
+0.8999 Tc
+[(63)-20(72)]TJ
+ET
+392.641 192.737 7.2 0.72 re
+f
+BT
+12 0 0 12 410.641 195.6171 Tm
+0 Tc
+(B)Tj
+ET
+206.401 192.737 0.48 13.2 re
+f
+423.121 192.737 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 182.4171 Tm
+0.8999 Tc
+(AA952)Tj
+/F7 1 Tf
+12 0 2.5507 12 284.401 182.4171 Tm
+0 Tc
+(1)Tj
+/F5 1 Tf
+12 0 0 12 302.401 182.4171 Tm
+0.8999 Tc
+(6B)Tj
+/F6 1 Tf
+3 0 TD
+0 Tc
+(7)Tj
+/F5 1 Tf
+1.5 0 TD
+0.8999 Tc
+[(4)-20(830)]TJ
+ET
+410.641 179.537 7.2 0.72 re
+f
+206.401 179.537 0.48 13.2 re
+f
+423.121 179.537 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 169.2171 Tm
+(2651)Tj
+/F7 1 Tf
+12 0 2.5507 12 266.161 169.2171 Tm
+0 Tc
+(A)Tj
+/F5 1 Tf
+12 0 0 12 284.401 169.2171 Tm
+0.8999 Tc
+(9273)Tj
+/F6 1 Tf
+6 0 TD
+0 Tc
+(0)Tj
+/F5 1 Tf
+1.52 0 TD
+0.8999 Tc
+(4B8)Tj
+ET
+206.401 166.097 0.48 13.44 re
+f
+423.121 166.097 0.48 13.44 re
+f
+BT
+12 0 0 12 194.161 155.7771 Tm
+(532)Tj
+/F7 1 Tf
+12 0 2.5507 12 248.161 155.7771 Tm
+0 Tc
+(A)Tj
+/F5 1 Tf
+12 0 0 12 266.161 155.7771 Tm
+0.8999 Tc
+[(7)-20(6B409)]TJ
+/F6 1 Tf
+9.04 0 TD
+0 Tc
+(1)Tj
+/F5 1 Tf
+1.5 0 TD
+0.8999 Tc
+(85)Tj
+ET
+206.401 152.897 0.48 13.2 re
+f
+423.121 152.897 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 142.5771 Tm
+(62)Tj
+/F7 1 Tf
+12 0 2.5507 12 230.161 142.5771 Tm
+0 Tc
+(1)Tj
+/F5 1 Tf
+12 0 0 12 248.161 142.5771 Tm
+0.8999 Tc
+[(96)-20(5A3B8)-20(0)]TJ
+/F6 1 Tf
+12.04 0 TD
+0 Tc
+(7)Tj
+/F5 1 Tf
+1.5 0 TD
+(4)Tj
+ET
+206.401 139.697 0.48 13.2 re
+f
+423.121 139.697 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 129.3771 Tm
+(1)Tj
+/F7 1 Tf
+12 0 2.5507 12 212.161 129.3771 Tm
+(7)Tj
+/F5 1 Tf
+12 0 0 12 230.161 129.3771 Tm
+0.8999 Tc
+[(62B)-20(A3841)-20(50)]TJ
+/F6 1 Tf
+15.04 0 TD
+0 Tc
+(9)Tj
+ET
+206.401 126.017 0.48 13.68 re
+f
+206.881 126.017 216.24 0.48 re
+f
+423.121 126.017 0.48 13.68 re
+f
+endstream
+endobj
+12 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F4 7 0 R
+/F5 13 0 R
+/F6 14 0 R
+/F7 15 0 R
+>>
+/ExtGState <<
+/GS1 8 0 R
+>>
+>>
+endobj
+17 0 obj
+<<
+/Length 3549
+>>
+stream
+BT
+/F1 1 Tf
+12 0 0 12 164.641 38.6571 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+(Morris: Invariance Matrices and 12-Tone Rows)Tj
+/F2 1 Tf
+20.42 0 TD
+0.0007 Tw
+(  page 3)Tj
+/F4 1 Tf
+-26.64 55.88 TD
+0 Tw
+(Now we realign P  with Q shifted one position to the left.)Tj
+/F5 1 Tf
+0 -2.3 TD
+( 038749BA2561 = )Tj
+/F4 1 Tf
+9.6016 0 TD
+(row P)Tj
+/F5 1 Tf
+-9.6016 -1.16 TD
+(8730B495261A  = )Tj
+/F4 1 Tf
+9.6016 0 TD
+(row Q)Tj
+/F5 1 Tf
+-9.6016 -1.16 TD
+( 70440064484  = )Tj
+/F4 1 Tf
+9.6016 0 TD
+(intervals from row P to row Q shifted 1 position to the left.)Tj
+-9.6016 -2.3 TD
+(The bottom line of intervals can be found on the diagonal to the immediate right of the)Tj
+0 -1.16 TD
+(main diagonal of E \(since E)Tj
+6.96 0 0 6.96 223.681 609.8571 Tm
+(n,n+1)Tj
+12 0 0 12 239.7862 612.2571 Tm
+( = intervals from P)Tj
+6.96 0 0 6.96 329.8741 609.8571 Tm
+(n)Tj
+12 0 0 12 333.361 612.2571 Tm
+( to Q)Tj
+6.96 0 0 6.96 357.361 609.8571 Tm
+(n+1)Tj
+12 0 0 12 368.2462 612.2571 Tm
+(\). This is the diagonal to the)Tj
+-23.1871 -1.16 TD
+(right of the bold faced diagonal in the matrix just given.)Tj
+0 -2.26 TD
+(Now we align P with Q shifted one position to the right and take the intervals likewise.)Tj
+/F5 1 Tf
+0 -2.3 TD
+(038749BA2561  = )Tj
+/F4 1 Tf
+9.6016 0 TD
+(row P)Tj
+/F5 1 Tf
+-9.6016 -1.16 TD
+( 8730B495261A = )Tj
+/F4 1 Tf
+9.6016 0 TD
+(row Q)Tj
+/F5 1 Tf
+-9.6016 -1.16 TD
+( 5B8825B3900 = )Tj
+/F4 1 Tf
+9.0015 0 TD
+(intervals from row P to row Q shifted -1 position to the left.)Tj
+-9.0015 -2.3 TD
+(The bottom line of intervals can be found on the diagonal to the immediate left of the)Tj
+0 -1.16 TD
+(main diagonal of E \(since E)Tj
+6.96 0 0 6.96 223.681 471.8571 Tm
+(n,n-1)Tj
+12 0 0 12 238.1787 474.257 Tm
+( = intervals from P)Tj
+6.96 0 0 6.96 328.2666 471.8571 Tm
+(n)Tj
+12 0 0 12 331.681 474.257 Tm
+( to Q)Tj
+6.96 0 0 6.96 355.681 471.8571 Tm
+(n-1)Tj
+12 0 0 12 365.041 474.257 Tm
+(\). This is the diagonal to the left)Tj
+-22.92 -1.16 TD
+(of the bold faced diagonal in the matrix given above.)Tj
+0 -2.3 TD
+(In general)Tj
+/F8 1 Tf
+4.0254 0 TD
+(,)Tj
+-4.0254 -2.32 TD
+(the xth diagonal to the right of the main diagonal of E contains the intervals from row P)Tj
+0 -1.14 TD
+(to row Q shifted x positions to the left.)Tj
+/F4 1 Tf
+15.56 0 TD
+(  )Tj
+-15.56 -2.32 TD
+(One more example illustrates this. Align P and Q shifted x positions to the left, where x =)Tj
+0 -1.16 TD
+(4. This is read off E from the diagonal 4 to the right of the main diagonal. This is the)Tj
+0 -1.14 TD
+(diagonal that is underlined in the matrix given above)Tj
+/F5 1 Tf
+0 -2.32 TD
+(    038749BA2561 )Tj
+/F4 1 Tf
+10.2017 0 TD
+(=  row P)Tj
+/F5 1 Tf
+-10.2017 -1.16 TD
+(8730B495261A     = )Tj
+/F4 1 Tf
+11.4019 0 TD
+(row Q)Tj
+/F5 1 Tf
+-11.4019 -1.14 TD
+(    B11AA920     )Tj
+/F4 1 Tf
+10.2017 0 TD
+(intervals from row P to row Q shifted 4 positions to the left.)Tj
+-10.2017 -2.32 TD
+(If we align row P with RQ, we have a new series of intervals.)Tj
+/F5 1 Tf
+0 -2.3 TD
+(038749BA2561 )Tj
+/F4 1 Tf
+7.8013 0 TD
+(=  row P)Tj
+/F5 1 Tf
+-7.8013 -1.16 TD
+(A162594B0378 = )Tj
+/F4 1 Tf
+9.0015 0 TD
+(row RQ)Tj
+/F5 1 Tf
+-9.0015 -1.16 TD
+(AAA71051AA17 )Tj
+/F4 1 Tf
+7.8013 0 TD
+(intervals from row P  to  row RQ.)Tj
+-7.8013 -2.3 TD
+(This series of intervals are found on the secondary diagonal of the matrix, reading down)Tj
+0 -1.16 TD
+(from the upper right hand corner to the lower left hand corner of the matrix, shown in)Tj
+T*
+(italics on the matrix given above.)Tj
+0 -2.3 TD
+(We can also shift RQ to the left or right and find a diagonal of the matrix that registers)Tj
+0 -1.16 TD
+(the intervals between row P and the shifted RQ row:)Tj
+ET
+endstream
+endobj
+18 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F4 7 0 R
+/F5 13 0 R
+/F8 19 0 R
+>>
+/ExtGState <<
+/GS1 8 0 R
+>>
+>>
+endobj
+21 0 obj
+<<
+/Length 4934
+>>
+stream
+BT
+/F1 1 Tf
+12 0 0 12 164.641 38.6571 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+(Morris: Invariance Matrices and 12-Tone Rows)Tj
+/F2 1 Tf
+20.42 0 TD
+0.0007 Tw
+(  page 4)Tj
+/F8 1 Tf
+-26.64 55.88 TD
+0 Tw
+(the xth diagonal to the right of the secondary diagonal of E contains the intervals from)Tj
+0 -1.16 TD
+(row R to row RQ shifted x positions to the right.)Tj
+/F3 1 Tf
+11.16 -2.3 TD
+(E\(P,Q\) and Hadamard matrices)Tj
+/F4 1 Tf
+-11.16 -2.32 TD
+(Let us now compare the Hadamard matrix for P and Q, H\(P,Q\), and the E\(P,Q\) matrix for)Tj
+0 -1.14 TD
+(the same rows.)Tj
+0 -2.32 TD
+(This is the Hadamard matrix H\(P,Q\):)Tj
+/F5 1 Tf
+10.18 -2.22 TD
+0.8999 Tc
+[(8730)-20(B4952)-20(61A)]TJ
+-1.5 -1.14 TD
+5.3999 Tc
+(01)Tj
+ET
+206.161 568.337 217.44 0.48 re
+f
+206.401 555.137 0.48 13.2 re
+f
+423.121 555.137 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 544.817 Tm
+3.8999 Tc
+(31)Tj
+ET
+206.401 541.697 0.48 13.44 re
+f
+423.121 541.697 0.48 13.44 re
+f
+BT
+12 0 0 12 194.161 531.3771 Tm
+0.8999 Tc
+(81)Tj
+ET
+206.401 528.497 0.48 13.2 re
+f
+423.121 528.497 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 518.1771 Tm
+2.3999 Tc
+(71)Tj
+ET
+206.401 515.297 0.48 13.2 re
+f
+423.121 515.297 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 504.9771 Tm
+8.4199 Tc
+(41)Tj
+ET
+206.401 502.097 0.48 13.2 re
+f
+423.121 502.097 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 491.777 Tm
+9.9199 Tc
+(91)Tj
+ET
+206.401 488.897 0.48 13.2 re
+f
+423.121 488.897 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 478.5771 Tm
+6.9199 Tc
+(B1)Tj
+ET
+206.401 475.457 0.48 13.44 re
+f
+423.121 475.457 0.48 13.44 re
+f
+BT
+12 0 0 12 194.161 465.1371 Tm
+17.4399 Tc
+(A1)Tj
+ET
+206.401 462.257 0.48 13.2 re
+f
+423.121 462.257 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 451.937 Tm
+12.9199 Tc
+(21)Tj
+ET
+206.401 449.057 0.48 13.2 re
+f
+423.121 449.057 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 438.7371 Tm
+11.4199 Tc
+(51)Tj
+ET
+206.401 435.857 0.48 13.2 re
+f
+423.121 435.857 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 425.537 Tm
+14.4399 Tc
+(61)Tj
+ET
+206.401 422.657 0.48 13.2 re
+f
+423.121 422.657 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 412.337 Tm
+15.9399 Tc
+(11)Tj
+ET
+206.401 408.737 0.48 13.92 re
+f
+206.881 408.737 216.24 0.48 re
+f
+423.121 408.737 0.48 13.92 re
+f
+BT
+/F4 1 Tf
+12 0 0 12 90.001 384.257 Tm
+0 Tc
+(This is the E\(P,Q\) matrix with the 0 entries in bold face:)Tj
+/F5 1 Tf
+10.18 -2.22 TD
+0.8999 Tc
+[(8730)-20(B4952)-20(61A)]TJ
+-1.5 -1.16 TD
+(0873)Tj
+/F6 1 Tf
+6 0 TD
+0 Tc
+(0)Tj
+/F5 1 Tf
+1.52 0 TD
+0.8999 Tc
+[(B4952)-20(61A)]TJ
+ET
+206.161 354.017 217.44 0.48 re
+f
+206.401 340.817 0.48 13.2 re
+f
+423.121 340.817 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 330.497 Tm
+(354)Tj
+/F6 1 Tf
+4.5 0 TD
+0 Tc
+(0)Tj
+/F5 1 Tf
+1.5 0 TD
+0.8999 Tc
+[(9)-20(8162B)-20(3A7)]TJ
+ET
+206.401 327.617 0.48 13.2 re
+f
+423.121 327.617 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 317.2971 Tm
+0 Tc
+(8)Tj
+/F6 1 Tf
+1.5 0 TD
+(0)Tj
+/F5 1 Tf
+1.5 0 TD
+0.8999 Tc
+[(B74)-20(38196)-20(A52)]TJ
+ET
+206.401 314.417 0.48 13.2 re
+f
+423.121 314.417 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 304.097 Tm
+(71)Tj
+/F6 1 Tf
+3 0 TD
+0 Tc
+(0)Tj
+/F5 1 Tf
+1.5 0 TD
+0.8999 Tc
+[(85)-20(492A7)-20(B63)]TJ
+ET
+206.401 301.217 0.48 13.2 re
+f
+423.121 301.217 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 290.897 Tm
+[(443B8)-20(7)]TJ
+/F6 1 Tf
+9.02 0 TD
+0 Tc
+(0)Tj
+/F5 1 Tf
+1.5 0 TD
+0.8999 Tc
+[(51A)-20(296)]TJ
+ET
+206.401 287.777 0.48 13.44 re
+f
+423.121 287.777 0.48 13.44 re
+f
+BT
+12 0 0 12 194.161 277.457 Tm
+[(9BA63)-20(27)]TJ
+/F6 1 Tf
+10.52 0 TD
+0 Tc
+(0)Tj
+/F5 1 Tf
+1.5 0 TD
+0.8999 Tc
+[(85)-20(941)]TJ
+ET
+206.401 274.577 0.48 13.2 re
+f
+423.121 274.577 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 264.2571 Tm
+(B9841)Tj
+/F6 1 Tf
+7.52 0 TD
+0 Tc
+(0)Tj
+/F5 1 Tf
+1.5 0 TD
+0.8999 Tc
+[(5A63)-20(72B)]TJ
+ET
+206.401 261.377 0.48 13.2 re
+f
+423.121 261.377 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 251.0571 Tm
+[(AA952)-20(16B74)-20(83)]TJ
+/F6 1 Tf
+18.04 0 TD
+0 Tc
+(0)Tj
+ET
+206.401 248.177 0.48 13.2 re
+f
+423.121 248.177 0.48 13.2 re
+f
+BT
+/F5 1 Tf
+12 0 0 12 194.161 237.8571 Tm
+0.8999 Tc
+[(2651A)-20(9273)]TJ
+/F6 1 Tf
+13.52 0 TD
+0 Tc
+(0)Tj
+/F5 1 Tf
+1.52 0 TD
+0.8999 Tc
+(4B8)Tj
+ET
+206.401 234.977 0.48 13.2 re
+f
+423.121 234.977 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 224.6571 Tm
+[(532A7)-20(6B4)]TJ
+/F6 1 Tf
+12.02 0 TD
+0 Tc
+(0)Tj
+/F5 1 Tf
+1.5 0 TD
+0.8999 Tc
+[(9)-20(185)]TJ
+ET
+206.401 221.537 0.48 13.44 re
+f
+423.121 221.537 0.48 13.44 re
+f
+BT
+12 0 0 12 194.161 211.2171 Tm
+[(62196)-20(5A3B8)]TJ
+/F6 1 Tf
+15.04 0 TD
+0 Tc
+(0)Tj
+/F5 1 Tf
+1.5 0 TD
+0.8999 Tc
+(74)Tj
+ET
+206.401 208.337 0.48 13.2 re
+f
+423.121 208.337 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 198.0171 Tm
+[(1762B)-20(A3841)-20(5)]TJ
+/F6 1 Tf
+16.54 0 TD
+0 Tc
+(0)Tj
+/F5 1 Tf
+1.5 0 TD
+(9)Tj
+ET
+206.401 194.657 0.48 13.68 re
+f
+206.881 194.657 216.24 0.48 re
+f
+423.121 194.657 0.48 13.68 re
+f
+BT
+/F4 1 Tf
+12 0 0 12 90.001 170.6571 Tm
+(We see that the pattern of zeros in E\(P,Q\) is the same as the 1s in the H\(P,Q\). A zero)Tj
+0 -1.16 TD
+(interval between two pcs indicates that the pcs are the same; thus the pattern of)Tj
+T*
+(intersection shown by 1s on the Hadamard matrix is same as the pattern of zero intervals)Tj
+0 -1.14 TD
+(on the E\(P,Q\) matrix.)Tj
+ET
+endstream
+endobj
+22 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F3 6 0 R
+/F4 7 0 R
+/F5 13 0 R
+/F6 14 0 R
+/F8 19 0 R
+>>
+/ExtGState <<
+/GS1 8 0 R
+>>
+>>
+endobj
+24 0 obj
+<<
+/Length 5556
+>>
+stream
+BT
+/F1 1 Tf
+12 0 0 12 164.641 38.6571 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+(Morris: Invariance Matrices and 12-Tone Rows)Tj
+/F2 1 Tf
+20.42 0 TD
+0.0007 Tw
+(  page 5)Tj
+/F4 1 Tf
+-26.64 55.88 TD
+0 Tw
+(Now let us compare a new Hadamard matrix made from T)Tj
+6.96 0 0 6.96 370.5655 706.817 Tm
+(1)Tj
+12 0 0 12 374.161 709.217 Tm
+(P and Q with the E\(P,Q\))Tj
+-23.68 -1.16 TD
+(matrix with the 1s in boldface.)Tj
+/F5 1 Tf
+10.18 -2.22 TD
+0.8999 Tc
+[(8730)-20(B4952)-20(61A)]TJ
+-1.5 -1.14 TD
+15.9399 Tc
+(11)Tj
+ET
+206.161 665.297 217.44 0.48 re
+f
+206.401 652.097 0.48 13.2 re
+f
+423.121 652.097 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 641.777 Tm
+8.4199 Tc
+(41)Tj
+ET
+206.401 638.897 0.48 13.2 re
+f
+423.121 638.897 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 628.577 Tm
+9.9199 Tc
+(91)Tj
+ET
+206.401 625.457 0.48 13.44 re
+f
+423.121 625.457 0.48 13.44 re
+f
+BT
+12 0 0 12 194.161 615.137 Tm
+0.8999 Tc
+(81)Tj
+ET
+206.401 612.257 0.48 13.2 re
+f
+423.121 612.257 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 601.937 Tm
+11.4199 Tc
+(51)Tj
+ET
+206.401 599.057 0.48 13.2 re
+f
+423.121 599.057 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 588.7371 Tm
+17.4399 Tc
+(A1)Tj
+ET
+206.401 585.857 0.48 13.2 re
+f
+423.121 585.857 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 575.537 Tm
+5.3999 Tc
+(01)Tj
+ET
+206.401 572.657 0.48 13.2 re
+f
+423.121 572.657 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 562.337 Tm
+6.9199 Tc
+(B1)Tj
+ET
+206.401 559.217 0.48 13.44 re
+f
+423.121 559.217 0.48 13.44 re
+f
+BT
+12 0 0 12 194.161 548.897 Tm
+3.8999 Tc
+(31)Tj
+ET
+206.401 546.017 0.48 13.2 re
+f
+423.121 546.017 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 535.697 Tm
+14.4399 Tc
+(61)Tj
+ET
+206.401 532.817 0.48 13.2 re
+f
+423.121 532.817 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 522.4971 Tm
+2.3999 Tc
+(71)Tj
+ET
+206.401 519.617 0.48 13.2 re
+f
+423.121 519.617 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 509.2971 Tm
+12.9199 Tc
+(21)Tj
+ET
+206.401 505.937 0.48 13.68 re
+f
+206.881 505.937 216.24 0.48 re
+f
+423.121 505.937 0.48 13.68 re
+f
+BT
+12 0 0 12 212.161 468.4971 Tm
+0.8999 Tc
+[(8730)-20(B4952)-20(61A)]TJ
+-1.5 -1.16 TD
+[(08730)-20(B4952)-20(6)]TJ
+/F6 1 Tf
+16.54 0 TD
+0 Tc
+(1)Tj
+/F5 1 Tf
+1.5 0 TD
+(A)Tj
+ET
+206.161 464.897 217.44 0.48 re
+f
+206.401 451.697 0.48 13.2 re
+f
+423.121 451.697 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 441.377 Tm
+0.8999 Tc
+[(35409)-20(8)]TJ
+/F6 1 Tf
+9.02 0 TD
+0 Tc
+(1)Tj
+/F5 1 Tf
+1.5 0 TD
+0.8999 Tc
+[(62B)-20(3A7)]TJ
+ET
+206.401 438.497 0.48 13.2 re
+f
+423.121 438.497 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 428.1771 Tm
+[(80B74)-20(38)]TJ
+/F6 1 Tf
+10.52 0 TD
+0 Tc
+(1)Tj
+/F5 1 Tf
+1.5 0 TD
+0.8999 Tc
+[(96)-20(A52)]TJ
+ET
+206.401 425.297 0.48 13.2 re
+f
+423.121 425.297 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 414.9771 Tm
+0 Tc
+(7)Tj
+/F6 1 Tf
+1.5 0 TD
+(1)Tj
+/F5 1 Tf
+1.5 0 TD
+0.8999 Tc
+[(085)-20(492A7)-20(B63)]TJ
+ET
+206.401 412.097 0.48 13.2 re
+f
+423.121 412.097 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 401.777 Tm
+[(443B8)-20(705)]TJ
+/F6 1 Tf
+12.02 0 TD
+0 Tc
+(1)Tj
+/F5 1 Tf
+1.5 0 TD
+0.8999 Tc
+[(A)-20(296)]TJ
+ET
+206.401 398.657 0.48 13.44 re
+f
+423.121 398.657 0.48 13.44 re
+f
+BT
+12 0 0 12 194.161 388.337 Tm
+[(9BA63)-20(27085)-20(94)]TJ
+/F6 1 Tf
+18.04 0 TD
+0 Tc
+(1)Tj
+ET
+206.401 385.457 0.48 13.2 re
+f
+423.121 385.457 0.48 13.2 re
+f
+BT
+/F5 1 Tf
+12 0 0 12 194.161 375.1371 Tm
+0.8999 Tc
+(B984)Tj
+/F6 1 Tf
+6 0 TD
+0 Tc
+(1)Tj
+/F5 1 Tf
+1.52 0 TD
+0.8999 Tc
+[(05A63)-20(72B)]TJ
+ET
+206.401 372.257 0.48 13.2 re
+f
+423.121 372.257 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 361.937 Tm
+(AA952)Tj
+/F6 1 Tf
+7.52 0 TD
+0 Tc
+(1)Tj
+/F5 1 Tf
+1.5 0 TD
+0.8999 Tc
+[(6B74)-20(830)]TJ
+ET
+206.401 359.057 0.48 13.2 re
+f
+423.121 359.057 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 348.7371 Tm
+(265)Tj
+/F6 1 Tf
+4.5 0 TD
+0 Tc
+(1)Tj
+/F5 1 Tf
+1.5 0 TD
+0.8999 Tc
+[(A)-20(92730)-20(4B8)]TJ
+ET
+206.401 345.857 0.48 13.2 re
+f
+423.121 345.857 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 335.537 Tm
+[(532A7)-20(6B409)]TJ
+/F6 1 Tf
+15.04 0 TD
+0 Tc
+(1)Tj
+/F5 1 Tf
+1.5 0 TD
+0.8999 Tc
+(85)Tj
+ET
+206.401 332.417 0.48 13.44 re
+f
+423.121 332.417 0.48 13.44 re
+f
+BT
+12 0 0 12 194.161 322.097 Tm
+(62)Tj
+/F6 1 Tf
+3 0 TD
+0 Tc
+(1)Tj
+/F5 1 Tf
+1.5 0 TD
+0.8999 Tc
+[(96)-20(5A3B8)-20(074)]TJ
+ET
+206.401 319.217 0.48 13.2 re
+f
+423.121 319.217 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 308.897 Tm
+[(1762B)-20(A384)]TJ
+/F6 1 Tf
+13.52 0 TD
+0 Tc
+(1)Tj
+/F5 1 Tf
+1.52 0 TD
+0.8999 Tc
+(509)Tj
+ET
+206.401 305.537 0.48 13.68 re
+f
+206.881 305.537 216.24 0.48 re
+f
+423.121 305.537 0.48 13.68 re
+f
+BT
+/F4 1 Tf
+12 0 0 12 90.001 280.817 Tm
+0 Tc
+(This time the correspondence between the two matrices is between the pattern of 1s  in)Tj
+0 -1.16 TD
+(H\( T)Tj
+6.96 0 0 6.96 113.041 264.4971 Tm
+(1)Tj
+12 0 0 12 116.641 266.8971 Tm
+(P,Q\) and the 1s in the E\(P,Q\) matrix.)Tj
+-2.22 -2.3 TD
+( This suggests a theorem:)Tj
+/F8 1 Tf
+0 -2.32 TD
+(The pattern of ns in E\(P,Q\) is the same as the pattern of 1s in H\(T)Tj
+6.96 0 0 6.96 407.3155 209.0571 Tm
+(n)Tj
+12 0 0 12 410.881 211.4571 Tm
+(P,Q\).)Tj
+/F4 1 Tf
+-26.74 -2.3 TD
+(Thus the E\(P,Q\) contains 12 Hadamard matrices, between the transpositionally related)Tj
+0 -1.16 TD
+(members of the row-class of P and the row Q.)Tj
+0 -2.3 TD
+(We might want to know the permutational relations between the rest of the other)Tj
+0 -1.16 TD
+(members of the row-class of P and the row Q. The Hadamard matrices H\(RT)Tj
+6.96 0 0 6.96 459.8858 126.0171 Tm
+(n)Tj
+12 0 0 12 463.441 128.4171 Tm
+(P,Q\) are)Tj
+-31.12 -1.16 TD
+(determined by reading the E\(P,Q\) upside down. This leaves the T)Tj
+6.96 0 0 6.96 404.641 112.0971 Tm
+(n)Tj
+12 0 0 12 408.241 114.4971 Tm
+(IP and RT)Tj
+6.96 0 0 6.96 457.681 112.0971 Tm
+(n)Tj
+12 0 0 12 461.281 114.4971 Tm
+(IP members)Tj
+-30.94 -1.16 TD
+(of the row-class of P. We simply make a new matrix E\(IP,Q\). The Hadamard matrices of)Tj
+ET
+endstream
+endobj
+25 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F4 7 0 R
+/F5 13 0 R
+/F6 14 0 R
+/F8 19 0 R
+>>
+/ExtGState <<
+/GS1 8 0 R
+>>
+>>
+endobj
+27 0 obj
+<<
+/Length 5388
+>>
+stream
+BT
+/F1 1 Tf
+12 0 0 12 164.641 38.6571 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+(Morris: Invariance Matrices and 12-Tone Rows)Tj
+/F2 1 Tf
+20.42 0 TD
+0.0007 Tw
+(  page 6)Tj
+/F4 1 Tf
+-26.64 55.88 TD
+0 Tw
+(the 12 T)Tj
+6.96 0 0 6.96 130.081 706.817 Tm
+(n)Tj
+12 0 0 12 133.681 709.217 Tm
+(IP forms and Q are located in the patterns of ns in this new matrix and we read)Tj
+-3.64 -1.16 TD
+(these patterns upside down to get the Hadamard matrices of the RT)Tj
+6.96 0 0 6.96 412.9053 692.897 Tm
+(n)Tj
+12 0 0 12 416.401 695.297 Tm
+(IP forms and Q.)Tj
+6.96 0 0 6.96 492.961 700.337 Tm
+(4)Tj
+12 0 0 12 90.001 667.697 Tm
+(Below is the E\(IP,Q\) matrix.)Tj
+/F5 1 Tf
+10.18 -2.22 TD
+0.8999 Tc
+[(8730)-20(B4952)-20(61A)]TJ
+-1.5 -1.14 TD
+[(08730)-20(B4952)-20(61A)]TJ
+ET
+206.161 637.697 217.44 0.48 re
+f
+206.401 624.257 0.48 13.44 re
+f
+423.121 624.257 0.48 13.44 re
+f
+BT
+12 0 0 12 194.161 613.937 Tm
+[(9BA63)-20(27085)-20(941)]TJ
+ET
+206.401 611.057 0.48 13.2 re
+f
+423.121 611.057 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 600.7371 Tm
+[(443B8)-20(7051A)-20(296)]TJ
+ET
+206.401 597.857 0.48 13.2 re
+f
+423.121 597.857 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 587.537 Tm
+[(532A7)-20(6B409)-20(185)]TJ
+ET
+206.401 584.657 0.48 13.2 re
+f
+423.121 584.657 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 574.337 Tm
+[(80B74)-20(38196)-20(A52)]TJ
+ET
+206.401 571.457 0.48 13.2 re
+f
+423.121 571.457 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 561.137 Tm
+[(35409)-20(8162B)-20(3A7)]TJ
+ET
+206.401 558.017 0.48 13.44 re
+f
+423.121 558.017 0.48 13.44 re
+f
+BT
+12 0 0 12 194.161 547.697 Tm
+[(1762B)-20(A3841)-20(509)]TJ
+ET
+206.401 544.817 0.48 13.2 re
+f
+423.121 544.817 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 534.4971 Tm
+[(2651A)-20(92730)-20(4B8)]TJ
+ET
+206.401 531.617 0.48 13.2 re
+f
+423.121 531.617 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 521.2971 Tm
+[(AA952)-20(16B74)-20(830)]TJ
+ET
+206.401 518.417 0.48 13.2 re
+f
+423.121 518.417 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 508.097 Tm
+[(71085)-20(492A7)-20(B63)]TJ
+ET
+206.401 505.217 0.48 13.2 re
+f
+423.121 505.217 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 494.8971 Tm
+[(62196)-20(5A3B8)-20(074)]TJ
+ET
+206.401 491.777 0.48 13.44 re
+f
+423.121 491.777 0.48 13.44 re
+f
+BT
+12 0 0 12 194.161 481.4571 Tm
+[(B9841)-20(05A63)-20(72B)]TJ
+ET
+206.401 478.097 0.48 13.68 re
+f
+206.881 478.097 216.24 0.48 re
+f
+423.121 478.097 0.48 13.68 re
+f
+BT
+/F4 1 Tf
+12 0 0 12 90.001 453.377 Tm
+0 Tc
+(It contains the Hadamard matrix below between T)Tj
+6.96 0 0 6.96 330.961 450.9771 Tm
+(1)Tj
+12 0 0 12 334.561 453.377 Tm
+(IP and Q. The pattern of 1s in the two)Tj
+-20.38 -1.14 TD
+(matrices is identical.)Tj
+/F5 1 Tf
+10.18 -2.22 TD
+0.8999 Tc
+[(8730)-20(B4952)-20(61A)]TJ
+-1.5 -1.16 TD
+15.9399 Tc
+(11)Tj
+ET
+206.161 409.457 217.44 0.48 re
+f
+206.401 396.257 0.48 13.2 re
+f
+423.121 396.257 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 385.937 Tm
+17.4399 Tc
+(A1)Tj
+ET
+206.401 383.057 0.48 13.2 re
+f
+423.121 383.057 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 372.7371 Tm
+11.4199 Tc
+(51)Tj
+ET
+206.401 369.857 0.48 13.2 re
+f
+423.121 369.857 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 359.537 Tm
+14.4399 Tc
+(61)Tj
+ET
+206.401 356.657 0.48 13.2 re
+f
+423.121 356.657 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 346.337 Tm
+9.9199 Tc
+(91)Tj
+ET
+206.401 343.217 0.48 13.44 re
+f
+423.121 343.217 0.48 13.44 re
+f
+BT
+12 0 0 12 194.161 332.897 Tm
+8.4199 Tc
+(41)Tj
+ET
+206.401 330.017 0.48 13.2 re
+f
+423.121 330.017 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 319.6971 Tm
+12.9199 Tc
+(21)Tj
+ET
+206.401 316.817 0.48 13.2 re
+f
+423.121 316.817 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 306.497 Tm
+3.8999 Tc
+(31)Tj
+ET
+206.401 303.617 0.48 13.2 re
+f
+423.121 303.617 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 293.2971 Tm
+6.9199 Tc
+(B1)Tj
+ET
+206.401 290.417 0.48 13.2 re
+f
+423.121 290.417 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 280.097 Tm
+0.8999 Tc
+(81)Tj
+ET
+206.401 276.977 0.48 13.44 re
+f
+423.121 276.977 0.48 13.44 re
+f
+BT
+12 0 0 12 194.161 266.6571 Tm
+2.3999 Tc
+(71)Tj
+ET
+206.401 263.777 0.48 13.2 re
+f
+423.121 263.777 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 253.4571 Tm
+5.3999 Tc
+(01)Tj
+ET
+206.401 250.097 0.48 13.68 re
+f
+206.881 250.097 216.24 0.48 re
+f
+423.121 250.097 0.48 13.68 re
+f
+BT
+/F8 1 Tf
+12 0 0 12 90.001 226.0971 Tm
+0 Tc
+(The two matrices E\(P,Q\) and E\(IP,Q\) contain all the Hadamard matrices between the)Tj
+T*
+(row-class of P and the row Q)Tj
+/F4 1 Tf
+11.78 0 TD
+(.)Tj
+6.96 0 0 6.96 234.481 217.2171 Tm
+(5)Tj
+/F2 1 Tf
+12 0 0 12 90.001 171.8571 Tm
+(                              )Tj
+7.2 0 TD
+(                    )Tj
+ET
+90.001 174.497 144 0.48 re
+f
+BT
+7.92 0 0 7.92 90.001 163.6971 Tm
+(4)Tj
+12 0 0 12 93.841 158.1771 Tm
+( These identities are explained in the document )Tj
+/F9 1 Tf
+19.1045 0 TD
+(Comparing Twelve-Tone)Tj
+-19.4245 -1.16 TD
+(rows:Hadamard Matrices)Tj
+/F2 1 Tf
+10.42 0 TD
+(.)Tj
+7.92 0 0 7.92 90.001 135.8571 Tm
+(5)Tj
+/F4 1 Tf
+12 0 0 12 93.841 130.3371 Tm
+(Hadamard matrices between P and other members of the row-class of Q donêt need to be)Tj
+-0.32 -1.14 TD
+(generated, because if we know the permutational pattern of KP to Q, the same)Tj
+0 -1.16 TD
+(permutational pattern relates P to K)Tj
+6.96 0 0 6.96 260.9483 107.7771 Tm
+(-1)Tj
+12 0 0 12 266.746 102.7371 Tm
+(Q. \(K is any combination of T)Tj
+6.96 0 0 6.96 411.7187 100.3371 Tm
+(n)Tj
+12 0 0 12 415.201 102.7371 Tm
+(, I, and/or R; K)Tj
+6.96 0 0 6.96 487.921 107.7771 Tm
+(-1)Tj
+12 0 0 12 493.7187 102.7371 Tm
+( is)Tj
+-33.6431 -1.16 TD
+(the inverse of K, also a combination of T)Tj
+6.96 0 0 6.96 287.041 86.4171 Tm
+(n)Tj
+12 0 0 12 290.641 88.8171 Tm
+(, I, and/or R.)Tj
+ET
+endstream
+endobj
+28 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F4 7 0 R
+/F5 13 0 R
+/F8 19 0 R
+/F9 29 0 R
+>>
+/ExtGState <<
+/GS1 8 0 R
+>>
+>>
+endobj
+31 0 obj
+<<
+/Length 5399
+>>
+stream
+BT
+/F1 1 Tf
+12 0 0 12 164.641 38.6571 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+(Morris: Invariance Matrices and 12-Tone Rows)Tj
+/F2 1 Tf
+20.42 0 TD
+0.0007 Tw
+(  page 7)Tj
+/F3 1 Tf
+-12.96 55.88 TD
+0 Tw
+(Invariance Matrices)Tj
+/F4 1 Tf
+-13.68 -2.3 TD
+(There are two types of )Tj
+/F8 1 Tf
+9.2461 0 TD
+(invariance matrices)Tj
+/F4 1 Tf
+7.9739 0 TD
+(; the )Tj
+/F8 1 Tf
+2 0 TD
+(T-matrix)Tj
+/F4 1 Tf
+3.5 0 TD
+( and the )Tj
+/F8 1 Tf
+3.42 0 TD
+(I-matrix)Tj
+/F4 1 Tf
+3.28 0 TD
+(. These are also)Tj
+-29.42 -1.16 TD
+(known respectively  as difference and sum tables or matrices.)Tj
+0 -2.32 TD
+(The E\(P,Q\) matrix listing the intervals from P to Q is the )Tj
+/F8 1 Tf
+23.0244 0 TD
+(T-matrix of P and Q)Tj
+/F4 1 Tf
+8.1156 0 TD
+(  and the)Tj
+-31.14 -1.14 TD
+(E\(IP,Q\) matrix listing the intervals from IP to Q is the )Tj
+/F8 1 Tf
+21.8857 0 TD
+(I-matrix of P and Q.)Tj
+/F4 1 Tf
+-21.8857 -2.32 TD
+(It should be clear that the T-matrix is a difference matrix since the body of the matrix)Tj
+0 -1.16 TD
+(contains the ordered intervals from P to Q and intervals are differences. While the)Tj
+0 -1.14 TD
+(E\(IP,Q\) matrix is a difference matrix such that cell E)Tj
+6.96 0 0 6.96 343.921 568.337 Tm
+(m,n )Tj
+12 0 0 12 356.401 570.7371 Tm
+(contains the difference between)Tj
+-22.2 -1.16 TD
+(IP)Tj
+6.96 0 0 6.96 100.6709 554.4171 Tm
+(m)Tj
+12 0 0 12 106.081 556.817 Tm
+( and Q)Tj
+6.96 0 0 6.96 138.0732 554.4171 Tm
+(n)Tj
+12 0 0 12 141.601 556.817 Tm
+(, it is also a sum matrix such that cell E)Tj
+6.96 0 0 6.96 330.001 554.4171 Tm
+(m,n )Tj
+12 0 0 12 342.481 556.817 Tm
+(contains the sum between P)Tj
+6.96 0 0 6.96 475.7876 554.4171 Tm
+(m)Tj
+12 0 0 12 481.201 556.817 Tm
+( and Q)Tj
+6.96 0 0 6.96 513.1932 554.4171 Tm
+(n)Tj
+12 0 0 12 516.7209 556.817 Tm
+(.)Tj
+-35.56 -1.16 TD
+(We can show this by constructing an I-matrix from the sums of P)Tj
+6.96 0 0 6.96 403.2725 540.4971 Tm
+(m)Tj
+12 0 0 12 408.721 542.897 Tm
+( and Q)Tj
+6.96 0 0 6.96 440.7132 540.4971 Tm
+(n)Tj
+12 0 0 12 444.241 542.897 Tm
+( using the same)Tj
+-29.52 -1.16 TD
+(rows as above for P and Q.)Tj
+0 -2.3 TD
+(P is written to the left side of the I-matrix and Q is written on top of the matrix \(as in a)Tj
+0 -1.16 TD
+(E\(P,Q\) or  T-matrix\), but the entries of the cells are the sums of the pcs in the rows. The)Tj
+T*
+(body of this I- or sum matrix is identical to the body of the E\(IP,Q\) matrix \(that is the T-)Tj
+0 -1.14 TD
+(matrix of IP and Q\) shown on the last page.)Tj
+6.96 0 0 6.96 299.281 464.897 Tm
+(6)Tj
+12 0 0 12 90.001 432.0171 Tm
+(Here is the I-matrix for IP and Q. \(The ç+é shows it is an I-matrix or sum matrix\).)Tj
+/F5 1 Tf
+8.68 -2.22 TD
+0.8999 Tc
+[(+8730)-20(B4952)-20(61A)]TJ
+0 -1.14 TD
+[(08730)-20(B4952)-20(61A)]TJ
+ET
+206.161 402.017 217.44 0.48 re
+f
+206.401 388.817 0.48 13.2 re
+f
+423.121 388.817 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 378.497 Tm
+[(3BA63)-20(27085)-20(941)]TJ
+ET
+206.401 375.617 0.48 13.2 re
+f
+423.121 375.617 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 365.2971 Tm
+[(843B8)-20(7051A)-20(296)]TJ
+ET
+206.401 362.177 0.48 13.44 re
+f
+423.121 362.177 0.48 13.44 re
+f
+BT
+12 0 0 12 194.161 351.8571 Tm
+[(732A7)-20(6B409)-20(185)]TJ
+ET
+206.401 348.977 0.48 13.2 re
+f
+423.121 348.977 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 338.657 Tm
+[(40B74)-20(38196)-20(A52)]TJ
+ET
+206.401 335.777 0.48 13.2 re
+f
+423.121 335.777 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 325.457 Tm
+[(95409)-20(8162B)-20(3A7)]TJ
+ET
+206.401 322.577 0.48 13.2 re
+f
+423.121 322.577 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 312.257 Tm
+[(B762B)-20(A3841)-20(509)]TJ
+ET
+206.401 309.377 0.48 13.2 re
+f
+423.121 309.377 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 299.057 Tm
+[(A651A)-20(92730)-20(4B8)]TJ
+ET
+206.401 295.937 0.48 13.44 re
+f
+423.121 295.937 0.48 13.44 re
+f
+BT
+12 0 0 12 194.161 285.617 Tm
+[(2A952)-20(16B74)-20(830)]TJ
+ET
+206.401 282.737 0.48 13.2 re
+f
+423.121 282.737 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 272.4171 Tm
+[(51085)-20(492A7)-20(B63)]TJ
+ET
+206.401 269.537 0.48 13.2 re
+f
+423.121 269.537 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 259.2171 Tm
+[(62196)-20(5A3B8)-20(074)]TJ
+ET
+206.401 256.337 0.48 13.2 re
+f
+423.121 256.337 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 246.0171 Tm
+[(19841)-20(05A63)-20(72B)]TJ
+ET
+206.401 242.657 0.48 13.68 re
+f
+206.881 242.657 216.24 0.48 re
+f
+423.121 242.657 0.48 13.68 re
+f
+BT
+/F3 1 Tf
+12 0 0 12 202.561 204.0171 Tm
+0 Tc
+(The T-matrix between a row P and itself)Tj
+/F4 1 Tf
+-9.38 -2.3 TD
+(In order to generate the T-matrix for a row and itself, we make an E\(P,P\) matrix, that is,)Tj
+0 -1.16 TD
+(an E\(P,Q\) matrix, where P and Q are the same row. On the next page is the T-matrix for)Tj
+T*
+(our row P = <038749BA2561>.)Tj
+/F2 1 Tf
+0 -1.56 TD
+(                              )Tj
+7.2 0 TD
+(                    )Tj
+ET
+90.001 132.497 144 0.48 re
+f
+BT
+7.92 0 0 7.92 90.001 121.6971 Tm
+(6)Tj
+12 0 0 12 93.841 116.1771 Tm
+( The significance of the sums is that if T)Tj
+7.92 0 0 7.92 287.521 114.7371 Tm
+(n)Tj
+12 0 0 12 291.601 116.1771 Tm
+(Ia = b, then n - a = b and a + b = n \(n is the)Tj
+-16.8 -1.16 TD
+(index number of the inversion operator T)Tj
+7.92 0 0 7.92 288.001 100.8171 Tm
+(n)Tj
+12 0 0 12 292.081 102.2571 Tm
+(I\). Note also that if T)Tj
+7.92 0 0 7.92 393.3837 100.8171 Tm
+(n)Tj
+12 0 0 12 397.441 102.2571 Tm
+(a = b, then n+ a = b and b)Tj
+-25.62 -1.14 TD
+(Ö  a = n \(n is the interval from a to b\) . In both cases a and b would be pcs in the twelve-)Tj
+0 -1.16 TD
+(tone rows generating the invariance matrices, and the ns would be in the cells of matrices.)Tj
+ET
+endstream
+endobj
+32 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F3 6 0 R
+/F4 7 0 R
+/F5 13 0 R
+/F8 19 0 R
+>>
+/ExtGState <<
+/GS1 8 0 R
+>>
+>>
+endobj
+34 0 obj
+<<
+/Length 6273
+>>
+stream
+BT
+/F1 1 Tf
+12 0 0 12 164.641 38.6571 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+(Morris: Invariance Matrices and 12-Tone Rows)Tj
+/F2 1 Tf
+20.42 0 TD
+0.0007 Tw
+(  page 8)Tj
+/F4 1 Tf
+-26.64 54.72 TD
+0 Tw
+(A T-matrix for P and itself is the same as a row table for the row P. The reason is that the)Tj
+0 -1.14 TD
+(tables houses the intervals between P and P, thus these intervals read in the columns from)Tj
+0 -1.16 TD
+(top to bottom correspond to the pcs in the T)Tj
+6.96 0 0 6.96 300.2998 665.297 Tm
+(n)Tj
+12 0 0 12 303.841 667.697 Tm
+(I forms of P and the intervals read left to)Tj
+-17.82 -1.16 TD
+[(right correspond to the )-8.9(pcs in the T)]TJ
+6.96 0 0 6.96 258.481 651.377 Tm
+(n)Tj
+12 0 0 12 262.081 653.777 Tm
+( forms of P. Here is the T-matrix for P and itself.)Tj
+-14.34 -2.3 TD
+(T-matrix \(row table\))Tj
+/F5 1 Tf
+10.18 -2.28 TD
+0.8999 Tc
+[(0387)-20(49BA2)-20(561)]TJ
+-1.5 -1.14 TD
+[(00387)-20(49BA2)-20(561)]TJ
+ET
+206.161 595.457 217.44 0.48 re
+f
+206.401 582.257 0.48 13.2 re
+f
+423.121 582.257 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 571.937 Tm
+[(39054)-20(1687B)-20(23A)]TJ
+ET
+206.401 568.817 0.48 13.44 re
+f
+423.121 568.817 0.48 13.44 re
+f
+BT
+12 0 0 12 194.161 558.4971 Tm
+[(8470B)-20(81326)-20(9A5)]TJ
+ET
+206.401 555.617 0.48 13.2 re
+f
+423.121 555.617 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 545.2971 Tm
+[(75810)-20(92437)-20(AB6)]TJ
+ET
+206.401 542.417 0.48 13.2 re
+f
+423.121 542.417 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 532.097 Tm
+[(48B43)-20(0576A)-20(129)]TJ
+ET
+206.401 529.217 0.48 13.2 re
+f
+423.121 529.217 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 518.897 Tm
+[(936BA)-20(70215)-20(894)]TJ
+ET
+206.401 516.017 0.48 13.2 re
+f
+423.121 516.017 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 505.6971 Tm
+[(B1498)-20(5A0B3)-20(672)]TJ
+ET
+206.401 502.577 0.48 13.44 re
+f
+423.121 502.577 0.48 13.44 re
+f
+BT
+12 0 0 12 194.161 492.257 Tm
+[(A25A9)-20(6B104)-20(783)]TJ
+ET
+206.401 489.377 0.48 13.2 re
+f
+423.121 489.377 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 479.0571 Tm
+[(2A165)-20(27980)-20(34B)]TJ
+ET
+206.401 476.177 0.48 13.2 re
+f
+423.121 476.177 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 465.8571 Tm
+[(57A32)-20(B4659)-20(018)]TJ
+ET
+206.401 462.977 0.48 13.2 re
+f
+423.121 462.977 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 452.657 Tm
+[(66921)-20(A3548)-20(B07)]TJ
+ET
+206.401 449.777 0.48 13.2 re
+f
+423.121 449.777 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 439.4571 Tm
+[(1B276)-20(38A91)-20(450)]TJ
+ET
+206.401 435.857 0.48 13.92 re
+f
+206.881 435.857 216.24 0.48 re
+f
+423.121 435.857 0.48 13.92 re
+f
+BT
+/F4 1 Tf
+12 0 0 12 90.001 411.377 Tm
+0 Tc
+(Thus the properties of a T-matrix for a row and itself are same as for a row table: \(1\) the)Tj
+0 -1.16 TD
+(main diagonal contains zeros, the interval between the row aligned with itself; \(2\) the)Tj
+T*
+(entries symmetrically disposed around the main diagonal are inversions of each other. \(If)Tj
+T*
+(E)Tj
+6.96 0 0 6.96 97.441 367.217 Tm
+(i,j )Tj
+12 0 0 12 104.881 369.617 Tm
+(= x, then E)Tj
+6.96 0 0 6.96 157.681 367.217 Tm
+(j,i )Tj
+12 0 0 12 165.121 369.617 Tm
+(= -x \(mod 12\)\).)Tj
+-6.26 -2.3 TD
+(Since the T-matrix is an E\(P,P\) matrix, the zeros form a Hadamard matrix for a row and)Tj
+0 -1.16 TD
+(itself. Likewise, the 1s form a Hadamard matrix for T)Tj
+6.96 0 0 6.96 347.585 325.6971 Tm
+(1)Tj
+12 0 0 12 351.121 328.097 Tm
+(P and P, and, in general, the)Tj
+-21.76 -1.16 TD
+(matrices H\(T)Tj
+6.96 0 0 6.96 153.6397 311.777 Tm
+(n)Tj
+12 0 0 12 157.201 314.1771 Tm
+(P,P\) are formed by the patterns of ns.)Tj
+-5.6 -2.3 TD
+(Below we list all 12 of the embedded Hadamard matrices in the row table of P. The)Tj
+0 -1.16 TD
+(reader can examine these matrices at leisure to detect permutational relations among the)Tj
+T*
+(P and T)Tj
+6.96 0 0 6.96 127.441 256.3371 Tm
+(n)Tj
+12 0 0 12 131.041 258.7371 Tm
+(P rows.)Tj
+-3.42 -2.3 TD
+(Some of these Hadamard matrices are related. Examine the Hadamard matrices for T)Tj
+6.96 0 0 6.96 498.241 228.7371 Tm
+(5)Tj
+12 0 0 12 501.841 231.1371 Tm
+(P)Tj
+-34.32 -1.16 TD
+(and P, and T)Tj
+6.96 0 0 6.96 150.721 214.8171 Tm
+(7)Tj
+12 0 0 12 154.321 217.2171 Tm
+(P and P; that is, H\(T)Tj
+6.96 0 0 6.96 252.319 214.8171 Tm
+(5)Tj
+12 0 0 12 255.841 217.2171 Tm
+(P,P\) and H\(T)Tj
+6.96 0 0 6.96 319.5031 214.8171 Tm
+(7)Tj
+12 0 0 12 323.041 217.2171 Tm
+(P,P\). The 5s in H\(T)Tj
+6.96 0 0 6.96 417.121 214.8171 Tm
+(5)Tj
+12 0 0 12 420.721 217.2171 Tm
+(P,P\) can be flipped)Tj
+-27.56 -1.16 TD
+(around the main diagonal into the positions of the 7s in the H\(T)Tj
+6.96 0 0 6.96 395.281 200.8971 Tm
+(7)Tj
+12 0 0 12 398.881 203.2971 Tm
+(P,P\).)Tj
+6.96 0 0 6.96 422.161 208.3371 Tm
+(7)Tj
+12 0 0 12 425.521 203.2971 Tm
+( In general,)Tj
+-27.96 -1.14 TD
+(H\(T)Tj
+6.96 0 0 6.96 109.9932 187.2171 Tm
+(n)Tj
+12 0 0 12 113.521 189.6171 Tm
+(P,P\) is transformed into H\(T)Tj
+6.96 0 0 6.96 250.561 187.2171 Tm
+(-n)Tj
+12 0 0 12 256.3587 189.6171 Tm
+(P,P\) by flipping the first matrix around the main)Tj
+/F2 1 Tf
+-13.8631 -2.62 TD
+(                              )Tj
+7.2 0 TD
+(                    )Tj
+ET
+90.001 160.817 144 0.48 re
+f
+BT
+7.92 0 0 7.92 90.001 149.7771 Tm
+(7)Tj
+/F4 1 Tf
+12 0 0 12 93.841 144.2571 Tm
+(This results from the factÑexplained in the document oh Hadamard matricesÑthat)Tj
+-0.32 -1.16 TD
+(H\(P,Q\) is the same as H\(KP,KQ\) and that H\(P,Q\) flipped around the main diagonal is the)Tj
+0 -1.14 TD
+(same as H\(Q,P\). In this case, K is T)Tj
+6.96 0 0 6.96 261.6338 114.2571 Tm
+(7)Tj
+12 0 0 12 265.201 116.6571 Tm
+(, the inverse of T)Tj
+6.96 0 0 6.96 346.8397 114.2571 Tm
+(5)Tj
+12 0 0 12 350.401 116.6571 Tm
+(. H\(T)Tj
+6.96 0 0 6.96 376.3932 114.2571 Tm
+(5)Tj
+12 0 0 12 379.921 116.6571 Tm
+(P,P\) is the same as)Tj
+-24.16 -1.16 TD
+(H\(T)Tj
+6.96 0 0 6.96 109.9932 100.3371 Tm
+(7)Tj
+12 0 0 12 113.521 102.7371 Tm
+(T)Tj
+6.96 0 0 6.96 120.961 100.3371 Tm
+(5)Tj
+12 0 0 12 124.561 102.7371 Tm
+(P,T)Tj
+6.96 0 0 6.96 141.601 100.3371 Tm
+(7)Tj
+12 0 0 12 145.201 102.7371 Tm
+(P\) or H\(P,T)Tj
+6.96 0 0 6.96 201.601 100.3371 Tm
+(7)Tj
+12 0 0 12 205.201 102.7371 Tm
+(P\); then we exchange P and T)Tj
+6.96 0 0 6.96 348.492 100.3371 Tm
+(7)Tj
+12 0 0 12 352.081 102.7371 Tm
+(P, which produces H\(T)Tj
+6.96 0 0 6.96 463.441 100.3371 Tm
+(7)Tj
+12 0 0 12 467.041 102.7371 Tm
+(P,P\) with)Tj
+-31.42 -1.16 TD
+(the body of the H\(T)Tj
+6.96 0 0 6.96 185.3096 86.4171 Tm
+(5)Tj
+12 0 0 12 188.881 88.8171 Tm
+(P,P\) matrix flipped around the main diagonal with 7s rather than 5s.)Tj
+ET
+endstream
+endobj
+35 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F4 7 0 R
+/F5 13 0 R
+>>
+/ExtGState <<
+/GS1 8 0 R
+>>
+>>
+endobj
+37 0 obj
+<<
+/Length 2612
+>>
+stream
+BT
+/F1 1 Tf
+12 0 0 12 164.641 38.6571 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+(Morris: Invariance Matrices and 12-Tone Rows)Tj
+/F2 1 Tf
+20.42 0 TD
+0.0007 Tw
+(  page 9)Tj
+/F4 1 Tf
+-26.64 55.88 TD
+0 Tw
+(diagonal into the second. This also explains why the H\(T)Tj
+6.96 0 0 6.96 363.9444 706.817 Tm
+(0)Tj
+12 0 0 12 367.441 709.217 Tm
+(P,P\) and \(T)Tj
+6.96 0 0 6.96 422.4371 706.817 Tm
+(6)Tj
+12 0 0 12 426.001 709.217 Tm
+(P,P\) matrices are)Tj
+-28 -1.16 TD
+(symmetric around the main diagonal; they flip into themselves.)Tj
+0 -2.3 TD
+(Hadamard matrices embedded in the T-matrix for P and itself:)Tj
+/F5 1 Tf
+0 -2.28 TD
+(    038749BA2561    038749BA2561)Tj
+ET
+118.801 637.457 86.4 0.72 re
+f
+BT
+12 0 0 12 320.401 640.337 Tm
+(    038749BA2561)Tj
+ET
+234.001 637.457 86.4 0.72 re
+f
+349.201 637.457 86.4 0.72 re
+f
+BT
+12 0 0 12 90.001 627.137 Tm
+(  0|0           | 1|           1| 2|        2   |)Tj
+0 -1.1 TD
+(  3| 0          | 4|    1       | 5|         2  |)Tj
+T*
+(  8|  0         | 9|     1      | A|       2    |)Tj
+T*
+(  7|   0        | 8|  1         | 9|     2      |)Tj
+0 -1.12 TD
+(  4|    0       | 5|         1  | 6|          2 |)Tj
+0 -1.1 TD
+(  9|     0      | A|       1    | B|      2     |)Tj
+T*
+(  B|      0     | 0|1           | 1|           2|)Tj
+T*
+(  A|       0    | B|      1     | 0|2           |)Tj
+T*
+(  2|        0   | 3| 1          | 4|    2       |)Tj
+0 -1.12 TD
+(  5|         0  | 6|          1 | 7|   2        |)Tj
+0 -1.1 TD
+(  6|          0 | 7|   1        | 8|  2         |)Tj
+T*
+(  1|           0| 2|        1   | 3| 2          |)Tj
+T*
+(    ------------    ------------    ------------)Tj
+0 -3.32 TD
+(    038749BA2561    038749BA2561)Tj
+ET
+118.801 425.537 86.4 0.72 re
+f
+BT
+12 0 0 12 320.401 428.4171 Tm
+(    038749BA2561)Tj
+ET
+234.001 425.537 86.4 0.72 re
+f
+349.201 425.537 86.4 0.72 re
+f
+BT
+12 0 0 12 90.001 415.217 Tm
+(  3| 3          | 4|    4       | 5|         5  |)Tj
+0 -1.1 TD
+(  6|          3 | 7|   4        | 8|  5         |)Tj
+0 -1.12 TD
+(  B|      3     | 0|4           | 1|           5|)Tj
+0 -1.1 TD
+(  A|       3    | B|      4     | 0|5           |)Tj
+T*
+(  7|   3        | 8|  4         | 9|     5      |)Tj
+T*
+(  0|3           | 1|           4| 2|        5   |)Tj
+T*
+(  2|        3   | 3| 4          | 4|    5       |)Tj
+0 -1.12 TD
+(  1|           3| 2|        4   | 3| 5          |)Tj
+0 -1.1 TD
+(  5|         3  | 6|          4 | 7|   5        |)Tj
+T*
+(  8|  3         | 9|     4      | A|       5    |)Tj
+T*
+(  9|     3      | A|       4    | B|      5     |)Tj
+T*
+(  4|    3       | 5|         4  | 6|          5 |)Tj
+0 -1.12 TD
+(    ------------    ------------    ------------)Tj
+ET
+endstream
+endobj
+38 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F4 7 0 R
+/F5 13 0 R
+>>
+/ExtGState <<
+/GS1 8 0 R
+>>
+>>
+endobj
+40 0 obj
+<<
+/Length 3764
+>>
+stream
+BT
+/F1 1 Tf
+12 0 0 12 161.521 38.6571 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+(Morris: Invariance Matrices and 12-Tone Rows)Tj
+/F2 1 Tf
+20.42 0 TD
+0.0007 Tw
+(  page 10)Tj
+/F5 1 Tf
+-26.38 54.82 TD
+0 Tw
+(    038749BA2561    038749BA2561)Tj
+ET
+118.801 693.617 86.4 0.72 re
+f
+BT
+12 0 0 12 320.401 696.4971 Tm
+(    038749BA2561)Tj
+ET
+234.001 693.617 86.4 0.72 re
+f
+349.201 693.617 86.4 0.72 re
+f
+BT
+12 0 0 12 90.001 683.297 Tm
+(  6|          6 | 7|   7        | 8|  8         |)Tj
+0 -1.12 TD
+(  9|     6      | A|       7    | B|      8     |)Tj
+0 -1.1 TD
+(  2|        6   | 3| 7          | 4|    8       |)Tj
+T*
+(  1|           6| 2|        7   | 3| 8          |)Tj
+T*
+(  A|       6    | B|      7     | 0|8           |)Tj
+T*
+(  3| 6          | 4|    7       | 5|         8  |)Tj
+0 -1.12 TD
+(  5|         6  | 6|          7 | 7|   8        |)Tj
+0 -1.1 TD
+(  4|    6       | 5|         7  | 6|          8 |)Tj
+T*
+(  8|  6         | 9|     7      | A|       8    |)Tj
+T*
+(  B|      6     | 0|7           | 1|           8|)Tj
+T*
+(  0|6           | 1|           7| 2|        8   |)Tj
+0 -1.12 TD
+(  7|   6        | 8|  7         | 9|     8      |)Tj
+0 -1.1 TD
+(    ------------    ------------    ------------)Tj
+0 -2.2 TD
+(    038749BA2561    038749BA2561)Tj
+ET
+118.801 494.897 86.4 0.72 re
+f
+BT
+12 0 0 12 320.401 497.777 Tm
+(    038749BA2561)Tj
+ET
+234.001 494.897 86.4 0.72 re
+f
+349.201 494.897 86.4 0.72 re
+f
+BT
+12 0 0 12 90.001 484.5771 Tm
+(  9|     9      | A|       A    | B|      B     |)Tj
+0 -1.12 TD
+(  0|9           | 1|           A| 2|        B   |)Tj
+0 -1.1 TD
+(  5|         9  | 6|          A | 7|   B        |)Tj
+T*
+(  4|    9       | 5|         A  | 6|          B |)Tj
+T*
+(  1|           9| 2|        A   | 3| B          |)Tj
+T*
+(  6|          9 | 7|   A        | 8|  B         |)Tj
+0 -1.12 TD
+(  8|  9         | 9|     A      | A|       B    |)Tj
+0 -1.1 TD
+(  7|   9        | 8|  A         | 9|     B      |)Tj
+T*
+(  B|      9     | 0|A           | 1|           B|)Tj
+T*
+(  2|        9   | 3| A          | 4|    B       |)Tj
+T*
+(  3| 9          | 4|    A       | 5|         B  |)Tj
+0 -1.12 TD
+(  A|       9    | B|      A     | 0|B           |)Tj
+0 -1.1 TD
+(    ------------    ------------    ------------)Tj
+/F4 1 Tf
+0 -2.24 TD
+(In the discussion of the properties of the row matrix in the document )Tj
+/F8 1 Tf
+27.688 0 TD
+(The Row Matrix)Tj
+/F4 1 Tf
+6.492 0 TD
+(, it)Tj
+-34.18 -1.16 TD
+(was shown that the INT\(P\) and INT\(IP\) are found on the diagonals immediately to the)Tj
+T*
+(right and left, respectively, of the row matrixês main diagonal. This follows from the)Tj
+0 -1.14 TD
+(properties of the E\(P,Q\) matrix, whose diagonals house the intervals between P and Q \(as)Tj
+0 -1.16 TD
+(well as P and RQ\) in various alignments. Since the row table is the same as E\(P,P\) the)Tj
+T*
+(alignments are between P and itself.)Tj
+0 -2.3 TD
+(Let us align P  with itself shifted one position to the left.)Tj
+/F5 1 Tf
+0 -2.32 TD
+( 038749BA2561 = )Tj
+/F4 1 Tf
+9.6016 0 TD
+(row P)Tj
+/F5 1 Tf
+-9.6016 -1.16 TD
+(038749BA2561  = )Tj
+/F4 1 Tf
+9.6016 0 TD
+(row P)Tj
+/F5 1 Tf
+-9.6016 -1.14 TD
+(35B952B4317   = )Tj
+/F4 1 Tf
+9.6016 0 TD
+(intervals from row P to row P shifted 1 position to the left,)Tj
+-0.2216 -1.16 TD
+0.01 Tw
+[( i.e., )10(from )5.5(P)]TJ
+6.96 0 0 6.96 259.441 129.8571 Tm
+0 Tw
+(n)Tj
+12 0 0 12 263.041 132.2571 Tm
+( to P)Tj
+6.96 0 0 6.96 285.121 129.8571 Tm
+(n+1)Tj
+12 0 0 12 296.0062 132.2571 Tm
+(.)Tj
+-17.1671 -2.32 TD
+(Now these intervals are the same as those in the INT\(P\), which registers the intervals)Tj
+0 -1.14 TD
+(from P)Tj
+6.96 0 0 6.96 123.121 88.3371 Tm
+(n)Tj
+12 0 0 12 126.721 90.7371 Tm
+( to P)Tj
+6.96 0 0 6.96 148.801 88.3371 Tm
+(n+1)Tj
+12 0 0 12 159.6862 90.7371 Tm
+(. So the diagonal to the immediate right of the main diagonal on the row)Tj
+ET
+endstream
+endobj
+41 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F4 7 0 R
+/F5 13 0 R
+/F8 19 0 R
+>>
+/ExtGState <<
+/GS1 8 0 R
+>>
+>>
+endobj
+43 0 obj
+<<
+/Length 3460
+>>
+stream
+BT
+/F1 1 Tf
+12 0 0 12 161.521 38.6571 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+(Morris: Invariance Matrices and 12-Tone Rows)Tj
+/F2 1 Tf
+20.42 0 TD
+0.0007 Tw
+(  page 11)Tj
+/F4 1 Tf
+-26.38 55.88 TD
+0 Tw
+(matrix lists the INT\(P\) as well as the intervals between the alignment of P with P shifted)Tj
+0 -1.16 TD
+(one position to the left..)Tj
+0 -2.3 TD
+(Now we align P with itself shifted one position to the right and take the intervals)Tj
+0 -1.16 TD
+(likewise.)Tj
+/F5 1 Tf
+0 -2.3 TD
+(038749BA2561  = )Tj
+/F4 1 Tf
+9.6016 0 TD
+(row P)Tj
+/F5 1 Tf
+-9.6016 -1.16 TD
+( 038749BA2561 = )Tj
+/F4 1 Tf
+9.6016 0 TD
+(row P)Tj
+/F5 1 Tf
+-9.6016 -1.16 TD
+( 97137A189B5 = )Tj
+/F4 1 Tf
+9.0015 0 TD
+(intervals from row P to row P shifted -1 position to the left.)Tj
+-9.0015 -2.3 TD
+(These intervals are from P)Tj
+6.96 0 0 6.96 216.721 568.337 Tm
+(n)Tj
+12 0 0 12 220.321 570.7371 Tm
+( to P)Tj
+6.96 0 0 6.96 242.401 568.337 Tm
+(n-1)Tj
+12 0 0 12 251.761 570.7371 Tm
+(. This series of intervals is the inversion of the intervals)Tj
+-13.48 -1.16 TD
+(above in the INT\(P\). The inversion of the INT\(P\) is the INT\(IP\). So the diagonal to the)Tj
+T*
+(left of the main diagonal of the row matrix lists the INT\(IP\) as well as the intervals)Tj
+T*
+(between the alignment of P with P shifted one position to the right..)Tj
+0 -2.3 TD
+(In general)Tj
+/F8 1 Tf
+4.0254 0 TD
+(,)Tj
+-4.0254 -2.32 TD
+(the xth diagonal to the right of the main diagonal of the T-matrix between P and P \(the)Tj
+0 -1.14 TD
+(row matrix\) contains the INT)Tj
+6.96 0 0 6.96 229.999 457.4571 Tm
+(x)Tj
+12 0 0 12 233.041 459.8571 Tm
+(\(P\) as well as the intervals from row P to itself shifted x)Tj
+-11.92 -1.16 TD
+(positions to the left.)Tj
+/F4 1 Tf
+8.14 0 TD
+(  )Tj
+-8.14 -2.32 TD
+(It was noted that the E\(P,Q\) matrix houses the series of intervals between P and RQ on its)Tj
+0 -1.14 TD
+(secondary diagonal and that the diagonal x positions to the right of the secondary)Tj
+0 -1.16 TD
+(diagonal list intervals between P and RQ shifted x positions to the right. By substituting P)Tj
+T*
+(for Q in the last sentence, we see that these secondary diagonals in the row matrix show)Tj
+0 -1.14 TD
+(intervals between various alignments of P and its retrograde. To show this, we align P)Tj
+0 -1.16 TD
+(and RP.)Tj
+/F5 1 Tf
+0 -2.32 TD
+(038749BA2561  = )Tj
+/F4 1 Tf
+9.6016 0 TD
+(row P)Tj
+/F5 1 Tf
+-9.6016 -1.14 TD
+(1652AB947830  = )Tj
+/F4 1 Tf
+9.6016 0 TD
+(row RP)Tj
+/F5 1 Tf
+-9.6016 -1.16 TD
+(139262A6539B  = )Tj
+/F4 1 Tf
+9.6016 0 TD
+(intervals from row P to RP)Tj
+-9.6016 -2.32 TD
+(The secondary diagonal of the row matrix lists the series from top to bottom. In the)Tj
+0 -1.14 TD
+(discussion of the row matrix, we noted that the secondary diagonal listed the intervals)Tj
+0 -1.16 TD
+(between P)Tj
+6.96 0 0 6.96 139.681 235.6971 Tm
+(n)Tj
+12 0 0 12 143.281 238.0971 Tm
+( and P)Tj
+6.96 0 0 6.96 173.281 235.6971 Tm
+(B-n)Tj
+12 0 0 12 183.841 238.0971 Tm
+(; this is the same as the intervals between P and RP aligned pc to pc.)Tj
+-7.82 -2.32 TD
+(Here is P aligned with RP shifted 3 positions to the right.)Tj
+/F5 1 Tf
+0 -2.3 TD
+(038749BA2561    = )Tj
+/F4 1 Tf
+10.8018 0 TD
+(row P)Tj
+/F5 1 Tf
+-10.8018 -1.16 TD
+(   1652AB947830 = )Tj
+/F4 1 Tf
+10.8018 0 TD
+(row RP)Tj
+/F5 1 Tf
+-10.8018 -1.16 TD
+(   6283034A6    = )Tj
+/F4 1 Tf
+10.8018 0 TD
+(intervals from row P to RP shifted 3 positions to the right.)Tj
+-10.8018 -2.3 TD
+(The interval series in found 3 positions to right of the secondary diagonal of the row)Tj
+0 -1.16 TD
+(matrix on page 8.)Tj
+ET
+endstream
+endobj
+44 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F4 7 0 R
+/F5 13 0 R
+/F8 19 0 R
+>>
+/ExtGState <<
+/GS1 8 0 R
+>>
+>>
+endobj
+48 0 obj
+<<
+/Length 3819
+>>
+stream
+BT
+/F1 1 Tf
+12 0 0 12 161.521 38.6571 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+(Morris: Invariance Matrices and 12-Tone Rows)Tj
+/F2 1 Tf
+20.42 0 TD
+0.0007 Tw
+(  page 12)Tj
+/F4 1 Tf
+-26.38 55.88 TD
+0 Tw
+(All of the series of intervals between P and RP in any alignment have RI symmetry, due)Tj
+0 -1.16 TD
+(to the symmetry of a row table around the main diagonal; the main diagonal bisects the)Tj
+0 -1.14 TD
+(secondary diagonals.)Tj
+/F3 1 Tf
+9.52 -2.32 TD
+(The I-matrix between a row P and itself)Tj
+/F4 1 Tf
+-9.52 -2.3 TD
+(The I-matrix is the same as E\(P,IP\) matrix, but be write P to the left and above the matrix)Tj
+0 -1.16 TD
+(and consider the body of the matrix to hold the sums of the pairs of pcs from P to itself.)Tj
+T*
+(Here is the I-matrix for our row P.)Tj
+/F5 1 Tf
+10.18 -2.26 TD
+0.8999 Tc
+[(0387)-20(49BA2)-20(561)]TJ
+-1.5 -1.16 TD
+[(00387)-20(49BA2)-20(561)]TJ
+ET
+206.161 567.617 217.44 0.48 re
+f
+206.401 554.417 0.48 13.2 re
+f
+423.121 554.417 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 544.097 Tm
+[(336BA)-20(70215)-20(894)]TJ
+ET
+206.401 541.217 0.48 13.2 re
+f
+423.121 541.217 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 530.897 Tm
+[(88B43)-20(0576A)-20(129)]TJ
+ET
+206.401 528.017 0.48 13.2 re
+f
+423.121 528.017 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 517.697 Tm
+[(77A32)-20(B4659)-20(018)]TJ
+ET
+206.401 514.817 0.48 13.2 re
+f
+423.121 514.817 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 504.4971 Tm
+[(4470B)-20(81326)-20(9A5)]TJ
+ET
+206.401 501.377 0.48 13.44 re
+f
+423.121 501.377 0.48 13.44 re
+f
+BT
+12 0 0 12 194.161 491.0571 Tm
+[(99054)-20(1687B)-20(23A)]TJ
+ET
+206.401 488.177 0.48 13.2 re
+f
+423.121 488.177 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 477.8571 Tm
+[(BB276)-20(38A91)-20(450)]TJ
+ET
+206.401 474.977 0.48 13.2 re
+f
+423.121 474.977 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 464.657 Tm
+[(AA165)-20(27980)-20(34B)]TJ
+ET
+206.401 461.777 0.48 13.2 re
+f
+423.121 461.777 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 451.4571 Tm
+[(225A9)-20(6B104)-20(783)]TJ
+ET
+206.401 448.577 0.48 13.2 re
+f
+423.121 448.577 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 438.257 Tm
+[(55810)-20(92437)-20(AB6)]TJ
+ET
+206.401 435.137 0.48 13.44 re
+f
+423.121 435.137 0.48 13.44 re
+f
+BT
+12 0 0 12 194.161 424.817 Tm
+[(66921)-20(A3548)-20(B07)]TJ
+ET
+206.401 421.937 0.48 13.2 re
+f
+423.121 421.937 0.48 13.2 re
+f
+BT
+12 0 0 12 194.161 411.6171 Tm
+[(11498)-20(5A0B3)-20(672)]TJ
+ET
+206.401 408.257 0.48 13.68 re
+f
+206.881 408.257 216.24 0.48 re
+f
+423.121 408.257 0.48 13.68 re
+f
+BT
+/F4 1 Tf
+12 0 0 12 90.001 383.537 Tm
+0 Tc
+(The I-matrix has different properties from T-matrix: \(1\) the main diagonal has two)Tj
+T*
+(instances of the even numbers from 0 to A; \(2\) the matrix is symmetric around the main)Tj
+0 -1.14 TD
+(diagonal.)Tj
+0 -2.32 TD
+(If we align IP with P, we obtain a series of intervals as shown.)Tj
+/F5 1 Tf
+0 -2.3 TD
+(09458312A76B  = )Tj
+/F4 1 Tf
+9.6016 0 TD
+(row IP)Tj
+/F5 1 Tf
+-9.6016 -1.16 TD
+(038749BA2561  = )Tj
+/F4 1 Tf
+9.6016 0 TD
+(row P)Tj
+/F5 1 Tf
+-9.6016 -1.16 TD
+(064286A84A02  = )Tj
+/F4 1 Tf
+9.6016 0 TD
+(intervals from row IP to row P.)Tj
+-9.6016 -2.3 TD
+(This series is found on the main diagonals of the I-matrix for P and itself, because this)Tj
+0 -1.16 TD
+(matrix is also a T-matrix between IP and P \(or a E\(IP,P\) matrix\). So the main diagonal)Tj
+T*
+(gives the intervals from IP to P. Similarly the other diagonals on the I-matrix give the)Tj
+T*
+(intervals between IP and P aligned in various ways.)Tj
+0 -2.3 TD
+(For the reasons just stated, the secondary diagonal of the I-matrix gives the intervals)Tj
+0 -1.16 TD
+(between IP and RP.)Tj
+/F5 1 Tf
+0 -2.3 TD
+(09458312A76B  = )Tj
+/F4 1 Tf
+9.6016 0 TD
+(row IP)Tj
+/F5 1 Tf
+-9.6016 -1.16 TD
+(1652AB947830  = )Tj
+/F4 1 Tf
+9.6016 0 TD
+(row RP)Tj
+/F5 1 Tf
+-9.6016 -1.16 TD
+(191928829191  = )Tj
+/F4 1 Tf
+9.6016 0 TD
+(intervals from row IP to row P.)Tj
+-9.6016 -2.3 TD
+(This series is palindromic, invariant under R.)Tj
+ET
+endstream
+endobj
+49 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F3 6 0 R
+/F4 7 0 R
+/F5 13 0 R
+>>
+/ExtGState <<
+/GS1 8 0 R
+>>
+>>
+endobj
+51 0 obj
+<<
+/Length 3485
+>>
+stream
+BT
+/F1 1 Tf
+12 0 0 12 161.521 38.6571 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+(Morris: Invariance Matrices and 12-Tone Rows)Tj
+/F2 1 Tf
+20.42 0 TD
+0.0007 Tw
+(  page 13)Tj
+/F4 1 Tf
+-26.38 54.72 TD
+0 Tw
+(And in general, the I-matrix houses the series of intervals between IP and RP shifted x)Tj
+0 -1.14 TD
+(positions to the right on the diagonal x positions to the right of the secondary diagonal.)Tj
+0 -2.32 TD
+(Since the secondary diagonals are bisected by the main diagonal, all of the series of)Tj
+0 -1.16 TD
+(intervals between IP and RP in any alignment have retrograde symmetry, due to the)Tj
+0 -1.14 TD
+(symmetry of a row table around the main diagonal.)Tj
+0 -2.32 TD
+(The following are the 12 Hadamard matrices \(H\(T)Tj
+6.96 0 0 6.96 332.2393 595.937 Tm
+(n)Tj
+12 0 0 12 335.761 598.337 Tm
+(IP,P\) for each n\) embedded in the I-)Tj
+-20.48 -1.16 TD
+(matrix of P with itself. Again, the reader can examine them for interesting permutational)Tj
+0 -1.14 TD
+(relations between T)Tj
+6.96 0 0 6.96 184.6299 568.337 Tm
+(n)Tj
+12 0 0 12 188.161 570.7371 Tm
+(IP, and P. Each Hadamard matrix is different unlike the Hadamard)Tj
+-8.18 -1.16 TD
+(matrices with in the T-matrix for P with itself.)Tj
+0 -2.32 TD
+(Since T)Tj
+6.96 0 0 6.96 126.9912 526.577 Tm
+(n)Tj
+12 0 0 12 130.561 528.9771 Tm
+(I is its own inverse, the matrix H\(T)Tj
+6.96 0 0 6.96 299.281 526.577 Tm
+(n)Tj
+12 0 0 12 302.881 528.9771 Tm
+(IP,P\) the same as H\(P,T)Tj
+6.96 0 0 6.96 418.1993 526.577 Tm
+(n)Tj
+12 0 0 12 421.681 528.9771 Tm
+(IP\) and, therefore)Tj
+-27.64 -1.14 TD
+(each H\(T)Tj
+6.96 0 0 6.96 134.9717 512.897 Tm
+(n)Tj
+12 0 0 12 138.481 515.2971 Tm
+(I.P\) matrix is symmetric around its main diagonal.)Tj
+6.96 0 0 6.96 380.161 520.337 Tm
+(8)Tj
+12 0 0 12 90.001 487.4571 Tm
+(Hadamard matrices embedded in the I-matrix for P and itself:)Tj
+/F5 1 Tf
+0 -2.22 TD
+(    038749BA2561    038749BA2561)Tj
+ET
+118.801 457.937 86.4 0.72 re
+f
+BT
+12 0 0 12 320.401 460.817 Tm
+(    038749BA2561)Tj
+ET
+234.001 457.937 86.4 0.72 re
+f
+349.201 457.937 86.4 0.72 re
+f
+BT
+12 0 0 12 90.001 447.6171 Tm
+(  0|0           | 1|           1| 2|        2   |)Tj
+0 -1.1 TD
+(  9|     0      | A|       1    | B|      2     |)Tj
+T*
+(  4|    0       | 5|         1  | 6|          2 |)Tj
+0 -1.12 TD
+(  5|         0  | 6|          1 | 7|   2        |)Tj
+0 -1.1 TD
+(  8|  0         | 9|     1      | A|       2    |)Tj
+T*
+(  3| 0          | 4|    1       | 5|         2  |)Tj
+T*
+(  1|           0| 2|        1   | 3| 2          |)Tj
+T*
+(  2|        0   | 3| 1          | 4|    2       |)Tj
+0 -1.12 TD
+(  A|       0    | B|      1     | 0|2           |)Tj
+0 -1.1 TD
+(  7|   0        | 8|  1         | 9|     2      |)Tj
+T*
+(  6|          0 | 7|   1        | 8|  2         |)Tj
+T*
+(  B|      0     | 0|1           | 1|           2|)Tj
+T*
+(    ------------    ------------    ------------)Tj
+/F2 1 Tf
+0 -16.64 TD
+(                              )Tj
+7.2 0 TD
+(                    )Tj
+ET
+90.001 91.697 144 0.48 re
+f
+BT
+7.92 0 0 7.92 90.001 80.4171 Tm
+(8)Tj
+12 0 0 12 93.841 74.8971 Tm
+0.0024 Tc
+0.0076 Tw
+[( H\(T)]TJ
+7.92 0 0 7.92 117.121 73.4571 Tm
+0 Tc
+0 Tw
+(n)Tj
+12 0 0 12 121.201 74.8971 Tm
+(IP,P\) = )Tj
+/F4 1 Tf
+3.1 0 TD
+0.0024 Tc
+(H\(T)Tj
+6.96 0 0 6.96 178.561 72.4971 Tm
+0 Tc
+(n)Tj
+12 0 0 12 182.161 74.8971 Tm
+(IT)Tj
+6.96 0 0 6.96 193.4872 72.4971 Tm
+(n)Tj
+12 0 0 12 197.041 74.8971 Tm
+(IP,T)Tj
+6.96 0 0 6.96 218.161 72.4971 Tm
+(n)Tj
+12 0 0 12 221.761 74.8971 Tm
+(IP\) = H\(P, T)Tj
+6.96 0 0 6.96 281.8606 72.4971 Tm
+(n)Tj
+12 0 0 12 285.361 74.8971 Tm
+(IP\))Tj
+ET
+endstream
+endobj
+52 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F4 7 0 R
+/F5 13 0 R
+>>
+/ExtGState <<
+/GS1 8 0 R
+>>
+>>
+endobj
+54 0 obj
+<<
+/Length 3219
+>>
+stream
+BT
+/F1 1 Tf
+12 0 0 12 161.521 38.6571 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+(Morris: Invariance Matrices and 12-Tone Rows)Tj
+/F2 1 Tf
+20.42 0 TD
+0.0007 Tw
+(  page 14)Tj
+/F5 1 Tf
+-26.38 54.82 TD
+0 Tw
+(    038749BA2561    038749BA2561)Tj
+ET
+118.801 693.617 86.4 0.72 re
+f
+BT
+12 0 0 12 320.401 696.4971 Tm
+(    038749BA2561)Tj
+ET
+234.001 693.617 86.4 0.72 re
+f
+349.201 693.617 86.4 0.72 re
+f
+BT
+12 0 0 12 90.001 683.297 Tm
+(  3| 3          | 4|    4       | 5|         5  |)Tj
+0 -1.12 TD
+(  0|3           | 1|           4| 2|        5   |)Tj
+0 -1.1 TD
+(  7|   3        | 8|  4         | 9|     5      |)Tj
+T*
+(  8|  3         | 9|     4      | A|       5    |)Tj
+T*
+(  B|      3     | 0|4           | 1|           5|)Tj
+T*
+(  6|          3 | 7|   4        | 8|  5         |)Tj
+0 -1.12 TD
+(  4|    3       | 5|         4  | 6|          5 |)Tj
+0 -1.1 TD
+(  5|         3  | 6|          4 | 7|   5        |)Tj
+T*
+(  1|           3| 2|        4   | 3| 5          |)Tj
+T*
+(  A|       3    | B|      4     | 0|5           |)Tj
+T*
+(  9|     3      | A|       4    | B|      5     |)Tj
+0 -1.12 TD
+(  2|        3   | 3| 4          | 4|    5       |)Tj
+0 -1.1 TD
+(    ------------    ------------    ------------)Tj
+0 -2.2 TD
+(     038749BA2561    038749BA2561)Tj
+ET
+126.001 494.897 86.4 0.72 re
+f
+BT
+12 0 0 12 327.601 497.777 Tm
+(    038749BA2561)Tj
+ET
+241.201 494.897 86.4 0.72 re
+f
+356.401 494.897 86.4 0.72 re
+f
+BT
+12 0 0 12 90.001 484.5771 Tm
+(  6|          6 | 7|   7        | 8|  8         |)Tj
+0 -1.12 TD
+(  3| 6          | 4|    7       | 5|         8  |)Tj
+0 -1.1 TD
+(  A|       6    | B|      7     | 0|8           |)Tj
+T*
+(  B|      6     | 0|7           | 1|           8|)Tj
+T*
+(  2|        6   | 3| 7          | 4|    8       |)Tj
+T*
+(  9|     6      | A|       7    | B|      8     |)Tj
+0 -1.12 TD
+(  7|   6        | 8|  7         | 9|     8      |)Tj
+0 -1.1 TD
+(  8|  6         | 9|     7      | A|       8    |)Tj
+T*
+(  4|    6       | 5|         7  | 6|          8 |)Tj
+T*
+(  1|           6| 2|        7   | 3| 8          |)Tj
+T*
+(  0|6           | 1|           7| 2|        8   |)Tj
+0 -1.12 TD
+(  5|         6  | 6|          7 | 7|   8        |)Tj
+0 -1.1 TD
+(    ------------    ------------    ------------)Tj
+0 -2.2 TD
+(    038749BA2561    038749BA2561)Tj
+ET
+118.801 296.177 86.4 0.72 re
+f
+BT
+12 0 0 12 320.401 299.057 Tm
+(    038749BA2561)Tj
+ET
+234.001 296.177 86.4 0.72 re
+f
+349.201 296.177 86.4 0.72 re
+f
+BT
+12 0 0 12 90.001 285.8571 Tm
+(  9|     9      | A|       A    | B|      B     |)Tj
+0 -1.12 TD
+(  6|          9 | 7|   A        | 8|  B         |)Tj
+0 -1.1 TD
+(  1|           9| 2|        A   | 3| B          |)Tj
+T*
+(  2|        9   | 3| A          | 4|    B       |)Tj
+T*
+(  5|         9  | 6|          A | 7|   B        |)Tj
+T*
+(  0|9           | 1|           A| 2|        B   |)Tj
+0 -1.12 TD
+(  A|       9    | B|      A     | 0|B           |)Tj
+0 -1.1 TD
+(  B|      9     | 0|A           | 1|           B|)Tj
+T*
+(  7|   9        | 8|  A         | 9|     B      |)Tj
+T*
+(  4|    9       | 5|         A  | 6|          B |)Tj
+T*
+(  3| 9          | 4|    A       | 5|         B  |)Tj
+0 -1.12 TD
+(  8|  9         | 9|     A      | A|       B    |)Tj
+0 -1.1 TD
+(    ------------    ------------    ------------)Tj
+ET
+endstream
+endobj
+55 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F5 13 0 R
+>>
+/ExtGState <<
+/GS1 8 0 R
+>>
+>>
+endobj
+57 0 obj
+<<
+/Length 2263
+>>
+stream
+BT
+/F1 1 Tf
+12 0 0 12 161.521 38.6571 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+(Morris: Invariance Matrices and 12-Tone Rows)Tj
+/F2 1 Tf
+20.42 0 TD
+0.0007 Tw
+(  page 15)Tj
+/F3 1 Tf
+-10.5 55.88 TD
+0 Tw
+(Summary)Tj
+/F4 1 Tf
+-15.88 -2.3 TD
+[(The matrix of intervals from one row to another, first called the )-9.6(E\(P,Q\) matrix and later)]TJ
+0 -1.16 TD
+(the T-matrix \(between P and Q\) embeds the twelve Hadamard matrices H\(T)Tj
+6.96 0 0 6.96 454.801 665.297 Tm
+(n)Tj
+12 0 0 12 458.401 667.697 Tm
+(P,Q\) and)Tj
+-30.7 -1.16 TD
+(holds in its diagonals the intervals between various alignments of P and Q or RQ. The T-)Tj
+T*
+(matrix made from P and itself is the row table. The properties of the row table are)Tj
+0 -1.14 TD
+(therefore derived from the properties of a T-matrix except that the properties between P)Tj
+0 -1.16 TD
+(and a copy of itself in the T-matrix were conflated into the properties internal to P itself)Tj
+T*
+(in the row table. The I-matrix between P and Q is a sum matrix, but is actually the T)Tj
+T*
+(matrix between IP and Q.  It is mainly useful when Q is P, since it then displays relations)Tj
+0 -1.14 TD
+(between T)Tj
+6.96 0 0 6.96 140.401 568.337 Tm
+(n)Tj
+12 0 0 12 144.001 570.7371 Tm
+(IP and P or RP.)Tj
+/F3 1 Tf
+6.2 -2.32 TD
+(Other uses of invariance matrices.)Tj
+/F4 1 Tf
+-10.7 -2.3 TD
+(The T and I matrices can be used to show the permutational and content relations)Tj
+0 -1.16 TD
+(between any two ordered sets of pcs, of any cardinality, possibly with duplications. The)Tj
+T*
+(theory of \(Stravinskian\) rotational arrays is easily modeled by invariance matrices.)Tj
+0 -2.3 TD
+(These matrices can be used to generalize the common-tone theory from transposition to)Tj
+0 -1.16 TD
+(any operations. Under this interpretation thay can answer the question: how many)Tj
+T*
+(common pcs are there between P and T)Tj
+6.96 0 0 6.96 278.9307 429.6171 Tm
+(n)Tj
+12 0 0 12 282.481 432.0171 Tm
+(KQ, where P and Q are pcsets. K is )Tj
+/F8 1 Tf
+14.42 0 TD
+(any)Tj
+/F4 1 Tf
+-30.46 -1.16 TD
+(operation, and not only I or M.)Tj
+0 -2.3 TD
+(These matrices can be deployed in other aspects of pitch \(not only pitch-class\) and other)Tj
+0 -1.16 TD
+(musical dimensions, such as contour, time, and timbre and upon transformations in)Tj
+0 -1.14 TD
+(addition to entities.)Tj
+ET
+endstream
+endobj
+58 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+/F3 6 0 R
+/F4 7 0 R
+/F8 19 0 R
+>>
+/ExtGState <<
+/GS1 8 0 R
+>>
+>>
+endobj
+8 0 obj
+<<
+/Type /ExtGState
+/SA false
+/SM 0.02
+/OP false
+/op false
+/OPM 1
+/BG2 /Default
+/UCR2 /Default
+/HT /Default
+/TR2 /Default
+>>
+endobj
+59 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 662
+/CapHeight 662
+/Descent -215
+/Flags 6
+/FontBBox [-184 -226 1009 913]
+/FontName /ANNKFD+TimesNewRomanPS-BoldMT
+/ItalicAngle 0
+/StemV 0
+/XHeight 456
+/CharSet (/M/o/r/i/s/colon/space/I/n/v/a/c/e/t/d/one/two/hyphen/T/R/w)
+/FontFile3 60 0 R
+>>
+endobj
+60 0 obj
+<<
+/Filter /FlateDecode
+/Length 2863
+/Subtype /Type1C
+>>
+stream
+HâtïkTgá%ô∑ÆfëÀŒdgtµ´÷R€µÆ[]≈[J’ä(*ÜB 	!BÓ!†∏
+·»H 1DH∏ÑÀA´,Î¢=jÎm’•∂û’Íqœqm›Æ3…D∫—Ój?ÏŒ9sŒ|xü9øÁˇ{Áù(rÅmLL‹˛·ñÂ)9RÅ,QPúú/ÂÂÌÿª)_íïêÚ|≈ù=?4'î…Ø≥‡÷}d(}Ûá√á_=ÕÜ	≈›_4á`˛úÿE§Œ5±~v'˙9˝∆ˇy11 (:B!Ë-zÇVB–*⁄A[f@€ ()⁄5Jç/Ñò±Ô˝fÕ÷Ñ‰?Kêìó_(+:T¸4?l -Sµåeƒù∂ô;féD∫iøß}O◊–øÉkA,¯Ûká_{8k˚¨øœz`≥h–¸=›¿¢†`<]ƒäº√¶∞®”)¨»3tUòC^aÜ¶(>9EÈå ÉEÀfÜ*©áà÷6Ê7˜†m-FΩ∑Èõ¥&0©éf% œv¡´*vóaôR!”Ma¶q'*“}z™∞ŒZÑÀ,Íñr(sUù˘	>ÃÖ¡wISD/‚($ö•(ïÅQŒ©⁄åR£t‚qêXBl¯úà'Ôw|sSùO`‚âÙ·]‡I˛ÿè.ˇ≠$qæ1aw¨àöÁ”∆|71u˙	z˛åå3åqú;Ÿ»ÚÉKSó`©ø¶ñQ{©*j»˝íEõE¡7ôb±*ãÉpl|è{T£ËhøÕ„¡=˚¿(2™Ï{0è8ÀŒA9|•XåW?˚Sú˚äëxîœ{˜âü0'¬ˇ%√XÿÌc
+$¶f9.oV[À†Ã^5t	F¡üı◊€∞Fg≥Õ—,Ì›uËàÔŸ>·Ωœ]Æu‚N≠U]ØuäöåëÈ(8æíWÆ¬Jã¥*•hd‚Ú,4]ÿÁKß3ÇÚãˆ13Ù©pËÌzI+k2‚ëgˇÄ´s™À±2q©L´‘(J4••˘“? çêÃÚ—8çmyx^[…±≤Pi≠ºÑì`≤ÉEΩOkßìvV‰u⁄tÈÀïÍ«|î+ÏıqÈ?:ÖÀ_:F√ó˛Îhµ?wÙÑá}°ìÙP‰tthn0ö∆ ØÜ∑›4ì‹ö¶ëq>∫Ëàÿ|∞Maë¯xì‘_InÃÌ÷›£~pıÇ˜´«»mŸï¥sX⁄πú8„®ŸM‘Ô–g≥ÑÙÛ~£>,≠≥©J@CI-g2	o¨‡ò°D•ñÎÄNûQëÄ
+€|pBFmS8¨Ye5¥ CKÂËuÑå∫;±Ãß∑
+˜è·c˚:‚#õ5;∏XW$·(Åí√.[Å&ì˜ü“dÊı„ûŸ[˚nû}É[†è¶ªÈØFÙ”öˆák ˙€†˚[¯≥a£Æë{•ù¬N°+—πx…ô,j}¯ú◊Œîπµ„Ë»@Sõ˜:{º=ß§Ì1Ö
+ÖNâ éòåxymE}ïTö´è!ƒ„äÜ.L5ú;ê⁄˙RŸ-+—çl]Q</€ì+‡∑$=…±Hª
+±Ç.ØŒèˆ{ÃÆvº›’‹uÈ‘v«JZb´∑8ö∞ñÆﬁ∆a¥≥Ω\„ƒ€4UΩ‘+j“ŸH,LeæM!qâ… !Y∫}≤«ŒıfcŸΩ√ qÙõ'ßæ%Ë∏ioã¿]®8‚¶T÷‡P·ró˛X7‚mˆuz±˛Ò…S_éÍ",‡f)rQFm@Bº√TI%Âbt◊r\ÑÔÔLÊOÅ¸)Õùª»øÏ∑zOc=Œ.ªmuT6‹™lÃ´·ô>≤r:@AßG;Ä˙‹fów9õ∫˚ê…ºÒ‰ìÿXÚ˙éÂ(µò¢Ì†¿x¸[9T$ı:B≈¯(⁄_b±ÿÎès—Î_¥ı_ƒ/¸Ò¸Wíˆ~Fv^û09˘ºl<ÏÆ0ÑOø“&M}	0©èflA®^ò?$tÁ8Ä=õﬂ¿EŸ€Òì§Ã¥§úµ {≠ÚΩ%›µ`b∂‡ãá{àŸË®ﬂ‹Í√}≠˛˛±≥ÄZ
+ì¯M⁄	Xp§†NmV7ñ⁄+ú†≤˘ì°kH\h%L†”AÊä‘]úùË¡C¶f5.Ìê*ˇewâY»”∫)€iÃv∫’€—öm≠uËï…¥ÿSxHáG©¸çyã˝A,J—óX±_ΩÇGEQÔ"‘ºÆÖg√ëÆ|øá¿—©+Nˇy¸‹–ƒµOˇô„åÏÃŒÀÅ<W§Á£€RéMp§´πèå·”òl§â∑ÖÃæBÀ®nf/¸§ÂÀÅ…çÙ¢Æ£ŒÇ∑rHõ¯†âo⁄∏ °:¬?ñªDã∂û)ï™Ö<$√*rK1©€´B˝>´€çª›6Ô‚W˚§nÃ-⁄2–ëJ*≈©E°ÂL!<\u\oS ´¢û∑	¡[À3µj¨∏H¢À¨"ÚàN?"5´@Â(∫à!.Ìrpm4”7+A≥¢éÀFBf#WØ¡îÚ|]VeñzaQç¨I€¥„»eÑ¸æ}ÚÃ‡Y‘n3Í-∏EoVõäÅ©¯Ë˛8$Ù>º’»+Ua™¬Buˆh^ÕA≥÷ÒÇæäêL@∆k•}òÊT¡ øÙ˜⁄ì–Ωt2.ŒïqÑi©ÄòöéógÆ["† Ö ‘¸>
+æ±[zÉÄˆQb9N@∑ÒK˜zàôƒ/ê%_ãna¢õ{&Ÿ~‡g«µ≠A)÷¬}K÷·$Î,≥Ω∏E“ÃMº∫u‘øI,ﬂê&‚0é¥›ÔEÑ¬∫≥ª7Aàÿ´"Ú•§f)¥diVksSœ9∑y€ú€tÅ:wﬁn<Á˛cŒ?[®ÛÀDI"áëòÙ¢W˙™Aúz:Û˝üá/œÁ+Çy©ù/4?@m-FUªı}D›F«pèöfÌ+†˜SnÊ‡°ø‰JÓ≥Q∞—ÑoâáÌÉ∏ø˝è.Ÿv¯˙hEx¿›3§|Á˝–ù>—ç›ZÎÀÅ≥ÙÖ€uõHiı_ÕIπbi¯Ì∫àSAﬂ©Ø·-‘?J∆#¿?∆ê!Ñ$]˝lx hfu†ìMXgëK«◊EΩ3ãº%©ã†ùÜñ#ÕœM™gXìJZS[
+8E˛2$∏T|,-2·¬ÓŒ>õÀÇX7e¿¢çO}2§¨RS/√dıxu%\~òë¢â◊9ÈÔ{_°N¬©6¨µ‚z=™◊∑€THì,úi¿2-9Õ>PäÉ¸ÅhJ<Â#ø=Ñiw7âEdc’œÆ`ÀlÍõl÷˜~ﬁ0≠™óPıRÕFIÆ$˜hπ+à†Éa‡ËËDàAôÒG ñQÃWœïÅiq∑#Rû÷¨√“‚Û'EÕÂu’uUwko◊WêÑÆ’zt®∑ÖïœµÇ÷π¨i·.ÓÊ
+◊0MXTı™•ıbµSÃLŸhg8ÉÆô5¯póÎ¯%töüB±:ú—q[G©˝¯áqÊ
+√DΩâaê‚? °¥ãµÃ `&çz¯ç°VqÂ/ÒÎ¸ÓèH≥M,≈‡9†^ÔƒHIÂr(·Ñjú¿è”7πÌ•dYPﬂŒqZ`éLÒ—,s∆ò<e$‰–Ï@ÃÓ≥ ⁄‚Èná6ï±Â/º‰úHüµ%p¿MS$JëëëÙ HÂq94ÈàÿDÄ`‘!ÖKxI˛Uò◊≠˜N”0=B—:Já›ß;©Â–to¨g¨ãUMﬁO_„O %´bn¯®Ç=©màÚ≈«£Ö«≈Eˇ ⁄wj
+endstream
+endobj
+61 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 694
+/CapHeight 662
+/Descent -215
+/Flags 6
+/FontBBox [-167 -216 1009 913]
+/FontName /ANNKHA+TimesNewRomanPSMT
+/ItalicAngle 0
+/StemV 0
+/XHeight 447
+/CharSet (/space/p/a/g/e/one/I/n/t/h/i/s/c/o/comma/l/d/u/b/r/m/hyphen/two/period/L/w/E/parenleft/P/Q/parenright/x/T/three/W/y/f/four/five/six/seven/equal/plus/v/N/endash/eight/nine/zero/H)
+/FontFile3 62 0 R
+>>
+endobj
+62 0 obj
+<<
+/Filter /FlateDecode
+/Length 6843
+/Subtype /Type1C
+>>
+stream
+Hâdî{PSW«o0…=åä^Ñ{”{}∂E®èeQ¿"ƒ†ÄâÅ 
+ëáÚBxE1¨ÇÓvG°"!äºæP!T‘ nµ“u∑´≠NÎ£∂'pÇ›ÙØ˝c3üôﬂÃ9øÛõÔ˜;sX€
+c±Xéæ[∑¯:KÒ™≠ÒŸ€”ÚTqh∞‰èCOekè~4o ;Ã°k∞Äø,ˇ˝´Ø˛◊Ÿ‚ü`ÅbˇŸ–f¸r.‹5ØD ¯’Óèiªˇca<f;õ«√h˚√úXÿ∂
+√÷∞07s«∞ç fc°∏Â.ñÜ±Ê~ŒrûµöÁÖ	± V∂≥$X&)Ï|∆0WãlvC,V6´à’cµ«ÍÊ¨ ˆ<∂˚>Á ßì[ä˚·ë¿‹Á-„ï[€ZwŸ‰ÿL⁄÷œ.ÊªØŒ…öÛqnŸº7vΩÛÉÁ7,ò$é€”ˆÔ:x9‘;z:^ ˝»ﬂ©NÍ"usz∑ÄÉŸ[¯X*@ÿt)˛1S¿˛'1-†%∂ÅÀ4•†Ø	π>…†ÍÀ∏ï5ñ˜®!–B{∏îÑ+†ùŒ¶u–∂Ûç·â˛„Ωg›‡é‹}ë#‚/Gﬁ¿B8
+AªI¥Dáz¥ê∂0é∏ØW<}'~⁄q—µ7‰ΩÄ?Ï‚bX≥¥^RZ≥ÒÙ*Pã¨ÀÅñê»!Ÿ)—lZâl„>ì~)ıÚÿ	pË>!ˇÙÔ†w/Å±$\¢ÑÇ0∏ê∂‡π.?âåÎÓ|⁄‰∏1Ífƒ•p¿75õ\Lòõé<31Æ7öã<LEÊ√Oq˛"¯=⁄E\®2íÉπΩâtGb\u4µ'Â@fì°:êñL&ñ¶WÁ–9gtÕTE≈—ír¶≤ÓT…qÍXÒë¬b¶‰‡Qm>)Õë≈G–ÒQ“Ω¢Lçøoô∏v˝∂EÁ§ia™ÑŒÊJ‰Ãµl¬µÑZ]†L!SN(k’tV≠N€H]–ï’‘2µµe∫FÚÇVóUK◊™ïe)TäRõ•f¯0 	Ù≈Ûﬂ|†=uﬂX◊3¬åÙ‹~⁄≠¿Uhu÷‚…üHò7-ÉÙØÓ+K©¿`uÃ6∆KÏæ±AbgZRZI¢-mh’Z@CŒTqZ7ˇÎz?ËjÌ™È¶:öµÍÛLGr£§Œ4-=e…¬2ØAkàKg˚($Ò… 9.A≥áÚ	ΩÒ&ûŸ	≠3°‹FB¸8‰UAöèÿDıïñ≤zÍÙ…¢Çr¶º†TSúJ“é:ë3È∏«·àC˙†&??∑ ß`wQ‡ﬂ@ÇÈÎv<¯Ô±%Ÿ'≤OÏØ,<
+´é\L
+ÿπI8öDn'S8¸iVπälU¶F•QjSã@a™ÏØ~˙ç{±˝»Çûp¥Ç∂O!ﬁ1–d<5<LæNòÙ•G|W∑!+j©[“ÊMÃ¶Õ1.4¥sÎ':o:Aßa†˙!56ò&10˙–sB7q"—\g$†- O‰è†$ê0u+9	\>¸d˙!≠Üü˜ˇB‘ÚÀÃeym®àîàTE”™Ë∏xiä4YöVM∏æW´Óaz‘ù™euˆô¥™pVVF˙)Éda¥T&Vä®¥Ù£«UåÊXzylMlç≤\{ÁÊ’PÍúÉ˚5åfﬂ°ºRy*£YM´õÔxI¡ ∏∏≤b∆üwºÖ÷‰3ı®¸.3tÕΩ¿πÓΩ˚ôP˜GËëêum£\}3dbF,ã∆Øn÷8ß MGàiÄ¨ﬁG{Z`E”–N[l\Ç∂‡3ÑΩ)} ç3„fN«˘¶œú UòÎ‡º¢üÛ∆é/„∆$†˜?Á„AÆU¯â≈¥X,Jı¢¬dß[eLr≠∫"øÁÔ;öG©,"ˆ1ö˝áÚr…ƒ*E{ùﬁ~gˇ3ÍÈì3mˇ`nÍn¥\π|ÂRõæ·.h8˘‡	˘ª~s}A/˝Ä=@˛∫Ô·ì˜ËÕ1Áq˘SoúΩÑü˜æT∆]ÒÁÌk÷≠Y+\âX Y©éfìh˚ ZÁ#:xËâ‚
+
+ ´r'„≠Ô!óÑºƒ◊¢	z\‰Ÿ±äZ·ú¥Ÿô©{—§ÌA€É´woZ™Ø´_◊Ø{TıÔR–ÇõflàÁJt‘‰ê‹Ωõπ∫Ó¨‚íÀ3ΩvÓ†%;√”C®à›'õô®+{Ô®&ÄjB;2DˆïåïˇáÓoΩ|∂°OW⁄ñ°´◊˙´ö•è)èkv†ı»Êö¬úçúéôdŸ£qô4D¨8[ºçÙ>Ô;êˆ|Ù&¥~’lc€ø}MN(…åtºﬁkÒ^@ÓËƒΩ6h”WÈ{…«â7–w\/ Ö8kíEå(0qÉ+rR“(•w!Ê˙πüpK¨¿]¶@"©1£9∑‰∂lm%ı5›óªËŒK˝’F h»éÌb:c´wI©6*KN´Â≤–ı~»
+‡èÊ>¢>æ"&íQÀbbÈ›—€≥˝®ç€ÍıQLî>s¯99TqÁ\≠Îªÿ€.C‹W+Øz§–ÚZG!∆@áÁÔ!6ÌÅÖv∏:ìp}\ºrÈóÎ]∫—,
+9,⁄éÿåhe‚bdM"~ãì—óˆ5~ªÁ5ıù≈îL‚E.Æ:˘â|„6ƒyfªY~ó[∏)|j±OûpHAJœﬂéa∂=I˝/›U’‘ôÜ’í{ØeN{&ä˜rÓ◊VkWOeD‹⁄QQp©
+UdIÿ√V¬BKÈi≥ !¡K»1aSêu*é*V•ÿ±é”Aßs‘⁄û~I>†s3£ùŒôŒøÔ«˚ûÔyûwg{≈+‰⁄/˚FË·ﬁ!„85x⁄≈—c“æOhﬂØÒﬂCÜï˙ã}Ë§4æ0J‰ö#VG7◊yÒ´˘ã~˙“ÌŸÀ›±‘—Â…YƒΩr¶Lb≠"ΩPìÆISQÌ :±xñ3o‚˜cc6Q∫h≤°>‰<,èî
+iiñ(_(!Ú)%IT8ﬂi¬‡b¯ÄÉE˙FÌãéNJJ&Hà¢¯ê≤˜(îáÒ2*ÂÖ@$/Vñ’•u÷q“Ò±Óí¬f`1πµ)rQ @¬jOÊcÂ[≤%§ôÈaE[)4»B¬U=v?ÁcÓÂ™^πññkUÍ∆¢æ˘î‹LXgßX§fì4ﬂ±™@ñO»≥™èÌ$Á~¬˝§ÊÈƒÙò¸©} zKJñ´SAV-€≤5D±∂ºÔ*i˜r,ôı¬˝äütﬂ∂ÜˇÀX Ñø4v¸Ñ_Æ|éB˚Eøuˆˆ3-†Òó(f=Êñÿ=pvOô∂rÂsÁ¸é|P£•ÕzõfÏˇ“ŸEŒ/¯5:l ù£0òÀKã* Ú£∂ï¨¢ﬁ¿º√*e˘ ÔÑ∏F™"äò≤é1“Ò üÆ¨—“ F¶°EE®ZOLR÷Y'Ï,@Cñ2‘◊%€ñí#"!ÕÀàŒ¶>‰;€0Hÿ›eÒæÒ˚bW≤¡HÛ‰ºŒÌl˘∏îùÖ&#b
+L)∂cƒ¸v¸=©À7>3:/à: ∑'≥*Ü∆™ö3@.S<tót‹¬ù/ÕﬂÊ¥{∫ec∑d˝ıZ⁄¢≥5|ÓR0ôÓ•ÍAÉP∂Åúk¬ÁÆ9?„Ã∫±ÛÀÆ±w⁄ù‹≤é∂äV
+Æ|jπv‹∏j˝æ@ﬁ…º>Náü;–ÌØ'Ù˛o◊°e‘l){FK®]Ôíè•Uò˝3-Væ0,åß2eÄ¶x¯ixè§´§£ú@ÓéÂ‹⁄·^ôÖ;[ò—z3,<›aBw∏ˆ`ÈìæÛ!˙–·˝È;©Ïè>≠J©ï…’Ò2¬~wµy∑G∞Ñ;_<◊¿ç$<ænEÀ!ICíÌëk'ê?Öˆ#Ô D¢ y r7⁄Ç"Hƒ’"∑æµtﬂ⁄õæ⁄3y+˙[ﬁD¿Ùﬁá<<ËÿÒﬂ'> ù)'Ã¯πóyÛËÊ±m˜v±u˜F/\˙ı|â@Wù•‹1É{;÷Ë=ª¨'Q\ÚˆBËw∑Æâ@/RhŸ[}3€¿;p…Q∏¶±˚◊i∏Ò!\Hﬂ˚‚Ω–ùö∫.åπ ÿúörMŒ|tù”ÅUùØ–∑Î⁄M∫∂:BaË´æHAﬂ˘FÏ?Åv%„§ıË⁄ŸC±>IÆXrõçº⁄Leå<ÑË`ªÀuŒ¸ÊÓ…y’ìÛ¿ı∑µñÄ™¥∂XYH(E’¢2© H‡G£ö91™sdqRÓå[H£\€†¶’£ºÉj∑ŒÍ˘òë©(ØÍRçT#Æ-Æ)Rà5ÈjÅ*—ºŒ√Ü0î5G!∆ÒÎ.÷ëZsíuo0 €)ùuˆ>÷y™D‹öƒ9™y˛…#&_˚ÎÛNèvé; ¸”‰ÿ0ªªs™˘~„®J∑í±4Í¥uD≠∂Y÷Œ÷Œõ∏;Ï±;‘‹¨ìq+5q˝Ï„õ`èâIÀIâ2©§BBIä+eR =QV˜1Cî3üﬂ'·E¸~È9qù”+0«6∆∞ ’FÍïô·A‡@∏ 4òLëe™ÛË\5#’SzFÆQµZÆ;EV|Œi©5öh≠ŒR€MçvÁ%¥ÄñÑ˙ΩÎ»8˝.πÖÔäŸsÙxZëù(âç$w0¡]«È»Æ!·E ÷©P∑]ÕπÓá7àÉ X&ãFyw∏ºƒzs*òE∂~≤£¶≠…LkÕ¶aSã˙RÀÅæ√6$¶‹·Ñ'ßíÅ°f‰¶äÁ(õõNú§‘ue“†,ñÁWg’ôï{VëÛÅ¯c«£9DŒËàdÑÇÿ”Ó{ \hÆÄæ$Òpëˇ4=ÌÔ◊µñZ˝ˆ>Ùo‡xˇnŒì€–÷¶hß.è'ÌC{ç^h1â~õˆVX ú∏ü‚Ò‰ö8ßâ◊'X{ﬁe≥å*v.˜8F‡<7~c\H\
+v k7ıÓˆÆªá¿°ªÈﬂ¬E‰è∆{#óÈ€à˛
+’eñdÎ@ì∞.•*∂*Fñ^+"“ô±çjií©]Z+9(Íß˚É˛†Û¢–“’^>¿«+
+-F´IÙfZ2ı{⁄˚ˆﬂéO˝e⁄|iL^Í†áÀ*vMOÂû∆†rä⁄8‚îÃ≤\™†∞JYäRuôé(”U\ÇHgoé»≠ÓﬂR6¸èîªWëh>`ÿD°Â/DŸ›-åFK—
+ˆ‡¥æ|”óˆ˝‚~Ùcj‡tÕ…–Õﬁ0}g¥G;‡"Óˆ¿∂I6°&O!E¬ï¶'ÁØ—CßáåÁ®SfIN+hÕ1¶2|ÜW]AÃ&„HŸOπîú±Op!'Òõ¿	z"pΩÂ5
+πØâÙﬁ6y« w¥éDØu"| áˆô˙{\D=πkΩ9Æ‹Ï˙≥j&ôÒHŸƒéL$#√Ú˜S^õ;¶A¿Ìƒ?ÖûÑc6;%‹ûﬁÌ’n)≤0≤Ù_ô)ã™
+"f7c≤[˙Òﬁˆu¨q|ÕùDEóq¯j’_ïZa©7h’Ñ∫—†8EÈõJƒçÄ˘'›’€ƒ}«7J|?©ö¶ywÙ¥ı©Ul¥S”≤-TÇ∫FbÚ¬q«±Á·GŒÔ◊Ÿq2’±Û∏¯øp«vLﬁ	!JQÄ¬FZ®†¿tù⁄UZ;v§ùymhöÓˇè>ﬂœ}æüﬂÁkà c¬∞<`¶Äø√èÑÇ}¡ ˆÜ‡#xZê@ÁˆEw!Öx}1V\Ë`Û^ -“ˇÊÁp1Ω{'µ{Ìkà”¡#î(°–©ï†W lmH≠0;õ…gÒ≈ﬁÑSE,'ô‚k ƒl¸.™ö≠íXZp{Ø ´EΩ⁄√™1ºà#⁄mBûBdíB€©’¬¬√¢EZÚı›Ê\ﬁNm:vÁ[lÂBÊ£O‡˜Us„h√ëäËª˝µ=€úÙsŒé*á∫[‚TˆôÄâÏp√óüD…¡P$˙£Û∂yÑZw;qÊv~9uÈ|Yu∂a•ûeﬁs∏0ó√Èp8Awè√Ñ}]ˆ¥Àiwÿ¿—°yØ°ÀX”Eë◊ëÕØâﬂaö5GÙÎ_¿≈æ“Dö®òúj›]¬„©ö@ñ≥
+ÿÛ≈—¸-õö}*ÛUÂH)/2+¬™O+ØﬂÖØ˚ó”L”NMÖë≥J^Ωˇ˚]-c:ê÷dçpeÛ°˝5hÌ˛◊îÙ˜˙ØÑß8X}L5úÑ˜˘GP":öL_3QÄ†^±3+<ôãzËa∏åF{ºH¿€AêOoƒ˝®ƒ. ‘(°26`êKluà0[ëÅ™ƒ.RÖ©HÉ«ÍV_Áƒ98´Çé-MèeÇ 0ñÓO!…!B≈"⁄ÄÇl§§Áùa˙
+ƒ˝É§ÀåZ€å*≠4RifÀ2¨öf'…\≤˝FèÕÃa˚‰iò∫Qy÷´∆T}¶eÆax>.¬´1*j0û¢Ñ˚ˆ[`u[5¥°úRl ke„∏E—∑êÚé‚°òyéí°
+ë±axÿ≈ChWê-H≥‹å„µ~≠îMè0"Û»x‘5¯X¢WÁj=“Ó¢ó`˙.¥øC`¡Qn‘È`—JÌ<FÑíƒì>§lÉÄ¥èüÜWºù€‰e'¿»è<
+ú'Ú:Â›{
+ﬂøîC&˛π≈ŒgêK3P•ƒIj05˘9òCﬁ¥~È¥·^-ı◊{;Ÿ5¨m_év‰i⁄ Ìú‘ﬂ<7Ëµ`—4? /œ@Â"gˇ#⁄¡¯s&°Df:u*«2dYöRÚXD<P˙6ºÜB∫ƒù&îê‘*#0™mÂR›c‡OπÄuÕ8fíô‡∆`&˜ƒ|0≠‰3Â∞©øÏZió§ÀÑZÂ&çéπmîM÷zD%ÃÃ∞jõ]§:7µ«Êñ∞}‚4úE°ƒ˝™<%ù0ùSP„©D +≤*¨RV¬-‹Æ?◊≤Põ)~E`?"j¥ÍEX£^ÇKeFs]=á(.ì#7ˇØfO¸æá^”_@{,á¥rTÆïò™<'Î?rYBÄvNúÖ≥8tÎÍß≥◊ê„ï ÇE≈˘⁄≥PYW”#skõ[ı É◊Ùÿ‹÷ 0árÊŒ"Ãdgıì®ÚÉñ)!3ô∞∆Séº¸¸;4{3Fï1§è›ÉÿÖu~«œ¸|<ˇòÈü\‹ä“ÎÆSÎP(rÛJd˙"vq˙‰áì7¡ƒÕ–üo¿~˚€œ—æAØ?A£H¡NºÆÀÆ{ÅΩÚÍ˝√\O˝Q˚V~Z /m+B^ﬂµpß+˚™çÇ(æ1ß»	4≤4|$·Ãÿ@π¥,)Z¿6ê´iv,Ïbﬂg'‹òõË3ˆhÅK€-ÿﬂˇs≠Ú≠‘™3ç–∑I¨BD÷êUaï7>ä	/·g¨÷9y¶íPJö¿áÃ@üô∂."Tﬁó”˘˚¸õy¶∞lÉ©-
+⁄Ò˙Òªô≠HYπFRâUJ™ˆWmîX —c4À-…À®ÿ˛—$sû>ﬁ∆ù¡Œån¶7√Ù˜[VZàrô·8»Ô´Ω	¶æå(“ñ	`ãvªSáﬁ_ûÃƒ‹ÃìGÕ0û†ÙzÚ·Úásé∞0≥ô˚tN8ÒÓ¢-0MÂ‹⁄ôs´Q£5ù¢—ZÕx_îÅ¯M=n%s`j}Ã‚∂Ò„p∂JûùKè◊”ÎFºa£bSåƒM1$Í¯TF‚à1.è†yì[àºı´›ÙsUÀg˛¯Ó’gRÑ÷j≤ŸAáÕ¬tZ£“Eä0∑¶Oàºπß≠úãq ˆÓÄK|ï	ö®?WsßÚ´ Ûu…&êî’∞@'nnE[õ’g_tÅãïÆ®øb˙ZäËs˜˚o–nã`¯«öO!WW‚ãÁ∞s«ìº	Sﬂ)ºM#P˙Öèä¸|x£2nNé√	Ô–»a46<Ó9äúYT7Nbì¬$'˛2HQÁ≈,&Ôñ6≠?…n)lØ÷…§ïç|A#Û…Ñz ¶û_[É8Ω^	ÍïÑÂ	–é$,£»‹¨?≈¥®TÍXÏ®g[µ8Æ˙ˆvõiUía¶	ìL0˝çØ–bÍd¥!ªtÔ%ÊÄYÓö0™¡†öl‰¬k~®¸ O$TµPliA¯Bœêì∆ıßò±J_nÄRvKZºR˙5.iºˆ*ÙÀ^éØıV≈„R–<>´[BÊg"”ÿTd˘ƒß∑ ]6QCTûûiïmÚ¸[Â]8ªDüá6Ó=√NŸ"n[»0xµ≠WÊR◊Ó{<≈¢ÆÆÁ√ÈXh£g ÷;÷é–KP:⁄ewcˆ~[ü∏l›Ñ∆â]√ø9.ó÷&‚(äØ&7°ÖdA–‡≤µ‘Ç(®-à6mäµ—ƒI“NùL2	ÿ4œ…<ö◊dí¥4!©€ÿjëÇ ∏iV~3Ê?UˇÒúﬂΩúÀ=ãZ<UHpá©W±rjìÁ<_J◊Ãçé6e◊¡÷ÀA¡7·≠’¢Ø‡+.ñfîwß¨±£SJÍ@!µU?˝ﬁÆ{˚∫ü5u@◊éÓ∆ÂGÎ9:MQòáy±∫ÄÉ˚⁄òS%$ «9ì†ãóÑVˆ`]ﬂ—n¿öØGÖpÕ_vä∂#`6Ç⁄U`U´µìÀX!)∞9úÕI©6úI≥£Ü˙à´EìuKù‹}Ù~JôI#∏2∑'?|πb"Éﬁ±¶_Pé⁄®„ï;‡ÙéDå≠¥{üqÂ¢bU0`E∫∑*sÃœPT˙‹Qº∑kmt~})KàÑh;º{Vî£rVô8˛±ÿîLU±ëmBp≈é ÖwKßBAå$fgn‚WŒOˇ
+TBõk"ö!YƒÑd¬gŸb≤am5‰!{+R•E:·ab©,âÆ‹≤28Ωnúóà;Ñçöñ	ohŸÃ¯í9óEòw§=ÊgÆ	ñ;ûÁ]57Óëw`∑˘x,Ì˜-˝ﬁ¡◊ˆOıÃÇQÏÊÂTN¨ü·2≈§<2¬;⁄(≠˝7B&öbÙ—Dò¬úQg»âÉ'ZÍ,‚ÈÖ⁄5¨òÁ)Ωm.w¥À–Á√ö*çˇŸõÓ}◊ÜŸ1ıÔ¯? ü0Ω`
+endstream
+endobj
+63 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 694
+/CapHeight 662
+/Descent -215
+/Flags 70
+/FontBBox [-189 -216 986 913]
+/FontName /ANNMFK+TimesNewRomanPS-ItalicMT
+/ItalicAngle -15
+/StemV 0
+/XHeight 441
+/CharSet (/C/o/m/p/a/r/i/n/g/space/T/w/e/l/v/hyphen/s/colon/H/d/M/t/c)
+/FontFile3 64 0 R
+>>
+endobj
+64 0 obj
+<<
+/Filter /FlateDecode
+/Length 3940
+/Subtype /Type1C
+>>
+stream
+HâtîyTSW«À{<¨ù‘‰ΩÃ{XÎë≈Â8å£Bß’BE 2∞ä NÑBB	!	Ít*[ñ$Ñ∞ YÑ¥ÄuÏ∏îADJµÉÍ{Ù‘⁄/·ù»¨ˇÃ˜ú{Ó˘}æ˜˚ªﬂ{~Nà´3‚‰‰‰q <<Ï`àOóó,OñDyÒôEn≈gp√¢^’¯-êÎﬁ\⁄∏Œq{»qC)r®PµÂÁO>˘Ônù€Øê†%ˆkÄÌ◊É∏◊K9ÎC6º¢ŸˇWqBB"»€‚Ö ;d7Çºè ÅŒ»!˘A¬\ëHg$∆…Qàl‹Óp(,*>1)9ïõ¡À‰geEb…5ÑÂË√°∞itJp˛»uQªF£NËòﬁmó·O÷kˇ˛ã¥uAÎæ}≠ñ·Œ0ªá∫á/&pP‰M«Z—q ≤®s[q\Ô3£8pˇJ«uc\˚n°úô ŸËÇÎlt…‡8?/"LâD%‚¸
+°QBIåU3Ÿl©0i£±¬“L4´$F (VIæP%ë–0m9ÕæÇt"$]Öö*ÍW°ÜUH˙
+˝bÿï4èÉ¶3˘È©Rãkî˘gÂ§\PZùJ∑Ì;PL¬M–#—R4§¸°t~z‡˛–#	æ=	oÛÆÅ=‘•=7Çƒ·'Ó?¨Ÿ<ˆà~8~Ô¡4XÉ«¬vÖ$‡Ò{%;IËæı‚Ï{Ùª≥…?~ioåÅ‘u∞ÌX∞9¸∆√/Äu‰•^ç¢õÓR¥…,"ã®.´2£2Ω,≠8±:≥∫∞Á!h
+∆∞?_¯~Ò”rœ<nl≠67‘∂W„¶≈§æ]j«î)Ëggµutù∂JUÆƒÀï%yπDö*VLAÕÚU¡nqDn[!ï‰	î2uZQÃ)¨Ö¨º˚Pqº.∑ä-´R◊[âV›∞Ò+
+∏/¯¢ˆ5d,˘
+|≈ëπ∂Ú_$◊AÊ;»FLøJ ˛M∂T'(†∂_5œ6åõ€Ÿ≥•ÓïKsgÒ YÈpŸè©R–ëUóµˇÎ2U+˚êÚÑÛË2Ü=Û(cq
+‹‡†°LU XQ∑÷®f’&π9≠úa	˝sbƒBúÀ;.&≥∞Çt!“·ÂÉ‚SˇÙRXﬂHX*ÜLS(≤ﬂo¨Ã£=òΩ}qäñõx[D¡r[Œì:>ûóï§9Í–pÿZò¿t›®ãJ‘≥iáä—J4óıF(Plnö6é‘YŸuVS≠YWY‹_2UÇw√9∑ÂÊïØ·Îã_£∆X®ÒãRf7V7ikµµÿl-CF‹8t≠bñºá¡éïæONËÍÌπiûÀOT«êÇ’˛Ü9(;í\^#¶sjT&+—T;’÷R¿¥Ëáæƒû\Q…Ë÷lC 1"^s\CŸ0‡ñ–∂.°{ˇ" LÖX˛∞∏3ÀÃ6eqıâd–˚¸»˜hØ@øÌ!p-ÓX–eXŸïH%uˆâá…ëœk€GÈ€wÔŒLºüïwDs*ù‡óâ´Û)EµY›Bˆ‘w”C]C£Éì\Îd87Q ≈ÚïEjR≠9_ZDk œÍÙDÈÀ>’QÊ« ∆Ó}Ö®G0”,–'D–;nÖ|ãÇ»Ów¢Hû† öCã¨]Éƒ#Î˜£¿ï._ŒM|Å˜˚I[´"€L3@øΩúeÜEƒ‡Ç£± XÚPt}O2ù‘#õ ~hz1˛Çòøy}º~Ω·&ŸŸ§QÈJUYA>°>ß9´•Œh
+‰yÚ<ï¢HÖúS*	IinµÇ ØÆ’öCCﬂPO7∂Tuˆód›©≠TkjTM πc[FòÌˆÆÑ·…ﬂ∫Öÿeç¶éåNæ#gÔm∑Ë…ãì_NŒeZY{	=¬Lq+Ól<_CöÎ¥’tÖ™ƒ·Bv&G-†äÚ¥ç–>g	:≤-^-»(O%Óœå‹Go‹≥3∫:ÚA36yø´∑ù†N⁄.â>sƒcº8NÛ≈¸ãß¿;	ÆgIBT±…Ø,« ß‰’ıÍ≤o–‘;L˜è}≈5±éÑ$'Ê»ÒBe¡5©’û/’“⁄“s•eÑQ◊WùO9Æµi
+CW⁄ò–˚≠ﬂÏ?Hf¨íc-∏8BÄÄ˝–†œOŒë∂6Ö†ë∂™“‚	Ë7nÜﬁî#öÖÀaL‡⁄Û`Ï M¸“àyÙ2q1∑É€B5s£ê^>ôáw“;øÎæ€Ã€‚I∞çÑSa√∑yœH∞¯ÃÇ]‡◊¥∏≈7(¯‘I	[r2Æ˘˚Xc_<ﬂ'πJò?m*È† i¯…tßá‡
+sjÊv˜ŸﬁXòÎòt2]üàúK%ƒÜü‹ó∆˜ìztÅMó_ŒL·ªÕ>«‰ô2j“+äÙÑí£$§†KÚÅΩÙﬁ˝	ø›N6E˜ß˙è]·MÁ˚¶FúŒ‚·Y<E¶Ä»4⁄Ñ‘û„±<ô"S" ñ§„2ûäóI§∏-\™ÂÙ∞`BåK'Ó®˛J>π_’8Kœ6˝©≥g Ô4çåÉπΩ‹N*≠#∞’√
+£XÎyz•WÍµï’ÑæT_≠ß:[Foô¡∆≤∂ôø‡”∂oÊâ6Má≤ã˛XÀè(l¿º°Öô-;ï√q˘Yß•∏‰4∑0ç<ë\s!ÉNoœÎ˚ú¯÷2;<CÕˇŸ6CŸ‰ºV∫5√M5…ä
+z.ìÃ©¸!i£oUeˇÉÍrjÍ „xÎz”;káŸŸ›t√ΩÓΩ¥ÎÏñ™k≠≥ÎbÌ™uA‘" 
+∫“L@àí@Hrssyugx‰E!ÑBx#√§¡vGQ¥N∑][uÌ≤ã´›«ÅÏÓIß€ôŒùπˇù{œ˜¸~ﬂœ˜wŒ'%¢C˘‘ŸC{T€H¯Ω›-ÉItVá≤gòË≥ı˘˙(_ˇ``∆ˆäæ∏0¿·i´?ŸºqÌ;A´tµÍ√Akv}7hõˇ¥%%4¥ØÔÂg?gÒ◊5íMˆJΩ9¡¿hà›ÔoRÖıL%‰2eƒì¢©åR;›ËõÉõ∫GË+£”°ëÎ‚VAvré(ßk ∞§û´5Üª8L≥¡g£@˙öÆ$ci¿ıçÒ:[ëÒºÆ
+÷∂ø∂å`tÚ}Ù|ı[LæüMó≈&•SE©ú-z/Ÿ›kk†ßªCÛWv
+rÑπ"…9úQk*í˝ˆw¬fÍqŒQ`yÛ∆v∏úÑ(˚¯—⁄'|s.fÍ˜‘ôIó≥Ç±”6∆®’’lC…v√Ñßõ12o§ÄÔ;{Éw∆ˇ¥È¬›©Ÿ/ÓxLn“bÆ‰L¥Q_ß-%‰l
+?∏o˝	∂ÚF¿Œq¿ü~¸ÿˆ)ÿÙ.ÓÎÙ7˙¬Ùh[÷ıÌªı.ßÀTx.	§Øhè2câ¡—Ãy»6üŸÅZ¡—Ò˜:€Û[íS‚Ïú"\´b**»Ú ö˙™∞DìÖ0[G=w)∞a5≥^4ˆ√l@ŸBµ(/4í©©≈gé”—1[‡œ‡30cçS¶ã]DóÆ]Ó¶Z‰“Ü|2;Wß”â9	âo≈dOﬂ+|º∞zB Wﬁ¬"˛ç,h»Î3`5.{çât⁄+tV⁄™3†+”ùQÏß‡ëß<º¬õ 1Æ?zÁÔE^˛œÏΩôk”◊&'&¸∏√Î65ì÷ÜJŒLõ∏zùñêrŸö4
+‚Î?«äﬂ–•Áç F5¬πãk#˝›6o?}©ÔÚ¬¸˝≥Õë0[$ñ"ÍøÅaeÜH¥≈Ë∑èS b5k˛¿23@tÎ:ê∑¸“ìp¥Pxò>¸ˆV èÅ»’S¯(Uˇ…⁄e~(È`«.r◊é¢§ÌÙv·æ7í£Ò‰ó•——ƒ/}˚BBJZ*zHﬁË-”}oÈŒÙ
+>Ω“˛Ëƒ√¢€I!
+æ≥˛F≈Ïä€N¶g9ÉtA∞l¸*®Aı1à¢–˚/ã+‰Xø*’0ﬂq:ÅÄ[D•Ö∞ªamy´.ÿ^Î"[ïÏ◊ﬁ“îN¢N°†·´gdªÂ'äK"•"]B5ãµÇ`sBR[Ø¢Kçåâ3„\CµÕN8å]h∫π	%>∆ÀEñ{;™Ç$x–∑¿6<6Åms ¸Ç∏•∏"•FE'=oìâBï$âNíI<¯Îk@%Ä;âÅ¥ıT~ lò˙˚ıOèØﬂ∫A:‘RÌë⁄2Sâ√∫xy<%?$ûKì¶ù}Gí#…Â!†ÂÂÈ%dl≤g"ì˛La 	úÊzΩµv“Ì¨`Qàrı,Cú’ùT§ê≥û≈¿v^ ¸∞Æ—1‚ªÈ∫‰ô_˝Á‹üg?ËÚzõ,xΩ≈Rk%çÜÍJ]WU´ØajFuã≥∂JÈomÙ;h˜Äuhòî736 ¶UÂ§$#‹Ë[_“áß¿ñU§m%Ÿòﬁ’⁄Ò/ /P ‘Rí)6ÿ$¥ƒ&7Èk⁄“íy‡Xq∆i˙Ùô‚î£DûIÏSŒºæ‘πÿπﬂıß4g·ñbBØH-.îR“¬,My¯DÀPù3§X¨zÇÁÚé¡±^ûø±’·'≠Œ*ŒMÀÁgô1ÚﬁÔLàÕt\πNiG.åQÁ«íµúﬂ£±.úuUµ∏âÄµ›”Jπ=]÷!rÚ¢"´õf6©{ÔÂ]sXaúŸºëÂ'Fßƒù Jœ:VÙ¶íÕ ÷¿◊◊ocÚlJQdñ5óR™&Î'˚˚Ëôû–¬¸É¸6Arú8≥LãÀ§r]…}k!+—dœ˚W?√¿´<ÁwÚÓÄ6,Éá¶É…µqæ¡Ô©uí}>ïƒIOºÑ«˙¥-@ zÈCª„_ ‚ˆ ÿÕ—õÅ˘¶I‹“iË
+AùO—Jµ eV))SÍÀT¥J≈ï()
+d9’YÏP™–@URÆ§ÙÁ‘gÂbç"-v‹T&OK˙ÕÏ-*ßò/4˜Kok'U 	8î 0äësôµyT√ıO˜Tª´/U›ãdÄÍ<ÿó6¬ÅxAﬁsu~Oçã∂qj'›*wû±Ú¿;î◊√^|ò∑∫s-˛˝ßÒ®L=Ω≥Ôﬂ˙¸÷Á7/ÇgC˙ó\!‹‚ØtA∂=|Â,)n8áˆŒi‘tô¶ºTIhj5&Ü226¶	=\mn`Íˇ
+iY±T,|~¸ÍπÕqkz∫ÈEE|i˛ÒÍ˘ˇ` ÌQ≤Ö
+endstream
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/FirstChar 32
+/LastChar 119
+/Widths [250 778 778 778 778 778 778 778 778 778 778 778 778 333 778 778 
+778 500 500 778 778 778 778 778 778 778 333 778 778 778 778 778 
+778 778 778 778 778 778 778 778 778 389 778 778 778 944 778 778 
+778 778 722 778 667 778 778 778 778 778 778 778 778 778 778 778 
+778 500 778 444 556 444 778 778 778 278 778 778 778 778 556 500 
+778 778 444 389 333 778 500 722 ]
+/Encoding 65 0 R
+/BaseFont /ANNKFD+TimesNewRomanPS-BoldMT
+/FontDescriptor 59 0 R
+/ToUnicode 66 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/FirstChar 32
+/LastChar 133
+/Widths [250 778 778 778 778 778 778 778 333 333 778 564 250 333 250 778 
+500 500 500 500 500 500 500 500 500 500 778 778 778 564 778 778 
+778 778 778 778 778 611 778 778 722 333 778 778 611 778 722 778 
+556 722 778 778 611 778 778 944 778 778 778 778 778 778 778 778 
+778 444 500 444 500 444 333 500 500 278 778 778 278 778 500 500 
+500 778 333 389 278 500 500 722 500 500 778 778 778 778 778 778 
+778 778 778 778 778 500 ]
+/Encoding 67 0 R
+/BaseFont /ANNKHA+TimesNewRomanPSMT
+/FontDescriptor 61 0 R
+/ToUnicode 68 0 R
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Encoding 69 0 R
+/BaseFont /Times-Bold
+/ToUnicode 70 0 R
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Encoding 71 0 R
+/BaseFont /Times-Roman
+/ToUnicode 72 0 R
+>>
+endobj
+13 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Bold
+>>
+endobj
+15 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Oblique
+>>
+endobj
+19 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Encoding 73 0 R
+/BaseFont /Times-Italic
+/ToUnicode 74 0 R
+>>
+endobj
+29 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/FirstChar 32
+/LastChar 119
+/Widths [250 778 778 778 778 778 778 778 778 778 778 778 778 333 778 778 
+778 778 778 778 778 778 778 778 778 778 333 778 778 778 778 778 
+778 778 778 667 778 778 778 778 722 778 778 778 778 833 778 778 
+778 778 778 778 556 778 778 778 778 778 778 778 778 778 778 778 
+778 500 778 444 500 444 778 500 778 278 778 778 278 722 500 500 
+500 778 389 389 278 778 444 667 ]
+/Encoding 75 0 R
+/BaseFont /ANNMFK+TimesNewRomanPS-ItalicMT
+/FontDescriptor 63 0 R
+/ToUnicode 76 0 R
+>>
+endobj
+65 0 obj
+<<
+/Type /Encoding
+/Differences [ 32/space 45/hyphen 49/one/two 58/colon 73/I 77/M 82/R
+ 84/T 97/a 99/c/d/e 105/i 110/n/o
+ 114/r/s/t 118/v/w
+]
+>>
+endobj
+67 0 obj
+<<
+/Type /Encoding
+/Differences [ 32/space 40/parenleft/parenright 43/plus/comma/hyphen/period 48/zero
+/one/two/three/four/five/six/seven/eight
+/nine 61/equal 69/E 72/H/I 76/L 78/N 80/P
+/Q 84/T 87/W 97/a/b/c/d/e
+/f/g/h/i 108/l/m/n/o
+/p 114/r/s/t/u/v/w/x
+/y 133/endash
+]
+>>
+endobj
+69 0 obj
+<<
+/Type /Encoding
+/Differences [ 32/space 40/parenleft/parenright 44/comma/hyphen/period 69/E 72/H
+/I 77/M 79/O/P/Q/R/S/T
+ 97/a/b/c/d/e/f 104/h/i
+ 108/l/m/n/o 114/r/s/t/u
+/v/w/x/y
+]
+>>
+endobj
+71 0 obj
+<<
+/Type /Encoding
+/Differences [ 32/space 40/parenleft/parenright 43/plus/comma/hyphen/period/slash
+/zero/one/two/three/four/five/six/seven
+/eight/nine/colon/semicolon/less/equal/greater/question
+ 65/A/B 69/E/F 72/H/I 75/K/L
+/M/N/O/P/Q/R/S/T
+/U 87/W 97/a/b/c/d/e/f
+/g/h/i/j/k/l/m/n
+/o/p/q/r/s/t/u/v
+/w/x/y/z 132/emdash/endash 141/quotedblleft/quotedblright
+ 144/quoteright
+]
+>>
+endobj
+73 0 obj
+<<
+/Type /Encoding
+/Differences [ 32/space 40/parenleft/parenright 44/comma/hyphen/period 49/one 69/E
+ 72/H/I 77/M/N 80/P/Q/R 84/T
+ 97/a/b/c/d/e/f/g/h
+/i 108/l/m/n/o/p 114/r/s
+/t 118/v/w/x/y
+]
+>>
+endobj
+75 0 obj
+<<
+/Type /Encoding
+/Differences [ 32/space 45/hyphen 58/colon 67/C 72/H 77/M 84/T 97/a
+ 99/c/d/e 103/g 105/i 108/l/m/n
+/o/p 114/r/s/t 118/v/w
+]
+>>
+endobj
+66 0 obj
+<<
+/Filter /FlateDecode
+/Length 306
+>>
+stream
+HâTëMoÉ0ÜÔ¸
+;Ì T	!MÌ&qÿáF∑{öòiÑ(–Cˇ˝ÏÑu⁄Å¯…ø±qƒæ=¥vX@º˘Iw∏@?X„qû.^#ú<X»r0É^÷]Xı®2w◊y¡±µ˝uùàw:úÖÕSvüﬁÅxı˝`œ∞9fü$tÁæqDª@
+M˚DÏüï{Q#Ç`€üvº:Ñ<Ï≥µdpvJ£WˆåPÁiuU5Ä÷¸?Kv—qÍıóÚIÃLS
+ƒ&ÚÅX™¿ÚÅ∏ÿ¶@s
+ŒŸÊÅ)ë‚2LÅ8z)$‘ÀZu˚€Cl©ñlêÒ6\í∏‹F´dYË£HB≈ŸU,ZqUπ˛2ÂZ-ﬁœC‡óπÕS_ºßQáÁÂYo/Ï&«£„/˘` %
+ï˙
+endstream
+endobj
+68 0 obj
+<<
+/Filter /FlateDecode
+/Length 325
+>>
+stream
+HâTíMoÉ0ÜÔ¸
+;ÌPòÑ8¨›§ˆ°µ€ù&¶C!
+Ù–?;Æ:Ì ~‚ºé_‘f∑›πaı&≥«˙¡ŸÄÛt·àß¡A¶¡fπÆ‚€åùE≈˚Àº‡∏s˝Mì®⁄úópÅ’≥æOÔ@Ωãap'X≤œ/JÏœﬁˇ‡ànÅ⁄,ˆâ⁄ºt˛µó˝Âè†„:ª6û,Œæ3:wBht⁄BSó-†≥ˇ˜íZ*éΩ˘ÓB" 4•ê4πçúoâã22b#ºaF·'‚≤àLÅ∏Æàπ1úÂmB˝Øùn}≈F£k=H˜ö™Ùërº~d;l-EŒ˛
+.)$QpI…ä2ìŒ¨X3ØEAL	∂^…7ÆŸ•9!
+b1(ñxV|Å∑±õst#Òñ„‡y‰É√€è‡'œÊ'˘` ù÷
+endstream
+endobj
+70 0 obj
+<<
+/Filter /FlateDecode
+/Length 301
+>>
+stream
+HâTQÀn√ ºÛ{L’6qH"Yæ$ä‰Cj“ﬁX;ñjå∞sﬂw◊∏©z ÜafÄ]y(è•kGêÔ°7g°nù8Ù˜`Æÿ¥R∂5„≤õg”U$ôœ”0bW∫∫á<ÚÉá1L∞:≠üì'êo¡bh]´K˙˘Eƒ˘Ó˝7vËFH†(¿b-‰·•ÚØUá Ÿˆ«]&è†Ê}∫\‹[|e0TÆA»UR@æ›ÄŒ˛?ÎË∏÷ÊVïIBã»≥Õåi!l#>Ç2ıÓ◊£rµ#ë⁄«Ñπîa#q‡VdQë±"´	o≤Húà–)a≠gÇ0l——¢Ÿ¢9T◊ë‡–≠Z~G·¯¿¯$˛/7·Q:sÅ™:wj.ó≠u¯h¶Ô=Wâá¯` bkí_
+endstream
+endobj
+72 0 obj
+<<
+/Filter /FlateDecode
+/Length 314
+>>
+stream
+HâTëMo√ ÜÔ¸
+;Ìêèí6ëPÎ4©á}hÌvß‡tëÇHzËøüYßÄó¸ÿ≤≥›˛qÔ˙≤∑0öŒ–ıŒú∆K0'<˜äloÊÂw3hÆ”å√ﬁu#(%≤wzúÊpÖ’ìºœÔ {CÔŒ∞:üd.ﬁ„ÄnÜ⁄,v"€=kˇ¢Ñå√˛º„’#îÒ^,âGãì◊ÉvgUÊ-®Ü6tˆˇõ®Rƒ©3_:àÙ3œÈ™⁄FMáPµlSH÷U“k“e›¥Çÿ•˛e¶™¨˘Sì»5Eï'“Î.d»Ç¥,£AöŒ!7…®ÿ`ÜL……å™J36ÃÿÍhlòQ[“5¶wKÅ©$ÓÁ÷Rs	Å∫'õ ÌÏﬁÜÏGœ›„%~ X ñŒ
+endstream
+endobj
+74 0 obj
+<<
+/Filter /FlateDecode
+/Length 314
+>>
+stream
+HâTQMo√ ΩÛ+|Ï¥	£§ëP.≠&ı∞≠›Ó)8m§Ö í˙Ôá!Î¥C∞y<?øÿ|ªﬂÌ]?£9‡]Ôl¿iºÉp¬sÔ†`{3/∑tö°ı¿cÒ·6Õ8Ï]7Ç÷åƒ«i7X=oã‡o¡bË›V«ÚÛ+á´˜ﬂ8†õ°Ä¶ã„€ó÷ø∂ß≤?ÏxÛ"›À•ÒhqÚ≠¡–∫3ÇE∫™@gˇø1ô+Nùπ¥ÅefQƒ¿ÙSôÚòñÎî«¿ÙZ¶<ıñ ˙W'Àj±â$QgµM¨Ü Ã¿ñ$â!3CCZ2CÓ®ôYã‹ç)r§râ"[äD´ÏYëhEÏ*åy‘ÚÎ®≈qˆH√†›ÁjÆ!ƒëß5¶…“L{á˜M˚—”Èc? e¬ó∞
+endstream
+endobj
+76 0 obj
+<<
+/Filter /FlateDecode
+/Length 307
+>>
+stream
+HâTëMo¬0ÜÔ˘>2Ìê∂î§™“öƒaå{H\ViM£¥¯˜≥ìéiá÷Oﬁÿ±ÛFn˜ªΩÎ&êÔa0ú†Ìú8◊`ŒxÈ‰ÿŒLÛ*˛MØ=H*>‹∆	˚Ωk®k!?hsú¬œõ«Ï‰[∞:wÅ≈1ˇ<ëp∏zˇç=∫	2h∞ÿ
+π}—˛U˜íÀ˛¥„Õ#qùœçã£◊ÉvÑ∫»®´™tˆˇû»≥TrnÕó"•fbõxGº‘ëóOƒÂ22‚u‚5s /9UF¶ jïG¶@\%Æò7â7ç†¡Ê	 ﬂy“|µ‚fjï2π£2|ô4¶⁄íP,§~ƒ$®˘∫,®˘t¿Ør˜“\C õ„”E7Ÿ«Œ·˝u˝‡Ÿ6˛ƒè  øï	
+endstream
+endobj
+1 0 obj
+<<
+/Type /Page
+/Parent 9 0 R
+/Resources 3 0 R
+/Contents 2 0 R
+>>
+endobj
+10 0 obj
+<<
+/Type /Page
+/Parent 9 0 R
+/Resources 12 0 R
+/Contents 11 0 R
+>>
+endobj
+16 0 obj
+<<
+/Type /Page
+/Parent 9 0 R
+/Resources 18 0 R
+/Contents 17 0 R
+>>
+endobj
+20 0 obj
+<<
+/Type /Page
+/Parent 9 0 R
+/Resources 22 0 R
+/Contents 21 0 R
+>>
+endobj
+23 0 obj
+<<
+/Type /Page
+/Parent 9 0 R
+/Resources 25 0 R
+/Contents 24 0 R
+>>
+endobj
+26 0 obj
+<<
+/Type /Page
+/Parent 9 0 R
+/Resources 28 0 R
+/Contents 27 0 R
+>>
+endobj
+30 0 obj
+<<
+/Type /Page
+/Parent 9 0 R
+/Resources 32 0 R
+/Contents 31 0 R
+>>
+endobj
+33 0 obj
+<<
+/Type /Page
+/Parent 9 0 R
+/Resources 35 0 R
+/Contents 34 0 R
+>>
+endobj
+36 0 obj
+<<
+/Type /Page
+/Parent 9 0 R
+/Resources 38 0 R
+/Contents 37 0 R
+>>
+endobj
+39 0 obj
+<<
+/Type /Page
+/Parent 9 0 R
+/Resources 41 0 R
+/Contents 40 0 R
+>>
+endobj
+42 0 obj
+<<
+/Type /Page
+/Parent 46 0 R
+/Resources 44 0 R
+/Contents 43 0 R
+>>
+endobj
+47 0 obj
+<<
+/Type /Page
+/Parent 46 0 R
+/Resources 49 0 R
+/Contents 48 0 R
+>>
+endobj
+50 0 obj
+<<
+/Type /Page
+/Parent 46 0 R
+/Resources 52 0 R
+/Contents 51 0 R
+>>
+endobj
+53 0 obj
+<<
+/Type /Page
+/Parent 46 0 R
+/Resources 55 0 R
+/Contents 54 0 R
+>>
+endobj
+56 0 obj
+<<
+/Type /Page
+/Parent 46 0 R
+/Resources 58 0 R
+/Contents 57 0 R
+>>
+endobj
+77 0 obj
+<<
+/S /D
+>>
+endobj
+78 0 obj
+<<
+/Nums [0 77 0 R ]
+>>
+endobj
+9 0 obj
+<<
+/Type /Pages
+/Kids [1 0 R 10 0 R 16 0 R 20 0 R 23 0 R 26 0 R 30 0 R 33 0 R 36 0 R 39 0 R]
+/Count 10
+/Parent 45 0 R
+>>
+endobj
+46 0 obj
+<<
+/Type /Pages
+/Kids [42 0 R 47 0 R 50 0 R 53 0 R 56 0 R]
+/Count 5
+/Parent 45 0 R
+>>
+endobj
+45 0 obj
+<<
+/Type /Pages
+/Kids [9 0 R 46 0 R ]
+/Count 15
+/MediaBox [0 0 612 792]
+>>
+endobj
+79 0 obj
+<<
+/CreationDate (D:20061030204843-05'00')
+/ModDate (D:20061030204843-05'00')
+/Producer (PSNormalizer.framework)
+>>
+endobj
+80 0 obj
+<<
+/Type /Catalog
+/Pages 45 0 R
+/PageLabels 78 0 R
+>>
+endobj
+xref
+0 81
+0000000000 65535 f 
+0000090279 00000 n 
+0000000016 00000 n 
+0000005154 00000 n 
+0000084241 00000 n 
+0000084785 00000 n 
+0000085381 00000 n 
+0000085487 00000 n 
+0000069189 00000 n 
+0000091594 00000 n 
+0000090359 00000 n 
+0000005278 00000 n 
+0000012853 00000 n 
+0000085594 00000 n 
+0000085690 00000 n 
+0000085791 00000 n 
+0000090442 00000 n 
+0000013001 00000 n 
+0000016603 00000 n 
+0000085895 00000 n 
+0000090525 00000 n 
+0000016740 00000 n 
+0000021727 00000 n 
+0000090608 00000 n 
+0000021885 00000 n 
+0000027494 00000 n 
+0000090691 00000 n 
+0000027642 00000 n 
+0000033083 00000 n 
+0000086004 00000 n 
+0000090774 00000 n 
+0000033231 00000 n 
+0000038683 00000 n 
+0000090857 00000 n 
+0000038830 00000 n 
+0000045156 00000 n 
+0000090940 00000 n 
+0000045282 00000 n 
+0000047947 00000 n 
+0000091023 00000 n 
+0000048073 00000 n 
+0000051890 00000 n 
+0000091106 00000 n 
+0000052027 00000 n 
+0000055540 00000 n 
+0000091832 00000 n 
+0000091730 00000 n 
+0000091190 00000 n 
+0000055677 00000 n 
+0000059549 00000 n 
+0000091274 00000 n 
+0000059685 00000 n 
+0000063223 00000 n 
+0000091358 00000 n 
+0000063349 00000 n 
+0000066621 00000 n 
+0000091442 00000 n 
+0000066737 00000 n 
+0000069053 00000 n 
+0000069329 00000 n 
+0000069621 00000 n 
+0000072575 00000 n 
+0000072980 00000 n 
+0000079914 00000 n 
+0000080210 00000 n 
+0000086551 00000 n 
+0000087974 00000 n 
+0000086713 00000 n 
+0000088353 00000 n 
+0000087002 00000 n 
+0000088751 00000 n 
+0000087204 00000 n 
+0000089125 00000 n 
+0000087599 00000 n 
+0000089512 00000 n 
+0000087811 00000 n 
+0000089899 00000 n 
+0000091526 00000 n 
+0000091554 00000 n 
+0000091923 00000 n 
+0000092055 00000 n 
+trailer
+<<
+/Size 81
+/Root 80 0 R
+/Info 79 0 R
+/ID [<49986f8af752dbcdf665e2b1754c1a7f><49986f8af752dbcdf665e2b1754c1a7f>]
+>>
+startxref
+92125
+%%EOF
