@@ -17,25 +17,19 @@
     	\subsection{BERG: \textit{Lied der Lulu}}
         	La gran calidad emocional de la música de Alban Berg se refleja en esta segunda obra: es una de las arias más destacadas de su segunda ópera, \textit{Lulu}. El arreglo a voz y piano fue realizado por Erwin Stein, un músico austriaco amigo y discípulo de Schoenberg.
         	
+        	El libreto de la obra está basado en dos tragedias de Frank Wedekind: ``El espíritu de la tierra'' y ``La Caja de Pandora''. 
+        	
         	%argumento de la ópera
+        	
+        	
         	
         	%series utilizadas (por personaje)
 
-BERG: LULU: PRIMARY ROW
-
-{0,4,5,2,7,9,6,8,B,A,3,1} (Jarman)
-
-http://www.ccarh.org/publications/data/humdrum/tonerow/files/berg/berg10.pc.krn
-
-
-BERG: LULU, ACT I , SCENE XX -- PERM. (EVERY 7TH NOTE OF PRIMARY ROW)
-
-{10,6,3,8,5,11,4,2,9,0,1,7}
-
-
-BERG: LULU, ACT II, SCENE 1 -- PERM. (EVERY 5th NOTE OF PRIMARY ROW)
-
-{10,7,1,0,9,2,4,11,5,8,3,6}
+		BERG: LULU: PRIMARY ROW
+		
+		{0,4,5,2,7,9,6,8,B,A,3,1} (Jarman)
+		
+		http://www.ccarh.org/publications/data/humdrum/tonerow/files/berg/berg10.pc.krn
             
         % argumento de esta aria
         
@@ -76,6 +70,57 @@ BERG: LULU, ACT II, SCENE 1 -- PERM. (EVERY 5th NOTE OF PRIMARY ROW)
 		{4,3,7,6,5,B,A,2,1,0,9,8}	
 		
 	\section{ESCALAS Y FUNCIONES A UTILIZAR}
+	
+		Una \textit{escala interválica} es una secuencia ordenada de números naturales -- una secuencia de intervalos entre notas -- tales que la suma de todos ellos da 12. Así solo se consideran válidas las escalas equivalentes octava a octava: todos los intervalos de la escala deben sumar el número de semitonos de una octava. Por ejemplo, la escala diatónica jónica (o escala mayor) tiene como secuencia (2, 2, 1, 2, 2, 2, 1).
+		
+		%En general, se puede considerar que dos escalas son esencialmente iguales si sus secuencias comienzan desde puntos distintos de la misma secuencia. Por ejemplo, todas las escalas diatónicas son esencialmente iguales.
+		
+		Dada una escala interválica de longitud L y una nota fija inicial, la secuencia de intervalos se plasma en una secuencia de notas de longitud L+1. Se construye comenzando por la nota inicial y sumando cada intervalo para conseguir la nota siguiente. Con la escala mayor y la nota Re se consigue \{Re, Mi, Fa$\#$, Sol, La, Si, Do$\#$\}, ya que es equivalente a \{2, 2+\textbf{2}=4, 4+\textbf{2}=6, 6+\textbf{1}=7, 7+\textbf{2}=9, 9+\textbf{2}=11, 11+\textbf{2}=13, 13+\textbf{1}=14\}. Por construcción, la última nota debe ser equivalente a la primera, ya que en el último paso habremos sumado a la nota inicial todos los términos de la secuencia interválica, que por definición da 12.
+		
+		De esta forma, se puede definir una \textit{escala-k} como el conjunto de notas generadas por una escala interválica desde la nota $k$. Por ejemplo, el conjunto anterior sería la escala-2 mayor; es decir, la escala de Re mayor. Una escala generada por una secuencia de intervalos con longitud L tiene L notas.
+		
+		Este experimento pretende que se transformen las notas de la escala cromática en notas de otras escalas reducidas. Por ello se define una \textit{función a una escala-k} E$_k$ es una función $f$ que relaciona cada nota de la escala cromática con un valor de la escala E$_k$. Entonces $f : \mathbb{Z}/(12) \rightarrow \text{E}_k$ reduce las notas de una melodía cromática a solamente la escala escogida.
+		
+		El proceso verdaderamente interesante está en averiguar, dada una escala E$_k$, cuál es la mejor función a E$_k$. La mayor prioridad es conservar la estructura serial de las piezas; por tanto, hay que intentar que todas las notas aparezcan con la menor frecuencia posible y evitar la jerarquía entre las notas lo máximo posible. Si $|\text{E}|<12$, $f$ no puede ser inyectiva. Queremos la $f$ que mejor distribuya las notas de E$_k$ a lo largo de la escala cromática. 
+		
+		El siguiente gráfico describe, para cada posible tamaño de escala en cada fila, la frecuencia óptima de sus elementos. Para una escala E con tamaño $t$, la columna $t\ |\ a_1\ a_2\ a_3\ \ldots\ a_{12}$ cumple:
+		
+		$\sum_{r=1}^{12}a_r=t$, porque cada nota de E debe aparecer en una sola columna.
+		
+		$\sum_{r=1}^{12}a_r*r=12$, porque las columnas indican cuántas veces aparece en la imagen
+		
+		$$\begin{array}{l|rrrrrrrrrrrr}
+		&1&2&3&4&5&6&7&8&9&10&11&12\\\hline
+		1&&&&&&&&&&&&1\\\hline
+		2&&&&&&2\\\hline
+		3&&&&3\\\hline
+		4&&&4\\\hline
+		5&&3&2\\\hline
+		6&&6\\\hline
+		7&2&5\\\hline
+		8&4&4\\\hline
+		9&6&3\\\hline
+		10&8&2\\\hline
+		11&10&1\\\hline
+		12&12&\\
+		\end{array}$$
+		
+		Si $f$ no fuera sobreyectiva, la música resultante utilizaría una escala más reducida de la deseada. Hay que pedir más requisitos a $f$ para que no solo modifique las notas, sino que además se parezcan lo máximo posible a sus preimágenes, a las notas originales. Por ejemplo:
+		
+		\begin{enumerate}[i)]
+			\item{$f$ debe ser creciente: si $n<m\in\mathbb{Z}/(12)$ entonces $f(n)\leq f(m)$. Si no lo fuera, aquellas dos notas decrecientes se deberían intercambiar.}
+			\item{
+					
+			}
+		\end{enumerate}
+		
+		Las funciones a escalas se representan de la siguiente manera:
+		
+		$$\left.\begin{matrix}
+		\text{Escala cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
+		\text{Escala E}&f(0)&f(1)&f(2)&f(3)&f(4)&f(5)&f(6)&f(7)&f(8)&f(9)&f(10)&f(11)\\
+		\text{Intervalos}&&2&&2&1&&2&&2&&2&1\\
+		\end{matrix}\right.$$
 
         Randomly generated function
         \begin{lstlisting}
@@ -124,19 +169,26 @@ BERG: LULU, ACT II, SCENE 1 -- PERM. (EVERY 5th NOTE OF PRIMARY ROW)
         }        
         \end{lstlisting}
 
-        Diatonic heptaphonic scales
-        2212221
+        $$\left.\begin{matrix}
+        \text{Escala cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
+        \text{Escala diatónica en Do:}&0&0&2&2&4&5&5&7&7&9&9&11\\
+        \text{Intervalos}&&2&&2&1&&2&&2&&2&1\\
+        \end{matrix}\right.$$
 
-        Whole tone scale
-        222222
+        $$\left.\begin{matrix}
+        \text{Escala cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
+        \text{Escala de tonos enteros:}&0&0&2&2&4&4&6&6&8&8&10&10\\
+        \text{Intervalos}&&2&&2&&2&&2&&2&&2\\
+        \end{matrix}\right.$$
 
-        Pentatonic scales
-        22323
-
-        Octotonic scales
-        21212121
-
-        Repetición de notas en las funciones
-                $$
-    \begin{array}{l|rrrrrrrrrrrr}&1&2&3&4&5&6&7&8&9&10&11&12\\\hline1&&&&&&&&&&&&1\\\hline2&&&&&&2\\\hline3&&&&3\\\hline4&&&4\\\hline5&&3&2\\\hline6&&6\\\hline7&2&5\\\hline8&4&4\\\hline9&6&3\\\hline10&8&2\\\hline11&10&1\\\hline12&12&\\\end{array}
-                $$
+        $$\left.\begin{matrix}
+        \text{Escala cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
+        \text{Escala pentatónica mayor:}&0&0&2&2&4&4&7&7&7&9&9&0\\
+        \text{Intervalos}&&2&&2&&3&&&2&&3&\\
+        \end{matrix}\right.$$
+        
+        $$\left.\begin{matrix}
+        \text{Escala cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
+        \text{Escala octotónica:}&0&0&2&3&3&5&6&6&8&9&9&11\\
+        \text{Intervalos}&&2&1&&2&1&&2&1&&2&1\\
+        \end{matrix}\right.$$
