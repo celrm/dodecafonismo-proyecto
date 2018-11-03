@@ -36,7 +36,7 @@
 		
 		Así, $\sigma(m)$ sería constante para todo $m\in \mathbb{Z} / (n)$, lo cual es imposible. Esto implica que ninguna permutación va a tener a I en su estabilizador, por lo que $\#\sigma_4=0$. Queda entonces calcular cuántas permutaciones son equivalentes a su retrogradación y cuántas a su retrogradación inversa. La suma de ambas dará $\#\sigma_2$.
 	
-	\subsection*{ESTABILIZADORES \{ID, R\}}
+	\subsection{ELEMENTOS ESTABLES MEDIANTE R}
 		Las permutaciones que coinciden con alguna transposición de su retrogradación cumplen, para $\gamma$ constante:
 		$$\gamma+\sigma(m)=\text{R}(\sigma(m))=\sigma(-1-m)$$
 		Aplicándolo a $(-1-m)$: $\qquad\gamma+\sigma(-1-m)=\sigma(-1-(-1-m))=\sigma(m)$
@@ -49,7 +49,7 @@
 		En una serie de longitud $n$, existen $\frac{n}{2}$ intervalos que miden $\frac{n}{2}$. Como no importa por cuál de ellos comience la serie, ya que las transportaciones son equivalentes, se fija el primero de los intervalos. Quedan los otros $\frac{n}{2}-1$ intervalos por escoger, así que el número de series con simetría par cuenta las permutaciones de $\frac{n}{2}-1$ intervalos y las dos posibles posiciones de cada intervalo -- creciente y decreciente --. \cite{reiner} Por ello, el número de series con simetría par es de:
 		$$2! \cdot \left(\frac{n}{2}-1\right)! = 2\left(\frac{n-2}{2}\right)!=(n-2)(n-4)\ldots=(n-2)!!\ \footnote{Por definición, si $n$ es par $n!!=n(n-2)(n-4)\ldots4\cdot2$ y si $n$ es impar $n!!=n(n-2)(n-4)\ldots3\cdot1$.}$$
 
-	\subsection*{ESTABILIZADORES \{ID, RI\}}
+	\subsection{ELEMENTOS ESTABLES MEDIANTE RI}
 		Las permutaciones que coinciden con alguna transposición de su retrogradación inversa cumplen, para un $\gamma$ constante:
 		$$\sigma(m)=\text{RI}(\sigma(m))+\gamma=-\sigma(-1-m)+\gamma$$
 		$$\gamma=\sigma(m)+\sigma(-1-m)$$
@@ -117,7 +117,7 @@
 		En vez de expresar el sumatorio como ``para cada $\sigma$, el número de $\Psi$ que fijan $\sigma$'', se puede expresar como ``para cada $\Psi$, el número de $\sigma$ fijados por $\Psi$''. La fórmula queda de esta manera:
 		$\#\text{Spec}=\frac{1}{4n^2}\sum_{\Psi\in\text{D}_{n}\times\text{D}_{n}}\text{Fij}(\Psi)$. Ahora hay que averiguar para cada elemento de $\text{D}_{n}\times\text{D}_{n}$ cuántas series estabiliza. Por ejemplo, trivialmente no hay permutaciones estables mediante C y R solamente.
 		
-		\subsection*{ELEMENTOS ESTABLES MEDIANTE T}
+		\subsection{ELEMENTOS ESTABLES MEDIANTE T}
 		
 		Los elementos estables mediante T$^\text{k}$ son a los que se aplica una rotación de $\uptheta_\text{k}=\frac{2\pi\text{k}}{n}$, para $1\leq\text{k}\leq n$, y quedan igual. Por tanto, los sumandos que aportan a la suma total son $\sum_{\text{k}=1}^{n}\text{Fij}(\uptheta_\text{k})$.
 		
@@ -185,7 +185,7 @@
 		
 		Primero se escoge la diagonal de entre $\frac{n}{2}$ posibilidades, con lo que queda dividida en dos la figura. De cada pareja de puntos antipodales se escoge el que irá primero en la ronda de elección. Esa elección para cada pareja opuesta se da de de $2^{\frac{n}{2}}$ formas. Tras lo cual se ordenan esos primeros miembros entre sí, de $\frac{n}{2}!$ formas. Esto lleva a las $\frac{n}{2}\cdot2^{\frac{n}{2}}\cdot\frac{n}{2}!$ formas de dibujar un polígono con las características buscadas.		
 		
-		\subsection*{ELEMENTOS ESTABLES MEDIANTE I}
+		\subsection{ELEMENTOS ESTABLES MEDIANTE I}
 		
 		Los elementos estables mediante I son aquellos que quedan invariantes mediante reflexiones. En este punto se ha de separar por paridad de $n$. 
 		

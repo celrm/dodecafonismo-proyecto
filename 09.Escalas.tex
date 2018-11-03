@@ -81,137 +81,113 @@
 		Hay que pedir más requisitos a $f$ para que no solo modifique las notas, sino que además las imágenes se parezcan lo máximo posible a sus preimágenes, a las notas originales.
 		
 		\begin{enumerate}[(1)]
-		\item $f$ debe ser sobreyectiva: si no lo fuera, la música resultante utilizaría una escala más reducida de la deseada.
+		\item $f$ debe ser sobreyectiva: si no, la música resultante tendría una escala más reducida de la deseada.
 		
-		\item $f$ debe ser creciente: si no lo fuera, aquellas dos notas decrecientes se deberían intercambiar. También se podrá sumar o restar 12 a las notas que lo requieran. La monotonía debe conservarse, además, en las siguientes octavas, por lo que las funciones deben acabar o por la nota con la que se empieza $+12$ o por una menor que ésta.
-		
+		\item $f$ debe ser creciente: si no, las dos notas decrecientes se deberían intercambiar. También se podrá sumar o restar 12 a las notas que lo requieran. La monotonía debe conservarse, además, en todas las octavas, por lo que las funciones deben acabar o por la nota con la que se empieza $+12$ o por una menor que ésta.
+
 		\item $f$ debe tener el mayor número de puntos fijos posible: las notas que puedan mantenerse estables al aplicar $f$ deben quedarse igual. Existen escalas para las que no se puede tener buena distribución, monotonía creciente y todas sus notas fijas, así que este criterio es menos prioritario. 
 		
 		Por ejemplo, para la escala \{0, 1, 2\}, si se fijan las tres notas, $f$ empezaría con 0 1 2. Por (2), la última nota debe ser 12 o menos. Entonces los otros tres 1 que faltan no se pueden asignar, ya que después del 2 no puede ir un 1 y antes del 12 no puede ir un 13. Entonces $f$ no estaría bien distribuida. La solución es que solo se fijen dos de las tres notas.
 		$$\left.\begin{matrix}
-		\text{Cromática}&0&1&2&3&4&5&6&7&8&9&10&11\\
-		\text{Escala E}&0&1&2&&&\sout{1}&&&\sout{13}&&&12\\
+		\text{Cromática}&0&1&2&3&4&5&6&7&8&9&10&11&12\\
+		\text{Escala E}&0&1&2&&&\text{\cancel{1}}&&&\text{\cancel{13}}&&&&12\\
 		\end{matrix}\right.$$
 		
+		\item Por último, de entre las $f$ que queden, se escogerán aquellas cuya distancia a la cromática sea menor. Se calculará para todo $i$ la expresión $|f(i)-i|$, y se sumarán todos los resultados. Esa suma será la \textit{puntuación} de dicha $f$. Las funciones con menor puntuación son las funciones de mejor ajuste.
 		
 		\end{enumerate}
-		%distancia
 		
-		Por último, si aún quedan varias $f$ que cumplen todos los requisitos, se escogerá la más grave, la menor de ellas. De esta manera, dada cualquier escala E, la función E-inducida queda unívocamente determinada.
+		Si aún quedan varias $f$ que cumplen todos los requisitos, se escogerá la más grave, la menor de ellas. De esta manera, dada cualquier escala E, la función E-inducida queda unívocamente determinada.
 		
-	\section{ESCALAS UTILIZADAS}
-
-        Función generada aleatoriamente:
-        \begin{lstlisting}
-        #include <iostream>
-        #include <cstdlib>
-        #include <algorithm>
-        
-        using namespace std;
-        using VI = int[12];
-        
-        int main() {
-        	srand (time(NULL));
-        	VI v;
-        	for (size_t i = 0; i < 12; i++)
-        		v[i] = rand()%12;
-        	sort(v, v+12);
-        	for (size_t i = 0; i < 12; i++)
-        		cout << v[i] << " ";
-        	cout << "\n";
-        	return 0;
-        }        
-        \end{lstlisting}
+		En el Anexo \ref{app:function}, página \pageref{app:function}, se encuentra el código en Haskell de un programa que, dado una escala, produce su función inducida óptima con las propiedades descritas anteriormente. También puede encontrarse en \textit{https://gitlab.com/dodecafonismo/f-inducida}
+		
+	\section{ESCALAS Y OBRAS UTILIZADAS}
+	
+		Las escalas escogidas para este experimento son cuatro escalas de distintos tamaños y sonoridades; desde el sonido oriental hasta el occidental clásico, pasando por el jazz moderno y el impresionismo.
+		
+		Son la escala pentatónica, la escala hexafónica de tonos enteros, la escala heptafónica de Do Mayor y la escala octotónica. Estas son las funciones inducidas de dichas escalas, según el algoritmo del Anexo \ref{app:function}:
+	
+		$$\left.\begin{matrix}
+		\text{Escala cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
+		\text{Escala pentatónica mayor (5):}&0&0&2&2&4&4&7&7&7&9&9&0\\
+		\text{Intervalos:}&&2&&2&&3&&&2&&3&\\
+		\end{matrix}\right.$$
+		
+		$$\left.\begin{matrix}
+		\text{Escala cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
+		\text{Escala de tonos enteros (6):}&0&0&2&2&4&4&6&6&8&8&10&10\\
+		\text{Intervalos:}&&2&&2&&2&&2&&2&&2\\
+		\end{matrix}\right.$$
 
         $$\left.\begin{matrix}
         \text{Escala cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
-        \text{Escala diatónica en Do:}&0&0&2&2&4&5&5&7&7&9&9&11\\
-        \text{Intervalos}&&2&&2&1&&2&&2&&2&1\\
-        \end{matrix}\right.$$
-
-        $$\left.\begin{matrix}
-        \text{Escala cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
-        \text{Escala de tonos enteros:}&0&0&2&2&4&4&6&6&8&8&10&10\\
-        \text{Intervalos}&&2&&2&&2&&2&&2&&2\\
-        \end{matrix}\right.$$
-
-        $$\left.\begin{matrix}
-        \text{Escala cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
-        \text{Escala pentatónica mayor:}&0&0&2&2&4&4&7&7&7&9&9&0\\
-        \text{Intervalos}&&2&&2&&3&&&2&&3&\\
+        \text{Escala diatónica en Do (7):}&0&0&2&2&4&5&5&7&7&9&9&11\\
+        \text{Intervalos:}&&2&&2&1&&2&&2&&2&1\\
         \end{matrix}\right.$$
         
         $$\left.\begin{matrix}
         \text{Escala cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
-        \text{Escala octotónica:}&0&0&2&3&3&5&6&6&8&9&9&11\\
-        \text{Intervalos}&&2&1&&2&1&&2&1&&2&1\\
+        \text{Escala octotónica (8):}&0&0&2&3&3&5&6&6&8&9&9&11\\
+        \text{Intervalos:}&&2&1&&2&1&&2&1&&2&1\\
         \end{matrix}\right.$$
-           
-    \section{OBRAS A MODIFICAR}
-        El objetivo de este experimento es modificar algunas obras que ya están compuestas mediante el método dodecafónico, y cambiar su serialismo de doce notas por otro pseudoserialismo de menos notas. Para abarcar distintos estilos compositivos y hacer este estudio más riguroso, se han escogido obras de los tres principales compositores dodecafónicos: Schoenberg, Berg y Webern.
         
-        Sin embargo, no se han escogido obras de compositores posteriores ni serialistas integrales. Uno de los motivos es porque interesa en este estudio la relación entre los sonidos: no se modifican más que las alturas de las notas, y por tanto no importa el resto de elementos musicales. Que estén compuestos serialmente no afecta a las conclusiones de este estudio.
+        Ahora se describirán las obras que pasarán por la modificación. Para abarcar distintos estilos compositivos y hacer este estudio más riguroso, se han escogido obras de los tres principales compositores dodecafónicos: Schoenberg, Berg y Webern.
+        
+        Sin embargo, no se han escogido obras de compositores posteriores ni serialistas integrales. Uno de los motivos es porque interesa en este estudio la relación entre los sonidos: no se modifican más que las alturas de las notas, y por tanto no importa el resto de elementos musicales. Que estén compuestos serialmente no afecta a las conclusiones de este experimento.
         
         Por otro lado, los compositores posteriores a Schoenberg todavía no han pasado al dominio público. Eso impide, por desgracia, que se pueda trabajar libremente con su música.
         
-        Por último, el hecho de que cada nota tenga su propia dinámica, su propia articulación o su propio timbre hace de las obras serialistas integrales que sean difíciles de manipular. Además, como los audios están hechos mediante ordenador y no con intérpretes reales, la calidad y la intención musical de estas partituras tan complicadas nunca pueden plasmarse a la perfección.
+        Por último, el hecho de que cada nota tenga su propia dinámica, su propia articulación o su propio timbre hace de las obras serialistas integrales que sean difíciles de manipular. Además, como los audios están hechos mediante ordenador y no con intérpretes reales, la calidad y la intención musical de estas partituras tan complicadas nunca podrían plasmarse a la perfección.
         
-        \subsection{SCHOENBERG: \textit{Suite para piano}, OP. 25}
+        \subsection*{SCHOENBERG: \textit{Suite para piano}, OP. 25}
         La primera obra que pasará por el algoritmo de modificación serial es la Suite para piano de Schoenberg, ya comentada en el capítulo \ref{suitechapter}. En dicha sección se estudió su serie principal, la estructura general de la obra y su razón de ser, así como su tercer movimiento en profundidad.
         
-        http://www.ccarh.org/publications/data/humdrum/tonerow/files/schoenberg/schoenberg04.pc.krn
-        
-        \subsection{BERG: \textit{Lied der Lulu}}
-        La gran calidad emocional de la música de Alban Berg se refleja en esta segunda obra: es una de las arias más destacadas de su segunda ópera, \textit{Lulu}. El arreglo a voz y piano fue realizado por Erwin Stein, un músico austriaco amigo y discípulo de Schoenberg.
-        
-        El libreto de la obra está basado en dos tragedias de Frank Wedekind: ``El espíritu de la tierra'' y ``La Caja de Pandora''. 
-        
-        %argumento de la ópera
+        Su serie original\footnote{\textit{http://www.ccarh.org/publications/data/humdrum/tonerow/files/schoenberg/schoenberg04.pc.krn}} es: 
+        \begin{footnotesize}
+        	$\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\4&5&7&1&6&3&8&2&11&0&9&10\\\end{matrix}\right)$	
+        \end{footnotesize}
         
         
+        \subsection*{BERG: \textit{Lied der Lulu}}
+        La gran calidad emocional de la música de Alban Berg se refleja en esta segunda obra: es una de las arias más destacadas de su segunda ópera, \textit{Lulu}. El libreto de la obra está basado en dos tragedias de Frank Wedekind: ``El espíritu de la tierra'' y ``La Caja de Pandora''. 
+                
+        Su serie original\footnote{\textit{http://www.ccarh.org/publications/data/humdrum/tonerow/files/berg/berg10.pc.krn}} es:
+        \begin{footnotesize}
+        	$\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\0&4&5&2&7&9&6&8&11&10&3&1\\\end{matrix}\right)$	
+        \end{footnotesize}        
         
-        %series utilizadas (por personaje)
         
-        BERG: LULU: PRIMARY ROW
+        \subsection*{BERG: \textit{Der Wein}}
         
-        {0,4,5,2,7,9,6,8,B,A,3,1} (Jarman)
+        \textit{Der Wein} (El vino) es un Aria Concierto para soprano y orquesta, compuesto en 1929. La letra es una traducción al alemán de los tres poemas de Charles Baudelaire ``\textit{Le Vin}''. Son una celebración del vino y de la felicidad y confianza de aquellos que lo disfrutan, así como de la fuerza, orgullo e inspiración que éste provee.
         
-        http://www.ccarh.org/publications/data/humdrum/tonerow/files/berg/berg10.pc.krn
+        La pieza evoca aires tonales, ya que su serie está compuesta por la escala de Re menor y la de Sol bemol Mayor. Es una pieza simétrica que evoca también la forma sonata, con los tres poemas trabajando como exposición, desarrollo y recapitulación.
         
-        % argumento de esta aria
+        Su serie original\footnote{\textit{http://www.ccarh.org/publications/data/humdrum/tonerow/files/berg/berg09.pc.krn}} es: 
+        \begin{footnotesize}
+        	$\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\2&4&5&7&9&10&1&6&8&0&11&3\\\end{matrix}\right)$	
+        \end{footnotesize}
         
-        \subsection{BERG: \textit{Der Wein}}
+        \subsection*{WEBERN: \textit{Variations}, OP. 27}     
         
-        BERG: DER WEIN
+        Su serie original\footnote{\textit{http://www.ccarh.org/publications/data/humdrum/tonerow/files/webern/webern17.pc.krn}} es: 
+        \begin{footnotesize}
+        	$\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\3&11&10&2&1&0&6&4&7&5&9&8\\\end{matrix}\right)$	
+        \end{footnotesize}
         
-        {2,4,5,7,9,A,1,6,8,0,B,3}
+        \subsection*{WEBERN: \textit{3 Lieder}, OP. 18}
         
-        http://www.ccarh.org/publications/data/humdrum/tonerow/files/berg/berg09.pc.krn
+        La serie de \textit{Schatzerl Klein}\footnote{\textit{http://www.ccarh.org/publications/data/humdrum/tonerow/files/webern/webern06.pc.krn}} es: 
+        \begin{footnotesize}
+        	$\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\0&11&5&8&10&9&3&4&1&7&2&6\\\end{matrix}\right)$	
+        \end{footnotesize}        
         
-        Der Wein (The Wine) (1929), Concert Aria for Soprano and Orchestra
-        
-        Alban Berg's concert aria Der Wein (1929) is a setting of three poems from Charles Baudelaire's ``Le Vin'' as translated into German by Stephan George: "Die Seele des Weines" (The Wine's Soul), "Der Wein der Liebenden" (The Wine of Lovers), "Der Wein des Einsamen" (The Wine of the Lonely One). The poems express not only the happiness and confidence (real or imagined) of those who enjoy wine's restorative powers, but also wine's celebration of itself as a giver of strength to the weak, pride to the poor, and inspiration to poets.
-        
-        Appropriately, Berg's setting is lush, evoking earthly sensations through the use of jazz elements and tango rhythms in the manner so popular in Europe in the 1920s. (Compare, for example, the contemporaneous music of Kurt Weill and Paul Hindemith.) The principal twelve-tone row Berg fashioned for Der Wein lends itself to the construction of diatonic sonorities: the first six pitches comprise most of a D minor scale, while of the row's remaining six, five are part of a G flat major scale. Few of Berg's works place as apparent an emphasis on symmetry as does Der Wein. There are no breaks between the poems, and the two outer songs provide the exposition and recapitulation of a sonata-form movement. ``Die Seele des Weines'' consists of an orchestral introduction, first and second theme groups with a transition, and closing material. All of this music, albeit abbreviated, returns in "Der Wien des Einsamen" in the same order and is followed by a coda. Where a traditional development section might be expected, Berg instead interpolates the scherzo-like "Der Wein der Liebenden." This middle song itself falls into three sections, the third of which is a retrograde of the second. Extended palindromes of this sort reappear in Berg's opera Lulu (1935), notably in the film music of Act II.
-        
-        Der Wein was commissioned by Ruzena Herlinger, who gave the first performance of the work in Frankfurt on June 4, 1930.
-        
-        \subsection{WEBERN: \textit{Variations}, OP. 27}     
-        
-        WEBERN: OP. 27--VARIATIONS FOR PIANO
-        
-        {3,B,A,2,1,0,6,4,7,5,9,8}
-        
-        \subsection{WEBERN: \textit{3 Lieder}, OP. 18}
-        
-        WEBERN: OP. 18, NO. 1, "SCHATZERL KLEIN"
-        
-        {0,B,5,8,A,9,3,4,1,7,2,6}
-        
-        WEBERN: OP. 18, NO. 2, "ERLOSUNG"
-        
-        {6,9,5,8,4,7,3,B,2,A,1,0}
-        
-        WEBERN: OP. 18, NO. 3, "AVE, REGINA COELORUM"
-        
-        {4,3,7,6,5,B,A,2,1,0,9,8}
+        La serie de \textit{Erlosung}\footnote{\textit{http://www.ccarh.org/publications/data/humdrum/tonerow/files/webern/webern07.pc.krn}} es: 
+        \begin{footnotesize}
+        	$\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\6&9&5&8&4&7&3&11&2&10&1&0\\\end{matrix}\right)$	
+        \end{footnotesize}
+    
+        La serie de \textit{Ave, Regina Coelorum}\footnote{\textit{http://www.ccarh.org/publications/data/humdrum/tonerow/files/webern/webern08.pc.krn}} es: 
+        \begin{footnotesize}
+        	$\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\4&3&7&6&5&11&10&2&1&0&9&8\\\end{matrix}\right)$	
+        \end{footnotesize}

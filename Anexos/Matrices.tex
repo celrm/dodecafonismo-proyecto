@@ -1,0 +1,104 @@
+	\chapter{Código para el cálculo de matrices dodecafónicas.}
+	\label{app:codigo}
+		
+	\lstset{
+		tabsize=3,
+		language=C++,
+		frame=lines,
+		numbers=left,
+		identifierstyle=\color{magenta},
+%			
+%		numberstyle=\tiny,
+		numberstyle=\ttfamily\tiny\color[gray]{0.3},		
+%		basicstyle=\footnotesize,
+		basicstyle=\small\sffamily,
+%		keywordstyle=\color[rgb]{0,0,1},
+		keywordstyle=\bfseries\rmfamily,
+%		commentstyle=\color[rgb]{0.09, 0.45, 0.27},
+		commentstyle=\it,
+%		stringstyle=\color{red}
+		stringstyle=\mdseries\rmfamily,
+%		
+		xleftmargin=2pt,
+		stepnumber=1,
+		numbersep=5pt,
+		belowcaptionskip=\bigskipamount,
+		captionpos=b,
+		escapeinside={*'}{'*},
+		emphstyle={\bf},
+		showspaces=false,
+		columns=flexible,
+		showstringspaces=false,
+	}
+		
+		\newpage
+		\begin{lstlisting}
+	#include <iostream>
+	using namespace std;
+	
+	const int N = 12;
+	
+	int main() {
+	
+		int s[N + 3][N + 2];
+	
+		for (int i = 1; i < N + 1; ++i) {
+			cin >> s[1][i];
+			s[i][0] = (N - s[1][i] + s[1][1]) % N;
+			s[i][N + 1] = s[i][0];
+			s[0][i] = (N - s[i][0]) % N;
+			s[N + 1][i] = s[0][i];
+			s[N + 2][i] = (N + s[0][i] + 2 * (s[1][N] - s[1][1])) % N;
+		}
+	
+		for (int i = 2; i < N + 1; ++i) {
+			for (int j = 1; j < N + 1; ++j) {
+				s[i][j] = (s[1][j] + s[i][0]) % N;
+			}
+		}
+	
+		cout << "\n$$\\begin{array}{l|";
+		
+		for (int i = 0; i < N; ++i) {
+			cout << 'c';
+		}
+		
+		cout << "|r}&";
+	
+		for (int i = 1; i < N + 1; ++i){
+			cout << "\\text{I}_{" << s[0][i] << "}&";
+		}
+		
+		cout << "\\\\\\hline";
+	
+		for (int i = 1; i < N + 1; ++i) {
+			cout << "\\text{T}_{" << s[i][0] << "}&";
+			
+			for (int j = 1; j < N + 1; ++j) {
+				cout << s[i][j] << "&";
+			}
+			
+			cout << "\\text{R}_{" << s[i][N + 1] << "}\\\\";
+		}
+	
+		cout << "\\hline&";
+		
+		for (int i = 1; i < N + 1; ++i) {
+			cout << "\\text{IR}_{" << s[N + 1][i] << "}&";
+		}
+	
+		cout << "\\\\\\hline&";
+		
+		for (int i = 1; i < N + 1; ++i) {
+			cout << "\\text{RI}_{" << s[N + 2][i] << "}&";
+		}
+	
+		cout << "\\end{array}$$\n";
+	
+		system("PAUSE");
+	
+		return 0;
+	}
+
+
+	\end{lstlisting}
