@@ -1,5 +1,5 @@
 	\chapter{CONTEO DE ESPECTROS SERIALES}
-	\section{ESPECTROS DE LAS FUNCIONES \{I, T, R\}}
+	\section{Espectros de las funciones \{I, T, R\}}
 		\label{espec}		
 		
 		\begin{wrapfigure}{R}{0.25\textwidth}
@@ -36,7 +36,7 @@
 		
 		Así, $\sigma(m)$ sería constante para todo $m\in \mathbb{Z} / (n)$, lo cual es imposible. Esto implica que ninguna permutación va a tener a I en su estabilizador, por lo que $\#\sigma_4=0$. Queda entonces calcular cuántas permutaciones son equivalentes a su retrogradación y cuántas a su retrogradación inversa. La suma de ambas dará $\#\sigma_2$.
 	
-	\subsection{ELEMENTOS ESTABLES MEDIANTE R}
+	\subsection{Elementos estables mediante R}
 		Las permutaciones que coinciden con alguna transposición de su retrogradación cumplen, para $\gamma$ constante:
 		$$\gamma+\sigma(m)=\text{R}(\sigma(m))=\sigma(-1-m)$$
 		Aplicándolo a $(-1-m)$: $\qquad\gamma+\sigma(-1-m)=\sigma(-1-(-1-m))=\sigma(m)$
@@ -49,7 +49,7 @@
 		En una serie de longitud $n$, existen $\frac{n}{2}$ intervalos que miden $\frac{n}{2}$. Como no importa por cuál de ellos comience la serie, ya que las transportaciones son equivalentes, se fija el primero de los intervalos. Quedan los otros $\frac{n}{2}-1$ intervalos por escoger, así que el número de series con simetría par cuenta las permutaciones de $\frac{n}{2}-1$ intervalos y las dos posibles posiciones de cada intervalo -- creciente y decreciente --. \cite{reiner} Por ello, el número de series con simetría par es de:
 		$$2! \cdot \left(\frac{n}{2}-1\right)! = 2\left(\frac{n-2}{2}\right)!=(n-2)(n-4)\ldots=(n-2)!!\ \footnote{Por definición, si $n$ es par $n!!=n(n-2)(n-4)\ldots4\cdot2$ y si $n$ es impar $n!!=n(n-2)(n-4)\ldots3\cdot1$.}$$
 
-	\subsection{ELEMENTOS ESTABLES MEDIANTE RI}
+	\subsection{Elementos estables mediante RI}
 		Las permutaciones que coinciden con alguna transposición de su retrogradación inversa cumplen, para un $\gamma$ constante:
 		$$\sigma(m)=\text{RI}(\sigma(m))+\gamma=-\sigma(-1-m)+\gamma$$
 		$$\gamma=\sigma(m)+\sigma(-1-m)$$
@@ -68,7 +68,7 @@
 		$$=\frac{n}{2}\cdot(n-2)(n-4)\ldots(n-(n-4))(n-(n-2))=$$
 		$$=\frac{n}{2}\cdot(n-2)(n-4)\ldots4\cdot2=\frac{n}{2}\cdot(n-2)!!$$
 			\newpage
-	\subsection*{SUMA COMPLETA}
+	\subsection*{Suma completa}
 		Como ya se ha podido observar, el número de espectros seriales varía según la paridad de la longitud de las series.		
 		\def\arraystretch{1.5}
 		$$\begin{array}{c|c|c|c|c}
@@ -97,7 +97,7 @@
 		
 		Así, con la fórmula para $n$ impar, se obtiene que hay 192 espectros seriales con series de longitud 7.
 	
-	\section[ESPECTROS DEL GRUPO D$_{n}$ x D$_{n}$]{ESPECTROS DEL GRUPO D$_{\textbf{\textit{n}}}$ x D$_{\textbf{\textit{n}}}$}
+	\section[Espectros del grupo D$_{n}$ x D$_{n}$]{Espectros del grupo D$_{\textbf{\textit{n}}}$ x D$_{\textbf{\textit{n}}}$}
 	
 		\begin{wrapfigure}{L}{0.25\textwidth}
 			\vspace{-0.5cm}
@@ -117,7 +117,7 @@
 		En vez de expresar el sumatorio como ``para cada $\sigma$, el número de $\Psi$ que fijan $\sigma$'', se puede expresar como ``para cada $\Psi$, el número de $\sigma$ fijados por $\Psi$''. La fórmula queda de esta manera:
 		$\#\text{Spec}=\frac{1}{4n^2}\sum_{\Psi\in\text{D}_{n}\times\text{D}_{n}}\text{Fij}(\Psi)$. Ahora hay que averiguar para cada elemento de $\text{D}_{n}\times\text{D}_{n}$ cuántas series estabiliza. Por ejemplo, trivialmente no hay permutaciones estables mediante C y R solamente.
 		
-		\subsection{ELEMENTOS ESTABLES MEDIANTE T}
+		\subsection{Elementos estables mediante T}
 		
 		Los elementos estables mediante T$^\text{k}$ son a los que se aplica una rotación de $\uptheta_\text{k}=\frac{2\pi\text{k}}{n}$, para $1\leq\text{k}\leq n$, y quedan igual. Por tanto, los sumandos que aportan a la suma total son $\sum_{\text{k}=1}^{n}\text{Fij}(\uptheta_\text{k})$.
 		
@@ -185,7 +185,7 @@
 		
 		Primero se escoge la diagonal de entre $\frac{n}{2}$ posibilidades, con lo que queda dividida en dos la figura. De cada pareja de puntos antipodales se escoge el que irá primero en la ronda de elección. Esa elección para cada pareja opuesta se da de de $2^{\frac{n}{2}}$ formas. Tras lo cual se ordenan esos primeros miembros entre sí, de $\frac{n}{2}!$ formas. Esto lleva a las $\frac{n}{2}\cdot2^{\frac{n}{2}}\cdot\frac{n}{2}!$ formas de dibujar un polígono con las características buscadas.		
 		
-		\subsection{ELEMENTOS ESTABLES MEDIANTE I}
+		\subsection{Elementos estables mediante I}
 		
 		Los elementos estables mediante I son aquellos que quedan invariantes mediante reflexiones. En este punto se ha de separar por paridad de $n$. 
 		
@@ -193,7 +193,7 @@
 		
 		Para $n$ par se tienen dos simetrías: con ejes que pasan por vértices y con ejes que pasan por lados. De manera similar a la anterior, se escoge el eje, el primer vértice, los primeros miembros de las parejas de vértices y se ordenan. Para las simetrías con ejes que pasan por vértices, da un resultado de  $\frac{n^2}{2}\cdot2^{\frac{n}{2}}\cdot\left(\frac{n}{2}-1\right)!$. Para las simetrías con ejes que pasan por lados, da un resultado de $\frac{n^2}{2}\cdot2^{\frac{n}{2}-1}\cdot\frac{n}{2}!$.
 		
-		\subsection*{SUMA COMPLETA}
+		\subsection*{Suma completa}
 		
 		En resumen, estos son los numeradores $\sum_{\Psi\in\text{D}_{n}\times\text{D}_{n}}\text{Fij}(\Psi)$. El resultado final del número de diagramas posibles, o espectros seriales distintos, es dicho numerador entre $4n^2$, el tamaño del grupo. \footnote{Este apartado es una explicación detallada del artículo \cite{polygons}. La secuencia de números dada por las fórmulas demostradas se encuentra en la OEIS: \textit{https://oeis.org/A000940}}		
 		\def\arraystretch{1.25}
@@ -214,7 +214,7 @@
 		\end{array}$$
 		\def\arraystretch{1}
 		
-	\section{MEDEFONISMO, MONOFONISMO Y DIFONISMO}
+	\section{Medefonismo, monofonismo y difonismo}
 	\label{monodi}
 		Con $n=0$ se da el caso de medefonismo. El grupo simétrico de orden 0 tiene $0!=1$ elemento. Por tanto, hay una sola posible serie, $\sigma$, que es la que no tiene ninguna nota. El medefonismo es comúnmente llamado silencio.
 		$$\sigma=\left(\begin{matrix}\\\end{matrix}\right)\hspace{3cm}\begin{array}{l||r}&\\\hline\hline&\\\hline&\end{array}$$

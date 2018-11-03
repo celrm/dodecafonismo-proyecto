@@ -1,12 +1,15 @@
 \chapter{INTRODUCCIÓN MATEMÁTICA}
-	\section{CONJUNTOS Y GRUPOS}
+	\section{Conjuntos y grupos}
 		La teoría de conjuntos es la rama de las matemáticas que estudia las propiedades y relaciones de los \emph{conjuntos}. En matemáticas, un conjunto es una colección de objetos bien definidos y distintos entre sí que se llaman \emph{elementos}.
 	
-		Se dice que un conjunto está bien definido cuando, dado un elemento cualquiera, éste o pertenece al conjunto o no pertenece a él. Para definir un conjunto se puede o bien listar los objetos uno a uno, o bien describirlos por medio de un predicado: una o varias propiedades que caracterizan a todos los elementos de dicho conjunto.
+		Para definir un conjunto se puede o bien listar los objetos uno a uno, o bien describirlos por medio de un predicado: una o varias propiedades que caracterizan a todos los elementos de dicho conjunto.
 
-		Por ejemplo, el conjunto K$_\text{i}$, formado por las doce notas de la escala cromática de una misma octava i, está bien definido porque podemos hacer una lista con ellas:	
+		Por ejemplo, el conjunto K$_\text{i}$, formado por las doce notas de la escala cromática de una misma octava i, está bien definido porque podemos hacer una lista con ellas:			
 		$$\text{K}_\text{4} = \{\text{Do}_\text{4}, \text{Do\#}_\text{4}, \text{Re}_\text{4}, \text{Re\#}_\text{4}, \text{Mi}_\text{4}, \text{Fa}_\text{4}, \text{Fa\#}_\text{4}, \text{Sol}_\text{4}, \text{Sol\#}_\text{4}, \text{La}_\text{4}, \text{La\#}_\text{4}, \text{Si}_\text{4}\}$$
-		Por un lado, aun llamando a las notas de distinta manera, el conjunto, conceptualmente, es el mismo. Además, el hecho de listar algún elemento más de una vez no afecta a su definición. Como $\text{Do\#}_\text{4} = \text{Re}\flat_\text{4}$,\footnote{En este texto se trabajará siempre con temperamento igual por convenio.}  $\text{K}_\text{4}$ también puede ser listado así:$$\text{K}_\text{4} = \{\text{Do}_\text{4}, \text{Do\#}_\text{4}, \text{Re}\flat_\text{4}, \text{Re}_\text{4}, \text{Re\#}_\text{4}, \text{Mi}_\text{4}, \text{Fa}_\text{4}, \text{Fa\#}_\text{4}, \text{Sol}_\text{4}, \text{Sol\#}_\text{4}, \text{La}_\text{4}, \text{La\#}_\text{4}, \text{Si}_\text{4}\}$$
+		
+		Por un lado, aun llamando a las notas de distinta manera, el conjunto, conceptualmente, es el mismo. Además, el hecho de listar algún elemento más de una vez no afecta a su definición. Como $\text{Do\#}_\text{4} = \text{Re}\flat_\text{4}$,\footnote{En este texto se trabajará siempre con temperamento igual por convenio.}  $\text{K}_\text{4}$ también puede ser listado así:
+		$$\text{K}_\text{4} = \{\text{Do}_\text{4}, \text{Do\#}_\text{4}, \text{Re}\flat_\text{4}, \text{Re}_\text{4}, \text{Re\#}_\text{4}, \text{Mi}_\text{4}, \text{Fa}_\text{4}, \text{Fa\#}_\text{4}, \text{Sol}_\text{4}, \text{Sol\#}_\text{4}, \text{La}_\text{4}, \text{La\#}_\text{4}, \text{Si}_\text{4}\}$$
+		
 		En cambio, el conjunto D, formado por las duraciones rítmicas elementales -- sin ligaduras ni puntillos --, es infinito, por lo que no se puede listar de forma completa. Sin embargo, se puede expresar por medio de un predicado:
 		$$\text{D} =\{2^n:n\in\mathbb{Z},\ n\le 2\} = \{4,\ 2,\ 1,\ \frac{1}{2},\ \frac{1}{4},\ \frac{1}{8},\ \ldots\} = \{\fullnote,\ \halfnote,\ \quarternote,\ \eighthnote,\ \ldots\}$$
 	
@@ -14,29 +17,29 @@
 	
 		\begin{enumerate}
 			\item{Su operación es interna: Si $a$ y $b$ pertenecen a X, $a\ast b$ pertenece a X.}		\item{Su operación es asociativa: Si $a$, $b$ y $c$ pertenecen a X, $(a\ast b)\ast c=a\ast(b\ast c)$. }
-			\item{Existe un elemento $e$ en X, llamado elemento identidad, tal que para todo $a$ que pertenece a X se cumple que $e\ast a = a\ast e = a$. Se puede probar que el elemento identidad es único para cada grupo.}
-			\item{Cada elemento $a$ perteneciente a X tiene asociado otro elemento $a^{-1}$ en X, llamado elemento inverso, tal que $a \ast a^{-1} = a^{-1}  \ast a = e$. Se puede probar que el elemento inverso de cada elemento es único.}		
+			\item{Existe un elemento $e$ en X, llamado elemento neutro o identidad, tal que para todo $x$ que pertenece a X se cumple que $e\ast x = x\ast e = x$. Se puede probar que el elemento identidad es único para cada grupo.}
+			\item{Cada elemento $x$ perteneciente a X tiene asociado otro elemento $x^{-1}$ en X, llamado elemento inverso, tal que $x \ast x^{-1} = x^{-1}  \ast x = e$. Se puede probar que el elemento inverso de cada elemento es único.}		
 		\end{enumerate}
 	
-	\section{FUNCIONES Y PERMUTACIONES}
-		Una \emph{función} es una regla que asocia a cada elemento de un primer conjunto, llamado \emph{dominio}, un único elemento de un segundo conjunto, llamado \emph{codominio}. Si la función se llama $f$, el dominio A y el codominio B, se denota $f:\text{A}\to \text{B}$. El elemento asociado a un $x$ mediante $f$ se denota $f(x)$.
+	\section{Funciones y permutaciones}
+		Una \emph{función} es una regla que asocia a cada elemento de un primer conjunto, llamado \emph{dominio}, un único elemento de un segundo conjunto. Si la función se llama $f$, el dominio A y el segundo conjunto B, se denota $f:\text{A}\to \text{B}$. El elemento asociado a un $x$ mediante $f$ se denota $f(x)$.
 		
 		Todos los $x\in$ A tienen que estar asociados a un $f(x)\in$ B, pero no todos los elementos de B tienen un elemento de A asociado. Los elementos de B que sí lo cumplen, es decir, los que se pueden escribir como $f(x)$ para algún $x$, forman el conjunto \emph{imagen} de la función: $im(f)=\{\ y\in \text{B}:\ \exists\ x \in \text{A},\ f(x)=y\ \}$
 		
-		Cuando varias funciones se aplican una detrás de la otra decimos que realizamos la operación de composición de funciones. Se representa con el símbolo $\circ$. La imagen de la primera función será el dominio de la segunda, y así sucesivamente. Por ejemplo, aplicar una función $f(x)$ y después aplicar una función $g(x)$ se denota $g(f(x))=(g\circ f)(x)$.
+		Cuando varias funciones se aplican una detrás de la otra decimos que realizamos la operación de \textit{composición de funciones}. Se representa con el símbolo $\circ$. La imagen de la primera función será el dominio de la segunda, y así sucesivamente. Por ejemplo, aplicar una función $f(x)$ y después aplicar una función $g(x)$ se denota $g(f(x))=(g\circ f)(x)$.
 		
-		Una \emph{permutación} $\sigma$(X) es una función sobre un conjunto X que asocia sus elementos biyectivamente a los elementos del mismo conjunto X. Es decir, asocia cada elemento a uno, y solo uno, de los elementos de su mismo conjunto ($\sigma:\text{X}\to \text{X}$). \cite{armstrong}
+		Una \emph{permutación} $\sigma$(X) es una función sobre un conjunto X que asocia sus elementos a los elementos del mismo conjunto X de manera unívoca. Es decir, asocia cada elemento a uno, y solo uno, de los elementos de su mismo conjunto ($\sigma:\text{X}\to \text{X}$).
 
 		El conjunto de todas las posibles permutaciones sobre un determinado conjunto X, junto con la operación de composición de funciones ($\circ$), forma un grupo denotado por S$_\text{x}$. Para probarlo, se debe comprobar que cumple todas las propiedades de los grupos.
 
 		\begin{enumerate}
 			\item{Permutar dos veces es también una permutación.}
 			\item{La composición de funciones es asociativa.}
-			\item{La permutación que asigna un elemento a sí mismo es la identidad.}
+			\item{La permutación que asigna un elemento a sí mismo es la función identidad.}
 			\item{Como las permutaciones son biyectivas, cada una tiene una inversa que es también una permutación.}		
 		\end{enumerate}
 
-		Cuando X es el conjunto de números naturales desde 1 hasta $n$, $\text{X} = \{ \text{a} \in \mathbb{N}$ : $1\le \text{a}\le n\} = \{ 1,\ 2,\ 3,\ \ldots,\ n-1,\ n\}$, el grupo S$_\text{x}$ se representa como S$_n$ y se le denomina el grupo simétrico de orden $n$. El número de elementos en S$_n$, es decir, de posibles permutaciones de $n$ números, es $n!$. 
+		Cuando X es el conjunto de números naturales desde 1 hasta $n$, el grupo S$_\text{x}$ se representa como S$_n$ y se le denomina el grupo simétrico de orden $n$. El número de elementos en S$_n$, es decir, de posibles permutaciones de $n$ números, es $n!$. 
 		
 		En los ejemplos musicales de este texto, los conjuntos estarán numerados desde 0 hasta $n-1$, siendo $n$ el número de elementos a permutar, en vez de desde 1 hasta $n$. Seguirán siendo grupos simétricos de orden $n$, pero con una numeración distinta.
 		

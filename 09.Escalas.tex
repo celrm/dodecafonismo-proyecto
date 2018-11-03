@@ -1,7 +1,7 @@
 	\chapter{ESCALAS Y OBRAS DEL EXPERIMENTO}
     % 09.Obras y escalas a utilizar y su estudio: por qué suena mal la hexafónica.	
 		
-	\section{ESCALAS INTERVÁLICAS, ESCALAS Y FUNCIONES}
+	\section{Escalas interválicas, escalas y funciones}
 	
 		Una \textit{escala interválica} es una secuencia ordenada de números naturales -- una secuencia de intervalos entre notas -- tales que la suma de todos ellos da 12. Así solo se consideran válidas las escalas equivalentes octava a octava: todos los intervalos de la escala deben sumar el número de semitonos de una octava. Por ejemplo, la escala diatónica jónica (o escala mayor) tiene como secuencia (2, 2, 1, 2, 2, 2, 1).
 		
@@ -24,7 +24,7 @@
 		
 		¿Cuáles serán las características de esas funciones óptimas? Deben conservar la estructura serial y deben conservar el parecido con la melodía original.
 		
-	\section{FUNCIONES BIEN DISTRIBUIDAS}
+	\section{Funciones bien distribuidas}
 		
 		La mayor prioridad es conservar la estructura serial de las piezas; por tanto, todas las notas deben aparecer con la menor frecuencia posible, y se debe evitar jerarquías entre las notas en la medida de lo posible. Si $|\text{E}|<12$, $f$ no puede ser inyectiva, por lo que va a haber elementos repetidos en la imagen. Queremos la $f$ que mejor distribuya esas repeticiones, que distribuya las notas de E a lo largo de la escala cromática.
 		
@@ -76,7 +76,7 @@
 		\end{array}$$
 		
 		
-	\section{MÁS REQUISITOS DE LAS FUNCIONES E-INDUCIDAS}
+	\section{Más requisitos de las funciones E-inducidas}
 		
 		Hay que pedir más requisitos a $f$ para que no solo modifique las notas, sino que además las imágenes se parezcan lo máximo posible a sus preimágenes, a las notas originales.
 		
@@ -101,7 +101,7 @@
 		
 		En el Anexo \ref{app:function}, página \pageref{app:function}, se encuentra el código en Haskell de un programa que, dado una escala, produce su función inducida óptima con las propiedades descritas anteriormente. También puede encontrarse en \textit{https://gitlab.com/dodecafonismo/f-inducida}
 		
-	\section{ESCALAS Y OBRAS UTILIZADAS}
+	\section{Escalas y obras utilizadas}
 	
 		Las escalas escogidas para este experimento son cuatro escalas de distintos tamaños y sonoridades; desde el sonido oriental hasta el occidental clásico, pasando por el jazz moderno y el impresionismo.
 		
@@ -139,7 +139,7 @@
         
         Por último, el hecho de que cada nota tenga su propia dinámica, su propia articulación o su propio timbre hace de las obras serialistas integrales que sean difíciles de manipular. Además, como los audios están hechos mediante ordenador y no con intérpretes reales, la calidad y la intención musical de estas partituras tan complicadas nunca podrían plasmarse a la perfección.
         
-        \subsection*{SCHOENBERG: \textit{Suite para piano}, OP. 25}
+        \subsection*{Schoenberg: \textit{Suite para piano}, OP. 25}
         La primera obra que pasará por el algoritmo de modificación serial es la Suite para piano de Schoenberg, ya comentada en el capítulo \ref{suitechapter}. En dicha sección se estudió su serie principal, la estructura general de la obra y su razón de ser, así como su tercer movimiento en profundidad.
         
         Su serie original\footnote{\textit{http://www.ccarh.org/publications/data/humdrum/tonerow/files/schoenberg/schoenberg04.pc.krn}} es: 
@@ -148,7 +148,7 @@
         \end{footnotesize}
         
         
-        \subsection*{BERG: \textit{Lied der Lulu}}
+        \subsection*{Berg: \textit{Lied der Lulu}}
         La gran calidad emocional de la música de Alban Berg se refleja en esta segunda obra: es una de las arias más destacadas de su segunda ópera, \textit{Lulu}. El libreto de la obra está basado en dos tragedias de Frank Wedekind: ``El espíritu de la tierra'' y ``La Caja de Pandora''. 
                 
         Su serie original\footnote{\textit{http://www.ccarh.org/publications/data/humdrum/tonerow/files/berg/berg10.pc.krn}} es:
@@ -157,7 +157,7 @@
         \end{footnotesize}        
         
         
-        \subsection*{BERG: \textit{Der Wein}}
+        \subsection*{Berg: \textit{Der Wein}}
         
         \textit{Der Wein} (El vino) es un Aria Concierto para soprano y orquesta, compuesto en 1929. La letra es una traducción al alemán de los tres poemas de Charles Baudelaire ``\textit{Le Vin}''. Son una celebración del vino y de la felicidad y confianza de aquellos que lo disfrutan, así como de la fuerza, orgullo e inspiración que éste provee.
         
@@ -168,14 +168,14 @@
         	$\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\2&4&5&7&9&10&1&6&8&0&11&3\\\end{matrix}\right)$	
         \end{footnotesize}
         
-        \subsection*{WEBERN: \textit{Variations}, OP. 27}     
+        \subsection*{Webern: \textit{Variations}, OP. 27}     
         
         Su serie original\footnote{\textit{http://www.ccarh.org/publications/data/humdrum/tonerow/files/webern/webern17.pc.krn}} es: 
         \begin{footnotesize}
         	$\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\3&11&10&2&1&0&6&4&7&5&9&8\\\end{matrix}\right)$	
         \end{footnotesize}
         
-        \subsection*{WEBERN: \textit{3 Lieder}, OP. 18}
+        \subsection*{Webern: \textit{3 Lieder}, OP. 18}
         
         La serie de \textit{Schatzerl Klein}\footnote{\textit{http://www.ccarh.org/publications/data/humdrum/tonerow/files/webern/webern06.pc.krn}} es: 
         \begin{footnotesize}

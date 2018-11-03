@@ -1,5 +1,5 @@
 	\chapter{MÁS HERRAMIENTAS MATEMÁTICAS}	
-	\section{ACCIÓN DE UN GRUPO SOBRE UN CONJUNTO}
+	\section{Acción de un grupo sobre un conjunto}
 		Dado un grupo (G, $*$) y un conjunto X, la \emph{acción} de (G, $*$) sobre X es una función $\phi$ que asocia un elemento $g \in$ G y un elemento $x \in$ X -- el par ($g$, $x$) -- a otro elemento $g\cdot x$ que también pertenece a X \cite{armstrong}. $\ \ \phi :(g,x) \to g\cdot x$
 	
 		La acción $\phi$, expresada mediante la operación ($\cdot$), debe cumplir dos condiciones:
@@ -12,7 +12,7 @@
 		
 		De igual manera, se puede definir el grupo que forman solamente S y V, que servirá más adelante. Como son dos reflexiones, forman el conocido grupo de Klein -- a partir de ahora denotado por $\Xi$, con elementos Id, I, R e IR.
 
-	\section{ÓRBITAS Y ESTABILIZADORES}	
+	\section{Órbitas y estabilizadores}	
 		Dada una acción de (G, $*$) sobre X, la \emph{órbita} de un determinado elemento $x_0\in$ X es el subconjunto de elementos $x$ de X que pueden ser alcanzados desde $x_0$ mediante algún $g_0\in$ G. Es decir, todos los $x$ para los que existe un $g_0$ que al actuar sobre $x_0$ da $x$. Trivialmente, $x_0\in Orb(x_0)$ ya que $e\cdot x_0=x_0$.
 		$$Orb(x_0)=\{x\in X :\ \exists \ g_0\in \text{G},\ g_0\cdot x_0 =x\}$$
 	
@@ -31,7 +31,7 @@
 		\def\arraystretch{1}
 		Una serie $\sigma$ sin simetrías tendrá una serie distinta para cada una de sus transformaciones. Por tanto, su órbita será \{$\sigma$, R($\sigma$), I($\sigma$), RI($\sigma$)\} y su estabilizador será solamente \{Id\}. Cumple entonces el teorema: $4\cdot 1 = 4$.
 	
-	\section{EL LEMA DE BURNSIDE}
+	\section{El lema de Burnside}
 		\label{burnside}
 		Las órbitas, que son subconjuntos de X, forman una \emph{partición} de X. Esto significa que son subconjuntos disjuntos: ningún $x$ puede estar en dos órbitas distintas. Interesa entonces saber cuántos subconjuntos hay; es decir, el número de órbitas ($\#Orb$). El lema de Burnside\footnote{Aunque Burnside demostró este lema en una ocasión, citó a Frobenius como su autor. Sin embargo, Cauchy era conocedor del lema décadas antes. Para no confundirlo con otros lemas que sí son de Burnside, a veces se le llama \emph{el lema que no es de Burnside.}} afirma que se pueden calcular así:
 		$$\#Orb=\frac{1}{|\text{G}|}\sum_{x\in\text{X}}|\text{Stab}(x)|$$	

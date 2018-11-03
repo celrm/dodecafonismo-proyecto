@@ -1,5 +1,5 @@
 \chapter[EL SISTEMA DODECAFÓNICO DE SCHOENBERG]{EL SISTEMA DODECAFÓ- NICO DE SCHOENBERG}
-	\section{LOS POSTULADOS DEL DODECAFONISMO}
+	\section{Los postulados del dodecafonismo}
 		El dodecafonismo es un sistema compositivo que predetermina la melodía y la armonía a partir de una ordenación de las doce notas de la escala cromática, que se llama \textit{serie}. Ésta y algunas de sus transformaciones son los ladrillos con los que se construye la obra: se deben colocar una detrás de otra. Son, por tanto, el único material que se puede utilizar para determinar las alturas de las notas.
 		
 		El resto de elementos de la pieza, como el número de instrumentos, el ritmo, el carácter, la textura o las dinámicas, se dejan a discreción del compositor. No serializar todos los conjuntos será la principal crítica al dodecafonismo por parte de los compositores serialistas que sucedieron a Schoenberg: los compositores de serialismo integral de mediados del siglo XX, como Pierre Boulez (apartado \ref{boulez}). Para los serialistas integrales, aquello restaba cohesión al modelo compositivo; para los dodecafonistas, aportaba libertad.
@@ -28,11 +28,11 @@
 		
 		Los dos últimos postulados amplían los recursos compositivos al admitir la transformación de la serie original mediante \emph{inversión}, \emph{retrogradación}, \emph{inversión retrógrada} y \emph{transposición}\footnote{No confundir con un 2-ciclo. Una transposición musical se corresponde con una traslación matemática.}. El compositor puede utilizar cualquiera de las transformaciones de una serie al componer su obra dodecafónica. El conjunto de series que puede utilizar, que viene dado por la serie original y todas sus posibles transformaciones, se conoce como \emph{espectro serial}.
 		
-	\section{LAS TRANSFORMACIONES DE UNA SERIE}
+	\section{Las transformaciones de una serie}
 		\label{transPsi}
 		Transformar una serie es matemáticamente equivalente a aplicar una función sobre la serie que asocie su permutación a la permutación transformada. Por tanto, cualquier función transformativa $\Psi$ se aplica sobre el conjunto de las permutaciones: S$_{12}$, el grupo simétrico de orden 12 ($\Psi:\text{S}_{12}\rightarrow\text{S}_{12}$).
 		
-	\subsection{TRANSPOSICIONES}
+	\subsection{Transposiciones}
 		La \emph{transposición}, mencionada en el cuarto postulado, consiste en subir o bajar la serie original un número determinado de semitonos. Por tanto, no se modifican los intervalos entre las notas, sino solamente la altura a la que está la serie. Ya que consideraremos todas las octavas equivalentes, debemos trabajar módulo 12. 
 		
 		La serie transportada k semitonos, T$^\text{k}\left(\sigma\right)$, se construye sumando k a $\sigma$ (mod. 12):
@@ -51,7 +51,7 @@
 		$$\text{T}^6=\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\10&11&1&7&0&9&2&8&5&6&3&4\\\end{matrix}\right)$$	
 		\includegraphics[width=138mm]{2.png}
 		
-	\subsection{RETROGRADACIÓN}
+	\subsection{Retrogradación}
 		La \emph{retrogradación} consiste en leer la serie original desde la nota final hacia atrás, es decir, aplicar a la serie una simetría especular. De este modo, la primera nota irá al último puesto, la segunda al penúltimo, y así sucesivamente.
 		
 		La serie retrógrada se construye de esta forma:
@@ -63,7 +63,7 @@
 		$$\text{R}=\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\10&9&0&11&2&8&3&6&1&7&5&4\\\end{matrix}\right)$$		
 		\includegraphics[width=138mm]{3.png}
 		
-	\subsection{INVERSIÓN}
+	\subsection{Inversión}
 		La \emph{inversión} consiste en cambiar la dirección --de ascendente a descendente, y viceversa-- de los intervalos entre cada nota de la serie. Si el primer intervalo en la serie original $\sigma$ es de $+k$, el primer intervalo en la serie invertida I será de $-k$ (mod. 12), por lo que debemos cambiar el signo de $\sigma$ para construir I. Además, queremos que la primera nota de ambas series, I(0) y $\sigma$(0), coincidan, así que debemos transportar la serie $-\sigma$ un número $\lambda$ de semitonos para que esta condición se cumpla:
 		$$\text{I}(0)=-\sigma\left(0\right)+\lambda=\sigma\left(0\right)\implies \lambda=2\sigma(0)$$
 		Por tanto, la serie invertida se construye de esta forma:
