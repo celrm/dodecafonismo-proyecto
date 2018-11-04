@@ -1,6 +1,6 @@
 \chapter[EL SISTEMA DODECAFÓNICO DE SCHOENBERG]{EL SISTEMA DODECAFÓ- NICO DE SCHOENBERG}
 	\section{Los postulados del dodecafonismo}
-		El dodecafonismo es un sistema compositivo que predetermina la melodía y la armonía a partir de una ordenación de las doce notas de la escala cromática, que se llama \textit{serie}. Ésta y algunas de sus transformaciones son los ladrillos con los que se construye la obra: se deben colocar una detrás de otra. Son, por tanto, el único material que se puede utilizar para determinar las alturas de las notas.
+		El dodecafonismo es un sistema compositivo que predetermina la melodía y la armonía a partir de una ordenación de las doce notas de la escala cromática, que se llama \textit{serie}. Ésta y algunas de sus transformaciones son los ladrillos con los que se construyen las alturas de las notas; son el único material que se puede utilizar.
 		
 		El resto de elementos de la pieza, como el número de instrumentos, el ritmo, el carácter, la textura o las dinámicas, se dejan a discreción del compositor. No serializar todos los conjuntos será la principal crítica al dodecafonismo por parte de los compositores serialistas que sucedieron a Schoenberg: los compositores de serialismo integral de mediados del siglo XX, como Pierre Boulez (apartado \ref{boulez}). Para los serialistas integrales, aquello restaba cohesión al modelo compositivo; para los dodecafonistas, aportaba libertad.
 		
@@ -13,12 +13,14 @@
 		\emph{2. Ninguna nota aparece más de una vez en la serie.}
 		
 		Los dos primeros postulados expresan que una obra dodecafónica fundamenta su estructura sobre una permutación de la escala de doce semitonos. Dicha permutación $\sigma$ es una biyección del conjunto numerado de las doce notas \{Do = 0, Do\# = 1, Re = 2, Re\# = 3, Mi = 4, Fa = 5, F\# = 6, Sol = 7, Sol\# = 8, La = 9, La\# = 10, Si = 11\} consigo mismo, y se representa de esta forma:
+		
 		\begin{footnotesize}
 			$$
 			\sigma=\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\\sigma(0)&\sigma(1)&\sigma(2)&\sigma(3)&\sigma(4)&\sigma(5)&\sigma(6)&\sigma(7)&\sigma(8)&\sigma(9)&\sigma(10)&\sigma(11)\\\end{matrix}\right)
 			$$
 		\end{footnotesize}	
-		La permutación $\sigma(m)$, con $m\in \mathbb{Z} / (12)$\footnote{$\mathbb{Z} / (12)=\{0,\ 1,\ 2,\ 3,\ 4,\ 5,\ 6,\ 7,\ 8,\ 9,\ 10,\ 11\}$, el grupo cíclico de orden 12.}, pertenece al grupo simétrico de orden 12: $\sigma\in$ S$_{12}$. Por ejemplo, en la Suite para piano Op. 25 Schoenberg utiliza como serie original en todos los movimientos de la obra la siguiente permutación $\sigma$:
+	
+		La permutación $\sigma(m)$, con $m\in \mathbb{Z} / (12)$\footnote{$\mathbb{Z} / (12)=\{0,\ 1,\ 2,\ 3,\ 4,\ 5,\ 6,\ 7,\ 8,\ 9,\ 10,\ 11\}$}, pertenece al grupo simétrico de orden 12: $\sigma\in$ S$_{12}$. Por ejemplo, en la Suite para piano Op. 25 Schoenberg utiliza como serie original en todos los movimientos de la obra la siguiente permutación $\sigma$:
 		$$\sigma=\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\4&5&7&1&6&3&8&2&11&0&9&10\\\end{matrix}\right)$$	
 		\includegraphics[width=138mm]{1.png}
 		
@@ -43,9 +45,9 @@
 		\text{T}^\text{k}=\left(\begin{matrix}0&1&2&&9&10&11\\\sigma\left(0\right)+\text{k}&\sigma\left(1\right)+\text{k}&\sigma\left(2\right)+\text{k}&\cdots&\sigma\left(9\right)+\text{k}&\sigma\left(10\right)+\text{k}&\sigma\left(11\right)+\text{k}\\\end{matrix}\right)
 		$$
 		
-		A su vez, T$^\text{k}$ se forma al componer k transposiciones de 1 semitono, T$^1$: $\text{T}^\text{k}=\text{T}^1\circ\text{T}^1\circ\ldots\circ\text{T}^1$, k veces. Debido a que k es en realidad el exponente en la potencia de T, se coloca este número como superíndice.
+		A su vez, T$^\text{k}$ se forma al componer k transposiciones de 1 semitono: $\text{T}^\text{k}=\text{T}^1\circ\text{T}^1\circ\ldots\circ\text{T}^1$, k veces. Debido a que k es en realidad el exponente en la potencia de T, se coloca este número como superíndice.
 		
-		Históricamente, la notación $\Psi_\text{k}$, $\Psi^\text{k}$ o $\Psi(\text{k})$ se ha usado en sustitución de la composición de la transposición T$^\text{k}$ y otra función $\Psi$, en el respectivo orden: $\Psi^\text{k}=\Psi \circ \text{T}^\text{k} = \Psi(\text{T}^\text{k})$. Sin embargo, esta notación es especialmente ambigua y confusa. Por ello, es preferible ceñirse a la notación estrictamente matemática; es decir, a la composición de funciones, aun omitiendo el símbolo $\circ$.
+		Históricamente, la notación $\Psi_\text{k}$, $\Psi^\text{k}$ o $\Psi(\text{k})$ se ha usado en sustitución de la composición de la transposición T$^\text{k}$ y otra función $\Psi$, en el respectivo orden: $\Psi^\text{k}=\Psi \circ \text{T}^\text{k} = \Psi(\text{T}^\text{k})$. Sin embargo, esta notación es especialmente ambigua y confusa. Por ello, es preferible ceñirse a la notación estrictamente matemática; es decir, a la composición de funciones, aun omitiendo $\circ$: \cancel{$\Psi_\text{k}$}, \cancel{$\Psi^\text{k}$}, \cancel{$\Psi(\text{k})$} $\rightarrow \Psi\text{T}^\text{k}$
 		
 		Una posible serie transportada sobre la permutación $\sigma$ de la Suite para piano Op. 25, con k $= 6$, es la siguiente serie T$^6$:
 		$$\text{T}^6=\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\10&11&1&7&0&9&2&8&5&6&3&4\\\end{matrix}\right)$$	
@@ -64,7 +66,7 @@
 		\includegraphics[width=138mm]{3.png}
 		
 	\subsection{Inversión}
-		La \emph{inversión} consiste en cambiar la dirección --de ascendente a descendente, y viceversa-- de los intervalos entre cada nota de la serie. Si el primer intervalo en la serie original $\sigma$ es de $+k$, el primer intervalo en la serie invertida I será de $-k$ (mod. 12), por lo que debemos cambiar el signo de $\sigma$ para construir I. Además, queremos que la primera nota de ambas series, I(0) y $\sigma$(0), coincidan, así que debemos transportar la serie $-\sigma$ un número $\lambda$ de semitonos para que esta condición se cumpla:
+		La \emph{inversión} consiste en cambiar la dirección --de ascendente a descendente, y viceversa-- de los intervalos entre cada nota de la serie. Si el primer intervalo en la serie original $\sigma$ es de $+k$, el primer intervalo en la serie invertida I será de $-k$ (mod. 12), por lo que debemos cambiar el signo de $\sigma$ para construir I. Además, queremos que la primera nota de ambas series, I(0) y $\sigma$(0), coincidan, así que debemos transportar la serie ($-\sigma$) un número $\lambda$ de semitonos para que esta condición se cumpla:
 		$$\text{I}(0)=-\sigma\left(0\right)+\lambda=\sigma\left(0\right)\implies \lambda=2\sigma(0)$$
 		Por tanto, la serie invertida se construye de esta forma:
 		$$
@@ -80,11 +82,11 @@
 		$$		
 		\includegraphics[width=138mm]{4.png}
 				
-		En total, obtendremos 48 series -- aunque no obligatoriamente distintas entre sí -- pertenecientes a un solo espectro serial. Hay 12 series originales sobre cada una de las doce notas, 12 series retrógradas, 12 invertidas y 12 series sobre las que se aplica tanto la retrogradación como la inversión. A continuación se muestra la nomenclatura histórica junto a la matemática:
+		En total, obtendremos 48 series -- aunque no obligatoriamente distintas entre sí -- pertenecientes a un solo espectro serial. Hay 12 series originales sobre cada una de las doce notas, 12 series retrógradas, 12 invertidas y 12 series sobre las que se aplica tanto la retrogradación como la inversión. A continuación se muestra la sintaxis simple junto a la matemática:
 		
 		\begin{center}
 		\begin{multicols}{2}
-			\underline{Nomenclatura histórica}
+			\underline{Sintaxis simple}
 			
 			T$_0$, T$_1$, T$_2$\ldots
 			
@@ -94,7 +96,7 @@
 			
 			IR$_0$, IR$_1$, IR$_2$\ldots
 			
-			\underline{Nomenclatura matemática}
+			\underline{Sintaxis matemática}
 			
 			T$^0$, T$^1$, T$^2$\ldots
 			
@@ -105,3 +107,12 @@
 			IR, IRT$_1$, IRT$_2$\ldots
 		\end{multicols}
 		\end{center}
+	
+	\section{Matrices dodecafónicas}
+		
+		Dada una serie, su matriz dodecafónica es una representación visual de su espectro serial; es decir, del conjunto de series derivadas de esa serie. La derivación se obtiene mediante tres funciones transformativas: la transposición (T), la inversión (I) y la retrogradación (R).
+		
+		El espectro serial es todo el material compositivo sonoro del que se dispone para la composición de una obra dodecafónica. Al poder ordenar y disponer la información en una tabla, el compositor puede acceder a toda ella al mismo tiempo sin tener que calcular cada serie individualmente.
+		
+		La matriz se lee en la dirección en la que aparece el nombre de la serie. Las series T se leen de izquierda a derecha, mientras que las series R de derecha a izquierda. Las series I se leen de arriba a abajo y las IR/RI de abajo a arriba.
+	
