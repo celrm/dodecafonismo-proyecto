@@ -1,0 +1,65 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {0}INTRODUCCI\IeC {\'O}N MATEM\IeC {\'A}TICA}{1}
+\contentsline {section}{\numberline {0.1}Conjuntos y grupos}{1}
+\contentsline {section}{\numberline {0.2}Funciones y permutaciones}{2}
+\contentsline {part}{I\hspace {1em}DODECAFONISMO}{5}
+\contentsline {chapter}{\numberline {1}INTRODUCCI\IeC {\'O}N HIST\IeC {\'O}RICA DEL DODECAFONISMO}{7}
+\contentsline {section}{\numberline {1.1}Richard Wagner y la emancipaci\IeC {\'o}n de la disonancia}{7}
+\contentsline {section}{\numberline {1.2}Hacia el atonalismo de Schoenberg}{8}
+\contentsline {section}{\numberline {1.3}El surgimiento de un sistema}{10}
+\contentsline {chapter}{\numberline {2}EL SISTEMA DODECAF\IeC {\'O}NICO DE SCHOENBERG}{11}
+\contentsline {section}{\numberline {2.1}Los postulados del dodecafonismo}{11}
+\contentsline {section}{\numberline {2.2}Las transformaciones de una serie}{13}
+\contentsline {subsection}{\numberline {2.2.1}Transposiciones}{13}
+\contentsline {subsection}{\numberline {2.2.2}Retrogradaci\IeC {\'o}n}{14}
+\contentsline {subsection}{\numberline {2.2.3}Inversi\IeC {\'o}n}{14}
+\contentsline {section}{\numberline {2.3}Matrices dodecaf\IeC {\'o}nicas}{15}
+\contentsline {chapter}{\numberline {3}AN\IeC {\'A}LISIS DE UNA OBRA DODECAF\IeC {\'O}NICA: OP. 25}{17}
+\contentsline {section}{\numberline {3.1}Series de la Suite op. 25}{17}
+\contentsline {section}{\numberline {3.2}Descripci\IeC {\'o}n de la Suite op. 25}{18}
+\contentsline {section}{\numberline {3.3}An\IeC {\'a}lisis de la Musette}{19}
+\contentsline {chapter}{\numberline {4}EL GRUPO DE LAS TRANSFORMACIONES}{21}
+\contentsline {section}{\numberline {4.1}Nuevas definiciones y nuevas transformaciones}{21}
+\contentsline {section}{\numberline {4.2}Diagramas de reloj}{23}
+\contentsline {section}{\numberline {4.3}El grupo: D$_{12}$ x D$_{12}$}{24}
+\contentsline {section}{\numberline {4.4}Conmutatividad entre los elementos del grupo}{27}
+\contentsline {part}{II\hspace {1em}ENEFONISMO}{31}
+\contentsline {chapter}{\numberline {5}EL SURGIMIENTO DEL SERIALISMO INTEGRAL}{33}
+\contentsline {section}{\numberline {5.1}Alban Berg y Anton Webern: la Segunda Escuela de Viena}{33}
+\contentsline {section}{\numberline {5.2}La escuela de Darmstadt}{34}
+\contentsline {section}{\numberline {5.3}Pierre Boulez}{36}
+\contentsline {chapter}{\numberline {6}M\IeC {\'A}S HERRAMIENTAS MATEM\IeC {\'A}TICAS}{37}
+\contentsline {section}{\numberline {6.1}Acci\IeC {\'o}n de un grupo sobre un conjunto}{37}
+\contentsline {section}{\numberline {6.2}\IeC {\'O}rbitas y estabilizadores}{38}
+\contentsline {section}{\numberline {6.3}El lema de Burnside}{39}
+\contentsline {chapter}{\numberline {7}CONTEO DE ESPECTROS SERIALES}{41}
+\contentsline {section}{\numberline {7.1}Espectros de las funciones \{I, T, R\}}{41}
+\contentsline {subsection}{\numberline {7.1.1}Elementos estables mediante R}{43}
+\contentsline {subsection}{\numberline {7.1.2}Elementos estables mediante RI}{43}
+\contentsline {section}{\numberline {7.2}Espectros del grupo D$_{n}$ x D$_{n}$}{46}
+\contentsline {subsection}{\numberline {7.2.1}Elementos estables mediante T}{46}
+\contentsline {subsection}{\numberline {7.2.2}Elementos estables mediante I}{48}
+\contentsline {section}{\numberline {7.3}Medefonismo, monofonismo y difonismo}{49}
+\contentsline {part}{III\hspace {1em}MODIFICACIONES}{51}
+\contentsline {chapter}{\numberline {8}EL SERIALISMO EN LA FILOSOF\IeC {\'I}A DEL ARTE}{53}
+\contentsline {section}{\numberline {8.1}La visi\IeC {\'o}n art\IeC {\'\i }stica de Schoenberg}{53}
+\contentsline {section}{\numberline {8.2}El valor intr\IeC {\'\i }nseco del dodecafonismo}{55}
+\contentsline {section}{\numberline {8.3}Serialismo de escalas no crom\IeC {\'a}ticas}{56}
+\contentsline {chapter}{\numberline {9}ESCALAS Y OBRAS DEL EXPERIMENTO}{57}
+\contentsline {section}{\numberline {9.1}Escalas interv\IeC {\'a}licas, escalas y funciones}{57}
+\contentsline {section}{\numberline {9.2}Funciones bien distribuidas}{58}
+\contentsline {section}{\numberline {9.3}M\IeC {\'a}s requisitos de las funciones E-inducidas}{59}
+\contentsline {section}{\numberline {9.4}Escalas y obras utilizadas}{60}
+\contentsline {chapter}{\numberline {10}RESULTADOS DE LAS MODIFICACIONES}{65}
+\contentsline {section}{\numberline {10.1}P\IeC {\'a}gina de modificaciones y plugin}{65}
+\contentsline {section}{\numberline {10.2}Obra de Schoenberg}{65}
+\contentsline {section}{\numberline {10.3}Obras de Berg}{67}
+\contentsline {section}{\numberline {10.4}Obras de Webern}{67}
+\contentsline {section}{\numberline {10.5}Conclusiones}{67}
+\contentsline {chapter}{ANEXOS}{69}
+\contentsline {chapter}{Ap\'{e}ndice \numberline {A}C\IeC {\'o}digo para el c\IeC {\'a}lculo de matrices dodecaf\IeC {\'o}nicas.}{71}
+\contentsline {chapter}{Ap\'{e}ndice \numberline {B}Series de la Suite Op. 25.}{75}
+\contentsline {chapter}{Ap\'{e}ndice \numberline {C}An\IeC {\'a}lisis serial de la Musette.}{79}
+\contentsline {chapter}{Ap\'{e}ndice \numberline {D}Conmutatividad del grupo D$_{\textbf {12}}$ x D$_{\textbf {12}}$}{83}
+\contentsline {chapter}{Ap\'{e}ndice \numberline {E}Generador de funciones E-inducidas}{85}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{93}

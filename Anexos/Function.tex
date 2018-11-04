@@ -106,7 +106,8 @@
 	
 	-- Mostrar el resultado del calculo.
 	showResult :: [Scale] -> IO ()
-	-- `best` requiere no vacio. Si ponemos la restriccion en `best`, entonces falla `head` aqui.
+	-- `best` requiere no vacio. 
+	-- Si ponemos la restriccion en `best`, entonces falla `head` aqui.
 	showResult []
 		= return ()
 	
@@ -115,7 +116,7 @@
 			putStrLn
 				$ showScale [ 0 .. (long - 1) ]
 			putStrLn
-				$ replicate (long * 3 - 1) '―'
+				$ replicate (long * 3 - 1) '-'
 			putStrLn
 				$ showScales scales
 			putStrLn
@@ -159,14 +160,14 @@
 				scales
 	
 	
-	-- Llama a la funcioó recursiva de fixed points.
+	-- Llama a la funcion recursiva de fixed points.
 	induce :: Scale -> [Scale]
 	induce scale =
 		fxp (length scale) scale []
 	
 	
 	-- Obliga a que haya alguna fixed.
-	-- ¿Existe alguna solucion que no tenga 1 fixed pero si 0?
+	-- Existe alguna solucion que no tenga 1 fixed pero si 0?
 	-- He puesto demasiados head fixed, supongamos que no.
 	fxp :: Int -> Scale -> [Scale] -> [Scale]
 	-- Si encontro solucion, devuelvelo.
@@ -201,7 +202,7 @@
 			q = e - mod long e
 	
 	
-	-- q es el tamaño del subconjunto de frecuencias menores.
+	-- q es el cardinal del subconjunto de frecuencias menores.
 	-- c es la frecuencia menor.
 	-- long = qc + (e - q)(c + 1)
 	func :: Int -> Scale -> [Scale]

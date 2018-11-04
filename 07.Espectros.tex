@@ -217,10 +217,43 @@
 	\section{Medefonismo, monofonismo y difonismo}
 	\label{monodi}
 		Con $n=0$ se da el caso de medefonismo. El grupo simétrico de orden 0 tiene $0!=1$ elemento. Por tanto, hay una sola posible serie, $\sigma$, que es la que no tiene ninguna nota. El medefonismo es comúnmente llamado silencio.
-		$$\sigma=\left(\begin{matrix}\\\end{matrix}\right)\hspace{3cm}\begin{array}{l||r}&\\\hline\hline&\\\hline&\end{array}$$
+		
+		$$\sigma=\left(\begin{matrix}\\\end{matrix}\right)
+		\hspace{5cm}
+		\begin{array}{l||r}
+		&\\
+		\hline
+		\hline
+		&\\
+		\hline
+		&
+		\end{array}$$
 	
 		Con $n=1$ se da el caso de monofonismo. Con solamente una posible nota, el grupo simétrico de orden 1 tiene $1!=1$ elemento. Por tanto, hay una sola posible serie, $\sigma_0$, que es igual a su inversa, a su retrogradación y a su retrogradación inversa:
-		$$\sigma_0=\left(\begin{matrix}0\\0\end{matrix}\right)\hspace{3cm}\begin{array}{l|c|r}&\text{I}^{0}&\\\hline\text{T}^{0}&0&\text{R}^{0}\\\hline&\text{IR}^{0}&\\\hline&\text{RI}^{0}&\end{array}$$
+		$$\sigma_0=\left(\begin{matrix}0\\0\end{matrix}\right)
+		\hspace{3cm}
+		\begin{array}{l|c|r}
+			&\text{I}_{0}&\\
+			\hline
+			\text{T}_{0}&0&\text{R}_{0}\\
+			\hline
+			&\text{IR}_{0}&\\
+			\hline
+			&\text{RI}_{0}&
+		\end{array}$$
 	
 		Con $n=2$ se da el caso de difonismo. Tiene dos posibles notas, así que su grupo simétrico, el de orden 2, tiene $2!=2$ elementos. Por tanto, hay dos series distintas, $\sigma_0$ y $\sigma_1$. Se puede observar que ambas pertenecen al mismo espectro serial, dado que $\sigma_1=\text{T}^1(\sigma_0)$. Además, al igual que en el monofonismo, ambas coinciden con sus inversas, incumpliendo la regla general para $n>2$ probada en el apartado \ref{inversano}.
-		$$\sigma_0=\left(\begin{matrix}0&1\\0&1\end{matrix}\right) \hspace{2cm}\begin{array}{l|cc|r}&\text{I}^{0}&\text{I}^{1}&\\\hline\text{T}^{0}&0&1&\text{R}^{0}\\\text{T}^{1}&1&0&\text{R}^{1}\\\hline&\text{IR}^{0}&\text{IR}^{1}&\\\hline&\text{RI}^{0}&\text{RI}^{1}&\end{array}\hspace{2cm} \sigma_1=\left(\begin{matrix}0&1\\1&0\end{matrix}\right)$$
+		$$\sigma_0=\left(\begin{matrix}0&1\\0&1\end{matrix}\right)
+		\hspace{2cm}
+		\begin{array}{l|cc|r}
+			&\text{I}_{0}&\text{I}_{1}&\\
+			\hline
+			\text{T}_{0}&0&1&\text{R}_{0}\\
+			\text{T}_{1}&1&0&\text{R}_{1}\\
+			\hline
+			&\text{IR}_{0}&\text{IR}_{1}&\\
+			\hline
+			&\text{RI}_{0}&\text{RI}_{1}&
+		\end{array}
+		\hspace{2cm}
+		\sigma_1=\left(\begin{matrix}0&1\\1&0\end{matrix}\right)$$

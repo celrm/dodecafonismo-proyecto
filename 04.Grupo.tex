@@ -30,7 +30,7 @@
 		
 		La serie 4-cíclica sobre la permutación P de la Suite Op. 25 es la siguiente serie C$^4$:	
 		$$\text{C}^4=\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\6&3&8&2&11&0&9&10&4&5&7&1\\\end{matrix}\right)$$		
-		\includegraphics[width=138mm]{13.png}
+		\includegraphics[width=\textwidth]{13.png}
 		
 		En resumen, se puede trabajar con un nuevo sistema de definiciones que mantienen el significado musical del serialismo pero varían la notación con la que se trabaja. 
 		\vspace{-0.5cm}
@@ -139,8 +139,16 @@
 				\node at (0,0) [circle,fill=white] {V};
 				\end{tikzpicture}
 			\end{multicols}
-		\end{center}		
-		
+		\end{center}	
+	
+	He creado una página interactiva que genera diagramas de reloj de cualquier serie para cualquier longitud serial, además de generar series aleatorias. También se pueden aplicar las transformaciones a la serie, tanto las originales como las del nuevo sistema, para ver cómo se comporta el diagrama. Está escrita en Elm y el código puede encontrarse en \textit{https://gitlab.com/dodecafonismo/diagramas}.
+	
+	\begin{wrapfigure}{l}{0.2\textwidth}
+		\vspace{-0.5cm}
+		\qrcode{https://diagramas.netlify.com/}
+		\vspace{-1.5cm}
+	\end{wrapfigure} Este es el enlace de la aplicación web. Sus instrucciones de uso se encuentran al final de la página. El enlace es \textit{https://diagramas.netlify.com/}.	
+	
 	\section[El grupo: D$_{12}$ x D$_{12}$]{El grupo: D$_{\textbf{12}}$ x D$_{\textbf{12}}$}
 		\label{grupoD}
 		El conjunto de transformaciones \{S, T, V, C\} está compuesto por dos parejas con semejanzas entre sí. S es una reflexión y T una rotación de orden 12 -- es decir, que al aplicarla 12 veces se vuelve a la identidad -- y ambas se aplican a la figura entera; es como mover el diagrama por el papel. En cambio, V es una reflexión de la flecha en sí, y C una rotación -- también de orden 12 -- de la flecha sobre la línea; ambas aplicadas al interior de la figura.
@@ -181,9 +189,9 @@
 			\end{tikzpicture}
 		\end{multicols}
 	
+	\newpage
+	
 		Las cuatro siguientes figuras representan las cuatro funciones transformativas, que son en realidad la reflexión y la rotación del grupo diédrico de cada dodecágono. Aplicarlo al de dentro es aplicarlo antes de las flechas; antes de la permutación. Aplicarlo fuera es transformar después de las flechas; después de la permutación.
-			
-		\newpage
 	
 		\begin{multicols}{2}
 			\begin{tikzpicture}[minimum height=18pt,inner sep=0]
@@ -238,7 +246,7 @@
 			\end{tikzpicture}
 		\end{multicols}
 		
-		
+	\newpage
 	\section{Conmutatividad entre los elementos del grupo}
 	\label{conmut}
 		% comprobar cosos que conmutan, mencionar cosos que conmutan en el otro sistema
@@ -261,7 +269,7 @@
 		\text{IR}=\text{RI}=\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\10&11&8&9&6&0&5&2&7&1&3&4\\\end{matrix}\right)
 		$$	
 		
-		\includegraphics[width=138mm]{5.png}\\
+		\includegraphics[width=\textwidth]{5.png}\\
 		
 		\underline{I y C ya no conmutan:}
 		
@@ -269,7 +277,7 @@
 		
 		$\text{C}\circ\text{I}(\sigma(m))=\text{C}(-\sigma(m)+2\sigma(0))\overset{\footnote{C y T conmutan}}{=}\text{C}(-\sigma(m))+2\sigma(0)=-\sigma(m+1)+2\sigma(0)$
 		
-		Los únicos casos en los que podrían conmutar ocurrirían cuando $2\sigma\left(0\right)\equiv2\sigma(1)$ (mod. 12): $12+2\sigma\left(0\right)=2\sigma\left(1\right)\implies\ 6+\sigma\left(0\right)=\sigma\left(1\right)\implies \sigma\left(1\right)-\sigma\left(0\right)=6$. Es decir, cuando la primera y la segunda nota de la serie original se distancian en 6 semitonos.
+		Los únicos casos en los que podrían conmutar son cuando $2\sigma\left(0\right)\equiv2\sigma(1)$ (mod. 12): $12+2\sigma\left(0\right)=2\sigma\left(1\right)\implies\ 6+\sigma\left(0\right)=\sigma\left(1\right)\implies \sigma\left(1\right)-\sigma\left(0\right)=6$. Es decir, cuando la primera y la segunda nota de la serie original se distancian en 6 semitonos.
 		
 		Si se echan las cuentas con C$^\text{k}$ en vez de con C$^1$, pueden conmutar si $\sigma\left(\text{k}\right)-\sigma\left(0\right)=6$. Como $\sigma$ es una permutación, devuelve todos los valores de 0 a 11 y solamente una vez cada uno. Por tanto, también devuelve 6 + $\sigma(0)$, así que siempre existe un único k para el que I y C$^\text{k}$ conmutan. En el caso de la permutación de la Suite Op. 25, como $\sigma\left(0\right)=4$ hay que encontrar el $m$ para el que $\sigma\left(m\right)=4+6=10$. En este caso, $m=11$, pero depende por completo de la permutación original.\\
 		
