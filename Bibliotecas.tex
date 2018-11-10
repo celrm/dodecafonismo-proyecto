@@ -1,27 +1,69 @@
 % Idioma español
-\usepackage[spanish,es-lcroman]{babel}
-\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-lcroman]{babel} % Características del idioma
+\usepackage[utf8]{inputenc} % Acentos
 
-% QR
-\usepackage{bytefield}
-\usepackage{qrcode}
+% Espacio entre párrafos
+\usepackage{parskip}
 
-% Matemáticas
-\usepackage{amsmath}
+% Kerning y mejoras tipográficas
+\usepackage{microtype}
+
+% Matemáticas: \text, \mathbf, \overset, \underset, equation*
+\usepackage{mathtools}
 
 % Listas numeradas
 \usepackage{enumerate}
 
+% Columnas
+\usepackage{multicol}
+
+% Colores
+\usepackage{color}
+
+% Código
+\usepackage{listingsutf8}
+\lstset{
+	inputencoding=utf8,
+	extendedchars=true,
+	literate=%
+	{á}{{\'a}}1
+	{é}{{\'e}}1
+	{í}{{\'i}}1
+	{ó}{{\'o}}1
+	{ú}{{\'u}}1
+	{Á}{{\'A}}1
+	{É}{{\'E}}1
+	{Í}{{\'I}}1
+	{Ó}{{\'O}}1
+	{Ú}{{\'U}}1
+	{ñ}{{\~n}}1
+	{Ñ}{{\~N}}1
+	{¿}{{>}}1
+	{¡}{{<}}1
+	{―}{{---}}1
+}
+
+% PDFs
+\usepackage{pdfpages}
+
 % Letras raras de matemáticas
-\usepackage{amsfonts}
-\usepackage{upgreek}
-\usepackage{amssymb}
+\usepackage{upgreek} % \uptheta
+\usepackage{amssymb} % \mathbb
 
 % Tachar
 \usepackage{soul}
 
 % QED
 \usepackage{amsthm}
+
+% QR
+\usepackage{qrcode}
+
+% Notas musicales
+\usepackage{wasysym}
+
+% Más columnas en matrix
+\setcounter{MaxMatrixCols}{30}
 
 % Imágenes
 \usepackage{graphicx}
@@ -40,18 +82,6 @@
 \renewcommand{\appendixname}{Anexo}
 \renewcommand{\appendixtocname}{ANEXOS}
 \renewcommand{\appendixpagename}{Anexos}
-\setcounter{MaxMatrixCols}{30}
-
-\usepackage{verbatim}
-
-% PDFs
-\usepackage{pdfpages}
-
-% Espacio entre párrafos
-\usepackage{parskip}
-
-% Kerning y mejoras tipográficas
-\usepackage{microtype}
 
 % Dibujos TIKZ
 \usepackage{tikz}
@@ -65,19 +95,7 @@
 
 \tikzstyle flocho=[decoration={markings,mark=at position 0.9999 with {\arrow[red,scale=1,>=triangle 45]{>}}},postaction={decorate}]
 
-% Columnas
-\usepackage{multicol}
-
-% Colores
-\usepackage{color}
-
-% Notas musicales
-\usepackage{wasysym}
-
-% Para código
-\usepackage{listings}
-
-% Clear double space limpio
+% Clear double page limpio
 \makeatletter
 \def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
 	\hbox{}

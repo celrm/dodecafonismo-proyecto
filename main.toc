@@ -2,6 +2,7 @@
 \contentsline {chapter}{\numberline {0}INTRODUCCI\IeC {\'O}N MATEM\IeC {\'A}TICA}{1}
 \contentsline {section}{\numberline {0.1}Conjuntos y grupos}{1}
 \contentsline {section}{\numberline {0.2}Funciones y permutaciones}{2}
+\contentsline {section}{\numberline {0.3}Aritm\IeC {\'e}tica modular b\IeC {\'a}sica}{3}
 \contentsline {part}{I\hspace {1em}DODECAFONISMO}{5}
 \contentsline {chapter}{\numberline {1}INTRODUCCI\IeC {\'O}N HIST\IeC {\'O}RICA DEL DODECAFONISMO}{7}
 \contentsline {section}{\numberline {1.1}Richard Wagner y la emancipaci\IeC {\'o}n de la disonancia}{7}
@@ -48,8 +49,8 @@
 \contentsline {chapter}{\numberline {9}ESCALAS Y OBRAS DEL EXPERIMENTO}{57}
 \contentsline {section}{\numberline {9.1}Escalas interv\IeC {\'a}licas, escalas y funciones}{57}
 \contentsline {section}{\numberline {9.2}Funciones bien distribuidas}{58}
-\contentsline {section}{\numberline {9.3}M\IeC {\'a}s requisitos de las funciones E-inducidas}{59}
-\contentsline {section}{\numberline {9.4}Escalas y obras utilizadas}{60}
+\contentsline {section}{\numberline {9.3}M\IeC {\'a}s requisitos de las funciones E-inducidas}{60}
+\contentsline {section}{\numberline {9.4}Escalas y obras utilizadas}{61}
 \contentsline {chapter}{\numberline {10}RESULTADOS DE LAS MODIFICACIONES}{65}
 \contentsline {section}{\numberline {10.1}P\IeC {\'a}gina de modificaciones y plugin}{65}
 \contentsline {section}{\numberline {10.2}Obra de Schoenberg}{65}
@@ -61,5 +62,5 @@
 \contentsline {chapter}{Ap\'{e}ndice \numberline {B}Series de la Suite Op. 25.}{75}
 \contentsline {chapter}{Ap\'{e}ndice \numberline {C}An\IeC {\'a}lisis serial de la Musette.}{79}
 \contentsline {chapter}{Ap\'{e}ndice \numberline {D}Conmutatividad del grupo D$_{\textbf {12}}$ x D$_{\textbf {12}}$}{83}
-\contentsline {chapter}{Ap\'{e}ndice \numberline {E}Generador de funciones E-inducidas}{85}
+\contentsline {chapter}{Ap\'{e}ndice \numberline {E}C\IeC {\'o}digo para generar funciones E-inducidas}{85}
 \contentsline {chapter}{Bibliograf\IeC {\'\i }a}{93}
