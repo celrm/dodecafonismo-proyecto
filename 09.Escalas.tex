@@ -12,11 +12,11 @@
 		De esta forma, se puede definir una \textit{escala-k} como el conjunto de notas generadas por una escala interválica desde la nota $k$. Por ejemplo, el conjunto anterior sería la escala-2 mayor; es decir, la escala de Re mayor. Una escala generada por una secuencia de intervalos con longitud L tiene L notas, ya que como la última es repetida puede ignorarse. La longitud $\text{L}\leq 12$, ya que una escala-\textit{k} definida de esta forma siempre es un subconjunto de la escala cromática: $\text{E}_k\subseteq\mathbb{Z}/(12)$
 		
 		Una \textit{función a una escala-k} es una función $f$ que transforma cada nota de la escala cromática a un valor de la escala E$_k$. Entonces $f : \mathbb{Z}/(12) \rightarrow \text{E}_k$ reduce las notas de una melodía a solamente la escala escogida. Las funciones a escalas se representan de la siguiente manera, con la primera fila representando el dominio de $f$ (la escala cromática), la segunda su imagen (la escala E$_k$), y la tercera su secuencia interválica:
-		$$\left.\begin{matrix}
+		\[\left.\begin{matrix}
 		0&1&2&\ldots&10&11\\
 		f(0)&f(1)&f(2)&\ldots&f(10)&f(11)\\
 		f(1)-f(0)&f(2)-f(1)&f(3)-f(2)&\ldots&f(11)-f(10)&12+f(0)-f(11)
-		\end{matrix}\right.$$
+		\end{matrix}\right.\]
 		
 		En realidad, la $k$ de la escala-$k$ no es especialmente relevante, porque una escala-$k+1$ es la transportada de una $k$. Se puede escoger sin pérdida de generalidad $k=0$ a partir de ahora, y así todas comenzarán en Do.
 		
@@ -30,11 +30,11 @@
 		
 		Lo óptimo sería que todas tuvieran la misma frecuencia, pero eso solo pasará cuando $|\text{E}|$ divida a 12. Por ejemplo, si E = \{$a_1,a_2,a_3,a_4,a_5,a_6$\} (entonces $|\text{E}|=6$), existen funciones tales que cada nota de la imagen se repite exactamente 2 veces. La siguiente función E-inducida $f$ cumpliría la condición de buena distribución:
 				
-		$$\left.\begin{matrix}
+		\[\left.\begin{matrix}
 		\text{Cromática}&0&1&2&3&4&5&6&7&8&9&10&11\\
 		\text{Escala E}&a_1&a_1&a_2&a_2&a_3&a_3&a_4&a_4&a_5&a_5&a_6&a_6\\
 		\text{Intervalos}&&&&&&\ldots\\
-		\end{matrix}\right.$$
+		\end{matrix}\right.\]
 		
 		En cambio, si $|\text{E}|$ no divide a 12 no hay funciones E-inducidas totalmente distribuidas. No existe una sola frecuencia que puedan compartir todas las notas de E. Sin embargo, sí se pueden encontrar dos frecuencias consecutivas, $c$ y $c+1$, tales que todos los elementos de E tengan o frecuencia $c$ o frecuencia $c+1$. Esto es lo más parecido a que todas tengan la misma frecuencia, y se va a probar a continuación que siempre es posible. 
 		
@@ -59,7 +59,7 @@
 %			\item Si $e\ |\ 12$ solo hay una frecuencia, $c$, tal que $a_c$ es positivo. Si $e\not|\ 12$ solo hay dos frecuencias, $c$ y $c+1$, tales que $a_c$ y $a_{c+1}$ son positivos. Así la función tiene una distribución óptima.
 %		\end{itemize}		
 	
-		$$\begin{array}{l|rrrrrrrrrrrr}
+		\[\begin{array}{l|rrrrrrrrrrrr}
 		&1&2&3&4&5&6&7&8&9&10&11&12\\\hline
 		1&&&&&&&&&&&&1\\\hline
 		2&&&&&&2\\\hline
@@ -73,7 +73,7 @@
 		10&8&2\\\hline
 		11&10&1\\\hline
 		12&12&\\
-		\end{array}$$
+		\end{array}\]
 		
 		
 	\section{Más requisitos de las funciones E-inducidas}
@@ -88,10 +88,10 @@
 		\item $f$ debe tener el mayor número de puntos fijos posible: las notas que puedan mantenerse estables al aplicar $f$ deben quedarse igual. Existen escalas para las que no se puede tener buena distribución, monotonía creciente y todas sus notas fijas, así que este criterio es menos prioritario. 
 		
 		Por ejemplo, para la escala \{0, 1, 2\}, si se fijan las tres notas, $f$ empezaría con 0 1 2. Por (2), la nota asociada al 12 debe ser un 12. Entonces los otros tres 1's que faltan no se pueden asignar, ya que después del 2 no puede ir un 1 y antes del 12 no puede ir un 13. Por tanto, $f$ no estaría bien distribuida. La solución es que solo se fijen dos de las tres notas.
-		$$\left.\begin{matrix}
+		\[\left.\begin{matrix}
 		\text{Cromática}&0&1&2&3&4&5&6&7&8&9&10&11&(12)\\
 		\text{Escala E}&0&1&2&&&\text{\cancel{1}}&&&\text{\cancel{13}}&&&&(12)\\
-		\end{matrix}\right.$$
+		\end{matrix}\right.\]
 		
 		\item Por último, de entre las $f$ que queden, se escogerán aquellas cuya distancia a la cromática sea menor. Se calculará para todo $i$ la expresión $|f(i)-i|$, y se sumarán todos los resultados. Esa suma será la \textit{puntuación} de dicha $f$. Las funciones con menor puntuación son las funciones de mejor ajuste.
 		
@@ -107,29 +107,29 @@
 		
 		Son la escala pentatónica, la escala hexafónica de tonos enteros, la escala heptafónica de Do Mayor y la escala octotónica. Estas son las funciones inducidas de dichas escalas, según el algoritmo del Anexo \ref{app:function}:
 	
-		$$\left.\begin{matrix}
+		\[\left.\begin{matrix}
 		\text{Escala cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
 		\text{Escala pentatónica mayor (5):}&0&0&2&2&4&4&7&7&7&9&9&0\\
 		\text{Intervalos:}&&2&&2&&3&&&2&&3&\\
-		\end{matrix}\right.$$
+		\end{matrix}\right.\]
 		
-		$$\left.\begin{matrix}
+		\[\left.\begin{matrix}
 		\text{Escala cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
 		\text{Escala de tonos enteros (6):}&0&0&2&2&4&4&6&6&8&8&10&10\\
 		\text{Intervalos:}&&2&&2&&2&&2&&2&&2\\
-		\end{matrix}\right.$$
+		\end{matrix}\right.\]
 
-        $$\left.\begin{matrix}
+        \[\left.\begin{matrix}
         \text{Escala cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
         \text{Escala diatónica en Do (7):}&0&0&2&2&4&5&5&7&7&9&9&11\\
         \text{Intervalos:}&&2&&2&1&&2&&2&&2&1\\
-        \end{matrix}\right.$$
+        \end{matrix}\right.\]
         
-        $$\left.\begin{matrix}
+        \[\left.\begin{matrix}
         \text{Escala cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
         \text{Escala octotónica (8):}&0&0&2&3&3&5&6&6&8&9&9&11\\
         \text{Intervalos:}&&2&1&&2&1&&2&1&&2&1\\
-        \end{matrix}\right.$$
+        \end{matrix}\right.\]
         
         Ahora se describirán las obras que pasarán por la modificación. Para abarcar distintos estilos compositivos y hacer este estudio más riguroso, se han escogido obras de los tres principales compositores dodecafónicos: Schoenberg, Berg y Webern.
         

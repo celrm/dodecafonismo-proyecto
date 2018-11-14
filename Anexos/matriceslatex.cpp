@@ -19,7 +19,7 @@ int main() {
 		for (int j = 1; j < N + 1; ++j)
 			s[i][j] = (s[1][j] + s[i][0]) % N;
 
-	cout << "\n$$\\begin{array}{l|";
+	cout << "\n\\[\\begin{array}{l|";
 	for (int i = 0; i < N; ++i)	cout << 'c';
 	cout << "|r}\n&";
 
@@ -45,7 +45,7 @@ int main() {
 	for (int i = 1; i < N + 1; ++i)
 		cout << "\\text{RI}_{" << (N + s[0][i] + DIF) % N << "}&";
 
-	cout << "\n\\end{array}$$\n";
+	cout << "\n\\end{array}\\]\n";
 
 	return 0;
 }
