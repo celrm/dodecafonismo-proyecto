@@ -4,19 +4,23 @@
 	
 		Para definir un conjunto se puede o bien listar los objetos uno a uno, o bien describirlos por medio de un predicado: una o varias propiedades que caracterizan a todos los elementos de dicho conjunto.
 
-		Por ejemplo, el conjunto K$_\text{i}$, formado por las doce notas de la escala cromática de una misma octava i, está bien definido porque podemos hacer una lista con ellas:			
-		\[\text{K}_\text{4} = \{\text{Do}_\text{4}, \text{Do\#}_\text{4}, \text{Re}_\text{4}, \text{Re\#}_\text{4}, \text{Mi}_\text{4}, \text{Fa}_\text{4}, \text{Fa\#}_\text{4}, \text{Sol}_\text{4}, \text{Sol\#}_\text{4}, \text{La}_\text{4}, \text{La\#}_\text{4}, \text{Si}_\text{4}\}\]
+		Por ejemplo, el conjunto K$_\text{i}$, formado por las doce notas de la escala cromática de una misma octava i, está bien definido porque podemos hacer una lista con ellas: $\text{K}_\text{4} = $
+		
+		\full{$\{\text{Do}_\text{4}, \text{Do\#}_\text{4}, \text{Re}_\text{4}, \text{Re\#}_\text{4}, \text{Mi}_\text{4}, \text{Fa}_\text{4}, \text{Fa\#}_\text{4}, \text{Sol}_\text{4}, \text{Sol\#}_\text{4}, \text{La}_\text{4}, \text{La\#}_\text{4}, \text{Si}_\text{4}\}$}
 		
 		Por un lado, aun llamando a las notas de distinta manera, el conjunto, conceptualmente, es el mismo. Además, el hecho de listar algún elemento más de una vez no afecta a su definición. Como $\text{Do\#}_\text{4} = \text{Re}\flat_\text{4}$,\footnote{En este texto se trabajará siempre con temperamento igual por convenio.}  $\text{K}_\text{4}$ también puede ser listado así:
-		\[\text{K}_\text{4} = \{\text{Do}_\text{4}, \text{Do\#}_\text{4}, \text{Re}\flat_\text{4}, \text{Re}_\text{4}, \text{Re\#}_\text{4}, \text{Mi}_\text{4}, \text{Fa}_\text{4}, \text{Fa\#}_\text{4}, \text{Sol}_\text{4}, \text{Sol\#}_\text{4}, \text{La}_\text{4}, \text{La\#}_\text{4}, \text{Si}_\text{4}\}\]
 		
+		\full{$\{\text{Do}_\text{4}, \text{Do\#}_\text{4}, \text{Re}\flat_\text{4}, \text{Re}_\text{4}, \text{Re\#}_\text{4}, \text{Mi}_\text{4}, \text{Fa}_\text{4}, \text{Fa\#}_\text{4}, \text{Sol}_\text{4}, \text{Sol\#}_\text{4}, \text{La}_\text{4}, \text{La\#}_\text{4}, \text{Si}_\text{4}\}$}
+	
 		En cambio, el conjunto D, formado por las duraciones rítmicas elementales -- sin ligaduras ni puntillos --, es infinito, por lo que no se puede listar de forma completa. Sin embargo, se puede expresar por medio de un predicado:
-		\[\text{D} =\{2^n:n\in\mathbb{Z},\ n\le 2\} = \{4,\ 2,\ 1,\ \frac{1}{2},\ \frac{1}{4},\ \frac{1}{8},\ \ldots\} = \{\fullnote,\ \halfnote,\ \quarternote,\ \eighthnote,\ \ldots\}\]
+		
+		\full{$\text{D} =\{2^n:n\in\mathbb{Z},\ n\le 2\} = \{4,\ 2,\ 1,\ \frac{1}{2},\ \frac{1}{4},\ \frac{1}{8},\ \ldots\} = \{\fullnote,\ \halfnote,\ \quarternote,\ \eighthnote,\ \ldots\}$}
 	
 		Los elementos de un conjunto pueden combinarse mediante \emph{operaciones} para dar otros objetos matemáticos. Se dice que un conjunto X no vacío y una operación binaria ($\ast$) forman un \emph{grupo} (X, $\ast$) cuando cumplen:
 	
 		\begin{enumerate}
-			\item{Su operación es interna: Si $a$ y $b$ pertenecen a X, $a\ast b$ pertenece a X.}		\item{Su operación es asociativa: Si $a$, $b$ y $c$ pertenecen a X, $(a\ast b)\ast c=a\ast(b\ast c)$. }
+			\item{Su operación es interna: Si $a$ y $b$ pertenecen a X, $a\ast b$ pertenece a X.}		
+			\item{Su operación es asociativa: Si $a$, $b$ y $c$ pertenecen a X, $(a\ast b)\ast c=a\ast(b\ast c)$. }
 			\item{Existe un elemento $e$ en X, llamado elemento neutro o identidad, tal que para todo $x$ que pertenece a X se cumple que $e\ast x = x\ast e = x$. Se puede probar que el elemento identidad es único para cada grupo.}
 			\item{Cada elemento $x$ perteneciente a X tiene asociado otro elemento $x^{-1}$ en X, llamado elemento inverso, tal que $x \ast x^{-1} = x^{-1}  \ast x = e$. Se puede probar que el elemento inverso de cada elemento es único.}		
 		\end{enumerate}

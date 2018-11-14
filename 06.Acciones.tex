@@ -1,5 +1,5 @@
 	\chapter{MÁS HERRAMIENTAS MATEMÁTICAS}	
-	\section{Acción de un grupo sobre un conjunto}
+	\section{Acciones de grupos sobre conjuntos}
 		Dado un grupo (G, $*$) y un conjunto X, la \emph{acción} de (G, $*$) sobre X es una función $\phi$ que asocia un elemento $g \in$ G y un elemento $x \in$ X -- el par ($g$, $x$) -- a otro elemento $g\cdot x$ que también pertenece a X \cite{armstrong}. $\ \ \phi :(g,x) \to g\cdot x$
 	
 		La acción $\phi$, expresada mediante la operación ($\cdot$), debe cumplir dos condiciones:
@@ -36,7 +36,9 @@
 		Las órbitas, que son subconjuntos de X, forman una \emph{partición} de X. Esto significa que son subconjuntos disjuntos: ningún $x$ puede estar en dos órbitas distintas. Interesa entonces saber cuántos subconjuntos hay; es decir, el número de órbitas ($\#Orb$). El lema de Burnside\footnote{Aunque Burnside demostró este lema en una ocasión, citó a Frobenius como su autor. Sin embargo, Cauchy era conocedor del lema décadas antes. Para no confundirlo con otros lemas que sí son de Burnside, a veces se le llama \emph{el lema que no es de Burnside.}} afirma que se pueden calcular así:
 		\[\#Orb=\frac{1}{|\text{G}|}\sum_{x\in\text{X}}|\text{Stab}(x)|\]	
 		Se prueba de esta forma: por el teorema de Órbita--Estabilizador, $|\text{Stab}(x)|=\frac{|\text{G}|}{|Orb(x)|}$, por lo que la parte derecha se puede expresar así:
-		\[\frac{1}{|\text{G}|}\sum_{x\in\text{X}}|\text{Stab}(x)|=\frac{1}{|\text{G}|}\sum_{x\in\text{X}}\frac{|\text{G}|}{|Orb(x)|}=\frac{|\text{G}|}{|\text{G}|}\sum_{x\in\text{X}}\frac{1}{|Orb(x)|}=\sum_{x\in\text{X}}\frac{1}{|Orb(x)|}\]
+		\[\frac{1}{|\text{G}|}\sum_{x\in\text{X}}|\text{Stab}(x)|=
+		\frac{1}{|\text{G}|}\sum_{x\in\text{X}}\frac{|\text{G}|}{|Orb(x)|}=
+		\sum_{x\in\text{X}}\frac{1}{|Orb(x)|}\]
 
 		Como las órbitas forman una partición de X, la suma sobre todo el conjunto X puede ser dividida en sumas separadas para cada órbita. Además, si por cada elemento de una órbita se suma el inverso del número de elementos de la órbita, esa suma dará uno. Solo queda ahora sumar uno por cada órbita.
 		\[\sum_{x\in\text{X}}\frac{1}{|Orb(x)|}=\sum_{\text{O}\in\text{Órbitas}}\left(\sum_{x\in\text{O}}\frac{1}{|\text{O}|}\right)=\sum_{\text{O}\in\text{Órbitas}}1=\#Orb \qed\]	

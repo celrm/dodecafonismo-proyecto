@@ -73,7 +73,8 @@ showScales scales
 
 -- Mostrar el resultado del cálculo.
 showResult :: [Scale] -> IO ()
--- `best` requiere no vacío. Si ponemos la restricción en `best`, entonces falla head aquí.
+-- `best` requiere no vacío.
+-- Si ponemos la restricción en `best`, entonces falla head aquí.
 showResult []
   = return ()
 
@@ -253,13 +254,15 @@ oneCase [] ((next, nextFreq):freqs) start
 
 -- Si quedan fixed points:
 oneCase ffixed@(f:fixed) ((next, nextFreq):freqs) start@(s:_)
-    -- Si f es igual al siguiente índice, next tiene que ser ese índice porque f es fijo.
+    -- Si f es igual al siguiente índice,
+    -- next tiene que ser ese índice porque f es fijo.
     | f==currentIndex && f==next
     = oneCase
         fixed  -- Ya hemos usado f; lo desechamos.
         ((eraseFreq next nextFreq) ++ freqs) $
         start ++ [next]
-    --Si no necesito fijar, entonces next no puede pasarse del siguiente fixed point f.
+    --Si no necesito fijar,
+    -- entonces next no puede pasarse del siguiente fixed point f.
     | f/=currentIndex && f>=next
     = oneCase
         ffixed

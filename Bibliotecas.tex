@@ -17,6 +17,16 @@
 % Columnas
 \usepackage{multicol}
 
+\usepackage[a5paper]{geometry}
+
+\usepackage{sectsty}
+
+\chapternumberfont{\Large}
+\chaptertitlefont{\LARGE}
+
+\newcommand{\full}{\resizebox{\linewidth}{!}}
+
+
 % Colores
 \usepackage{color}
 
@@ -89,7 +99,7 @@
 
 \newcommand*\cancel[2][thin]{\tikz[baseline] \node [strike out,draw,anchor=text,inner sep=0pt,text=black,#1]{#2};}  
 
-\tikzstyle flechita=[decoration={markings,mark=at position 0.015 with {\arrow[scale=1.5,>=triangle 45]{>}}},postaction={decorate}]
+\tikzstyle flechita=[decoration={markings,mark=at position 0.015 with {\arrow[scale=1.25,>=triangle 45]{>}}},postaction={decorate}]
 
 \tikzstyle flache=[decoration={markings,mark=at position 1 with {\arrow[scale=1.5,>=angle 60]{>}}},postaction={decorate}]
 
@@ -105,3 +115,14 @@
 	\newpage
 	\if@twocolumn\hbox{}\newpage\fi\fi\fi}
 \makeatother
+
+\newenvironment{changemargin}[2]{%
+	\begin{list}{}{%
+			\setlength{\topsep}{0pt}%
+			\setlength{\leftmargin}{#1}%
+			\setlength{\rightmargin}{#2}%
+			\setlength{\listparindent}{\parindent}%
+			\setlength{\itemindent}{\parindent}%
+			\setlength{\parsep}{\parskip}%
+		}%
+		\item[]}{\end{list}}

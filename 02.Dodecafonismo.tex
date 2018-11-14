@@ -2,31 +2,28 @@
 	\section{Los postulados del dodecafonismo}
 		El dodecafonismo es un sistema compositivo que predetermina la melodía y la armonía a partir de una ordenación de las doce notas de la escala cromática, que se llama \textit{serie}. Ésta y algunas de sus transformaciones son los ladrillos con los que se construyen las alturas de las notas; son el único material que se puede utilizar.
 		
-		El resto de elementos de la pieza, como el número de instrumentos, el ritmo, el carácter, la textura o las dinámicas, se dejan a discreción del compositor. No serializar todos los conjuntos será la principal crítica al dodecafonismo por parte de los compositores serialistas que sucedieron a Schoenberg: los compositores de serialismo integral de mediados del siglo XX, como Pierre Boulez (apartado \ref{boulez}). Para los serialistas integrales, aquello restaba cohesión al modelo compositivo; para los dodecafonistas, aportaba libertad.
+		El resto de elementos de la pieza, como el número de instrumentos, el ritmo, el carácter, la textura o las dinámicas, se dejan a discreción del compositor. No serializar todos los conjuntos será la principal crítica al dodecafonismo por parte de los compositores serialistas que sucedieron a Schoenberg: los compositores de serialismo integral de mediados del siglo XX, como Pierre Boulez. Para los serialistas integrales, aquello restaba cohesión al modelo compositivo; para los dodecafonistas, aportaba libertad.
 		
 		Precisamente la predeterminación dodecafónica, aunque parece limitante, permite realizaciones musicales y estilos de composición muy diferentes: Schoenberg daba un tratamiento tradicional a sus obras, ya que aún admiraba las formas clásicas; Berg iba más allá al utilizar series que recordaban a las tríadas tonales; y, en cambio, Webern evitaba radicalmente cualquier asociación con la tradición.
 		
 		Schoenberg definió su sistema musical a partir de cuatro postulados que, en realidad, se basan en principios matemáticos:
 		
-		\emph{1. La serie \emph{[sobre la que se construye la obra dodecafónica]} consta de las doce notas de la escala cromática dispuestas en un orden lineal específico.}
+		{\it1. La serie \emph{[sobre la que se construye la obra dodecafónica]} consta de las doce notas de la escala cromática dispuestas en un orden lineal específico.}
 		
-		\emph{2. Ninguna nota aparece más de una vez en la serie.}
+		{\it2. Ninguna nota aparece más de una vez en la serie.}
 		
 		Los dos primeros postulados expresan que una obra dodecafónica fundamenta su estructura sobre una permutación de la escala de doce semitonos. Dicha permutación $\sigma$ es una biyección del conjunto numerado de las doce notas \{Do = 0, Do\# = 1, Re = 2, Re\# = 3, Mi = 4, Fa = 5, F\# = 6, Sol = 7, Sol\# = 8, La = 9, La\# = 10, Si = 11\} consigo mismo, y se representa de esta forma:
 		
-		\begin{footnotesize}
-			\[
-			\sigma=\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\\sigma(0)&\sigma(1)&\sigma(2)&\sigma(3)&\sigma(4)&\sigma(5)&\sigma(6)&\sigma(7)&\sigma(8)&\sigma(9)&\sigma(10)&\sigma(11)\\\end{matrix}\right)
-			\]
-		\end{footnotesize}	
+		\full{$\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\\sigma(0)&\sigma(1)&\sigma(2)&\sigma(3)&\sigma(4)&\sigma(5)&\sigma(6)&\sigma(7)&\sigma(8)&\sigma(9)&\sigma(10)&\sigma(11)\\\end{matrix}\right)$}
 	
 		La permutación $\sigma(m)$, con $m\in \mathbb{Z} / (12)$\footnote{$\mathbb{Z} / (12)=\{0,\ 1,\ 2,\ 3,\ 4,\ 5,\ 6,\ 7,\ 8,\ 9,\ 10,\ 11\}$}, pertenece al grupo simétrico de orden 12: $\sigma\in$ S$_{12}$. Por ejemplo, en la Suite para piano Op. 25 Schoenberg utiliza como serie original en todos los movimientos de la obra la siguiente permutación $\sigma$:
+		
 		\[\sigma=\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\4&5&7&1&6&3&8&2&11&0&9&10\\\end{matrix}\right)\]	
 		\includegraphics[width=\textwidth]{1.png}
 		
-		\emph{3. La serie será expuesta en cualquiera de sus aspectos lineales: original, inversión, retrogradación de la original y retrogradación de la inversión.}
+		{\it3. La serie será expuesta en cualquiera de sus aspectos lineales: original, inversión, retrogradación de la original y retrogradación de la inversión.}
 		 
-		\emph{4. La serie puede usarse en sus cuatro aspectos desde cualquier nota de la escala.}
+		{\it4. La serie puede usarse en sus cuatro aspectos desde cualquier nota de la escala.}
 		
 		Los dos últimos postulados amplían los recursos compositivos al admitir la transformación de la serie original mediante \emph{inversión}, \emph{retrogradación}, \emph{inversión retrógrada} y \emph{transposición}\footnote{No confundir con un 2-ciclo. Una transposición musical se corresponde con una traslación matemática.}. El compositor puede utilizar cualquiera de las transformaciones de una serie al componer su obra dodecafónica. El conjunto de series que puede utilizar, que viene dado por la serie original y todas sus posibles transformaciones, se conoce como \emph{espectro serial}.
 		
@@ -41,9 +38,9 @@
 		\[
 		\forall m\in \mathbb{Z} / (12):	\text{T}^\text{k}\left(\sigma\left(m\right)\right)=\sigma\left(m\right)+\text{k} \qquad \text{con k constante;}
 		\]		
-		\[
+		\full{$
 		\text{T}^\text{k}=\left(\begin{matrix}0&1&2&&9&10&11\\\sigma\left(0\right)+\text{k}&\sigma\left(1\right)+\text{k}&\sigma\left(2\right)+\text{k}&\cdots&\sigma\left(9\right)+\text{k}&\sigma\left(10\right)+\text{k}&\sigma\left(11\right)+\text{k}\\\end{matrix}\right)
-		\]
+		$}
 		
 		A su vez, T$^\text{k}$ se forma al componer k transposiciones de 1 semitono: $\text{T}^\text{k}=\text{T}^1\circ\text{T}^1\circ\ldots\circ\text{T}^1$, k veces. Debido a que k es en realidad el exponente en la potencia de T, se coloca este número como superíndice.
 		
@@ -58,8 +55,8 @@
 		
 		La serie retrógrada se construye de esta forma:
 		\[
-		\forall m\in \mathbb{Z} / (12):	\text{R}\left(\sigma\left(m\right)\right)=\sigma\left(-1-m\right)\] \begin{footnotesize}\[			\text{R}=\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\	\sigma(11)&\sigma(10)&\sigma(9)&\sigma(8)&\sigma(7)&\sigma(6)&\sigma(5)&\sigma(4)&\sigma(3)&\sigma(2)&\sigma(1)&\sigma(0)\\\end{matrix}\right)
-			\]\end{footnotesize}
+		\forall m\in \mathbb{Z} / (12):	\text{R}\left(\sigma\left(m\right)\right)=\sigma\left(-1-m\right)\] 
+		\full{$\text{R}=\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\	\sigma(11)&\sigma(10)&\sigma(9)&\sigma(8)&\sigma(7)&\sigma(6)&\sigma(5)&\sigma(4)&\sigma(3)&\sigma(2)&\sigma(1)&\sigma(0)\\\end{matrix}\right)$}
 			
 		La serie retrógrada sobre la permutación $\sigma$ de la Suite Op. 25 es la siguiente serie R:	
 		\[\text{R}=\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\10&9&0&11&2&8&3&6&1&7&5&4\\\end{matrix}\right)\]		
@@ -72,9 +69,8 @@
 		\[
 		\forall m\in \mathbb{Z} / (12):	\text{I}\left(\sigma\left(m\right)\right)=-\sigma\left(m\right)+2\sigma\left(0\right)
 		\]
-		\begin{footnotesize}	\[
-		\text{I}=\left(\begin{matrix}0&1&2&&10&11\\\sigma(0)&-\sigma(1)+2\sigma(0)&-\sigma(2)+2\sigma(0)&\ldots&-\sigma(10)+2\sigma(0)&-\sigma(11)+2\sigma(0)\\\end{matrix}\right)
-		\]	\end{footnotesize}
+		\full{$
+		\text{I}=\left(\begin{matrix}0&1&2&&10&11\\\sigma(0)&-\sigma(1)+2\sigma(0)&-\sigma(2)+2\sigma(0)&\ldots&-\sigma(10)+2\sigma(0)&-\sigma(11)+2\sigma(0)\\\end{matrix}\right)$}
 		
 		La serie invertida sobre la permutación $\sigma$ de la Suite Op. 25 es la siguiente serie I:
 		\[
@@ -116,9 +112,9 @@
 		
 		He creado un programa que devuelve en formato \LaTeX{} la matriz correspondiente a cualquier serie dodecafónica que se introduzca en teclado, además de producir la nomenclatura simple para cada serie. El código, escrito en C++, está incluido en el Anexo \ref{app:matrices}, página \pageref{app:matrices}, y está creado en base a las fórmulas de construcción de series y a la propiedad de invariancia de intervalos en las transportaciones.
 		
-		A continuación, se incluye la matriz dodecafónica de la serie P de la Suite Op. 25 de Schoenberg. Mientras que la mayoría de tablas tienen dos filas inferiores, que se corresponden con las distintas nomenclaturas de RI e IR para una misma serie – ya que normalmente no conmutan –, en la matriz de la serie P sí coinciden, como se mencionará en el apartado \ref{conmut}, por lo que solamente se incluye una de las dos.	
+		A continuación, se incluye la matriz dodecafónica de la serie P de la Suite Op. 25 de Schoenberg. Mientras que la mayoría de tablas tienen dos filas inferiores, que se corresponden con las distintas nomenclaturas de RI e IR para una misma serie – ya que normalmente no conmutan –, en la matriz de la serie P sí coinciden, como se mencionará en el apartado \ref{conmut}.
 		
-		\[\begin{array}{l|cccccccccccc|r}
+		\full{$\begin{array}{l|cccccccccccc|r}
 		&\text{I}_{0}&\text{I}_{1}&\text{I}_{3}&\text{I}_{9}&\text{I}_{2}&\text{I}_{11}&\text{I}_{4}&\text{I}_{10}&\text{I}_{7}&\text{I}_{8}&\text{I}_{5}&\text{I}_{6}&\\
 		\hline
 		\text{T}_{0}&4&5&7&1&6&3&8&2&11&0&9&10&\text{R}_{0}\\
@@ -137,12 +133,15 @@
 		&\text{IR}_{0}&\text{IR}_{1}&\text{IR}_{3}&\text{IR}_{9}&\text{IR}_{2}&\text{IR}_{11}&\text{IR}_{4}&\text{IR}_{10}&\text{IR}_{7}&\text{IR}_{8}&\text{IR}_{5}&\text{IR}_{6}&\\
 		\hline
 		&\text{RI}_{0}&\text{RI}_{1}&\text{RI}_{3}&\text{RI}_{9}&\text{RI}_{2}&\text{RI}_{11}&\text{RI}_{4}&\text{RI}_{10}&\text{RI}_{7}&\text{RI}_{8}&\text{RI}_{5}&\text{RI}_{6}&
-		\end{array}\]
+		\end{array}$}
+	
+		
+		\bigbreak
 		
 		También he creado una página interactiva que genera matrices de cualquier serie para cualquier longitud serial, además de generar series aleatorias. Permite escoger entre dos numeraciones y dos nomenclaturas. Está escrita en Elm y el código puede encontrarse en \textit{https://gitlab.com/dodecafonismo/matrices}.
 		
 		\begin{wrapfigure}{l}{0.2\textwidth}
-			\vspace{-0.5cm}
+			\vspace{-\bigskipamount}
 			\qrcode{https://matrices.netlify.com/}
-		\end{wrapfigure} Este es el enlace de la aplicación web. Sus instrucciones de uso se encuentran al final de la página. El enlace es \textit{https://matrices.netlify.com/}.
+		\end{wrapfigure} En el código QR está el enlace de la aplicación web. Sus instrucciones de uso se encuentran al final de la página. El enlace es \textit{https://matrices.netlify.com/}.
 		

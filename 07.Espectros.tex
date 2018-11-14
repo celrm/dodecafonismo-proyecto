@@ -4,12 +4,12 @@
 		
 		\begin{wrapfigure}{R}{0.25\textwidth}
 			\captionsetup{justification=centering, font=footnotesize}
-			\vspace{-0.5cm}
+			\vspace*{-\bigskipamount}
 			\centering{
 				\includegraphics[width=0.22\textwidth]{Felix_Klein.jpeg}			
 				\caption*{Felix Klein\\(1849--1925)}	}
 			
-			%\vspace{-0.5cm}
+			\vspace*{-\bigskipamount}
 		\end{wrapfigure}
 		Es interesante conocer el número de espectros seriales distintos que un compositor puede escoger. Al fin y al cabo, es irrelevante qué serie se escoge como la original dentro de su espectro serial, ya que produce el mismo material compositivo que cualquiera de su mismo espectro.
 		
@@ -25,8 +25,8 @@
 		
 		En general, un grupo de Klein es el formado por cuatro elementos donde cada elemento es inverso de sí mismo. El grupo de Klein, llamado así en honor al matemático alemán Felix Klein, es el grupo $\mathbb{Z}/(2)\times\mathbb{Z}/(2)$, producto directo de dos copias del grupo cíclico de orden 2.
 		
-		Por el lema de Burnside, explicado y demostrado en el apartado \ref{burnside}:	
-		\[\#\text{Spec}=\#Orb=\frac{1}{|\mathbb{Z}/(2)\times\mathbb{Z}/(2)|}\sum_{\sigma\in\text{S}_n}|\text{Stab}(\sigma)|=\frac{1}{4}\sum_{\sigma\in\text{S}_n}|\text{Stab}(\sigma)|\]
+		Por el lema de Burnside:	
+		\[\#\text{Spec}=\frac{1}{|\mathbb{Z}/(2)\times\mathbb{Z}/(2)|}\sum_{\sigma\in\text{S}_n}|\text{Stab}(\sigma)|=\frac{1}{4}\sum_{\sigma\in\text{S}_n}|\text{Stab}(\sigma)|\]
 		
 		Es decir, se deben calcular para cada posible serie $\sigma\in\text{S}_n$ cuántas funciones transformativas lo dejan igual o equivalente bajo transposición.
 		
@@ -34,7 +34,7 @@
 		\[\sum_{\sigma\in\text{S}_n}|\text{Stab}(\sigma)|=1\cdot(\#\sigma_1)+2\cdot(\#\sigma_2)+4\cdot(\#\sigma_4)\]
 	
 		Primero, se ha de ver que una permutación nunca va a ser igual ni equivalente mediante transposiciones a su inversa.	\label{inversano}	
-		\[-\sigma(m)\equiv\sigma(m)\ \forall m\in \mathbb{Z} / (n) \implies 0\equiv2\sigma(m)\implies n\equiv2\sigma(m) \implies \frac{n}{2}\equiv\sigma(m)\]
+		\[-\sigma(m)\equiv\sigma(m)\implies 0\equiv2\sigma(m)\implies n\equiv2\sigma(m) \implies \frac{n}{2}\equiv\sigma(m)\]
 		
 		Así, $\sigma(m)$ sería constante para todo $m\in \mathbb{Z} / (n)$, lo cual es imposible. Esto implica que ninguna permutación va a tener a I en su estabilizador, por lo que $\#\sigma_4=0$. Queda entonces calcular cuántas permutaciones son equivalentes a su retrogradación y cuántas a su retrogradación inversa. La suma de ambas dará $\#\sigma_2$.
 	
@@ -84,37 +84,35 @@
 		
 		Recuperando la fórmula del apartado \ref{espec}:
 		
-		\[\#\text{Spec}=\frac{1}{4}\left(\#\sigma_1+2\cdot(\#\sigma_2)\right)=\frac{(n-1)!-\#\sigma_2+2\#\sigma_2}{4}=\frac{(n-1)!+\#\sigma_2}{4}\]
+		\[\#\text{Spec}=
+		\frac{1}{4}\left(\#\sigma_1+2\cdot(\#\sigma_2)\right)=
+		\frac{(n-1)!+\#\sigma_2}{4}\]
 		
 		Para $n$ impar:
-		\[\#\text{Spec}=\frac{(n-1)!+(n-1)!!}{4}=\frac{(n-1)!!\cdot\left((n-2)!!+1\right)}{4}\]
+		\[\frac{(n-1)!+(n-1)!!}{4}=\frac{(n-1)!!\cdot\left((n-2)!!+1\right)}{4}\]
 		
 		Para $n$ par:
-		\[\#\text{Spec}=\frac{(n-1)!+\left(\frac{1}{2}(n+2)(n-2)!!\right)}{4}=\frac{2(n-1)!+(n+2)(n-2)!!}{8}\]
+		\[\frac{(n-1)!+\left(\frac{1}{2}(n+2)(n-2)!!\right)}{4}=\frac{2(n-1)!+(n+2)(n-2)!!}{8}\]
 		
 		Para $n=12$, es decir, para el dodecafonismo, la última fórmula proporciona el dato de 9985920 espectros seriales a escoger por el compositor.
 		
-		Como ejemplo perteneciente al serialismo integral, podemos numerar las dinámicas \footnotesize$\{pianississimo,\ pianissimo,\ piano,\ mezzoforte,\ forte,\ fortissimo,\ fortississimo\}$\small, del 0 al 6:
-	\[\{ppp,\ pp,\ p,\ m\!f,\ f,\ f\!\!f,\ f\!\!f\!\!f\} \equiv \{0,\ 1,\ 2,\ 3,\ 4,\ 5,\ 6\} = \mathbb{Z} / (7)\]
+		Como ejemplo perteneciente al serialismo integral, podemos numerar las dinámicas del 0 al 6:
+		\[\{ppp,\ pp,\ p,\ m\!f,\ f,\ f\!\!f,\ f\!\!f\!\!f\} \equiv \{0,\ 1,\ 2,\ 3,\ 4,\ 5,\ 6\} = \mathbb{Z} / (7)\]
 		
 		Así, con la fórmula para $n$ impar, se obtiene que hay 192 espectros seriales con series de longitud 7.
 	
 	\section[Espectros del grupo D$_{n}$ x D$_{n}$]{Espectros del grupo D$_{\textbf{\textit{n}}}$ x D$_{\textbf{\textit{n}}}$}
 	
 		\begin{wrapfigure}{L}{0.25\textwidth}
-			\vspace{-0.5cm}
+			\vspace*{-\bigskipamount}
 			\begin{tikzpicture}[rotate=30*4,minimum height=0pt,inner sep=0pt,outer sep=0pt,scale=0.75]
 			\foreach \x in {0,...,11} {\node (\x) at (90-30*\x:1.6) {};};
 			
 			\draw (4)--(5)--(7)--(1)--(6)--(3)--(8)--(2)--(11)--(0)--(9)--(10)--(4);
 			\end{tikzpicture}
-			%\vspace{-0.75cm}
-			\centering
-			
-			%\caption*{\begin{center}{\footnotesize Espectro serial de la Suite Op. 25}\end{center}}
 		\end{wrapfigure}
 		Ahora se calcularán los espectros formados mediante todas las transformaciones del grupo generado por \{S,T,V,C\}. Volviendo a la representación mediante diagramas de reloj del apartado \ref{diagramas}, el problema es equivalente a averiguar cuántos diagramas distintos, sin números ni flechas, se pueden dibujar. La flecha indica lo transformado por V y C, mientras que los números indican lo transformado por S y T. Un diagrama sin estos dos elementos representa entonces todo un espectro serial. ¿Cuántos diagramas esencialmente distintos hay? De nuevo, por el lema de Burnside:	
-		\[\#\text{Spec}=\#Orb=\frac{1}{|\text{D}_{n}\times\text{D}_{n}|}\sum_{\sigma\in\text{S}_n}|\text{Stab}(\sigma)|=\frac{1}{2n\cdot2n}\sum_{\sigma\in\text{S}_n}|\text{Stab}(\sigma)|\]
+		\[\#\text{Spec}=\frac{1}{|\text{D}_{n}\times\text{D}_{n}|}\sum_{\sigma\in\text{S}_n}|\text{Stab}(\sigma)|=\frac{1}{2n\cdot2n}\sum_{\sigma\in\text{S}_n}|\text{Stab}(\sigma)|\]
 		
 		En vez de expresar el sumatorio como ``para cada $\sigma$, el número de $\Psi$ que fijan $\sigma$'', se puede expresar como ``para cada $\Psi$, el número de $\sigma$ fijados por $\Psi$''. La fórmula queda de esta manera:
 		$\#\text{Spec}=\frac{1}{4n^2}\sum_{\Psi\in\text{D}_{n}\times\text{D}_{n}}\text{Fij}(\Psi)$. Ahora hay que averiguar para cada elemento de $\text{D}_{n}\times\text{D}_{n}$ cuántas series estabiliza. Por ejemplo, trivialmente no hay permutaciones estables mediante C y R solamente.
@@ -131,49 +129,6 @@
 		
 		Esos coeficientes son el número de \textit{totativos} de cada divisor $d$ de $n$, pero en orden contrario. Es decir, los totativos de $\frac{n}{d}$, que es el divisor opuesto a $d$. Los totativos de un número son los números menores que él y coprimos con él. La función que indica cuántos totativos tiene un número $n$ se llama la función $\varphi$ de Euler. Entonces $\sum_{\text{k}=1}^{n}\text{Fij}(\uptheta_\text{k})=\sum_{d|n}\left(\varphi(\frac{n}{d})\cdot\text{Fij}(\uptheta_d)\right)$.
 		
-		\begin{wrapfigure}{R}{0.15\textwidth}
-			\vspace{0.5cm}
-			\begin{tikzpicture}[minimum height=0pt,inner sep=0pt,outer sep=0pt,scale=0.75]
-			\foreach \x in {0,...,5} {\node at (90-60*\x:2) {\x}; \node (\x) at (90-60*\x:1.6) {};};
-			
-			\draw [style=flechita] (0)--(3)--(2)--(4)--(1)--(5)--(0);
-			\end{tikzpicture}
-			
-			\begin{tikzpicture}
-			\draw[white] (-1.41,0) -- (0,0.25) -- (0,-1);
-			\draw[style=flache] (0,0) -- node[right=7pt] {C} (0,-0.75);
-			\end{tikzpicture}
-			
-			\begin{tikzpicture}[minimum height=0pt,inner sep=0pt,outer sep=0pt,scale=0.75]
-			\foreach \x in {0,...,5} {\node at (90-60*\x:2) {\x}; \node (\x) at (90-60*\x:1.6) {};};
-			
-			\draw [style=flechita] (3)--(2)--(4)--(1)--(5)--(0)--(3);
-			\end{tikzpicture}
-			
-			\begin{tikzpicture}
-			\draw[white] (-1.41,0) -- (0,0.25) -- (0,-1);
-			\draw[style=flache] (0,0) -- node[right=7pt] {V} (0,-0.75);
-			\end{tikzpicture}
-			
-			\begin{tikzpicture}[minimum height=0pt,inner sep=0pt,outer sep=0pt,scale=0.75]
-			\foreach \x in {0,...,5} {\node at (90-60*\x:2) {\x}; \node (\x) at (90-60*\x:1.6) {};};
-			
-			\draw [style=flechita] (3)--(0)--(5)--(1)--(4)--(2)--(3);
-			\end{tikzpicture}
-			
-			\begin{tikzpicture}
-			\draw[white] (-1.41,0) -- (0,0.25) -- (0,-1);
-			\draw[style=flache] (0,0) -- node[right=7pt] {T$^3$} (0,-0.75);
-			\end{tikzpicture}
-			
-			\begin{tikzpicture}[minimum height=0pt,inner sep=0pt,outer sep=0pt,scale=0.75]
-			\foreach \x in {0,...,5} {\node at (90-60*\x:2) {\x}; \node (\x) at (90-60*\x:1.6) {};};
-			
-			\draw [style=flechita] (0)--(3)--(2)--(4)--(1)--(5)--(0);
-			\end{tikzpicture}
-			\vspace{-0.5cm}
-		\end{wrapfigure}
-		
 		Para calcular $\text{Fij}(\uptheta_d)$ hay que analizar el método de construcción de diagramas invariantes respecto a una rotación. Estos diagramas deben tener varios loops iguales entre sí pero cada uno desde un punto distinto: desde cada múltiplo de $d$. El número de loops es, por tanto, $\frac{n}{d}$.
 		
 		Al construir uno de estos diagramas, se escoge la primera nota entre las $n$. Después, se escoge la segunda, pero no se puede escoger los vértices múltiplos de $d$ (de los que hay $\frac{n}{d}$), ya que van a ser el comienzo de los sucesivos loops. Hay entonces $n-\frac{n}{d}$ posibilidades. Después se escoge la tercera, pero sin escoger los múltiplos de $d$ ni los múltiplos de $d\ +$ la segunda posición. Hay $n - 2\cdot\frac{n}{d}$ posibilidades, y así sucesivamente hasta terminar el primer loop:
@@ -183,7 +138,25 @@
 		
 		Para escoger el segundo loop, su primera nota debe caer en el conjunto de vértices múltiplos de $d$, y se puede escoger de $\varphi\left(\frac{n}{d}\right)$ formas. No son $\frac{n}{d}$ ya que tomar un vértice no coprimo implicaría que el polígono se cerraría antes de tiempo sin pasar por todos los vértices. Tras esto el polígono está totalmente determinado, y se puede formar de $\sum_{d|n}\left(\varphi^2(\frac{n}{d})\cdot\left(\frac{n}{d}\right)^d\cdot d!\right)$ maneras.
 		
-		Solamente para $n$ par hay un método más de construcción de polígono invariante mediante T, V y C a la vez, ya que al rotar $\frac{n}{2}$ el diagrama puede llegar con la orientación cambiada. A la derecha hay un ejemplo de ello. Esto puede ocurrir cuando entre dos notas haya un intervalo -- un salto -- de $\frac{n}{2}$.
+		Solamente para $n$ par hay un método más de construcción de polígono invariante mediante T, V y C a la vez, ya que al rotar $\frac{n}{2}$ el diagrama puede llegar con la orientación cambiada. Debajo hay un ejemplo de ello. Esto puede ocurrir cuando entre dos notas haya un intervalo -- un salto -- de $\frac{n}{2}$: una diagonal.
+		
+		\begin{tikzpicture}[minimum height=0pt,inner sep=0pt,outer sep=0pt,scale=0.5]
+		\foreach \x in {0,...,5} {\node at (90-60*\x:2) {\x}; \node (\x) at (90-60*\x:1.6) {};};		
+		\draw [style=flechita] (0)--(3)--(2)--(4)--(1)--(5)--(0);
+		
+		\draw[style=flache] (3,0) -- node[above=5pt] {C} (4.5,0);
+		
+		\foreach \x in {0,...,5} {\node [xshift=4cm] at (90-60*\x:2) {\x}; \node [xshift=4cm] (\x) at (90-60*\x:1.6) {};};
+		\draw [style=flechita] (3)--(2)--(4)--(1)--(5)--(0)--(3);
+		
+		\draw[style=flache,xshift=8cm] (3,0) -- node[above=5pt] {V} (4.5,0);
+		
+		\foreach \x in {0,...,5} {\node [xshift=8cm] at (90-60*\x:2) {\x}; \node [xshift=8cm] (\x) at (90-60*\x:1.6) {};};
+		\draw [style=flechita] (3)--(0)--(5)--(1)--(4)--(2)--(3);		
+		
+		
+		\draw[style=flache] (16,-3) -- (16,-4) -- node [fill=white] {T$^3$} (0,-4) -- (0,-3);
+		\end{tikzpicture}
 		
 		Primero se escoge la diagonal de entre $\frac{n}{2}$ posibilidades, con lo que queda dividida en dos la figura. De cada pareja de puntos antipodales se escoge el que irá primero en la ronda de elección. Esa elección para cada pareja opuesta se da de de $2^{\frac{n}{2}}$ formas. Tras lo cual se ordenan esos primeros miembros entre sí, de $\frac{n}{2}!$ formas. Esto lleva a las $\frac{n}{2}\cdot2^{\frac{n}{2}}\cdot\frac{n}{2}!$ formas de dibujar un polígono con las características buscadas.		
 		
@@ -208,10 +181,10 @@
 		
 		\[\begin{array}{c||c}
 		&\textbf{\textit{n} PAR}\\\hline\hline
-		\text{Rotación}&\sum_{d|n}\left(\varphi^2(\frac{n}{d})\cdot\left(\frac{n}{d}\right)^d\cdot d!\right)\\\hline
-		\text{Rotación con orientación}&\frac{n}{2}\cdot2^{\frac{n}{2}}\cdot\frac{n}{2}!\\\hline
-		\text{Reflexión por vértices}&\frac{n^2}{2}\cdot2^{\frac{n}{2}}\cdot\left(\frac{n}{2}-1\right)!\\\hline
-		\text{Reflexión por lados}&\frac{n^2}{2}\cdot2^{\frac{n}{2}-1}\cdot\frac{n}{2}!\\\hline
+		\text{Rotación I}&\sum_{d|n}\left(\varphi^2(\frac{n}{d})\cdot\left(\frac{n}{d}\right)^d\cdot d!\right)\\\hline
+		\text{Rotación II}&\frac{n}{2}\cdot2^{\frac{n}{2}}\cdot\frac{n}{2}!\\\hline
+		\text{Reflexión vértices}&\frac{n^2}{2}\cdot2^{\frac{n}{2}}\cdot\left(\frac{n}{2}-1\right)!\\\hline
+		\text{Reflexión lados}&\frac{n^2}{2}\cdot2^{\frac{n}{2}-1}\cdot\frac{n}{2}!\\\hline
 		&\sum_{d|n}\left(\varphi^2(\frac{n}{d})\cdot\left(\frac{n}{d}\right)^d\cdot d!\right)+\frac{n(n+6)}{4}\cdot2^{\frac{n}{2}}\cdot\frac{n}{2}!\\
 		\end{array}\]
 		\def\arraystretch{1}
@@ -221,7 +194,7 @@
 		Con $n=0$ se da el caso de medefonismo. El grupo simétrico de orden 0 tiene $0!=1$ elemento. Por tanto, hay una sola posible serie, $\sigma$, que es la que no tiene ninguna nota. El medefonismo es comúnmente llamado silencio.
 		
 		\[\sigma=\left(\begin{matrix}\\\end{matrix}\right)
-		\hspace{5cm}
+		\qquad\qquad\qquad
 		\begin{array}{l||r}
 		&\\
 		\hline
@@ -233,7 +206,7 @@
 	
 		Con $n=1$ se da el caso de monofonismo. Con solamente una posible nota, el grupo simétrico de orden 1 tiene $1!=1$ elemento. Por tanto, hay una sola posible serie, $\sigma_0$, que es igual a su inversa, a su retrogradación y a su retrogradación inversa:
 		\[\sigma_0=\left(\begin{matrix}0\\0\end{matrix}\right)
-		\hspace{3cm}
+		\qquad\qquad\qquad
 		\begin{array}{l|c|r}
 			&\text{I}_{0}&\\
 			\hline
@@ -246,7 +219,7 @@
 	
 		Con $n=2$ se da el caso de difonismo. Tiene dos posibles notas, así que su grupo simétrico, el de orden 2, tiene $2!=2$ elementos. Por tanto, hay dos series distintas, $\sigma_0$ y $\sigma_1$. Se puede observar que ambas pertenecen al mismo espectro serial, dado que $\sigma_1=\text{T}^1(\sigma_0)$. Además, al igual que en el monofonismo, ambas coinciden con sus inversas, incumpliendo la regla general para $n>2$ probada en el apartado \ref{inversano}.
 		\[\sigma_0=\left(\begin{matrix}0&1\\0&1\end{matrix}\right)
-		\hspace{2cm}
+		\qquad\qquad
 		\begin{array}{l|cc|r}
 			&\text{I}_{0}&\text{I}_{1}&\\
 			\hline
@@ -257,5 +230,5 @@
 			\hline
 			&\text{RI}_{0}&\text{RI}_{1}&
 		\end{array}
-		\hspace{2cm}
+		\qquad\qquad
 		\sigma_1=\left(\begin{matrix}0&1\\1&0\end{matrix}\right)\]
