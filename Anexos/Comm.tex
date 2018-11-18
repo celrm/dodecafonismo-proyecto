@@ -1,41 +1,118 @@
 	\chapter[Conmutatividad del grupo D$_{\textbf{12}}$ x D$_{\textbf{12}}$]{Conmutatividad del grupo \\D$_{\textbf{12}}$ x D$_{\textbf{12}}$}
 	\label{app:commm}
-		\subsubsection*{S y T no conmutan:}
+	\begin{center}
 		
-		$\text{S}\circ\text{T}(\sigma(m))=\text{S}(\sigma(m)+1)=-(\sigma(m)+1)=-\sigma(m)-1$
+		\underline{S y T no conmutan:}
+		\vspace*{-\bigskipamount}
+		\begin{multicols}{3}
+			\begin{align*}
+			&\ \text{S}\circ\text{T}(\sigma(m))\\
+			=&\ \text{S}(\sigma(m)+1)\\
+			=&\ -(\sigma(m)+1)\\
+			=&\ -\sigma(m)-1
+			\end{align*}
+			
+			\begin{align*}
+			&\ \text{T}\circ\text{S}(\sigma(m))\\
+			=&\ \text{T}(-\sigma(m))\\
+			=&\ -\sigma(m)+1
+			\end{align*}
+			
+			\begin{align*}
+			&\ \text{S}\circ\text{T}^{-1}(\sigma(m))\\
+			=&\ \text{S}(\sigma(m)-1)\\
+			=&\ -(\sigma(m)-1)\\
+			=&\ -\sigma(m)+1
+			%=&\ \text{T}\circ\text{S}(\sigma(m))
+			\end{align*}
+		\end{multicols}
 		
-		$\text{T}\circ\text{S}(\sigma(m))=\text{T}(-\sigma(m))=-\sigma(m)+1$
+		\underline{V y C no conmutan:}
+		\vspace*{-\bigskipamount}
+		\begin{multicols}{3}
+			\begin{align*}
+			&\ \text{V}\circ\text{C}(\sigma(m))\\
+			=&\ \text{V}(\sigma(m+1))\\
+			=&\ \sigma(-(m+1))\\
+			=&\ \sigma(-m-1)
+			\end{align*}
+			
+			\begin{align*}
+			&\ \text{C}\circ\text{V}(\sigma(m))\\
+			=&\ \text{C}(\sigma(-m))\\
+			=&\ \sigma(-m+1)
+			\end{align*}
+			
+			\begin{align*}
+			&\ \text{V}\circ\text{C}^{-1}(\sigma(m))\\
+			=&\ \text{V}(\sigma(m-1))\\
+			=&\ \sigma(-(m-1))\\
+			=&\ \sigma(-m+1)
+			%=&\ \text{C}\circ\text{V}(\sigma(m))
+			\end{align*}
+		\end{multicols}
 		
-		$\text{S}\circ\text{T}^{-1}(\sigma(m))=\text{S}(\sigma(m)-1)=-(\sigma(m)-1)=-\sigma(m)+1=\text{T}\circ\text{S}(\sigma(m))$
+		\underline{S y V conmutan:}
+		\vspace*{-\bigskipamount}
+		\begin{multicols}{2}
+			\begin{align*}
+			&\ \text{S}\circ\text{V}(\sigma(m))\\
+			=&\ \text{S}(\sigma(-m))\\
+			=&\ -\sigma(-m)
+			\end{align*}
+			
+			\begin{align*}
+			&\ \text{V}\circ\text{S}(\sigma(m))\\
+			=&\ \text{V}(-\sigma(m))\\
+			=&\ -\sigma(-m)
+			\end{align*}
+		\end{multicols}
 		
-		\subsubsection*{V y C no conmutan:}
+		\underline{S y C conmutan:}
+		\vspace*{-\bigskipamount}
+		\begin{multicols}{2}
+			\begin{align*}
+			&\ \text{S}\circ\text{C}(\sigma(m))\\
+			=&\ \text{S}(\sigma(m+1))\\
+			=&\ -\sigma(m+1)
+			\end{align*}
+			
+			\begin{align*}
+			&\ \text{C}\circ\text{S}(\sigma(m))\\
+			=&\ \text{C}(-\sigma(m))\\
+			=&\ -\sigma(m+1)
+			\end{align*}
+		\end{multicols}
+	
+		\underline{T y V conmutan:}
+		\vspace*{-\bigskipamount}
+		\begin{multicols}{2}
+			\begin{align*}
+			&\ \text{T}\circ\text{V}(\sigma(m))\\
+			=&\ \text{T}(\sigma(-m))\\
+			=&\ \sigma(-m)+1
+			\end{align*}
+			
+			\begin{align*}
+			&\ \text{V}\circ\text{T}(\sigma(m))\\
+			=&\ \text{V}(\sigma(m)+1)\\
+			=&\ \sigma(-m)+1
+			\end{align*}
+		\end{multicols}
 		
-		$\text{V}\circ\text{C}(\sigma(m))=\text{V}(\sigma(m+1))=\sigma(-(m+1))=\sigma(-m-1)$
-		
-		$\text{C}\circ\text{V}(\sigma(m))=\text{C}(\sigma(-m))=\sigma(-m+1)$
-		
-		$\text{V}\circ\text{C}^{-1}(\sigma(m))=\text{V}(\sigma(m-1))=\sigma(-(m-1))=\sigma(-m+1)=\text{C}\circ\text{V}(\sigma(m))$
-		
-		\subsubsection*{S y V conmutan:}
-		
-		$\text{S}\circ\text{V}(\sigma(m))=\text{S}(\sigma(-m))=-\sigma(-m)$
-		
-		$\text{V}\circ\text{S}(\sigma(m))=\text{V}(-\sigma(m))=-\sigma(-m)$
-		
-		\subsubsection*{S y C conmutan:}
-		
-		$\text{S}\circ\text{C}(\sigma(m))=\text{S}(\sigma(m+1))=-\sigma(m+1)$
-		
-		$\text{C}\circ\text{S}(\sigma(m))=\text{C}(-\sigma(m))=-\sigma(m+1)$
-		
-		\subsubsection*{T y V conmutan:}
-		
-		$\text{T}\circ\text{V}(\sigma(m))=\text{T}(\sigma(-m))=\sigma(-m)+1$
-		
-		$\text{V}\circ\text{T}(\sigma(m))=\text{V}(\sigma(m)+1)=\sigma(-m)+1$
-		
-		\subsubsection*{T y C conmutan:}
-		
-		$\text{T}\circ\text{C}(\sigma(m))=\text{T}(\sigma(m+1))=\sigma(m+1)+1$
-		
-		$\text{C}\circ\text{T}(\sigma(m))=\text{C}(\sigma(m)+1)=\sigma(m+1)+1$
+		\underline{T y C conmutan:}
+		\vspace*{-\bigskipamount}
+		\begin{multicols}{2}
+			\begin{align*}
+			&\ \text{T}\circ\text{C}(\sigma(m))\\
+			=&\ \text{T}(\sigma(m+1))\\
+			=&\ \sigma(m+1)+1
+			\end{align*}
+			
+			\begin{align*}
+			&\ \text{C}\circ\text{T}(\sigma(m))\\
+			=&\ \text{V}(\sigma(m)+1)\\
+			=&\ \sigma(m+1)+1
+			\end{align*}
+		\end{multicols}
+	\end{center}

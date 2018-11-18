@@ -17,9 +17,7 @@
 	
 		Además, como las transposiciones siempre son distintas entre sí, siempre pertenecen al mismo espectro. Se tomarán a partir de ahora todas ellas como equivalentes, de manera que solo se necesita hacer el cálculo para \{I, R\}.
 		
-		Al calcular con permutaciones se trabajará módulo $n$. La retrogradación sigue siendo R($\sigma(m))=\sigma(-1-m)$. La inversión será I($\sigma(m))=-\sigma(m)$, omitiendo la transposición habitual, ya que se toman las series transpuestas como equivalentes. De esta forma $-\sigma(m)+2\sigma(0)\equiv-\sigma(m)$. La retrogradación invertida es, por tanto, la composición de ambas: 
-		
-		RI($\sigma(m))=\text{I}\circ\text{R}(\sigma(m))=\text{I}\left(\text{R}(\sigma(m))\right)=-\sigma(-1-m)$.
+		Al calcular con permutaciones se trabajará módulo $n$. La retrogradación sigue siendo R($\sigma(m))=\sigma(-1-m)$. La inversión será I($\sigma(m))=-\sigma(m)$, omitiendo la transposición habitual, ya que se toman las series transpuestas como equivalentes. De esta forma $-\sigma(m)+2\sigma(0)\equiv-\sigma(m)$. La retrogradación invertida es, por tanto, la composición de ambas: RI($\sigma(m))=\text{I}\circ\text{R}(\sigma(m))=\text{I}\left(\text{R}(\sigma(m))\right)=-\sigma(-1-m)$.
 		
 		La retrogradación, la inversión y la composición de ambas cumplen que al aplicarlas dos veces se vuelve a la serie original. En teoría de grupos se diría que tienen orden 2. Entonces, \{Id, I, R, IR\} forma un grupo especial llamado \textit{grupo de Klein}, donde RI $\equiv$ IR, ya que estamos tomando las series transpuestas como equivalentes. 
 		
@@ -33,15 +31,23 @@
 		Como los estabilizadores son subgrupos, por el teorema de Lagrange su tamaño debe ser divisor del tamaño del grupo total. Entonces se pueden agrupar los estabilizadores por sus tamaños: 1, 2 o 4, y así calcular $\sum|\text{Stab}(\sigma)|$ agrupando todas las permutaciones con igual tamaño de estabilizador. Si $\#\sigma_i$ es el número de permutaciones cuyos estabilizadores tienen tamaño $i$:		
 		\[\sum_{\sigma\in\text{S}_n}|\text{Stab}(\sigma)|=1\cdot(\#\sigma_1)+2\cdot(\#\sigma_2)+4\cdot(\#\sigma_4)\]
 	
-		Primero, se ha de ver que una permutación nunca va a ser igual ni equivalente mediante transposiciones a su inversa.	\label{inversano}	
-		\[-\sigma(m)\equiv\sigma(m)\implies 0\equiv2\sigma(m)\implies n\equiv2\sigma(m) \implies \frac{n}{2}\equiv\sigma(m)\]
+		Primero, se ha de ver que una permutación nunca va a ser igual ni equivalente mediante transposiciones a su inversa.	\label{inversano}
+			\begin{align*}
+			-\sigma(m)&\equiv\sigma(m)\Longleftrightarrow\\
+			0&\equiv2\sigma(m)\Longleftrightarrow\\
+			n&\equiv2\sigma(m)\Longleftrightarrow\\
+			\frac{n}{2}&\equiv\sigma(m)
+			\end{align*}
 		
 		Así, $\sigma(m)$ sería constante para todo $m\in \mathbb{Z} / (n)$, lo cual es imposible. Esto implica que ninguna permutación va a tener a I en su estabilizador, por lo que $\#\sigma_4=0$. Queda entonces calcular cuántas permutaciones son equivalentes a su retrogradación y cuántas a su retrogradación inversa. La suma de ambas dará $\#\sigma_2$.
 	
 	\subsection{Elementos estables mediante R}
 		Las permutaciones que coinciden con alguna transposición de su retrogradación cumplen, para $\gamma$ constante:
-		\[\gamma+\sigma(m)=\text{R}(\sigma(m))=\sigma(-1-m)\]
-		Aplicándolo a $(-1-m)$: $\qquad\gamma+\sigma(-1-m)=\sigma(-1-(-1-m))=\sigma(m)$
+		\begin{align*}
+		\gamma&+\sigma(m) &=& \text{R}(\sigma(m)) &=& \sigma(-1-m)\\
+		&\text{Aplicándolo a }(-1-m):\\
+		\gamma&+\sigma(-1-m) &=& \sigma(-1-(-1-m)) &=& \sigma(m)
+		\end{align*}
 		
 		De ambas ecuaciones: $\qquad\gamma=\sigma(-1-m)-\sigma(m)=\sigma(m)-\sigma(-1-m)$
 		\[2\sigma(m)\equiv2\sigma(-1-m)\implies2\sigma(m)-2\sigma(-1-m)\equiv0\]	\[2\sigma(m)-2\sigma(-1-m)=n \implies \sigma(m)-\sigma(-1-m)=\frac{n}{2}\]
@@ -49,6 +55,7 @@
 		\[\gamma=\sigma(m)-\sigma(-1-m)=\frac{n}{2}\]
 		
 		En una serie de longitud $n$, existen $\frac{n}{2}$ intervalos que miden $\frac{n}{2}$. Como no importa por cuál de ellos comience la serie, ya que las transportaciones son equivalentes, se fija el primero de los intervalos. Quedan los otros $\frac{n}{2}-1$ intervalos por escoger, así que el número de series con simetría par cuenta las permutaciones de $\frac{n}{2}-1$ intervalos y las dos posibles posiciones de cada intervalo -- creciente y decreciente --. \cite{reiner} Por ello, el número de series con simetría par es de:
+		
 		\[2! \cdot \left(\frac{n}{2}-1\right)! = 2\left(\frac{n-2}{2}\right)!=(n-2)(n-4)\ldots=(n-2)!!\ \footnote{Por definición, si $n$ es par $n!!=n(n-2)(n-4)\ldots4\cdot2$ y si $n$ es impar $n!!=n(n-2)(n-4)\ldots3\cdot1$.}\]
 
 	\subsection{Elementos estables mediante RI}

@@ -1,8 +1,6 @@
 import Control.Monad (forever, guard)
 import Data.List
 import Data.Ord (comparing)
---import Data.Function (on)
---import Debug.Trace (trace)
 
 
 type Scale = [Int]
@@ -29,7 +27,6 @@ main
         "\nTerminado."
 
 
--- TODO instance Read
 readScale :: String -> Scale
 readScale scale
   = (\x -> if length x > 12 then [] else x)
@@ -42,7 +39,6 @@ readScale scale
     scale
 
 
--- TODO instance Show
 -- Mostrar una escala.
 showScale :: Scale -> String
 showScale scale
@@ -111,20 +107,28 @@ best scales
     )
   where
     solution
-      = head  -- El primer grupo con la mínima distancia.
+      = head  -- El primer grupo tiene la mínima distancia.
       $ groupBy
         (\x y -> snd x == snd y)
       $ sortBy
         (comparing snd)  -- La menor distancia.
       $ map
-        (\e ->
-          (e, sum  -- La suma de las distancias
-            $ map  -- entre la función y la escala cromática.
-              (\(x, i) -> abs (x-i))
-            $ zip e [0..]
-          )
-        )
+        (\s -> (s, norm s))
         scales
+
+
+norm :: Scale -> Int
+norm s
+  = sum  -- La suma de las distancias
+  $ map  -- entre la función y la escala cromática.
+    (\(x, i) -> abs (x-i))
+  $ zip s [0..]
+  -- = sqrt
+  -- $ fromIntegral
+  -- $ sum
+  -- $ map
+  --   (\(x, i) -> (x-i)*(x-i))
+  -- $ zip s [0..]
 
 
 -- Llama a la función recursiva de fixed points.
@@ -223,6 +227,7 @@ func nfixed scale
         (length result == long) -- Quito los que no tengan long (los []).
       return $ normalize result
 
+
 -- Pongo el índice 0 otra vez al principio
 -- y lo pongo en orden creciente.
 normalize :: Scale -> Scale
@@ -254,15 +259,13 @@ oneCase [] ((next, nextFreq):freqs) start
 
 -- Si quedan fixed points:
 oneCase ffixed@(f:fixed) ((next, nextFreq):freqs) start@(s:_)
-    -- Si f es igual al siguiente índice,
-    -- next tiene que ser ese índice porque f es fijo.
+    -- Si f es igual al siguiente índice, next tiene que ser ese índice porque f es fijo.
     | f==currentIndex && f==next
     = oneCase
         fixed  -- Ya hemos usado f; lo desechamos.
         ((eraseFreq next nextFreq) ++ freqs) $
         start ++ [next]
-    --Si no necesito fijar,
-    -- entonces next no puede pasarse del siguiente fixed point f.
+    --Si no necesito fijar, entonces next no puede pasarse del siguiente fixed point f.
     | f/=currentIndex && f>=next
     = oneCase
         ffixed

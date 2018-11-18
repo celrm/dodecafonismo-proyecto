@@ -2,15 +2,15 @@
 	\section{Los postulados del dodecafonismo}
 		El dodecafonismo es un sistema compositivo que predetermina la melodía y la armonía a partir de una ordenación de las doce notas de la escala cromática, que se llama \textit{serie}. Ésta y algunas de sus transformaciones son los ladrillos con los que se construyen las alturas de las notas; son el único material que se puede utilizar.
 		
-		El resto de elementos de la pieza, como el número de instrumentos, el ritmo, el carácter, la textura o las dinámicas, se dejan a discreción del compositor. No serializar todos los conjuntos será la principal crítica al dodecafonismo por parte de los compositores serialistas que sucedieron a Schoenberg: los compositores de serialismo integral de mediados del siglo XX, como Pierre Boulez. Para los serialistas integrales, aquello restaba cohesión al modelo compositivo; para los dodecafonistas, aportaba libertad.
+		El resto de elementos de la pieza, como el número de instrumentos, el ritmo, el carácter, la textura o las dinámicas, se dejan a discreción del compositor. No serializar todos los conjuntos será la principal crítica al dodecafonismo por parte de los compositores serialistas que sucedieron a su creador, Arnold Schoenberg. Para los serialistas integrales, como Pierre Boulez, aquello restaba cohesión al modelo compositivo; para los dodecafonistas, aportaba libertad.
 		
-		Precisamente la predeterminación dodecafónica, aunque parece limitante, permite realizaciones musicales y estilos de composición muy diferentes: Schoenberg daba un tratamiento tradicional a sus obras, ya que aún admiraba las formas clásicas; Berg iba más allá al utilizar series que recordaban a las tríadas tonales; y, en cambio, Webern evitaba radicalmente cualquier asociación con la tradición.
+		Precisamente la predeterminación dodecafónica, aunque parece limitante, permite realizaciones musicales y estilos de composición muy diferentes: Schoenberg daba un tratamiento tradicional a sus obras, ya que aún admiraba las formas clásicas; Alban Berg iba más allá al utilizar series que recordaban a las tríadas tonales; y, en cambio, Anton Webern evitaba radicalmente cualquier asociación con la tradición.
 		
 		Schoenberg definió su sistema musical a partir de cuatro postulados que, en realidad, se basan en principios matemáticos:
 		
-		{\it1. La serie \emph{[sobre la que se construye la obra dodecafónica]} consta de las doce notas de la escala cromática dispuestas en un orden lineal específico.}
+		\emph{1. La serie \emph{[sobre la que se construye la obra dodecafónica]} consta de las doce notas de la escala cromática dispuestas en un orden lineal específico.}
 		
-		{\it2. Ninguna nota aparece más de una vez en la serie.}
+		\emph{2. Ninguna nota aparece más de una vez en la serie.}
 		
 		Los dos primeros postulados expresan que una obra dodecafónica fundamenta su estructura sobre una permutación de la escala de doce semitonos. Dicha permutación $\sigma$ es una biyección del conjunto numerado de las doce notas \{Do = 0, Do\# = 1, Re = 2, Re\# = 3, Mi = 4, Fa = 5, F\# = 6, Sol = 7, Sol\# = 8, La = 9, La\# = 10, Si = 11\} consigo mismo, y se representa de esta forma:
 		
@@ -21,30 +21,28 @@
 		\[\sigma=\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\4&5&7&1&6&3&8&2&11&0&9&10\\\end{matrix}\right)\]	
 		\includegraphics[width=\textwidth]{1.png}
 		
-		{\it3. La serie será expuesta en cualquiera de sus aspectos lineales: original, inversión, retrogradación de la original y retrogradación de la inversión.}
+		\emph{3. La serie será expuesta en cualquiera de sus aspectos lineales: original, inversión, retrogradación de la original y retrogradación de la inversión.}
 		 
-		{\it4. La serie puede usarse en sus cuatro aspectos desde cualquier nota de la escala.}
+		\emph{4. La serie puede usarse en sus cuatro aspectos desde cualquier nota de la escala.}
 		
 		Los dos últimos postulados amplían los recursos compositivos al admitir la transformación de la serie original mediante \emph{inversión}, \emph{retrogradación}, \emph{inversión retrógrada} y \emph{transposición}\footnote{No confundir con un 2-ciclo. Una transposición musical se corresponde con una traslación matemática.}. El compositor puede utilizar cualquiera de las transformaciones de una serie al componer su obra dodecafónica. El conjunto de series que puede utilizar, que viene dado por la serie original y todas sus posibles transformaciones, se conoce como \emph{espectro serial}.
 		
 	\section{Las transformaciones de una serie}
 		\label{transPsi}
-		Transformar una serie es matemáticamente equivalente a aplicar una función sobre la serie que asocie su permutación a la permutación transformada. Por tanto, cualquier función transformativa $\Psi$ se aplica sobre el conjunto de las permutaciones: S$_{12}$, el grupo simétrico de orden 12 ($\Psi:\text{S}_{12}\rightarrow\text{S}_{12}$).
+		Transformar una serie es matemáticamente equivalente a aplicar una función sobre la serie, y que asocie esa permutación a la permutación transformada. Por tanto, cualquier función transformativa $\Psi$ se aplica sobre el conjunto de las permutaciones, S$_{12}$.
 		
 	\subsection{Transposiciones}
 		La \emph{transposición}, mencionada en el cuarto postulado, consiste en subir o bajar la serie original un número determinado de semitonos. Por tanto, no se modifican los intervalos entre las notas, sino solamente la altura a la que está la serie. Ya que consideraremos todas las octavas equivalentes, debemos trabajar módulo 12. 
 		
-		La serie transportada k semitonos, T$^\text{k}\left(\sigma\right)$, se construye sumando k a $\sigma$ (mod. 12):
-		\[
-		\forall m\in \mathbb{Z} / (12):	\text{T}^\text{k}\left(\sigma\left(m\right)\right)=\sigma\left(m\right)+\text{k} \qquad \text{con k constante;}
-		\]		
+		La serie transportada k semitonos (con k constante), T$^\text{k}\left(\sigma\right)$, se construye sumando k a $\sigma$ (mod. 12):
+		\[\text{T}^\text{k}\left(\sigma\left(m\right)\right)=\sigma\left(m\right)+\text{k}\]		
 		\full{$
 		\text{T}^\text{k}=\left(\begin{matrix}0&1&2&&9&10&11\\\sigma\left(0\right)+\text{k}&\sigma\left(1\right)+\text{k}&\sigma\left(2\right)+\text{k}&\cdots&\sigma\left(9\right)+\text{k}&\sigma\left(10\right)+\text{k}&\sigma\left(11\right)+\text{k}\\\end{matrix}\right)
 		$}
 		
 		A su vez, T$^\text{k}$ se forma al componer k transposiciones de 1 semitono: $\text{T}^\text{k}=\text{T}^1\circ\text{T}^1\circ\ldots\circ\text{T}^1$, k veces. Debido a que k es en realidad el exponente en la potencia de T, se coloca este número como superíndice.
 		
-		Históricamente, la notación $\Psi_\text{k}$, $\Psi^\text{k}$ o $\Psi(\text{k})$ se ha usado en sustitución de la composición de la transposición T$^\text{k}$ y otra función $\Psi$, en el respectivo orden: $\Psi^\text{k}=\Psi \circ \text{T}^\text{k} = \Psi(\text{T}^\text{k})$. Sin embargo, esta notación es especialmente ambigua y confusa. Por ello, es preferible ceñirse a la notación estrictamente matemática; es decir, a la composición de funciones, aun omitiendo $\circ$: \cancel{$\Psi_\text{k}$}, \cancel{$\Psi^\text{k}$}, \cancel{$\Psi(\text{k})$} $\rightarrow \Psi\text{T}^\text{k}$
+		Históricamente, la notación $\Psi_\text{k}$, $\Psi^\text{k}$ o $\Psi(\text{k})$ se ha usado en sustitución de la composición de la transposición T$^\text{k}$ y otra función $\Psi$, en el respectivo orden: $\Psi^\text{k}=\Psi \circ \text{T}^\text{k} = \Psi(\text{T}^\text{k})$. Sin embargo, esta notación es especialmente ambigua y confusa, sobre todo al trabajar con funciones no conmutativas. Por ello, es preferible ceñirse a la notación estrictamente matemática; es decir, a la composición de funciones, aun omitiendo $\circ$: \cancel{$\Psi_\text{k}$}, \cancel{$\Psi^\text{k}$}, \cancel{$\Psi(\text{k})$} $\rightarrow \Psi\text{T}^\text{k}$
 		
 		Una posible serie transportada sobre la permutación $\sigma$ de la Suite para piano Op. 25, con k $= 6$, es la siguiente serie T$^6$:
 		\[\text{T}^6=\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\10&11&1&7&0&9&2&8&5&6&3&4\\\end{matrix}\right)\]	
@@ -54,8 +52,7 @@
 		La \emph{retrogradación} consiste en leer la serie original desde la nota final hacia atrás, es decir, aplicar a la serie una simetría especular. De este modo, la primera nota irá al último puesto, la segunda al penúltimo, y así sucesivamente.
 		
 		La serie retrógrada se construye de esta forma:
-		\[
-		\forall m\in \mathbb{Z} / (12):	\text{R}\left(\sigma\left(m\right)\right)=\sigma\left(-1-m\right)\] 
+		\[\text{R}\left(\sigma\left(m\right)\right)=\sigma\left(-1-m\right)\]
 		\full{$\text{R}=\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\	\sigma(11)&\sigma(10)&\sigma(9)&\sigma(8)&\sigma(7)&\sigma(6)&\sigma(5)&\sigma(4)&\sigma(3)&\sigma(2)&\sigma(1)&\sigma(0)\\\end{matrix}\right)$}
 			
 		La serie retrógrada sobre la permutación $\sigma$ de la Suite Op. 25 es la siguiente serie R:	
@@ -64,11 +61,12 @@
 		
 	\subsection{Inversión}
 		La \emph{inversión} consiste en cambiar la dirección --de ascendente a descendente, y viceversa-- de los intervalos entre cada nota de la serie. Si el primer intervalo en la serie original $\sigma$ es de $+k$, el primer intervalo en la serie invertida I será de $-k$ (mod. 12), por lo que debemos cambiar el signo de $\sigma$ para construir I. Además, queremos que la primera nota de ambas series, I(0) y $\sigma$(0), coincidan, así que debemos transportar la serie ($-\sigma$) un número $\lambda$ de semitonos para que esta condición se cumpla:
-		\[\text{I}(0)=-\sigma\left(0\right)+\lambda=\sigma\left(0\right)\implies \lambda=2\sigma(0)\]
+		\begin{align*}
+		\text{I}(0)=-\sigma\left(0\right)+\lambda&=\sigma\left(0\right)\\
+		\implies \lambda&=2\sigma(0)
+		\end{align*}
 		Por tanto, la serie invertida se construye de esta forma:
-		\[
-		\forall m\in \mathbb{Z} / (12):	\text{I}\left(\sigma\left(m\right)\right)=-\sigma\left(m\right)+2\sigma\left(0\right)
-		\]
+		\[\text{I}\left(\sigma\left(m\right)\right)=-\sigma\left(m\right)+2\sigma\left(0\right)\]
 		\full{$
 		\text{I}=\left(\begin{matrix}0&1&2&&10&11\\\sigma(0)&-\sigma(1)+2\sigma(0)&-\sigma(2)+2\sigma(0)&\ldots&-\sigma(10)+2\sigma(0)&-\sigma(11)+2\sigma(0)\\\end{matrix}\right)$}
 		
@@ -80,7 +78,6 @@
 				
 		En total, obtendremos 48 series -- aunque no obligatoriamente distintas entre sí -- pertenecientes a un solo espectro serial. Hay 12 series originales sobre cada una de las doce notas, 12 series retrógradas, 12 invertidas y 12 series sobre las que se aplica tanto la retrogradación como la inversión. A continuación se muestra la sintaxis simple junto a la matemática:
 		
-		\begin{center}
 		\begin{multicols}{2}
 			\underline{Sintaxis simple}
 			
@@ -102,7 +99,6 @@
 			
 			IR, IRT$_1$, IRT$_2$\ldots
 		\end{multicols}
-		\end{center}
 	
 	\section{Matrices dodecafónicas}
 		
