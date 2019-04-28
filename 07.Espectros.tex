@@ -18,7 +18,7 @@
 			
 			\vspace*{-\bigskipamount}
 		\end{wrapfigure}		
-		La retrogradación, la inversión y la composición de ambas cumplen que al aplicarlas dos veces se vuelve a la serie original. En teoría de grupos se diría que tienen orden 2. Entonces \{Id, I, R, IR\} forma un grupo especial llamado \textit{grupo de Klein}, donde RI $\equiv$ IR, ya que estamos tomando las series transpuestas como equivalentes. 
+		La retrogradación, la inversión y la composición de ambas cumplen que al aplicarlas dos veces se vuelve a la serie original. En teoría de grupos se dice que tienen \textit{orden 2}. Entonces \{Id, I, R, IR\} forma un grupo especial llamado \textit{grupo de Klein}, donde RI $\equiv$ IR, ya que estamos tomando las series transpuestas como equivalentes. 
 		
 		En general, un grupo de Klein es el formado por cuatro elementos donde cada elemento es inverso de sí mismo. El grupo de Klein, llamado así en honor al matemático alemán Felix Klein, es el grupo $\mathbb{Z}/(2)\times\mathbb{Z}/(2)$, producto directo de dos grupos cíclicos de orden 2.
 		
@@ -155,20 +155,20 @@
 		
 		\begin{tikzpicture}[minimum height=0pt,inner sep=0pt,outer sep=0pt,scale=0.5]
 		\foreach \x in {0,...,5} {\node at (90-60*\x:2) {\x}; \node (\x) at (90-60*\x:1.6) {};};		
-		\draw [style=flechita] (0)--(3)--(2)--(4)--(1)--(5)--(0);
+		\draw [style=ddiagramArrow] (0)--(3)--(2)--(4)--(1)--(5)--(0);
 		
-		\draw[style=flache] (3,0) -- node[above=5pt] {C} (4.5,0);
+		\draw[style=ddihedralArrow] (3,0) -- node[above=5pt] {C} (4.5,0);
 		
 		\foreach \x in {0,...,5} {\node [xshift=4cm] at (90-60*\x:2) {\x}; \node [xshift=4cm] (\x) at (90-60*\x:1.6) {};};
-		\draw [style=flechita] (3)--(2)--(4)--(1)--(5)--(0)--(3);
+		\draw [style=ddiagramArrow] (3)--(2)--(4)--(1)--(5)--(0)--(3);
 		
-		\draw[style=flache,xshift=8cm] (3,0) -- node[above=5pt] {V} (4.5,0);
+		\draw[style=ddihedralArrow,xshift=8cm] (3,0) -- node[above=5pt] {V} (4.5,0);
 		
 		\foreach \x in {0,...,5} {\node [xshift=8cm] at (90-60*\x:2) {\x}; \node [xshift=8cm] (\x) at (90-60*\x:1.6) {};};
-		\draw [style=flechita] (3)--(0)--(5)--(1)--(4)--(2)--(3);		
+		\draw [style=ddiagramArrow] (3)--(0)--(5)--(1)--(4)--(2)--(3);		
 		
 		
-		\draw[style=flache] (16,-3) -- (16,-4) -- node [fill=white] {T$^3$} (0,-4) -- (0,-3);
+		\draw[style=ddihedralArrow] (16,-3) -- (16,-4) -- node [fill=white] {T$^3$} (0,-4) -- (0,-3);
 		\end{tikzpicture}
 		
 		Primero se escoge la diagonal de entre $\frac{n}{2}$ posibilidades, con lo que queda dividida en dos la figura. De cada pareja de puntos antipodales se escoge el que irá primero en la ronda de elección. Esa elección para cada pareja opuesta se da de de $2^{\frac{n}{2}}$ formas. Tras lo cual se ordenan esos primeros miembros entre sí, de $\frac{n}{2}!$ formas. Esto lleva a las $\frac{n}{2}\cdot2^{\frac{n}{2}}\cdot\frac{n}{2}!$ formas de dibujar un polígono con las características buscadas.		% TODO improve
@@ -183,7 +183,8 @@
 		
 		\subsection*{Suma completa}
 		
-		En resumen, estos son los numeradores $\sum_{\Psi\in\text{D}_{n}\times\text{D}_{n}}\text{Fij}(\Psi)$. El resultado final del número de diagramas posibles, o espectros seriales distintos, es dicho numerador entre $4n^2$, el tamaño del grupo. \footnote{Este apartado es una explicación detallada del artículo \cite{polygons}. La secuencia de números dada por las fórmulas demostradas se encuentra en la OEIS: \textit{https://oeis.org/A000940}}		
+		En resumen, estos a continuación son los numeradores $\sum%_{\Psi\in\text{D}_{n}\times\text{D}_{n}}
+		\text{Fij}(\Psi)$. El resultado final del número de diagramas posibles, o espectros seriales distintos, es dicho numerador entre $4n^2$, el tamaño del grupo. \footnote{Este apartado es una explicación detallada del artículo \cite{polygons}. La secuencia de números dada por las fórmulas demostradas se encuentra en la OEIS: \textit{https://oeis.org/A000940}}		
 		\def\arraystretch{1.25}
 		\[\begin{array}{c||c}
 		&\textbf{\textit{n} IMPAR}\\\hline\hline

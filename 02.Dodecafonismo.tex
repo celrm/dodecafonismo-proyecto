@@ -14,11 +14,15 @@
 		
 		Los dos primeros postulados expresan que una obra dodecafónica fundamenta su estructura sobre una permutación de la escala de doce semitonos. Dicha permutación $\sigma$ es una biyección del conjunto numerado de las doce notas \{Do = 0, Do\# = 1, Re = 2, Re\# = 3, Mi = 4, Fa = 5, F\# = 6, Sol = 7, Sol\# = 8, La = 9, La\# = 10, Si = 11\} consigo mismo, y se representa de esta forma:
 		
-		\full{$\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\\sigma(0)&\sigma(1)&\sigma(2)&\sigma(3)&\sigma(4)&\sigma(5)&\sigma(6)&\sigma(7)&\sigma(8)&\sigma(9)&\sigma(10)&\sigma(11)\\\end{matrix}\right)$}
+		\full{
+			\drow{
+				\sigma(0),\sigma(1),\sigma(2),\sigma(3),\sigma(4),\sigma(5),\sigma(6),\sigma(7),\sigma(8),\sigma(9),\sigma(10),\sigma(11)
+			}
+		}
 	
 		La permutación $\sigma(m)$, con $m\in \mathbb{Z} / (12)$\footnote{$\mathbb{Z} / (12)=\{0,\ 1,\ 2,\ 3,\ 4,\ 5,\ 6,\ 7,\ 8,\ 9,\ 10,\ 11\}$}, pertenece al grupo simétrico de orden 12: $\sigma\in$ S$_{12}$. Por ejemplo, en la Suite para piano Op. 25 Schoenberg utiliza como serie original en todos los movimientos de la obra la siguiente permutación $\sigma$:
 		
-		\[\sigma=\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\4&5&7&1&6&3&8&2&11&0&9&10\\\end{matrix}\right)\]	
+		\[\sigma=\drow{4,5,7,1,6,3,8,2,11,0,9,10}\]	
 		\includegraphics[width=\textwidth]{1.png}
 		
 		\emph{3. La serie será expuesta en cualquiera de sus aspectos lineales: original, inversión, retrogradación de la original y retrogradación de la inversión.}
@@ -37,7 +41,13 @@
 		La serie transportada k semitonos (con k constante), T$^\text{k}\left(\sigma\right)$, se construye sumando k a $\sigma$ (mod. 12):
 		\[\text{T}^\text{k}\left(\sigma\left(m\right)\right)=\sigma\left(m\right)+\text{k}\]		
 		\full{$
-		\text{T}^\text{k}=\left(\begin{matrix}0&1&2&&9&10&11\\\sigma\left(0\right)+\text{k}&\sigma\left(1\right)+\text{k}&\sigma\left(2\right)+\text{k}&\cdots&\sigma\left(9\right)+\text{k}&\sigma\left(10\right)+\text{k}&\sigma\left(11\right)+\text{k}\\\end{matrix}\right)
+		\text{T}^\text{k}=
+		\left(\begin{matrix}
+			0&1&2&&9&10&11\\
+			\sigma\left(0\right)+\text{k}&\sigma\left(1\right)+\text{k}&\sigma\left(2\right)+\text{k}&
+			\cdots&
+			\sigma\left(9\right)+\text{k}&\sigma\left(10\right)+\text{k}&\sigma\left(11\right)+\text{k}\\
+		\end{matrix}\right)
 		$}
 		
 		A su vez, T$^\text{k}$ se forma al componer k transposiciones de 1 semitono: $\text{T}^\text{k}=\text{T}^1\circ\text{T}^1\circ\ldots\circ\text{T}^1$, k veces. Debido a que k es en realidad el exponente en la potencia de T, se coloca este número como superíndice.
@@ -45,7 +55,7 @@
 		Históricamente, la notación $\Psi_\text{k}$, $\Psi^\text{k}$ o $\Psi(\text{k})$ se ha usado en sustitución de la composición de la transposición T$^\text{k}$ y otra función $\Psi$, en el respectivo orden: $\Psi^\text{k}=\Psi \circ \text{T}^\text{k} = \Psi(\text{T}^\text{k})$. Sin embargo, esta notación es especialmente ambigua y confusa, sobre todo al trabajar con funciones no conmutativas. Por ello, es preferible ceñirse a la notación estrictamente matemática; es decir, a la composición de funciones, aun omitiendo $\circ$: \cancel{$\Psi_\text{k}$}, \cancel{$\Psi^\text{k}$}, \cancel{$\Psi(\text{k})$} $\rightarrow \Psi\text{T}^\text{k}$
 		
 		Una posible serie transportada sobre la permutación $\sigma$ de la Suite para piano Op. 25, con k $= 6$, es la siguiente serie T$^6$:
-		\[\text{T}^6=\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\10&11&1&7&0&9&2&8&5&6&3&4\\\end{matrix}\right)\]	
+		\[\text{T}^6=\drow{10,11,1,7,0,9,2,8,5,6,3,4}\]	
 		\includegraphics[width=\textwidth]{2.png}
 		
 	\subsection{Retrogradación}
@@ -53,10 +63,10 @@
 		
 		La serie retrógrada se construye de esta forma:
 		\[\text{R}\left(\sigma\left(m\right)\right)=\sigma\left(-1-m\right)\]
-		\full{$\text{R}=\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\	\sigma(11)&\sigma(10)&\sigma(9)&\sigma(8)&\sigma(7)&\sigma(6)&\sigma(5)&\sigma(4)&\sigma(3)&\sigma(2)&\sigma(1)&\sigma(0)\\\end{matrix}\right)$}
+		\full{$\text{R}=\drow{\sigma(11),\sigma(10),\sigma(9),\sigma(8),\sigma(7),\sigma(6),\sigma(5),\sigma(4),\sigma(3),\sigma(2),\sigma(1),\sigma(0)}$}
 			
 		La serie retrógrada sobre la permutación $\sigma$ de la Suite Op. 25 es la siguiente serie R:	
-		\[\text{R}=\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\10&9&0&11&2&8&3&6&1&7&5&4\\\end{matrix}\right)\]		
+		\[\text{R}=\drow{10,9,0,11,2,8,3,6,1,7,5,4}\]		
 		\includegraphics[width=\textwidth]{3.png}
 		
 	\subsection{Inversión}
@@ -71,9 +81,7 @@
 		\text{I}=\left(\begin{matrix}0&1&2&&10&11\\\sigma(0)&-\sigma(1)+2\sigma(0)&-\sigma(2)+2\sigma(0)&\ldots&-\sigma(10)+2\sigma(0)&-\sigma(11)+2\sigma(0)\\\end{matrix}\right)$}
 		
 		La serie invertida sobre la permutación $\sigma$ de la Suite Op. 25 es la siguiente serie I:
-		\[
-		\text{I}=\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\4&3&1&7&2&5&0&6&9&8&11&10\\\end{matrix}\right)
-		\]		
+		\[\text{I}=\drow{4,3,1,7,2,5,0,6,9,8,11,10}\]		
 		\includegraphics[width=\textwidth]{4.png}
 				
 		En total, obtendremos 48 series -- aunque no obligatoriamente distintas entre sí -- pertenecientes a un solo espectro serial. Hay 12 series originales sobre cada una de las doce notas, 12 series retrógradas, 12 invertidas y 12 series sobre las que se aplica tanto la retrogradación como la inversión. A continuación se muestra la sintaxis simple junto a la matemática:
@@ -106,7 +114,7 @@
 		
 		La matriz se lee en la dirección en la que aparece el nombre de la serie. Las series T se leen de izquierda a derecha, mientras que las series R de derecha a izquierda. Las series I se leen de arriba a abajo y las IR/RI de abajo a arriba.
 		
-		He creado un programa que devuelve en formato \LaTeX{} la matriz correspondiente a cualquier serie dodecafónica que se introduzca en teclado, además de producir la nomenclatura simple para cada serie. El código, escrito en C++, está incluido en el Anexo \ref{app:matrices}, página \pageref{app:matrices}, y está creado en base a las fórmulas de construcción de series y a la propiedad de invariancia de intervalos en las transportaciones.
+		He creado un programa que devuelve en formato \LaTeX{} la matriz correspondiente a cualquier serie dodecafónica que se introduzca en teclado, además de producir la nomenclatura simple para cada serie. El código, escrito en C++, está incluido en el Anexo \ref{app:matrices}, página \pageref{app:matrices}.
 		
 		A continuación, se incluye la matriz dodecafónica de la serie P de la Suite Op. 25 de Schoenberg. Mientras que la mayoría de tablas tienen dos filas inferiores, que se corresponden con las distintas nomenclaturas de RI e IR para una misma serie – ya que normalmente no conmutan –, en la matriz de la serie P sí coinciden, como se mencionará en el apartado \ref{conmut}.
 		
@@ -130,6 +138,9 @@
 		\hline
 		&\text{RI}_{0}&\text{RI}_{1}&\text{RI}_{3}&\text{RI}_{9}&\text{RI}_{2}&\text{RI}_{11}&\text{RI}_{4}&\text{RI}_{10}&\text{RI}_{7}&\text{RI}_{8}&\text{RI}_{5}&\text{RI}_{6}&
 		\end{array}$}
+	
+		Por otro lado, he escrito otro programa en el propio lenguaje \LaTeX{} que crea esta misma tabla con el comando \verb|\dmatrix|, y tiene cualquier serie como argumento: \verb|\dmatrix{4,5,7,1,6,3,8,2,11,0,9,10}|. El código se encuentra también en el Anexo \ref{app:matrices}, página \pageref{app:matrices2}. La tabla aparece sin el orlado de nomenclaturas:
+		\dmatrix{4,5,7,1,6,3,8,2,11,0,9,10}
 	
 		
 		\bigbreak

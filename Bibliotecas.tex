@@ -8,6 +8,9 @@
 % Kerning y mejoras tipográficas
 \usepackage{microtype}
 
+\usepackage{xstring}
+\usepackage{pgfkeys}
+
 % Matemáticas: \text, \mathbf, \overset, \underset, equation*
 \usepackage{mathtools}
 
@@ -21,12 +24,16 @@
 
 \usepackage{sectsty}
 
-%\usepackage{hyperref}
+%\input{Anexos/matrix.tex}
+\usepackage{ddphonism}
+
 
 \chapternumberfont{\Large}
 \chaptertitlefont{\LARGE}
 
 \newcommand{\full}{\resizebox{\linewidth}{!}}
+
+\tikzstyle rotateArrow=[decoration={markings,mark=at position 0.9999 with {\arrow[scale=1,>=triangle 45]{>}}},postaction={decorate}]
 
 
 % Colores
@@ -97,15 +104,8 @@
 
 % Dibujos TIKZ
 \usepackage{tikz}
-\usetikzlibrary{shapes,arrows,decorations.markings,shapes.misc}
 
 \newcommand*\cancel[2][thin]{\tikz[baseline] \node [strike out,draw,anchor=text,inner sep=0pt,text=black,#1]{#2};}  
-
-\tikzstyle flechita=[decoration={markings,mark=at position 0.015 with {\arrow[scale=1.25,>=triangle 45]{>}}},postaction={decorate}]
-
-\tikzstyle flache=[decoration={markings,mark=at position 1 with {\arrow[scale=1.5,>=angle 60]{>}}},postaction={decorate}]
-
-\tikzstyle flocho=[decoration={markings,mark=at position 0.9999 with {\arrow[red,scale=1,>=triangle 45]{>}}},postaction={decorate}]
 
 % Clear double page limpio
 \makeatletter

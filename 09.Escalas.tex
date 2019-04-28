@@ -9,7 +9,7 @@
 		
 		Con la escala mayor y la nota Re se consigue \{Re, Mi, Fa$\#$, Sol, La, Si, Do$\#$, Re\}, ya que es equivalente a \{2, 2+\textbf{2}=4, 4+\textbf{2}=6, 6+\textbf{1}=7, 7+\textbf{2}=9, 9+\textbf{2}=11, 11+\textbf{2}=13, 13+\textbf{1}=14\}. Por construcción, la última nota debe ser equivalente a la primera, ya que en el último paso habremos sumado a la nota inicial todos los términos de la secuencia interválica, y por definición suman 12.
 		
-		De esta forma, se puede definir una \textit{escala-k} como el conjunto de notas generadas por una escala interválica desde la nota $k$. Por ejemplo, el conjunto anterior sería la escala-2 mayor; es decir, la escala de Re mayor. Una escala generada por una secuencia de intervalos con longitud L tiene L notas, ya que como la última es repetida puede ignorarse. La longitud $\text{L}\leq 12$, ya que una escala-\textit{k} definida de esta forma siempre es un subconjunto de la escala cromática: $\text{E}_k\subseteq\mathbb{Z}/(12)$
+		De esta forma, se puede definir una \textit{escala-k} como el conjunto de notas generadas por una escala interválica desde la nota $k$. Por ejemplo, el conjunto anterior sería la escala-2 mayor; es decir, la escala de Re mayor. Una escala generada por una secuencia de intervalos con longitud L tiene L notas, ya que como la última es repetida puede no tenerse en cuenta. La longitud $\text{L}\leq 12$, ya que una escala-\textit{k} definida de esta forma siempre es un subconjunto de la escala cromática: $\text{E}_k\subseteq\mathbb{Z}/(12)$
 		
 		Una \textit{función a una escala-k} es una función $f$ que transforma cada nota de la escala cromática a un valor de la escala E$_k$. Entonces $f : \mathbb{Z}/(12) \rightarrow \text{E}_k$ reduce las notas de una melodía a solamente la escala escogida. Las funciones a escalas se representan de la siguiente manera, con la primera fila representando el dominio de $f$ (la escala cromática), la segunda su imagen (la escala E$_k$), y la tercera su secuencia interválica:
 		
@@ -84,7 +84,7 @@
 		\begin{enumerate}[(1)]
 		\item $f$ debe ser sobreyectiva: si no, la música resultante tendría una escala más reducida de la deseada.
 		
-		\item $f$ debe ser creciente: si no, las dos notas decrecientes se deberían intercambiar. También se podrá sumar o restar 12 a las notas que lo requieran. La monotonía debe conservarse, además, en todas las octavas, por lo que las funciones deben acabar o por la nota con la que se empieza $+12$ o por una menor que ésta.
+		\item $f$ debe ser creciente: si no, las dos notas decrecientes se deberían intercambiar. También se podrá sumar o restar 12 a las notas que lo requieran. La monotonía debe conservarse, además, en todas las octavas, por lo que las funciones deben acabar o por la nota con la que se empieza $+12$ o por una menor a ella.
 
 		\item $f$ debe tener el mayor número de puntos fijos posible: las notas que puedan mantenerse estables al aplicar $f$ deben quedarse igual. Existen escalas para las que no se puede tener buena distribución, monotonía creciente y todas sus notas fijas, así que este criterio es menos prioritario. 
 		
@@ -140,35 +140,35 @@
         
         La primera obra que pasará por el algoritmo de modificación serial es la \textit{Suite para piano}, Op. 25 de Schoenberg.
         
-        {Su serie original\footnote{\textit{http://www.ccarh.org/publications/data/humdrum/tonerow/files\\/schoenberg/schoenberg04.pc.krn}} es: $\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\4&5&7&1&6&3&8&2&11&0&9&10\\\end{matrix}\right)$}
+        {Su serie original\footnote{\textit{http://www.ccarh.org/publications/data/humdrum/tonerow/files\\/schoenberg/schoenberg04.pc.krn}} es: \drow{4,5,7,1,6,3,8,2,11,0,9,10}}
         
         La segunda obra es un arreglo para soprano y piano de una de las arias más destacadas de la segunda ópera de Alban Berg, \textit{Lulu}. El libreto de la obra está basado en dos tragedias de Frank Wedekind: ``El espíritu de la tierra'' y ``La Caja de Pandora''.
         
         El aria, llamada \textit{Lied der Lulu}, es parte de una dramática disputa entre Lulu y su marido por las infidelidades de ella, que acaba con el homicidio accidental de él.
                 
-        {La serie de Lulu\footnote{\textit{http://www.ccarh.org/publications/data/humdrum/tonerow/files\\/berg/berg10.pc.krn}} es:
-        $\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\0&4&5&2&7&9&6&8&11&10&3&1\\\end{matrix}\right)$}
+        {La serie de Lulu\footnote{\textit{~/berg/berg10.pc.krn}} es:
+        \drow{0,4,5,2,7,9,6,8,11,10,3,1}}
         
         La tercera, \textit{Der Wein}, es un aria de concierto para soprano y orquesta compuesta por Berg en 1929. La letra es una traducción al alemán de los tres poemas de Charles Baudelaire ``\textit{Le Vin}''. Son una celebración del vino y de la felicidad de quienes lo toman.
         
         La pieza evoca aires tonales, ya que su serie está compuesta por la escala de Re menor y la de Sol bemol Mayor. Es una pieza simétrica que evoca también la forma sonata, con los tres poemas formando una exposición, un desarrollo y una recapitulación.
         
-        {Su serie original\footnote{\textit{http://www.ccarh.org/publications/data/humdrum/tonerow/files\\/berg/berg09.pc.krn}} es:        	
-        $\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\2&4&5&7&9&10&1&6&8&0&11&3\\\end{matrix}\right)$}
+        {Su serie original\footnote{\textit{~/berg/berg09.pc.krn}} es:        	
+        \drow{2,4,5,7,9,10,1,6,8,0,11,3}}
         
         La cuarta, de 1936, es la única obra publicada de Webern para piano solo: \textit{Variationen für Klavier}, Op. 27, y se compone de tres movimientos: \textit{Sehr mässig}, \textit{Sehr schnell} y \textit{Ruhig fliessend}.
         
-        {Su serie original\footnote{\textit{http://www.ccarh.org/publications/data/humdrum/tonerow/files\\/webern/webern17.pc.krn}} es:
-       	$\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\3&11&10&2&1&0&6&4&7&5&9&8\\\end{matrix}\right)$}
+        {Su serie original\footnote{\textit{~/webern/webern17.pc.krn}} es:
+       	\drow{3,11,10,2,1,0,6,4,7,5,9,8}}
         
         Por último, \textit{3 Lieder}, Op. 18, compuesta por Webern en 1925, es un tríptico de Lieder para voz, clarinete y guitarra. Los Lieder, junto con sus respectivas series, son:
         
-        \textit{Schatzerl Klein}\footnote{\textit{http://www.ccarh.org/publications/data/humdrum/tonerow/files\\/webern/webern06.pc.krn}}: \hfill
-       	$\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\0&11&5&8&10&9&3&4&1&7&2&6\\\end{matrix}\right)$
+        \textit{Schatzerl Klein}\footnote{\textit{~/webern/webern06.pc.krn}}: \hfill
+       	\drow{0,11,5,8,10,9,3,4,1,7,2,6}
         
-        \textit{Erlosung}\footnote{\textit{http://www.ccarh.org/publications/data/humdrum/tonerow/files\\/webern/webern07.pc.krn}}: \hfill
-       	$\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\6&9&5&8&4&7&3&11&2&10&1&0\\\end{matrix}\right)$
+        \textit{Erlosung}\footnote{\textit{~/webern/webern07.pc.krn}}: \hfill
+       	\drow{6,9,5,8,4,7,3,11,2,10,1,0}
     	
     	\full{\textit{Ave, Regina Coelorum}\footnotemark: \hfill
-       	$\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\4&3&7&6&5&11&10&2&1&0&9&8\\\end{matrix}\right)$}
-        \footnotetext{\textit{http://www.ccarh.org/publications/data/humdrum/tonerow/files\\/webern/webern08.pc.krn}}
+       	\drow{4,3,7,6,5,11,10,2,1,0,9,8}}
+        \footnotetext{\textit{~/webern/webern08.pc.krn}}

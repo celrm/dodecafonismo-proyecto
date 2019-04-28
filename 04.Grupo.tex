@@ -29,9 +29,9 @@
 		\full{$\text{C}^\text{k}=\left(\begin{matrix}0&1&2&&9&10&11\\\sigma\left(\text{k}\right)&\sigma\left(\text{k}+1\right)&\sigma\left(\text{k}+2\right)&\cdots&\sigma\left(\text{k}+9\right)&\sigma\left(\text{k}+10\right)&\sigma\left(\text{k}+11\right)\\\end{matrix}\right)$}
 		
 		La serie 4-cíclica sobre la permutación P de la Suite Op. 25 es la siguiente serie C$^4$:	
-		\[\text{C}^4=\left(\begin{matrix}0&1&2&3&4&5&6&7&8&9&10&11\\6&3&8&2&11&0&9&10&4&5&7&1\\\end{matrix}\right)\]		
+		\[\text{C}^4=\drow{6,3,8,2,11,0,9,10,4,5,7,1}\]		
 		\includegraphics[width=\textwidth]{13.png}
-		
+				
 		En resumen, se puede trabajar con un nuevo sistema de definiciones que mantienen el significado musical del serialismo pero varían la notación con la que se trabaja. 
 		\vspace{-\bigskipamount}
 		\begin{multicols}{2}
@@ -51,38 +51,20 @@
 	
 		\begin{wrapfigure}{R}{0.2\textwidth}
 			\vspace{-\bigskipamount}
-			\begin{tikzpicture}[rotate=30*4,minimum height=0pt,inner sep=0pt,outer sep=0pt,scale=0.65]
-			\foreach \x in {0,...,11} {\node at (90-30*\x:2) {\x}; \node (\x) at (90-30*\x:1.6) {};};
-			
-			\draw [style=flechita] (4)--(5)--(7)--(1)--(6)--(3)--(8)--(2)--(11)--(0)--(9)--(10)--(4);
-			
-			\node at (0,0) [circle,fill=white] {T$^0$};
-			\end{tikzpicture}
+			\ddiagram{4,5,7,1,6,3,8,2,11,0,9,10}{T$^0$}
 			\vspace{-\bigskipamount}
 		\end{wrapfigure} Para visualizar mejor cómo actúan las distintas transformaciones, las series se pueden representar mediante \textit{diagramas de reloj}: una sucesión de aristas con una orientación establecida que conecta los vértices de un dodecágono en el orden de la serie. Ya que el desplazamiento cíclico actúa como si la serie fuese circular, hay añadida una arista desde la última nota a la primera. El comienzo de la serie y su orientación se marcan con una flecha.
 		
 		Arriba se incluye el diagrama de la serie original $\sigma$ de la Suite Op. 25. Se pueden distinguir las características de la serie, como las tres diagonales, que son los tres intervalos de tritono. A continuación se incluyen los diagramas de las transformaciones del apartado \ref{transPsi}: la transposición, la inversión y la retrogradación; así como el nuevo desplazamiento cíclico.
 		
-		\bigskip
-		\hspace*{-0.8cm}
-		\begin{tikzpicture}[scale=0.65,rotate=30*4,minimum height=0pt,inner sep=0pt,outer sep=0pt]
-		\foreach \x in {0,...,11} {\node at (90-30*\x:2) {\x}; \node (\x) at (90-30*\x:1.6) {};};
-		\draw [style=flechita] (5)--(6)--(8)--(2)--(7)--(4)--(9)--(3)--(0)--(1)--(10)--(11)--(5);
-		\node at (0,0) [circle,fill=white] {T$^1$};
-		
-		\foreach \x in {0,...,11} {\node [xshift=3cm] at (90-30*\x:2) {\x}; \node [xshift=3cm] (\x) at (90-30*\x:1.6) {};};
-		\draw [style=flechita] (10)--(9)--(0)--(11)--(2)--(8)--(3)--(6)--(1)--(7)--(5)--(4)--(10);
-		\node [xshift=3cm] at (0,0) [circle,fill=white] {R};
-		
-		\foreach \x in {0,...,11} {\node [xshift=6cm] at (90-30*\x:2) {\x}; \node [xshift=6cm] (\x) at (90-30*\x:1.6) {};};
-		\draw [style=flechita] (4)--(3)--(1)--(7)--(2)--(5)--(0)--(6)--(9)--(8)--(11)--(10)--(4);
-		\node [xshift=6cm] at (0,0) [circle,fill=white] {I};
-		
-		\foreach \x in {0,...,11} {\node [xshift=9cm] at (90-30*\x:2) {\x}; \node [xshift=9cm] (\x) at (90-30*\x:1.6) {};};		
-		\draw [style=flechita] (5)--(7)--(1)--(6)--(3)--(8)--(2)--(11)--(0)--(9)--(10)--(4)--(5);		
-		\node [xshift=9cm] at (0,0) [circle,fill=white] {C$^1$};
-		\end{tikzpicture}
-		\smallskip
+\begin{changemargin}{-15pt}{-15pt}
+	\begin{multicols}{4}
+		\ddiagram[4]{5,6,8,2,7,4,9,3,0,1,10,11}{T$^1$}
+		\ddiagram[4]{10,9,0,11,2,8,3,6,1,7,5,4}{R}
+		\ddiagram{4,3,1,7,2,5,0,6,9,8,11,10}{I}
+		\ddiagram[4]{5,7,1,6,3,8,2,11,0,9,10,4}{C$^1$}
+	\end{multicols}
+\end{changemargin}
 		
 		La transposición es una rotación en el sentido en el que apunta la flecha; la inversión es una reflexión con el eje de simetría en la diagonal que pasa por la flecha; la retrogradación es un cambio de orientación de la flecha; y el desplazamiento cíclico es el avance interno de la flecha por el recorrido de la serie.		
 		
@@ -90,46 +72,26 @@
 		
 		\begin{center}
 			\begin{multicols}{2}
-				\begin{tikzpicture}[scale=0.65,rotate=30*4,minimum height=0pt,inner sep=0pt,outer sep=0pt]
-				\foreach \x in {0,...,11} {\node at (90-30*\x:2) {\x}; \node (\x) at (90-30*\x:1.6) {};};
 				
-				\draw [style=flechita] (4)--(3)--(1)--(7)--(2)--(5)--(0)--(6)--(9)--(8)--(11)--(10)--(4);
+				\ddiagram{4,3,1,7,2,5,0,6,9,8,11,10}{I}
 				
-				\node at (0,0) [circle,fill=white] {I};
-				\end{tikzpicture}
 				
-				\begin{tikzpicture}[scale=0.65,rotate=30*4,minimum height=0pt,inner sep=0pt,outer sep=0pt]
-				\foreach \x in {0,...,11} {\node at (90-30*\x:2) {\x}; \node (\x) at (90-30*\x:1.6) {};};
-				
-				\draw [style=flechita] (8)--(7)--(5)--(11)--(6)--(9)--(4)--(10)--(1)--(0)--(3)--(2)--(8);
-				
-				\node at (0,0) [circle,fill=white] {S};
-				\end{tikzpicture}
+				\ddiagram[4]{8,7,5,11,6,9,4,10,1,0,3,2}{S}
 			\end{multicols}
 		\end{center}
 	
 		Por otro lado, la comparación entre las retrogradaciones R y V muestra que, aunque en principio más arbitraria, V es una transformación más natural, ya que deja fija la flecha. La diferencia entre ellas es en realidad un desplazamiento cíclico de -1.
 		
-		\begin{center}
+		\vspace*{-\smallskipamount}\begin{center}
 			\begin{multicols}{2}
-				\begin{tikzpicture}[scale=0.65,rotate=30*4,minimum height=0pt,inner sep=0pt,outer sep=0pt]
-				\foreach \x in {0,...,11} {\node at (90-30*\x:2) {\x}; \node (\x) at (90-30*\x:1.6) {};};
+				\ddiagram[4]{10,9,0,11,2,8,3,6,1,7,5,4}{R}
 				
-				\draw [style=flechita] (10)--(9)--(0)--(11)--(2)--(8)--(3)--(6)--(1)--(7)--(5)--(4)--(10);
 				
-				\node at (0,0) [circle,fill=white] {R};
-				\end{tikzpicture}
-				
-				\begin{tikzpicture}[scale=0.65,rotate=30*4,minimum height=0pt,inner sep=0pt,outer sep=0pt]
-				\foreach \x in {0,...,11} {\node at (90-30*\x:2) {\x}; \node (\x) at (90-30*\x:1.6) {};};
-				
-				\draw [style=flechita] (4)--(10)--(9)--(0)--(11)--(2)--(8)--(3)--(6)--(1)--(7)--(5)--(4);
-				
-				\node at (0,0) [circle,fill=white] {V};
-				\end{tikzpicture}
+				\ddiagram{4,10,9,0,11,2,8,3,6,1,7,5}{V}
 			\end{multicols}
 		\end{center}	
 	
+	\vspace*{-\bigskipamount}
 	\begin{wrapfigure}{l}{0.2\textwidth}
 		\vspace*{-\bigskipamount}
 		\qrcode{https://diagramas.netlify.com/}
@@ -138,8 +100,9 @@
 
 		He creado una página interactiva que genera diagramas de reloj de cualquier serie para cualquier longitud serial, además de generar series aleatorias. También se pueden aplicar las transformaciones a la serie, tanto las originales como las del nuevo sistema, para ver cómo se comporta el diagrama. Está escrita en Elm y el código puede encontrarse en \textit{https://gitlab.com/dodecafonismo/diagramas}.
 	
-		En el código QR está el enlace de la aplicación web. Sus instrucciones de uso se encuentran al final de la página. El enlace es \textit{https://diagramas.netlify.com/}.
-	\bigbreak
+		En el código QR está el enlace de la aplicación web. Sus instrucciones de uso se encuentran al final de la página. El enlace es \linebreak\textit{https://diagramas.netlify.com/}.
+		
+		Además, he creado un comando en \LaTeX{} que dibuja estos diagramas dada su serie y su nombre, así como el número que está arriba:\linebreak \verb|\ddiagram[4]{4,5,7,1,6,3,8,2,11,0,9,10}{T$^0$}| -- en este caso \verb|[4]| no es necesario, ya que por defecto se coloca arriba la primera nota de la serie.
 	
 	\section[El grupo: D$_{12}$ x D$_{12}$]{El grupo: D$_{\textbf{12}}$ x D$_{\textbf{12}}$}
 		\label{grupoD}
@@ -161,90 +124,64 @@
 		Podemos observarlo claramente si representamos la serie de una segunda forma: como la correspondencia entre vértices de dos dodecágonos. La serie original, que es en realidad una permutación de 12 elementos, se representa como una función: los vértices del dodecágono interno se envían biyectivamente a los vértices externos. Así, $m \longmapsto \sigma(m)$. Este diagrama es similar al matricial pero enroscado en sí mismo, de tal forma que se aprecia la permutación escogida mediante las flechas, que son fijas, y facilita un significado del antes y el después de aplicarla.
 		
 		Las dos primeras figuras describen esto mismo: la representación de la serie original y la representación de la permutación mediante las flechas, que se mantendrán constantes en el resto de figuras.
-		
-			
-		{\small \begin{multicols}{2}
-			\begin{tikzpicture}[minimum height=18pt,inner sep=0,scale=0.85]
-			\draw foreach \x in {0,...,11} {(90-30*\x:2.5) node[very thin,circle,draw] (\x) {\x}};
-			\draw foreach \x in {0,...,11} {(90-30*\x:1.25) node[very thin,circle,draw] {\x}};
-			\foreach \y/\x in {0/4,1/5,2/7,3/1,4/6,5/3,6/8,7/2,8/11,9/0,10/9,11/10} {\draw [style=flache] (90-30*\y:1.25) -- (\x);};		
-			
-			\node at (0,0) [very thin,draw,circle,fill=white] {T$^0$};
-			\end{tikzpicture}
-			
-			\begin{tikzpicture}[minimum height=18pt,inner sep=0,scale=0.85]
-			\draw foreach \x in {0,...,11} {(90-30*\x:2.5) node (\x) {}};
-			\foreach \y/\x in {0/4,1/5,2/7,3/1,4/6,5/3,6/8,7/2,8/11,9/0,10/9,11/10} {\draw [style=flache] (90-30*\y:1.25) -- (\x);};
-			\end{tikzpicture}
-		\end{multicols}}
+			\begin{multicols}{2}
+				\hspace*{-0.5cm}\begin{tikzpicture}
+				\ddihedral{4,5,7,1,6,3,8,2,11,0,9,10}
+				\end{tikzpicture}
+				
+				\hspace*{0.5cm}\begin{tikzpicture}
+				\darrows{4,5,7,1,6,3,8,2,11,0,9,10}
+				\end{tikzpicture}
+			\end{multicols}
 	
 		Las cuatro siguientes figuras representan las cuatro funciones transformativas, que son en realidad la reflexión y la rotación del grupo diédrico de cada dodecágono. Aplicarlo al de dentro es aplicarlo antes de las flechas; antes de la permutación. Aplicarlo fuera es transformar después de las flechas; después de la permutación.
 		
 		\newpage
 	
-		{\small \begin{multicols}{2}
-			\begin{tikzpicture}[minimum height=18pt,inner sep=0,scale=0.85]
-			\draw foreach \x in {0,...,11} {(90-30*\x:2.5) node[circle] (\x) {}};
-			\foreach \y/\x in {0/4,1/5,2/7,3/1,4/6,5/3,6/8,7/2,8/11,9/0,10/9,11/10} {\draw [style=flache] (90-30*\y:1.25) -- (\x);};
-			
-			\draw foreach \x in {0,...,11} {(90+30*\x:2.5) node[very thin,circle,draw] {\x}};
-			\draw foreach \x in {0,...,11} {(90-30*\x:1.25) node[very thin,circle,draw] {\x}};
-			
-			\draw [red,very thick,dash pattern={on 1pt off 4pt on 10pt off 3pt}] (0,-3.5) -- (0,3.5);
-			
+	\begin{changemargin}{-0.5cm}{-0.5cm}
+		\begin{multicols}{2}
+			\hspace*{-0.5cm}\begin{tikzpicture}
+			\ddihedral[s=1]{4,5,7,1,6,3,8,2,11,0,9,10}
+			\draw [very thick,dash pattern={on 1pt off 4pt on 10pt off 3pt}] (0,-3.5) -- (0,3.5);
 			\node at (0,0) [very thin,draw,circle,fill=white] {S};
 			\end{tikzpicture}
 			
-			\begin{tikzpicture}[minimum height=18pt,inner sep=0,scale=0.85]
-			\draw foreach \x in {0,...,11} {(90-30*\x:2.5) node[circle] (\x) {}};
-			\foreach \y/\x in {0/4,1/5,2/7,3/1,4/6,5/3,6/8,7/2,8/11,9/0,10/9,11/10} {\draw [style=flache] (90-30*\y:1.25) -- (\x);};
+			\hspace*{0.5cm}\begin{tikzpicture}
+			\ddihedral[t=1]{4,5,7,1,6,3,8,2,11,0,9,10}
 			
-			\draw foreach \x in {0,...,11} {(120-30*\x:2.5) node[very thin,circle,draw] {\x}};
-			\draw foreach \x in {0,...,11} {(90-30*\x:1.25) node[very thin,circle,draw] {\x}};
-			
-			\draw [style=flocho,thick,red,dashed] (90:3) to [bend right=45] (180:3);
+			\draw [style=rotateArrow,thick,dashed] (90:3) to [bend right=45] (180:3);
 			\node at (0,3.25) {};
-			
-			\node at (0,0) [very thin,draw,circle,fill=white] {T$^1$};
 			\end{tikzpicture}
 		\end{multicols}
 		
 		\begin{multicols}{2}
-			\begin{tikzpicture}[minimum height=18pt,inner sep=0,scale=0.85]
-			\draw foreach \x in {0,...,11} {(90-30*\x:2.5) node (\x) [circle] {}};
-			\foreach \y/\x in {0/4,1/5,2/7,3/1,4/6,5/3,6/8,7/2,8/11,9/0,10/9,11/10} {\draw [style=flache] (90-30*\y:1.25) -- (\x);};
+			\hspace*{-0.5cm}\begin{tikzpicture}
+			\ddihedral[v=1]{4,5,7,1,6,3,8,2,11,0,9,10}
 			
-			\draw foreach \x in {0,...,11} {(90-30*\x:2.5) node[very thin,circle,draw] {\x}};
-			\draw foreach \x in {0,...,11} {(90+30*\x:1.25) node[very thin,circle,draw] {\x}};
-			
-			\draw [red,very thick,dash pattern={on 1pt off 3pt on 7pt off 2pt}] (0,-2) -- (0,2);
-			
+			\draw [very thick,dash pattern={on 1pt off 3pt on 7pt off 2pt}] (0,-2) -- (0,2);
 			\node at (0,0) [very thin,draw,circle,fill=white] {V};
 			\end{tikzpicture}
 			
-			\begin{tikzpicture}[minimum height=18pt,inner sep=0,scale=0.85]
-			\draw foreach \x in {0,...,11} {(90-30*\x:2.5) node[circle] (\x) {}};
-			\foreach \y/\x in {0/4,1/5,2/7,3/1,4/6,5/3,6/8,7/2,8/11,9/0,10/9,11/10} {\draw [style=flache] (90-30*\y:1.25) -- (\x);};
+			\hspace*{0.5cm}\begin{tikzpicture}
+			\ddihedral[c=1]{4,5,7,1,6,3,8,2,11,0,9,10}
 			
-			\draw foreach \x in {0,...,11} {(90-30*\x:2.5) node[very thin,circle,draw] {\x}};
-			\draw foreach \x in {0,...,11} {(60-30*\x:1.25) node[very thin,circle,draw] {\x}};
-			
-			\draw [style=flocho,thick,red,dashed] (90:1.75) to [bend left=45] (0:1.75);
-			
-			\node at (0,0) [very thin,draw,circle,fill=white] {C$^1$};
+			\draw [style=rotateArrow,thick,dashed] (90:1.75) to [bend left=45] (0:1.75);
 			\end{tikzpicture}
 		\end{multicols}
-	}
-	\newpage
+	\end{changemargin}
+	
+	\pagebreak
+	He creado un comando en \LaTeX{} que dibuja estos diagramas diédricos dada su serie original y las funciones aplicadas a ella: \verb|t|, \verb|s|, \verb|c| y \verb|v|. Se aplican en ese mismo orden, y por defecto están a 0. \linebreak \verb|\ddihedral[c=2,t=3,s=1]{4,5,7,1,6,3,8,2,11,0,9,10}|.
+	
 	\section{Conmutatividad entre los elementos del grupo}
 	\label{conmut}
 		% comprobar cosos que conmutan, mencionar cosos que conmutan en el otro sistema
 		
-		La rotación (r) y la reflexión (s) de un grupo diédrico no conmutan, sino que cumplen esta relación: $r\cdot s=s\cdot r^{-1}$. Por otro lado, en los productos directos los elementos de un lado conmutan con los del otro. De esta forma, \{S, T\} no conmutan y \{V, C\} tampoco, pero el resto de parejas de transformaciones deben conmutar. Las verificaciones de estas afirmaciones, que confirman que el grupo formado es D$_{12}\times\text{D}_{12}$, se encuentran en el Anexo \ref{app:commm}, página \pageref{app:commm}.
+		La rotación (r) y la reflexión (s) de un grupo diédrico no conmutan, sino que cumplen $r\cdot s=s\cdot r^{-1}$. Por otro lado, en los productos directos los elementos de un lado conmutan con los del otro. Así, \{S, T\} no conmutan y \{V, C\} tampoco, pero el resto de parejas deben conmutar. La verificación de estas afirmaciones, que confirman que el grupo formado es D$_{12}\times\text{D}_{12}$, se encuentran en el Anexo \ref{app:commm}.
 		
-		Volviendo a las definiciones originales, al conjunto de transformaciones \{I, T, R, C\}, su estructura interna es bien distinta. El problema de I, a un nivel matemático, es que depende de la permutación escogida, por lo que a veces tiene unas propiedades y a veces otras. En cambio, la definición de V con respecto a R es meramente estética. Ya que no depende de la permutación, su conmutatividad se mantiene invariante. 
+		Volviendo a las definiciones originales \{I, T, R, C\}, su estructura interna es bien distinta. El problema de I es que depende de la permutación escogida, por lo que a veces tiene unas propiedades y a veces otras. En cambio, la definición de V con respecto a R es meramente estética. Ya que no depende de la permutación, su conmutatividad se mantiene invariante. 
 		
-		Viendo cómo conmutan los elementos de este sistema se aprecia la dificultad definitoria de I. Curiosamente, la conmutatividad de \{I, R\} e \{I, C\} se pierden, pero se gana la de \{I, T\}. Así, T conmuta con todo en el sistema. Esto refleja que en realidad la motivación de la definición de I viene por esta conmutatividad.
+		Viendo cómo conmutan los elementos de este sistema se aprecia la dificultad de I. Curiosamente, la conmutatividad de \{I, R\} e \{I, C\} se pierden, pero se gana la de \{I, T\}. Así, T conmuta con todo en el sistema. Esto muestra una ventaja de la definición de I.
 		
 		 \underline{I y R ya no conmutan:}
 		 \vspace{-2\bigskipamount}

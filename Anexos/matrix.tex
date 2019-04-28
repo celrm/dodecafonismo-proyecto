@@ -1,0 +1,58 @@
+\usepackage{ifthen}
+\usepackage{tcolorbox}
+\usepackage{xparse}
+\usepackage{tikz}
+\usetikzlibrary{matrix}
+
+\ExplSyntaxOn
+\DeclareExpandableDocumentCommand{\eval}{m}{\int_eval:n {#1}}
+\ExplSyntaxOff
+
+\newcounter{first}
+\newcounter{doce}
+\setcounter{first}{-1}
+
+\newcommand{\md}[1]{
+	\ifnum#1>\thedoce
+		\ \eval{#1-\thedoce}
+	\else\ifnum#1<0
+		\ \eval{#1+\thedoce}
+	\else #1
+	\fi\fi
+}
+\newcommand{\row}[2]{%
+	\foreach \i in {#1} {%
+		\begingroup\edef\x{\endgroup
+			\noexpand\gappto\noexpand\mymatrixcontent{ 
+				{#2}\&
+		}}\x
+	}%
+	\gappto\mymatrixcontent{\\}%
+}
+\newcommand{\mat}[1]{
+	\let\mymatrixcontent\empty
+	\setcounter{doce}{0}
+	\setcounter{first}{-1}
+	
+	\foreach \n in {#1}{
+		\ifnum\thefirst=-1
+			\setcounter{first}{\n}
+		\fi
+		\stepcounter{doce}
+	}
+	
+	\foreach \j in {#1}{
+		\row{#1}{%
+			\md{\eval{\i-\j+\thefirst}}
+		}
+	}
+
+	\resizebox{\linewidth}{!}{
+		\begin{tikzpicture}
+		\matrix [ampersand replacement=\&, 
+			matrix of math nodes, 
+			row sep=0.2em, column sep=1em]
+		{\mymatrixcontent};
+		\end{tikzpicture}
+	}
+}
