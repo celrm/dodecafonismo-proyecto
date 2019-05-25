@@ -1,7 +1,6 @@
-	\chapter{MODIFICACIÓN DE PARTITURAS SERIALISTAS}
-		
-	\section{Escalas y funciones del experimento}
-	\subsection{Escalas interválicas, escalas y funciones}
+	\chapter{ESCALAS Y FUNCIONES DEL EXPERIMENTO}
+	
+	\section{Escalas interválicas, escalas y funciones}
 	
 		Una \textit{escala interválica} es una secuencia ordenada de números naturales -- una secuencia de intervalos entre notas -- tales que la suma de todos ellos da 12. Así solo se consideran válidas las escalas equivalentes octava a octava: todos los intervalos de la escala deben sumar el número de semitonos de una octava. Por ejemplo, la escala diatónica jónica (o escala mayor) tiene como secuencia (2, 2, 1, 2, 2, 2, 1).
 		
@@ -25,7 +24,7 @@
 		
 		¿Cuáles serán las características de esas funciones óptimas? Deben conservar la estructura serial y deben conservar el parecido con la melodía original.
 		
-	\subsection{Funciones bien distribuidas}
+	\section{Funciones bien distribuidas}
 		
 		La mayor prioridad es conservar la estructura serial de las piezas; por tanto, todas las notas deben aparecer con la menor frecuencia posible, y se debe evitar jerarquías entre las notas en la medida de lo posible. Si $|\text{E}|<12$, $f$ no puede ser inyectiva, por lo que va a haber elementos repetidos en la imagen. Queremos la $f$ que mejor distribuya esas repeticiones, que distribuya las notas de E a lo largo de la escala cromática.
 		
@@ -77,7 +76,7 @@
 		\end{array}\]
 		
 		
-	\subsection{Funciones E-inducidas}
+	\section{Funciones E-inducidas}
 		
 		Hay que pedir más requisitos a $f$ para que no solo modifique las notas, sino que además las imágenes se parezcan lo máximo posible a sus preimágenes, a las notas originales.
 		
@@ -100,10 +99,10 @@
 		
 		Si aún quedan varias $f$ que cumplen todos los requisitos, se escogerá la más grave, la menor de ellas. De esta manera, dada cualquier escala E, la función E-inducida queda unívocamente determinada.
 		
-		En el Anexo \ref{app:function}, página \pageref{app:function}, se encuentra el código en Haskell de un programa que, dado una escala, produce su función inducida óptima con las propiedades descritas anteriormente. También puede encontrarse en \textit{https://gitlab.com/dodecafonismo/f-inducida}.
+		En el Anexo \ref{app:function}, página \pageref{app:function}, se encuentra el código en Haskell de un programa que, dado una escala, produce su función inducida óptima con las propiedades descritas anteriormente. También puede encontrarse en \url{https://gitlab.com/dodecafonismo/f-inducida}.
 		
-	\subsection{Escalas utilizadas}
-	
+		\section{Escalas utilizadas}
+		
 		Las escalas escogidas para este experimento son cuatro escalas de distintos tamaños y sonoridades; desde el sonido oriental hasta el occidental clásico, pasando por el jazz moderno y el impresionismo.
 		
 		Son la escala pentatónica, la escala de tonos enteros, la escala heptafónica de Do Mayor y la escala octotónica. Estas son las funciones inducidas de dichas escalas según el algoritmo del Anexo \ref{app:function}:
@@ -117,58 +116,13 @@
 		\text{Tonos enteros (6):}&0&0&2&2&4&4&6&6&8&8&10&10\\
 		\text{Intervalos:}&&2&&2&&2&&2&&2&&2\\
 		\end{matrix}\right.\]
-        \[\left.\begin{matrix}
-        \text{Cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
-        \text{Diatónica en Do (7):}&0&0&2&2&4&5&5&7&7&9&9&11\\
-        \text{Intervalos:}&&2&&2&1&&2&&2&&2&1\\
-        \end{matrix}\right.\]        
-        \[\left.\begin{matrix}
-        \text{Cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
-        \text{Octotónica (8):}&0&0&2&3&3&5&6&6&8&9&9&11\\
-        \text{Intervalos:}&&2&1&&2&1&&2&1&&2&1\\
-        \end{matrix}\right.\]
-        
-	\section{Obras modificadas}
-                
-        Ahora se describirán las obras que pasarán por la modificación. Para abarcar distintos estilos compositivos y hacer este estudio más riguroso, se han escogido obras de los tres principales compositores dodecafónicos: Schoenberg, Berg y Webern.
-        
-        Sin embargo, no se han escogido obras de compositores posteriores ni serialistas integrales. Uno de los motivos es porque interesa en este estudio la relación entre los sonidos: no se modifican más que las alturas de las notas, y por tanto no importa el resto de elementos musicales. Que estén compuestos serialmente no afecta a las conclusiones de este experimento.
-        
-        Por otro lado, los compositores posteriores a Schoenberg todavía no han pasado al dominio público. Eso impide, por desgracia, que se pueda trabajar libremente con su música.
-        
-        Por último, el hecho de que cada nota tenga su propia dinámica, su propia articulación o su propio timbre hace de las obras serialistas integrales que sean difíciles de manipular. Además, como los audios están hechos mediante ordenador y no con intérpretes reales, la calidad y la intención musical de estas partituras tan complicadas nunca podrían plasmarse a la perfección.
-        
-        La primera obra que pasará por el algoritmo de modificación serial es la \textit{Suite para piano}, Op. 25 de Schoenberg.
-        
-        {Su serie original\footnote{\textit{http://www.ccarh.org/publications/data/humdrum/tonerow/files\\/schoenberg/schoenberg04.pc.krn}} es: \drow{4,5,7,1,6,3,8,2,11,0,9,10}}
-        
-        La segunda obra es un arreglo para soprano y piano de una de las arias más destacadas de la segunda ópera de Alban Berg, \textit{Lulu}. El libreto de la obra está basado en dos tragedias de Frank Wedekind: ``El espíritu de la tierra'' y ``La Caja de Pandora''.
-        
-        El aria, llamada \textit{Lied der Lulu}, es parte de una dramática disputa entre Lulu y su marido por las infidelidades de ella, que acaba con el homicidio accidental de él.
-                
-        {La serie de Lulu\footnote{\textit{~/berg/berg10.pc.krn}} es:
-        \drow{0,4,5,2,7,9,6,8,11,10,3,1}}
-        
-        La tercera, \textit{Der Wein}, es un aria de concierto para soprano y orquesta compuesta por Berg en 1929. La letra es una traducción al alemán de los tres poemas de Charles Baudelaire ``\textit{Le Vin}''. Son una celebración del vino y de la felicidad de quienes lo toman.
-        
-        La pieza evoca aires tonales, ya que su serie está compuesta por la escala de Re menor y la de Sol bemol Mayor. Es una pieza simétrica que evoca también la forma sonata, con los tres poemas formando una exposición, un desarrollo y una recapitulación.
-        
-        {Su serie original\footnote{\textit{~/berg/berg09.pc.krn}} es:        	
-        \drow{2,4,5,7,9,10,1,6,8,0,11,3}}
-        
-        La cuarta, de 1936, es la única obra publicada de Webern para piano solo: \textit{Variationen für Klavier}, Op. 27, y se compone de tres movimientos: \textit{Sehr mässig}, \textit{Sehr schnell} y \textit{Ruhig fliessend}.
-        
-        {Su serie original\footnote{\textit{~/webern/webern17.pc.krn}} es:
-       	\drow{3,11,10,2,1,0,6,4,7,5,9,8}}
-        
-        Por último, \textit{3 Lieder}, Op. 18, compuesta por Webern en 1925, es un tríptico de Lieder para voz, clarinete y guitarra. Los Lieder, junto con sus respectivas series, son:
-        
-        \textit{Schatzerl Klein}\footnote{\textit{~/webern/webern06.pc.krn}}: \hfill
-       	\drow{0,11,5,8,10,9,3,4,1,7,2,6}
-        
-        \textit{Erlosung}\footnote{\textit{~/webern/webern07.pc.krn}}: \hfill
-       	\drow{6,9,5,8,4,7,3,11,2,10,1,0}
-    	
-    	\full{\textit{Ave, Regina Coelorum}\footnotemark: \hfill
-       	\drow{4,3,7,6,5,11,10,2,1,0,9,8}}
-        \footnotetext{\textit{~/webern/webern08.pc.krn}}
+		\[\left.\begin{matrix}
+		\text{Cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
+		\text{Diatónica en Do (7):}&0&0&2&2&4&5&5&7&7&9&9&11\\
+		\text{Intervalos:}&&2&&2&1&&2&&2&&2&1\\
+		\end{matrix}\right.\]        
+		\[\left.\begin{matrix}
+		\text{Cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
+		\text{Octotónica (8):}&0&0&2&3&3&5&6&6&8&9&9&11\\
+		\text{Intervalos:}&&2&1&&2&1&&2&1&&2&1\\
+		\end{matrix}\right.\]
