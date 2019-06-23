@@ -1,39 +1,49 @@
-\BOOKMARK [-1][-]{part.1}{I\040DODECAFONISMO}{}% 1
-\BOOKMARK [0][-]{chapter.1}{EL SISTEMA DODECAFÓNICO DE SCHOENBERG}{part.1}% 2
-\BOOKMARK [1][-]{section.1.1}{Los\040postulados\040del\040dodecafonismo}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.2}{Las\040transformaciones\040de\040una\040serie}{chapter.1}% 4
-\BOOKMARK [2][-]{subsection.1.2.1}{Transposiciones}{section.1.2}% 5
-\BOOKMARK [2][-]{subsection.1.2.2}{Retrogradación}{section.1.2}% 6
-\BOOKMARK [2][-]{subsection.1.2.3}{Inversión}{section.1.2}% 7
-\BOOKMARK [1][-]{section.1.3}{Matrices dodecafónicas}{chapter.1}% 8
-\BOOKMARK [0][-]{chapter.2}{EL\040GRUPO\040DE\040LAS\040TRANSFORMACIONES}{part.1}% 9
-\BOOKMARK [1][-]{section.2.1}{Nuevas\040definiciones\040y\040nuevas\040transformaciones}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.2}{Diagramas\040de\040reloj}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.3}{El\040grupo:\040D12\040x\040D12}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.4}{Conmutatividad\040entre\040los\040elementos\040del\040grupo}{chapter.2}% 13
-\BOOKMARK [0][-]{chapter.3}{CONTEO\040DE\040ESPECTROS\040SERIALES}{part.1}% 14
-\BOOKMARK [1][-]{section.3.1}{Espectros\040de\040las\040funciones\040\173I,\040T,\040R\175}{chapter.3}% 15
-\BOOKMARK [2][-]{subsection.3.1.1}{Elementos\040estables\040mediante\040R}{section.3.1}% 16
-\BOOKMARK [2][-]{subsection.3.1.2}{Elementos\040estables\040mediante\040RI}{section.3.1}% 17
-\BOOKMARK [1][-]{section.3.2}{Espectros\040del\040grupo\040Dn\040x\040Dn}{chapter.3}% 18
-\BOOKMARK [2][-]{subsection.3.2.1}{Elementos\040estables\040mediante\040T}{section.3.2}% 19
-\BOOKMARK [2][-]{subsection.3.2.2}{Elementos\040estables\040mediante\040I}{section.3.2}% 20
-\BOOKMARK [1][-]{section.3.3}{Medefonismo,\040monofonismo\040y\040difonismo}{chapter.3}% 21
-\BOOKMARK [-1][-]{part.2}{II\040MODIFICACIONES}{}% 22
-\BOOKMARK [0][-]{chapter.4}{ESCALAS\040Y\040FUNCIONES\040DEL\040EXPERIMENTO}{part.2}% 23
-\BOOKMARK [1][-]{section.4.1}{Escalas interválicas, escalas y funciones}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.2}{Funciones\040bien\040distribuidas}{chapter.4}% 25
-\BOOKMARK [1][-]{section.4.3}{Funciones\040E-inducidas}{chapter.4}% 26
-\BOOKMARK [1][-]{section.4.4}{Escalas\040utilizadas}{chapter.4}% 27
-\BOOKMARK [0][-]{chapter.5}{MODIFICACIÓN DE PARTITURAS SERIALISTAS}{part.2}% 28
-\BOOKMARK [1][-]{section.5.1}{Obras\040modificadas}{chapter.5}% 29
-\BOOKMARK [1][-]{section.5.2}{Página de modificaciones y plugin}{chapter.5}% 30
-\BOOKMARK [1][-]{section.5.3}{Obra\040de\040Schoenberg}{chapter.5}% 31
-\BOOKMARK [1][-]{section.5.4}{Obras\040de\040Berg}{chapter.5}% 32
-\BOOKMARK [1][-]{section.5.5}{Obras\040de\040Webern}{chapter.5}% 33
-\BOOKMARK [0][-]{section*.10}{ANEXOS}{part.2}% 34
-\BOOKMARK [0][-]{Apéndice.alph1.Alph1}{Apéndice Código para calcular matrices dodecafónicas}{part.2}% 35
-\BOOKMARK [0][-]{Apéndice.alph1.Alph2}{Apéndice Paquete de LaTeX: ddphonism}{part.2}% 36
-\BOOKMARK [0][-]{Apéndice.alph1.Alph3}{Apéndice Conmutatividad del grupo D12 x D12}{part.2}% 37
-\BOOKMARK [0][-]{Apéndice.alph1.Alph4}{Apéndice Código para generar funciones E-inducidas}{part.2}% 38
-\BOOKMARK [0][-]{appendix*.11}{Bibliografía}{part.2}% 39
+\BOOKMARK [0][-]{chapter.0}{INTRODUCCIÓN MATEMÁTICA}{}% 1
+\BOOKMARK [1][-]{section.0.1}{Conjuntos\040y\040grupos}{chapter.0}% 2
+\BOOKMARK [1][-]{section.0.2}{Funciones\040y\040permutaciones}{chapter.0}% 3
+\BOOKMARK [1][-]{section.0.3}{Aritmética modular}{chapter.0}% 4
+\BOOKMARK [-1][-]{part.1}{I\040DODECAFONISMO}{}% 5
+\BOOKMARK [0][-]{chapter.1}{INTRODUCCIÓN HISTÓRICA DEL DODECAFONISMO}{part.1}% 6
+\BOOKMARK [1][-]{section.1.1}{Richard Wagner y la emancipación de la disonancia}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.2}{Hacia\040el\040atonalismo\040de\040Schoenberg}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.3}{El\040surgimiento\040de\040un\040sistema}{chapter.1}% 9
+\BOOKMARK [0][-]{chapter.2}{EL SISTEMA DODECAFÓNICO DE SCHOENBERG}{part.1}% 10
+\BOOKMARK [1][-]{section.2.1}{Los\040postulados\040del\040dodecafonismo}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.2}{Las\040transformaciones\040de\040una\040serie}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.1}{Transposiciones}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.2}{Retrogradación}{section.2.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.3}{Inversión}{section.2.2}% 15
+\BOOKMARK [1][-]{section.2.3}{Matrices dodecafónicas}{chapter.2}% 16
+\BOOKMARK [0][-]{chapter.3}{ANÁLISIS DE UNA OBRA DODECAFÓNICA: OP. 25}{part.1}% 17
+\BOOKMARK [1][-]{section.3.1}{Series\040de\040la\040Suite\040op.\04025}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.2}{Descripción de la Suite op. 25}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.3}{Análisis de la Musette}{chapter.3}% 20
+\BOOKMARK [0][-]{chapter.4}{EL\040GRUPO\040DE\040LAS\040TRANSFORMACIONES}{part.1}% 21
+\BOOKMARK [1][-]{section.4.1}{Nuevas\040definiciones\040y\040nuevas\040transformaciones}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.2}{Diagramas\040de\040reloj}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.3}{El\040grupo:\040D12\040x\040D12}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.4}{Conmutatividad\040entre\040los\040elementos\040del\040grupo}{chapter.4}% 25
+\BOOKMARK [-1][-]{part.2}{II\040ENEFONISMO}{}% 26
+\BOOKMARK [0][-]{chapter.5}{EL\040SURGIMIENTO\040DEL\040SERIALISMO\040INTEGRAL}{part.2}% 27
+\BOOKMARK [1][-]{section.5.1}{Alban\040Berg\040y\040Anton\040Webern:\040la\040Segunda\040Escuela\040de\040Viena}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.2}{La\040escuela\040de\040Darmstadt}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.3}{Pierre\040Boulez}{chapter.5}% 30
+\BOOKMARK [0][-]{chapter.6}{MÁS HERRAMIENTAS MATEMÁTICAS}{part.2}% 31
+\BOOKMARK [1][-]{section.6.1}{Acciones\040de\040grupos\040sobre\040conjuntos}{chapter.6}% 32
+\BOOKMARK [1][-]{section.6.2}{Órbitas y estabilizadores}{chapter.6}% 33
+\BOOKMARK [1][-]{section.6.3}{El\040lema\040de\040Burnside}{chapter.6}% 34
+\BOOKMARK [0][-]{chapter.7}{CONTEO\040DE\040ESPECTROS\040SERIALES}{part.2}% 35
+\BOOKMARK [1][-]{section.7.1}{Espectros\040de\040las\040funciones\040\173I,\040T,\040R\175}{chapter.7}% 36
+\BOOKMARK [2][-]{subsection.7.1.1}{Elementos\040estables\040mediante\040R}{section.7.1}% 37
+\BOOKMARK [2][-]{subsection.7.1.2}{Elementos\040estables\040mediante\040RI}{section.7.1}% 38
+\BOOKMARK [1][-]{section.7.2}{Espectros\040del\040grupo\040Dn\040x\040Dn}{chapter.7}% 39
+\BOOKMARK [2][-]{subsection.7.2.1}{Elementos\040estables\040mediante\040T}{section.7.2}% 40
+\BOOKMARK [2][-]{subsection.7.2.2}{Elementos\040estables\040mediante\040I}{section.7.2}% 41
+\BOOKMARK [1][-]{section.7.3}{Medefonismo,\040monofonismo\040y\040difonismo}{chapter.7}% 42
+\BOOKMARK [0][-]{section*.14}{ANEXOS}{part.2}% 43
+\BOOKMARK [0][-]{Apéndice.alph1.Alph1}{Apéndice Código para calcular matrices dodecafónicas}{part.2}% 44
+\BOOKMARK [0][-]{Apéndice.alph1.Alph2}{Apéndice Paquete de LaTeX: ddphonism}{part.2}% 45
+\BOOKMARK [0][-]{Apéndice.alph1.Alph3}{Apéndice Series de la Suite Op. 25}{part.2}% 46
+\BOOKMARK [0][-]{Apéndice.alph1.Alph4}{Apéndice Análisis serial de la Musette}{part.2}% 47
+\BOOKMARK [0][-]{Apéndice.alph1.Alph5}{Apéndice Conmutatividad del grupo D12 x D12}{part.2}% 48
+\BOOKMARK [0][-]{appendix*.15}{Bibliografía}{part.2}% 49

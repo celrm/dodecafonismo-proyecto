@@ -1,4 +1,4 @@
-	\chapter{CONTEO DE ESPECTROS SERIALES}
+\chapter{CONTEO DE ESPECTROS SERIALES}\label{ch:espectros}
 	\section{Espectros de las funciones \{I, T, R\}}
 		\label{espec}
 		Es interesante conocer el número de espectros seriales distintos que un compositor puede escoger. Al fin y al cabo, es irrelevante qué serie se escoge como la original dentro de su espectro serial, ya que produce el mismo material compositivo que cualquiera de su mismo espectro.
@@ -112,7 +112,7 @@
 			\draw (4)--(5)--(7)--(1)--(6)--(3)--(8)--(2)--(11)--(0)--(9)--(10)--(4);
 			\end{tikzpicture}
 		\end{wrapfigure}
-		Ahora se calcularán los espectros formados mediante todas las transformaciones del grupo generado por \{S,T,V,C\}. Volviendo a la representación mediante diagramas de reloj del apartado \ref{diagramas}, el problema es equivalente a averiguar cuántos diagramas distintos, sin números ni flechas, se pueden dibujar. La flecha indica lo transformado por V y C, mientras que los números indican lo transformado por S y T. Un diagrama sin estos dos elementos representa entonces todo un espectro serial. ¿Cuántos diagramas esencialmente distintos hay? De nuevo, por el lema de Burnside:	
+		Ahora se calcularán los espectros formados mediante todas las transformaciones del grupo generado por \{S,T,V,C\}. Volviendo a la representación mediante diagramas de reloj del apartado \ref{diagramas}, el problema es equivalente a averiguar cuántos diagramas distintos, sin números ni flechas, se pueden dibujar. La flecha indica lo transformado por V y C, mientras que los números indican lo transformado por S y T. Un diagrama sin estos dos elementos representa entonces todo un espectro serial. ¿Cuántos diagramas esencialmente distintos hay? \cite{polygons} De nuevo, por el lema de Burnside:	
 		\[\#\text{Spec}=\frac{1}{|\text{D}_{n}\times\text{D}_{n}|}\sum_{\sigma\in\text{S}_n}|\text{Stab}(\sigma)|=\frac{1}{2n\cdot2n}\sum_{\sigma\in\text{S}_n}|\text{Stab}(\sigma)|\]
 		
 		En vez de expresar el sumatorio como ``para cada $\sigma$, el número de $\Psi$ que fijan $\sigma$'', se puede expresar como ``para cada $\Psi$, el número de $\sigma$ fijados por $\Psi$''. La fórmula queda de esta manera:
