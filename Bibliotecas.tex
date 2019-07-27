@@ -97,10 +97,19 @@
 % \setlength{\headheight}{15.71667pt}
 
 % Apéndices
-\usepackage[titletoc]{appendix}
-\renewcommand{\appendixname}{Anexo}
-\renewcommand{\appendixtocname}{ANEXOS}
-\renewcommand{\appendixpagename}{Anexos}
+%\usepackage[titletoc]{appendix}
+%\renewcommand{\appendixname}{Anexo}
+%\renewcommand{\appendixtocname}{ANEXOS}
+%\renewcommand{\appendixpagename}{Anexos}
+\newcommand{\apendices}
+{\part*{ANEXOS}%
+	\addcontentsline{toc}{part}{ANEXOS}
+	\setcounter{chapter}{0}%
+	\setcounter{section}{0}%
+	\setcounter{subsection}{0}%
+	\renewcommand\thechapter{\Alph{chapter}}
+	\renewcommand{\chaptername}{Anexo}
+}
 
 % Dibujos TIKZ
 \usepackage{tikz}

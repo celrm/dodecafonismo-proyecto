@@ -1,6 +1,6 @@
 \label{ch:introduccion}
-\pagestyle{plain}
-\thispagestyle{empty}
+\pagestyle{empty}\pagenumbering{gobble}
+%\thispagestyle{empty}
 
 	\vspace*{\bigskipamount}
 	\begin{flushright}
@@ -22,7 +22,7 @@
 %		Me gustaría dar las gracias a todos.
 	
 	
-	\pagenumbering{Roman}
+%	\pagenumbering{Roman}
 	\chapter*{\vspace*{-4\bigskipamount}INTRODUCCIÓN AL TEXTO}
 		Todas las estructuras musicales están basadas en estructuras matemáticas. Los elementos musicales de los que están compuestas las obras, como las notas, las dinámicas o los timbres, están agrupados en conjuntos, y, como tales, cumplen ciertas propiedades al relacionarse consigo mismos o con otros conjuntos.
 		
@@ -39,17 +39,14 @@
         %Son en estas estructuras en las que se centrará el presente texto, y más especı́ficamente en el dodecafonismo, el primer sistema compositivo serialista. Se explicarán los fundamentos matemáticos que lo posibilitan y los postulados que lo definieron, extendiendo las definiciones habituales hacia el ámbito matemático. Además, se investigará sobre el valor artı́stico del serialismo mediante el uso de escalas no cromáticas en busca de consonancia.
         
     
-    \renewcommand*\contentsname{\begin{LARGE}\textbf{Índice general}\end{LARGE}\vspace{-\bigskipamount}}
+    \renewcommand*\contentsname{\vspace{-2\bigskipamount}\begin{LARGE}\textbf{Índice}\end{LARGE}}
 	\begin{changemargin}{-0.5cm}{-0.5cm}
 		\tableofcontents
 	\end{changemargin}
-	\newpage
-	$\ $
-	\thispagestyle{empty}
-	\newpage
-	$\ $
+	\newpage$\ $
 	\thispagestyle{empty}
 	\newpage
 	
+	\pagestyle{plain}
 	\pagenumbering{arabic}
 %	\pagestyle{fancy}
