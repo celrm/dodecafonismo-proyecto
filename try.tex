@@ -1,0 +1,71 @@
+\documentclass[]{article}
+
+\usepackage{parskip}
+\usepackage{microtype}
+%\usepackage[T1]{fontenc}¡
+
+\usepackage{graphicx}
+%\usepackage{caption}
+\graphicspath{{Fotos/}}
+
+\usepackage{cancel}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{wasysym}
+
+\input{ddphonism.sty}
+
+\usepackage{multicol}
+%\usepackage{vwcol}
+
+\usepackage{hyperref}
+%\usepackage{qrcode}
+
+%\usepackage{listingsutf8}
+%\lstset{
+%	inputencoding=utf8,
+%	extendedchars=true,
+%	literate=%
+%	{á}{{\'a}}1
+%	{é}{{\'e}}1
+%	{í}{{\'i}}1
+%	{ó}{{\'o}}1
+%	{ú}{{\'u}}1
+%	{Á}{{\'A}}1
+%	{É}{{\'E}}1
+%	{Í}{{\'I}}1
+%	{Ó}{{\'O}}1
+%	{Ú}{{\'U}}1
+%	{ñ}{{\~n}}1
+%	{Ñ}{{\~N}}1
+%	{¿}{{>}}1
+%	{¡}{{<}}1
+%	{―}{{---}}1
+%}
+\usepackage{pdfpages}
+
+\newcommand{\apendices}
+{\part*{ANEXOS}%
+	\addcontentsline{toc}{part}{ANEXOS}
+	%	\setcounter{chapter}{0}%
+	\setcounter{section}{0}%
+	\setcounter{subsection}{0}%
+	\setcounter{subsubsection}{0}%
+	%	\renewcommand\thechapter{\Alph{chapter}}
+	%	\renewcommand{\chaptername}{Anexo}
+	\renewcommand\thesection{\Alph{section}}
+	%	\renewcommand{\secname}{Anexo}
+}
+
+
+\begin{document}
+	
+	\include{01.Historia}%
+	\include{02.Dodecafonismo}
+	\include{03.Suite}%
+	\include{00.Permutaciones}%
+	
+	\include{Bibliografia}
+
+\end{document}

@@ -1,0 +1,445 @@
+htfcss: cmbx  font-weight: bold;
+htfcss: cmbxsl  font-weight: bold; font-style: oblique;
+htfcss: cmmi font-style: italic;
+htfcss: cmmib font-style: italic; font-weight: bold;
+htfcss: wasyb font-weight: bold;
+htfcss: cmti  font-style: italic;
+htfcss: cmtt font-family: monospace;
+File: try.html
+File: try.tmp
+File: try.css
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try2.html
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try3.html
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try4.html
+File: try5.html
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try6.html
+File: try7.html
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try-1.svg
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try8.html
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try9.html
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try10.html
+Font_Class(1,"1"): <img  src="" alt="" class="%s-%dx-x-%x" />
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+File: try.tmp
+--- needs --- try.idv[1] ==> try0x.png ---
+--- empty picture --- try.idv[1] ---
+Css: p.noindent { text-indent: 0em }
+Css: td p.noindent { text-indent: 0em; margin-top:0em; }
+Css: p.nopar { text-indent: 0em; }
+Css: p.indent{ text-indent: 1.5em }
+Css: @media print {div.crosslinks {visibility:hidden;}}
+Css: a img { border-top: 0; border-left: 0; border-right: 0; }
+Font_Css("4"): .small-caps{font-variant: small-caps; }
+Font_Css("10"): .htf-cmbx {font-weight: bold; font-style:normal;}
+Font_Css("12"): .htf-calligraphy {font-family:cursive}
+Font_Css("14"): .htf-italic {font-style: italic;}
+Font_Css("16"): .htf-bold {font-weight: bold;}
+Font_Css("12"): .htf-calligraphy-bold {font-family:cursive ; font-weight: bold; }
+Css: center { margin-top:1em; margin-bottom:1em; }
+Css: td center { margin-top:0em; margin-bottom:0em; }
+Css: .Canvas { position:relative; }
+Css: img.math{vertical-align:middle;}
+Css: li p.indent { text-indent: 0em }
+Css: li p:first-child{ margin-top:0em; }
+Css: li p:last-child, li div:last-child { margin-bottom:0.5em; }
+Css: li p~ul:last-child, li p~ol:last-child{ margin-bottom:0.5em; }
+Css: .enumerate1 {list-style-type:decimal;}
+Css: .enumerate2 {list-style-type:lower-alpha;}
+Css: .enumerate3 {list-style-type:lower-roman;}
+Css: .enumerate4 {list-style-type:upper-alpha;}
+Css: div.newtheorem { margin-bottom: 2em; margin-top: 2em;}
+Css: .obeylines-h,.obeylines-v {white-space: nowrap; }
+Css: div.obeylines-v p { margin-top:0; margin-bottom:0; }
+Css: .overline{ text-decoration:overline; }
+Css: .overline img{ border-top: 1px solid black; }
+Css: td.displaylines {text-align:center; white-space:nowrap;}
+Css: .centerline {text-align:center;}
+Css: .rightline {text-align:right;}
+Css: div.verbatim {font-family: monospace; white-space: nowrap; text-align:left; clear:both; }
+Css: .fbox {padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: div.fbox {display:table}
+Css: div.center div.fbox {text-align:center; clear:both; padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: div.minipage{width:100%;}
+Css: div.center, div.center div.center {text-align: center; margin-left:1em; margin-right:1em;}
+Css: div.center div {text-align: left;}
+Css: div.flushright, div.flushright div.flushright {text-align: right;}
+Css: div.flushright div {text-align: left;}
+Css: div.flushleft {text-align: left;}
+Css: .underline{ text-decoration:underline; }
+Css: .underline img{ border-bottom: 1px solid black; margin-bottom:1pt; }
+Css: .framebox-c, .framebox-l, .framebox-r { padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: .framebox-c {text-align:center;}
+Css: .framebox-l {text-align:left;}
+Css: .framebox-r {text-align:right;}
+Css: span.thank-mark{ vertical-align: super }
+Css: span.footnote-mark sup.textsuperscript, span.footnote-mark a sup.textsuperscript{ font-size:80%; }
+Css: div.tabular, div.center div.tabular {text-align: center; margin-top:0.5em; margin-bottom:0.5em; }
+Css: table.tabular td p{margin-top:0em;}
+Css: table.tabular {margin-left: auto; margin-right: auto;}
+Css: td p:first-child{ margin-top:0em; }
+Css: td p:last-child{ margin-bottom:0em; }
+Css: div.td00{ margin-left:0pt; margin-right:0pt; }
+Css: div.td01{ margin-left:0pt; margin-right:5pt; }
+Css: div.td10{ margin-left:5pt; margin-right:0pt; }
+Css: div.td11{ margin-left:5pt; margin-right:5pt; }
+Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+Css: td.td00{ padding-left:0pt; padding-right:0pt; }
+Css: td.td01{ padding-left:0pt; padding-right:5pt; }
+Css: td.td10{ padding-left:5pt; padding-right:0pt; }
+Css: td.td11{ padding-left:5pt; padding-right:5pt; }
+Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+Css: .hline hr, .cline hr{ height : 1px; margin:0px; }
+Css: .tabbing-right {text-align:right;}
+Css: span.TEX {letter-spacing: -0.125em; }
+Css: span.TEX span.E{ position:relative;top:0.5ex;left:-0.0417em;}
+Css: a span.TEX span.E {text-decoration: none; }
+Css: span.LATEX span.A{ position:relative; top:-0.5ex; left:-0.4em; font-size:85%;}
+Css: span.LATEX span.TEX{ position:relative; left: -0.4em; }
+Css: div.float, div.figure {margin-left: auto; margin-right: auto;}
+Css: div.float img {text-align:center;}
+Css: div.figure img {text-align:center;}
+Css: .marginpar {width:20%; float:right; text-align:left; margin-left:auto; margin-top:0.5em; font-size:85%; text-decoration:underline;}
+Css: .marginpar p{margin-top:0.4em; margin-bottom:0.4em;}
+Css: table.equation {width:100%;}
+Css: .equation td{text-align:center; }
+Css: td.equation { margin-top:1em; margin-bottom:1em; } 
+Css: td.equation-label { width:5%; text-align:center; }
+Css: td.eqnarray4 { width:5%; white-space: normal; }
+Css: td.eqnarray2 { width:5%; }
+Css: table.eqnarray-star, table.eqnarray {width:100%;}
+Css: div.eqnarray{text-align:center;}
+Css: div.array {text-align:center;}
+Css: div.pmatrix {text-align:center;}
+Css: table.pmatrix {width:100%;}
+Css: span.pmatrix img{vertical-align:middle;}
+Css: div.pmatrix {text-align:center;}
+Css: table.pmatrix {width:100%;}
+Css: span.bar-css {text-decoration:overline;}
+Css: img.cdots{vertical-align:middle;}
+Css: .partToc a, .partToc, .likepartToc a, .likepartToc {line-height: 200%; font-weight:bold; font-size:110%;}
+Css: .index-item, .index-subitem, .index-subsubitem {display:block}
+Css: div.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:left;}
+Css: div.caption span.id{font-weight: bold; white-space: nowrap; }
+Css: h1.partHead{text-align: center}
+Css: p.bibitem { text-indent: -2em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+Css: p.bibitem-p { text-indent: 0em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+Css: .paragraphHead, .likeparagraphHead { margin-top:2em; font-weight: bold;}
+Css: .subparagraphHead, .likesubparagraphHead { font-weight: bold;}
+Css: .quote {margin-bottom:0.25em; margin-top:0.25em; margin-left:1em; margin-right:1em; text-align:justify;}
+Css: .verse{white-space:nowrap; margin-left:2em}
+Css: div.maketitle {text-align:center;}
+Css: h2.titleHead{text-align:center;}
+Css: div.maketitle{ margin-bottom: 2em; }
+Css: div.author, div.date {text-align:center;}
+Css: div.thanks{text-align:left; margin-left:10%; font-size:85%; font-style:italic; }
+Css: div.author{white-space: nowrap;}
+Css: .quotation {margin-bottom:0.25em; margin-top:0.25em; margin-left:1em; }
+Css: .abstract p {margin-left:5%; margin-right:5%;}
+Css: div.abstract {width:100%;}
+Css: .figure img.graphics {margin-left:10%;}
+Css: .equation td{text-align:center; }
+Css: .equation-star td{text-align:center; }
+Css: table.equation-star { width:100%; }
+Css: table.equation { width:100%; }
+Css: table.align, table.alignat, table.xalignat, table.xxalignat, table.flalign {width:95%; margin-left:5%; white-space: nowrap;}
+Css: table.align-star, table.alignat-star, table.xalignat-star, table.flalign-star {margin-left:auto; margin-right:auto; white-space: nowrap;}
+Css: td.align-label { width:5%; text-align:center; }
+Css: td.align-odd { text-align:right; padding-right:0.3em;}
+Css: td.align-even { text-align:left; padding-right:0.6em;}
+Css: table.multline, table.multline-star {width:100%;}
+Css: td.gather {text-align:center; }
+Css: table.gather {width:100%;}
+Css: div.gather-star {text-align:center;}
+--- needs --- try.idv[3] ==> try1x.png ---
+--- empty picture --- try.idv[3] ---
+--- needs --- try.idv[4] ==> try2x.png ---
+--- empty picture --- try.idv[4] ---
+--- needs --- try.idv[6] ==> try3x.png ---
+--- empty picture --- try.idv[6] ---
+--- needs --- try.idv[7] ==> try4x.png ---
+--- empty picture --- try.idv[7] ---
+--- needs --- try.idv[9] ==> try5x.png ---
+--- empty picture --- try.idv[9] ---
+--- needs --- try.idv[10] ==> try6x.png ---
+--- empty picture --- try.idv[10] ---
+File: Fotos/Richard_Wagner.jpg
+--- needs --- try.idv[12] ==> try7x.png ---
+--- empty picture --- try.idv[12] ---
+--- needs --- try.idv[13] ==> try8x.png ---
+--- empty picture --- try.idv[13] ---
+--- needs --- try.idv[15] ==> try9x.png ---
+--- empty picture --- try.idv[15] ---
+--- needs --- try.idv[16] ==> try10x.png ---
+--- empty picture --- try.idv[16] ---
+--- needs --- try.idv[18] ==> try11x.png ---
+--- empty picture --- try.idv[18] ---
+--- needs --- try.idv[19] ==> try12x.png ---
+--- empty picture --- try.idv[19] ---
+File: Fotos/Arnold_Schoenberg.jpg
+--- needs --- try.idv[21] ==> try13x.png ---
+--- empty picture --- try.idv[21] ---
+--- needs --- try.idv[22] ==> try14x.png ---
+--- empty picture --- try.idv[22] ---
+--- needs --- try.idv[24] ==> try15x.png ---
+--- empty picture --- try.idv[24] ---
+--- needs --- try.idv[25] ==> try16x.png ---
+--- empty picture --- try.idv[25] ---
+--- needs --- try.idv[27] ==> try17x.png ---
+--- empty picture --- try.idv[27] ---
+--- needs --- try.idv[28] ==> try18x.png ---
+--- empty picture --- try.idv[28] ---
+--- needs --- try.idv[30] ==> try19x.png ---
+--- empty picture --- try.idv[30] ---
+--- needs --- try.idv[31] ==> try20x.png ---
+--- empty picture --- try.idv[31] ---
+--- needs --- try.idv[33] ==> try21x.png ---
+--- empty picture --- try.idv[33] ---
+--- needs --- try.idv[34] ==> try23x.png ---
+--- empty picture --- try.idv[34] ---
+--- needs --- try.idv[36] ==> try24x.png ---
+--- empty picture --- try.idv[36] ---
+--- needs --- try.idv[37] ==> try26x.png ---
+--- empty picture --- try.idv[37] ---
+--- needs --- try.idv[39] ==> try22x.png ---
+--- needs --- try.idv[40] ==> try25x.png ---
+File: Fotos/1.png
+--- needs --- try.idv[42] ==> try27x.png ---
+--- empty picture --- try.idv[42] ---
+--- needs --- try.idv[43] ==> try33x.png ---
+--- empty picture --- try.idv[43] ---
+--- needs --- try.idv[45] ==> try28x.png ---
+--- needs --- try.idv[46] ==> try29x.png ---
+--- needs --- try.idv[48] ==> try34x.png ---
+--- empty picture --- try.idv[48] ---
+--- needs --- try.idv[49] ==> try38x.png ---
+--- empty picture --- try.idv[49] ---
+--- needs --- try.idv[51] ==> try30x.png ---
+--- needs --- try.idv[52] ==> try31x.png ---
+--- needs --- try.idv[53] ==> try32x.png ---
+--- needs --- try.idv[54] ==> try35x.png ---
+File: Fotos/2.png
+--- needs --- try.idv[55] ==> try36x.png ---
+--- needs --- try.idv[56] ==> try37x.png ---
+--- needs --- try.idv[58] ==> try39x.png ---
+--- empty picture --- try.idv[58] ---
+--- needs --- try.idv[59] ==> try42x.png ---
+--- empty picture --- try.idv[59] ---
+--- needs --- try.idv[61] ==> try40x.png ---
+File: Fotos/3.png
+--- needs --- try.idv[62] ==> try41x.png ---
+--- needs --- try.idv[64] ==> try43x.png ---
+--- empty picture --- try.idv[64] ---
+--- needs --- try.idv[65] ==> try47x.png ---
+--- empty picture --- try.idv[65] ---
+--- needs --- try.idv[67] ==> try44x.png ---
+--- needs --- try.idv[68] ==> try45x.png ---
+--- needs --- try.idv[69] ==> try46x.png ---
+File: Fotos/4.png
+Css: .columns-2 p:first-child { margin-top: 0em; }
+Css: .columns-2{-moz-column-count:2; -webkit-column-count:2; column-count:2; -moz-column-gap: 10.0pt; -webkit-column-gap: 10.0pt; column-gap: 10.0pt; -moz-column-rule-width: 0.0pt; -webkit-column-rule-width: 0.0pt; column-rule-rule-width: 0.0pt; -moz-column-rule-color: #555;; -webkit-column-rule-color: #555;; column-rule-color: #555;; -moz-column-rule-style: outset; -webkit-column-rule-style: outset; column-rule-style: outset; -moz-column-fill: balance; -webkit-column-fill: balance; column-fill: balance; }
+--- needs --- try.idv[71] ==> try48x.png ---
+--- empty picture --- try.idv[71] ---
+--- needs --- try.idv[72] ==> try49x.png ---
+--- empty picture --- try.idv[72] ---
+--- needs --- try.idv[74] ==> try50x.png ---
+--- empty picture --- try.idv[74] ---
+--- needs --- try.idv[75] ==> try51x.png ---
+--- empty picture --- try.idv[75] ---
+Css: #TBL-1 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-1{border-collapse:collapse;}
+Css: #TBL-1 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-1{border-collapse:collapse;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+--- needs --- try.idv[77] ==> try52x.png ---
+--- empty picture --- try.idv[77] ---
+--- needs --- try.idv[78] ==> try53x.png ---
+--- empty picture --- try.idv[78] ---
+--- needs --- try.idv[80] ==> try54x.png ---
+--- empty picture --- try.idv[80] ---
+--- needs --- try.idv[81] ==> try57x.png ---
+--- empty picture --- try.idv[81] ---
+--- needs --- try.idv[83] ==> try55x.png ---
+--- needs --- try.idv[85] ==> try58x.png ---
+--- empty picture --- try.idv[85] ---
+--- needs --- try.idv[86] ==> try62x.png ---
+--- empty picture --- try.idv[86] ---
+--- needs --- try.idv[88] ==> try56x.png ---
+File: Fotos/1.png
+--- needs --- try.idv[89] ==> try59x.png ---
+File: Fotos/2.png
+--- needs --- try.idv[90] ==> try60x.png ---
+File: Fotos/4.png
+--- needs --- try.idv[92] ==> try63x.png ---
+--- empty picture --- try.idv[92] ---
+--- needs --- try.idv[93] ==> try67x.png ---
+--- empty picture --- try.idv[93] ---
+--- needs --- try.idv[95] ==> try61x.png ---
+File: Fotos/6.png
+--- needs --- try.idv[96] ==> try64x.png ---
+File: Fotos/3.png
+--- needs --- try.idv[97] ==> try65x.png ---
+File: Fotos/7.png
+--- needs --- try.idv[99] ==> try68x.png ---
+--- empty picture --- try.idv[99] ---
+--- needs --- try.idv[100] ==> try70x.png ---
+--- empty picture --- try.idv[100] ---
+--- needs --- try.idv[102] ==> try66x.png ---
+File: Fotos/5.png
+--- needs --- try.idv[103] ==> try69x.png ---
+File: Fotos/8.png
+--- needs --- try.idv[105] ==> try71x.png ---
+--- empty picture --- try.idv[105] ---
+--- needs --- try.idv[106] ==> try72x.png ---
+--- empty picture --- try.idv[106] ---
+--- needs --- try.idv[108] ==> try73x.png ---
+--- empty picture --- try.idv[108] ---
+--- needs --- try.idv[109] ==> try74x.png ---
+--- empty picture --- try.idv[109] ---
+--- needs --- try.idv[111] ==> try75x.png ---
+--- empty picture --- try.idv[111] ---
+--- needs --- try.idv[112] ==> try77x.png ---
+--- empty picture --- try.idv[112] ---
+--- needs --- try.idv[114] ==> try76x.png ---
+--- needs --- try.idv[116] ==> try78x.png ---
+--- empty picture --- try.idv[116] ---
+--- needs --- try.idv[117] ==> try79x.png ---
+--- empty picture --- try.idv[117] ---
+--- needs --- try.idv[119] ==> try80x.png ---
+--- empty picture --- try.idv[119] ---
+--- needs --- try.idv[120] ==> try84x.png ---
+--- empty picture --- try.idv[120] ---
+--- needs --- try.idv[122] ==> try81x.png ---
+--- needs --- try.idv[123] ==> try82x.png ---
+--- needs --- try.idv[124] ==> try83x.png ---
+--- needs --- try.idv[126] ==> try85x.png ---
+--- empty picture --- try.idv[126] ---
+--- needs --- try.idv[127] ==> try89x.png ---
+--- empty picture --- try.idv[127] ---
+--- needs --- try.idv[129] ==> try86x.png ---
+--- needs --- try.idv[130] ==> try87x.png ---
+--- needs --- try.idv[131] ==> try88x.png ---
+--- needs --- try.idv[133] ==> try90x.png ---
+--- empty picture --- try.idv[133] ---
+--- needs --- try.idv[134] ==> try92x.png ---
+--- empty picture --- try.idv[134] ---
+--- needs --- try.idv[136] ==> try91x.png ---
+--- needs --- try.idv[138] ==> try93x.png ---
+--- empty picture --- try.idv[138] ---
+--- needs --- try.idv[139] ==> try94x.png ---
+--- empty picture --- try.idv[139] ---
+--- needs --- try.idv[141] ==> try95x.png ---
+--- empty picture --- try.idv[141] ---
+--- needs --- try.idv[142] ==> try96x.png ---
+--- empty picture --- try.idv[142] ---
+--- needs --- try.idv[144] ==> try97x.png ---
+--- empty picture --- try.idv[144] ---
+--- needs --- try.idv[145] ==> try98x.png ---
+--- empty picture --- try.idv[145] ---
+--- needs --- try.idv[147] ==> try99x.png ---
+--- empty picture --- try.idv[147] ---
+--- needs --- try.idv[148] ==> try100x.png ---
+--- empty picture --- try.idv[148] ---
+--- needs --- try.idv[150] ==> try101x.png ---
+--- empty picture --- try.idv[150] ---
+--- needs --- try.idv[151] ==> try102x.png ---
+--- empty picture --- try.idv[151] ---
+--- needs --- try.idv[153] ==> try103x.png ---
+--- empty picture --- try.idv[153] ---
+--- needs --- try.idv[154] ==> try104x.png ---
+--- empty picture --- try.idv[154] ---
+--- needs --- try.idv[156] ==> try105x.png ---
+--- empty picture --- try.idv[156] ---
+--- characters ---
+Font("cmex","10","10","100")
+Font("line","10","10","100")
+Font("cmr","7","7","100")
+Font("cmr","10","10","100")
+Font("cmmi","7","7","100")
+Font("cmmi","10","10","100")
+Font("cmsy","7","7","100")
+Font("cmsy","10","10","100")
+Font("cmtt","10","10","100")
+Font("cmti","10","10","100")
+Font("cmr","9","9","100")
+Font("cmr","8","8","100")
+Font("cmti","8","8","100")
+Font("msbm","10","10","100")
+Font("wasy","10","10","100")
+--- needs --- try.idv[157] ==> wasy10-e.png ---
+Font("cmmi","8","8","100")
+Font("cmsy","8","8","100")
+Font("msbm","10","10","80")
+Font("cmbx","10","10","100")

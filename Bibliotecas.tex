@@ -18,6 +18,7 @@
 \usepackage{enumerate}
 
 % Columnas
+\usepackage{vwcol}
 \usepackage{multicol}
 
 \usepackage[a5paper]{geometry}
@@ -104,11 +105,14 @@
 \newcommand{\apendices}
 {\part*{ANEXOS}%
 	\addcontentsline{toc}{part}{ANEXOS}
-	\setcounter{chapter}{0}%
+%	\setcounter{chapter}{0}%
 	\setcounter{section}{0}%
 	\setcounter{subsection}{0}%
-	\renewcommand\thechapter{\Alph{chapter}}
-	\renewcommand{\chaptername}{Anexo}
+	\setcounter{subsubsection}{0}%
+%	\renewcommand\thechapter{\Alph{chapter}}
+%	\renewcommand{\chaptername}{Anexo}
+	\renewcommand\thesection{\Alph{section}}
+%	\renewcommand{\secname}{Anexo}
 }
 
 % Dibujos TIKZ
@@ -117,15 +121,15 @@
 \newcommand*\cancel[2][thin]{\tikz[baseline] \node [strike out,draw,anchor=text,inner sep=0pt,text=black,#1]{#2};}  
 
 % Clear double page limpio
-\makeatletter
-\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
-	\hbox{}
-	\vspace*{\fill}
-	\vspace{\fill}
-	\thispagestyle{empty}
-	\newpage
-	\if@twocolumn\hbox{}\newpage\fi\fi\fi}
-\makeatother
+%\makeatletter
+%\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+%	\hbox{}
+%	\vspace*{\fill}
+%	\vspace{\fill}
+%	\thispagestyle{empty}
+%	\newpage
+%	\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+%\makeatother
 
 \newenvironment{changemargin}[2]{%
 	\begin{list}{}{%

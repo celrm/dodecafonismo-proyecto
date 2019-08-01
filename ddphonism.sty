@@ -15,6 +15,7 @@
 \RequirePackage{tikz}
 \RequirePackage{xstring}
 \RequirePackage{pgfkeys}
+%\setcounter{MaxMatrixCols}{30}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Matrices ¬\label{app:latex1}¬
@@ -176,10 +177,10 @@
 
 \newcommand{\drow}[1]{
 	\ensuremath{
-		\left(\begin{matrix}
+		\left(\begin{array}{*{12}c}
 			0&1&2&3&4&5&6&7&8&9&10&11\\
 			\StrSubstitute{#1}{,}{&}\\
-		\end{matrix}\right)
+		\end{array}\right)
 	}
 }
 
