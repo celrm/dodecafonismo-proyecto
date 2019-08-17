@@ -1,0 +1,35 @@
+\documentclass[]{article}
+
+\usepackage{parskip}
+\usepackage{microtype}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+
+\usepackage{graphicx}
+%\usepackage{caption}
+\graphicspath{{Fotos/}}
+
+\usepackage{cancel}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{wasysym}
+
+\input{ddphonism.sty}
+
+\usepackage{multicol}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+
+\begin{document}
+	
+	\tikzstyle rotateArrow=[decoration={markings,mark=at position 0.9999 with {\arrow[scale=1,>=triangle 45]{>}}},postaction={decorate}]
+	
+	\include{04.Grupo}%
+	\include{05.Serialismo}%
+%	\include{06.Acciones}%
+%	\include{07.Espectros}%
+	
+	\include{bib2}
+
+\end{document}

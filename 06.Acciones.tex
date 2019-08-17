@@ -1,5 +1,5 @@
-\chapter{MÁS HERRAMIENTAS MATEMÁTICAS}\label{ch:acciones}
-	\section{Acciones de grupos sobre conjuntos}
+\section{MÁS HERRAMIENTAS MATEMÁTICAS}\label{ch:acciones}
+	\subsection{Acciones de grupos sobre conjuntos}
 		Dado un grupo (G, $*$) y un conjunto X, la \emph{acción} de (G, $*$) sobre X es una función $\phi$ que asocia un elemento $g \in$ G y un elemento $x \in$ X -- el par ($g$, $x$) -- a otro elemento $g\cdot x$ que también pertenece a X \cite{armstrong}. $\ \ \phi :(g,x) \to g\cdot x$
 	
 		La acción $\phi$, expresada mediante la operación ($\cdot$), debe cumplir dos condiciones:
@@ -8,39 +8,44 @@
 		
 			\item{Para todo $x\in$ X y para todo par $g,h\in$ G, se debe cumplir que $(g*h)\cdot x=g\cdot (h\cdot x)$. La primera operación ($*$) es la interna del grupo G, y la segunda operación ($\cdot$) es la acción.}
 		\end{enumerate}
-		Como ya se ha visto en el apartado \ref{grupoD}, las funciones \{S,T,V,C\} forman el grupo diédrico $\text{D}_{n}\times\text{D}_{n}$, con $n$ la longitud de la serie. Se podrá definir entonces la acción $\phi$ de este grupo sobre el conjunto de permutaciones de orden $n$, tal que $\phi(\Psi,\ \sigma)=\Psi\circ\sigma=\Psi(\sigma)=\tau$, con $\Psi\in\text{D}_{n}\times\text{D}_{n}$ y $\sigma,\tau\in\text{S}_n$.
+		Como ya se ha visto, las funciones \{S,T,V,C\} forman el grupo diédrico $\mbox{D}_{n}\times\mbox{D}_{n}$, con $n$ la longitud de la serie. Se podrá definir entonces la acción $\phi$ de este grupo sobre el conjunto de permutaciones de orden $n$, tal que $\phi(\Psi,\ \sigma)=\Psi\circ\sigma=\Psi(\sigma)=\tau$, con $\Psi\in\mbox{D}_{n}\times\mbox{D}_{n}$ y $\sigma,\tau\in\mbox{S}_n$.
 		
 		De igual manera, se puede definir el grupo que forman solamente I y R, que servirá más adelante. Como son dos reflexiones, forman el conocido grupo de Klein -- a partir de ahora denotado por $\Xi$, con elementos Id, I, R e IR.
 
-	\section{Órbitas y estabilizadores}	
+	\subsection{Órbitas y estabilizadores}	
 		Dada una acción de (G, $*$) sobre X, la \emph{órbita} de un determinado elemento $x_0\in$ X es el subconjunto de elementos $x$ de X que pueden ser alcanzados desde $x_0$ mediante algún $g_0\in$ G. Es decir, todos los $x$ para los que existe un $g_0$ que al actuar sobre $x_0$ da $x$. Trivialmente, $x_0\in Orb(x_0)$ ya que $e\cdot x_0=x_0$.
-		\[Orb(x_0)=\{x\in X :\ \exists \ g_0\in \text{G},\ g_0\cdot x_0 =x\}\]
+		\[Orb(x_0)=\{x\in X :\ \exists \ g_0\in \mbox{G},\ g_0\cdot x_0 =x\}\]
 	
-		Por ejemplo, dada una permutación $\sigma$, todas las permutaciones a las que se llega desde $\sigma$ mediante algún $\Psi\in\text{D}_{n}\times\text{D}_{n}$ -- que son las transformaciones de series del apartado \ref{ciclico} -- conforman la órbita de $\sigma$. Por definición, las series a las que se puede llegar desde una serie original conforman su espectro serial, por lo que \textbf{la órbita es en realidad el espectro serial}.
+		Por ejemplo, dada una permutación $\sigma$, todas las permutaciones a las que se llega desde $\sigma$ mediante algún $\Psi\in\mbox{D}_{n}\times\mbox{D}_{n}$ %-- que son las transformaciones de series del apartado \ref{ciclico} -- 
+		conforman la órbita de $\sigma$. Por definición, las series a las que se puede llegar desde una serie original conforman su espectro serial, por lo que \textbf{la órbita es en realidad el espectro serial}.
 	
 		Para el mismo $x_0$ se define su \emph{estabilizador} como el conjunto de elementos $g\in$ G que fijan $x_0$, es decir, que mandan $x_0$ a sí mismo. Mientras que una órbita es un subconjunto de X, un estabilizador es un subgrupo de G. Trivialmente, $e\in Stab(x) \ \forall x\in$ X, porque el elemento identidad fija cualquier otro elemento por definición.
-		\[Stab(x_0)=\{g\in \text{G}\ :\ g\cdot x_0 =x_0 \}\]
+		\[Stab(x_0)=\{g\in \mbox{G}\ :\ g\cdot x_0 =x_0 \}\]
 	
 		Si cada $g\in$ G llevara a $x_0$ a un $x$ distinto, el número de elementos de $Orb(x_0)$ sería igual al número de elementos de G. Sin embargo, si un elemento $g_0\in$ G fija $x_0$, entonces no dará nuevos elementos en la órbita de $x$. Por tanto, el tamaño de la órbita disminuye. De hecho,  el teorema de Órbita--Estabilizador dice que el tamaño de una órbita ($|Orb(x_0)|$) será el tamaño de G ($|$G$|$) entre el número de elementos que fijan $x_0$; es decir, el tamaño de su estabilizador ($|Stab(x_0)|$). Además, es cierto para todo $x\in$ X.
-		\[|Orb(x)|=\frac{|\text{G}|}{|Stab(x)|}\text{, o lo que es lo mismo, }|\text{G}|=|Orb(x)||Stab(x)|\]
+		\[|Orb(x)|=\frac{|\mbox{G}|}{|Stab(x)|}\mbox{, o lo que es lo mismo, }|\mbox{G}|=|Orb(x)||Stab(x)|\]
 		
 		\def\arraystretch{1.5}
 		Este teorema implica que los tamaños de cada órbita y cada estabilizador son divisores del tamaño del grupo. Por ejemplo, como el tamaño del grupo $\Xi$ es 4, cualquier estabilizador y cualquier órbita tendrán tamaño 1, 2 o 4. En concreto, como Id está siempre en el estabilizador, para  todo $\sigma$ será de una de estas formas:
-		\[\begin{matrix}|Stab|=1&&&\{\text{Id}\}&\\\hline|Stab|=2&&\{\text{Id, R}\}&\{\text{Id, I}\}&\{\text{Id, RI}\}\}\\\hline|Stab|=4&&&\{\text{Id, R, I, RI}\}&\\\end{matrix}\]
+		\[\begin{array}{*{5}c}
+		|Stab|=1&&&\{\mbox{Id}\}&\\
+		\hline|Stab|=2&&\{\mbox{Id, R}\}&\{\mbox{Id, I}\}&\{\mbox{Id, RI}\}\}\\
+		\hline|Stab|=4&&&\{\mbox{Id, R, I, RI}\}&\\
+		\end{array}\]
 		
 		\def\arraystretch{1}
 		Una serie $\sigma$ sin simetrías tendrá una serie distinta para cada una de sus transformaciones. Por tanto, su órbita será \{$\sigma$, R($\sigma$), I($\sigma$), RI($\sigma$)\} y su estabilizador será solamente \{Id\}. Cumple entonces el teorema: $4\cdot 1 = 4$.
 	
-	\section{El lema de Burnside}
+	\subsection{El lema de Burnside}
 		\label{burnside}
 		Las órbitas, que son subconjuntos de X, forman una \emph{partición} de X. Esto significa que son subconjuntos disjuntos: ningún $x$ puede estar en dos órbitas distintas. Interesa entonces saber cuántos subconjuntos hay; es decir, el número de órbitas ($\#Orb$). El lema de Burnside\footnote{Aunque Burnside demostró este lema en una ocasión, citó a Frobenius como su autor. Sin embargo, Cauchy era conocedor del lema décadas antes. Para no confundirlo con otros lemas que sí son de Burnside, a veces se le llama \emph{el lema que no es de Burnside.}} afirma que se pueden calcular así:
-		\[\#Orb=\frac{1}{|\text{G}|}\sum_{x\in\text{X}}|\text{Stab}(x)|\]	
-		Se prueba de esta forma: por el teorema de Órbita--Estabilizador, $|\text{Stab}(x)|=\frac{|\text{G}|}{|Orb(x)|}$, por lo que la parte derecha se puede expresar así:
-		\[\frac{1}{|\text{G}|}\sum_{x\in\text{X}}|\text{Stab}(x)|=
-		\frac{1}{|\text{G}|}\sum_{x\in\text{X}}\frac{|\text{G}|}{|Orb(x)|}=
-		\sum_{x\in\text{X}}\frac{1}{|Orb(x)|}\]
+		\[\#Orb=\frac{1}{|\mbox{G}|}\sum_{x\in\mbox{X}}|\mbox{Stab}(x)|\]	
+		Se prueba de esta forma: por el teorema de Órbita--Estabilizador, $|\mbox{Stab}(x)|=\frac{|\mbox{G}|}{|Orb(x)|}$, por lo que la parte derecha se puede expresar así:
+		\[\frac{1}{|\mbox{G}|}\sum_{x\in\mbox{X}}|\mbox{Stab}(x)|=
+		\frac{1}{|\mbox{G}|}\sum_{x\in\mbox{X}}\frac{|\mbox{G}|}{|Orb(x)|}=
+		\sum_{x\in\mbox{X}}\frac{1}{|Orb(x)|}\]
 
 		Como las órbitas forman una partición de X, la suma sobre todo el conjunto X puede ser dividida en sumas separadas para cada órbita. Además, si por cada elemento de una órbita se suma el inverso del número de elementos de la órbita, esa suma dará uno. Solo queda ahora sumar uno por cada órbita.
-		\[\sum_{x\in\text{X}}\frac{1}{|Orb(x)|}=\sum_{\text{O}\in\text{Órbitas}}\left(\sum_{x\in\text{O}}\frac{1}{|\text{O}|}\right)=\sum_{\text{O}\in\text{Órbitas}}1=\#Orb \qed\]	
+		\[\sum_{x\in\mbox{X}}\frac{1}{|Orb(x)|}=\sum_{\mbox{O}\in\mbox{Órbitas}}\left(\sum_{x\in\mbox{O}}\frac{1}{|\mbox{O}|}\right)=\sum_{\mbox{O}\in\mbox{Órbitas}}1=\#Orb \qed\]	
 	
 		Este lema permite calcular el número de posibles espectros seriales distintos, ya que el espectro de una serie es igual al espectro de sus series transformadas. Un compositor serialista debe entonces escoger no una serie original, sino el espectro con el que construir la obra. O, más bien, si escoge una serie original está escogiendo el mismo material que si escogiera otra serie de ese mismo espectro.
