@@ -1,69 +1,70 @@
-\section{DEFINICIONES MATEM√ÅTICAS}\label{ch:permutaciones}
+\section{Definiciones matem·ticas}\label{ch:permutaciones}
+
 	\subsection{Conjuntos y grupos}
-		Un \emph{conjunto} es una colecci√≥n de objetos bien definidos y distintos entre s√≠ que se llaman \emph{elementos}. 
+		Un \emph{conjunto} es una colecciÛn de objetos bien definidos y distintos entre sÌ≠ que se llaman \emph{elementos}. 
 	
 		Para definir un conjunto se puede o bien listar los objetos uno a uno, o bien describirlos por medio de un predicado: una o varias propiedades que caracterizan a todos los elementos de dicho conjunto.
 
-		Por ejemplo, el conjunto K$_{\mbox{i}}$, formado por las doce notas de la escala crom√°tica de una misma octava i, est√° bien definido porque podemos hacer una lista con ellas: por ejemplo, $\mbox{K}_{\mbox{4}} = $
+		Por ejemplo, el conjunto $K_i$, formado por las doce notas de la escala crom·tica de una misma octava i, est· bien definido porque podemos hacer una lista con ellas: por ejemplo, $K_4=$:
 		
 		{$\{\mbox{Do}_{\mbox{4}}, \mbox{Do\#}_{\mbox{4}}, \mbox{Re}_{\mbox{4}}, \mbox{Re\#}_{\mbox{4}}, \mbox{Mi}_{\mbox{4}}, \mbox{Fa}_{\mbox{4}}, \mbox{Fa\#}_{\mbox{4}}, \mbox{Sol}_{\mbox{4}}, \mbox{Sol\#}_{\mbox{4}}, \mbox{La}_{\mbox{4}}, \mbox{La\#}_{\mbox{4}}, \mbox{Si}_{\mbox{4}}\}$}
 		
-		Por un lado, aun llamando a las notas de distinta manera, el conjunto, conceptualmente, es el mismo. Adem√°s, el hecho de listar alg√∫n elemento m√°s de una vez no afecta a su definici√≥n. Como $\mbox{Do\#}_{\mbox{4}} = \mbox{Re}\flat_{\mbox{4}}$ ({ya que trabajamos con temperamento igual}), $\mbox{K}_{\mbox{4}}$ tambi√©n puede ser listado as√≠:
+		Por un lado, aun llamando a las notas de distinta manera, el conjunto, conceptualmente, es el mismo. Adem·s, el hecho de listar alg˙n elemento m·s de una vez no afecta a su definiciÛn. Como $\mbox{Do\#}_{\mbox{4}} = \mbox{Re}\flat_{\mbox{4}}$ ({ya que trabajamos con temperamento igual}), $\mbox{K}_{\mbox{4}}$ tambiÈn puede ser listado asÌ≠:
 		
 		{$\{\mbox{Do}_{\mbox{4}}, \mbox{Do\#}_{\mbox{4}}, \mbox{Re}\flat_{\mbox{4}}, \mbox{Re}_{\mbox{4}}, \mbox{Re\#}_{\mbox{4}}, \mbox{Mi}_{\mbox{4}}, \mbox{Fa}_{\mbox{4}}, \mbox{Fa\#}_{\mbox{4}}, \mbox{Sol}_{\mbox{4}}, \mbox{Sol\#}_{\mbox{4}}, \mbox{La}_{\mbox{4}}, \mbox{La\#}_{\mbox{4}}, \mbox{Si}_{\mbox{4}}\}$}
 	
-		En cambio, el conjunto D, formado por las duraciones r√≠tmicas elementales -- sin ligaduras ni puntillos --, es infinito, por lo que no se puede listar de forma completa. Sin embargo, se puede expresar por medio de un predicado:		
-		\[\mbox{D} =\{2^n:n\in\mathbb{Z},\ n\le 2\} = \{4,\ 2,\ 1,\ \dfrac{1}{2},\ \dfrac{1}{4},\ \dfrac{1}{8},\ \ldots\} = \{\Ganz,\ \Halb,\ \Vier,\ \textsf{\Acht},\ \ldots\}\]
+		En cambio, el conjunto D, formado por las duraciones rÌ≠tmicas elementales -- sin ligaduras ni puntillos --, es infinito, por lo que no se puede listar de forma completa. Sin embargo, se puede expresar por medio de un predicado:		
+		\[D =\{2^n:n\in\mathbb{Z},\ n\le 2\} = \{4,\ 2,\ 1,\ \dfrac{1}{2},\ \dfrac{1}{4},\ \dfrac{1}{8},\ \ldots\} = \{\Ganz,\ \Halb,\ \Vier,\ \textsf{\Acht},\ \ldots\}\]
 		
-		La notaci√≥n $n\in\mathbb{Z}$ significa que $n$ pertenece a los n√∫meros enteros. En este caso se han representado las duraciones mediante su ratio con la duraci√≥n de la negra.
+		La notaciÛn $n\in\mathbb{Z}$ significa que $n$ pertenece a los n˙meros enteros. En este caso se han representado las duraciones mediante su ratio con la duraciÛn de la negra.
 	
-		Los elementos de un conjunto pueden combinarse mediante \emph{operaciones} -- como la suma o la multiplicaci√≥n en el caso de los n√∫meros -- para dar otros objetos matem√°ticos. 
+		Los elementos de un conjunto pueden combinarse mediante \emph{operaciones} \textemdash como la suma o la multiplicaciÛn en el caso de los n˙meros\textemdash~para dar otros objetos matem·ticos. 
 		
-		Se dice que un conjunto G no vac√≠o y una operaci√≥n binaria ($\ast$) forman la estructura de un \emph{grupo} (G, $\ast$) cuando cumplen:
+		Se dice que un conjunto $G$ no vacÌ≠o y una operaciÛn binaria ($\ast$) forman la estructura de un \emph{grupo} $(G, \ast)$ cuando cumplen las siguientes condiciones:
 	
 		\begin{enumerate}
-			\item{Su operaci√≥n es interna: Si $a,b\in$ G, entonces $a\ast b\in$ G.}		
-			\item{Su operaci√≥n es asociativa: Si $a,b,c\in$ G, $(a\ast b)\ast c=a\ast(b\ast c)$. }
-			\item{Existe un elemento $e$ en G, llamado elemento neutro o identidad, tal que para todo $x\in$ G se cumple que $e\ast x = x\ast e = x$. Se puede probar que el neutro es √∫nico para cada grupo. A veces se incluye dentro de la definici√≥n del grupo: (G, $\ast$, $e$).}
-			\item{Cada $x\in$ G tiene asociado otro elemento $x^{-1}\in$ G, llamado elemento inverso, tal que $x \ast x^{-1} = x^{-1}  \ast x = e$. Se puede probar que el inverso de cada elemento es √∫nico.}		
+			\item Su operaciÛn es interna: Si $a,b\in$ G, entonces $a\ast b\in G$.		
+			\item Su operaciÛn es asociativa: Si $a,b,c\in G$, entonces $(a\ast b)\ast c=a\ast(b\ast c)$.
+			\item Existe un elemento $e$ en G, llamado {\it elemento neutro} o {\it identidad}, tal que para todo $x\in$ G se cumple que $e\ast x = x\ast e = x$. Se puede probar que el neutro es ˙nico para cada grupo. A veces se incluye dentro de la definiciÛn del grupo: $(G, \ast, e)$.
+			\item Cada $x\in G$ tiene asociado otro elemento $x^{-1}\in G$, llamado {\it elemento inverso}, tal que $x \ast x^{-1} = x^{-1}  \ast x = e$. Se puede probar que el inverso de cada elemento es ˙nico.
 		\end{enumerate}
 	
-	($\mathbb{Z},+,0$) y ($\mathbb{Q},+,0$) son grupos, pero ($\mathbb{N},+,0$) no porque no existe el \textit{inverso} de 2 con la suma: $-2\notin\mathbb{N}$. ($\mathbb{R},*,1$) y ($\mathbb{Q},*,1$) son grupos, pero ($\mathbb{Z},*,1$) no porque no existe el \textit{inverso} de 2 con la multiplicaci√≥n: $\dfrac12\notin\mathbb{Z}$.
+	$(\mathbb{Z},+,0)$ y $(\mathbb{Q},+,0)$ son grupos, pero $(\mathbb{N},+,0)$ no porque no existe el \textit{inverso} de 2 con la suma: $-2\notin\mathbb{N}$. En cambio, $(\mathbb{R},*,1)$ y $(\mathbb{Q},*,1)$ son grupos, pero $(\mathbb{Z},*,1)$ no porque no existe el \textit{inverso} de 2 con la multiplicaciÛn: $\dfrac12\notin\mathbb{Z}$.
 	
 	\subsection{Funciones y permutaciones}
-		Una \emph{funci√≥n} es una regla que asocia a cada elemento de un primer conjunto, llamado \emph{dominio}, un √∫nico elemento de un segundo conjunto. Si la funci√≥n se llama $f$, el dominio A y el segundo conjunto B, se denota $f:\mbox{A}\to \mbox{B}$. El elemento asociado a un $x$ mediante $f$ se denota $f(x)$.
+		Una \emph{funciÛn} es una regla que asocia a cada elemento de un primer conjunto, llamado \emph{dominio}, un ˙nico elemento de un segundo conjunto. Si la funciÛn se llama $f$, el dominio $A$ y el segundo conjunto $B$, se denota $f:A\to B$. El elemento asociado a un $x$ mediante $f$ se denota $f(x)$.
 		
-		Todos los $x\in$ A tienen que estar asociados a un $f(x)\in$ B, pero no todos los elementos de B tienen un elemento de A asociado. Los elementos de B que s√≠ lo cumplen, es decir, los que se pueden escribir como $f(x)$ para alg√∫n $x$, forman el conjunto \emph{imagen} de la funci√≥n: $im(f)=\{\ y\in \mbox{B}:\ \exists\ x \in \mbox{A},\ f(x)=y\ \}$
+		Todos los $x\in A$ tienen que estar asociados a un $f(x)\in B$, pero no todos los elementos de $B$ tienen un elemento de $A$ asociado. Los elementos de $B$ que sÌ≠ lo cumplen, es decir, los que se pueden escribir como $f(x)$ para alg˙n $x$, forman el conjunto \emph{imagen} de la funciÛn: $im(f)=\{\ y\in B :\, \exists\, x \in A,\ f(x)=y\ \}$. \xxx{AquÌ meterÌa la definiciÛn de biyecciÛn}
 		
-		Cuando varias funciones se aplican una detr√°s de la otra decimos que realizamos la operaci√≥n de \textit{composici√≥n de funciones}. Se representa con el s√≠mbolo $\circ$. La imagen de la primera funci√≥n ser√° el dominio de la segunda, y as√≠ sucesivamente. Por ejemplo, aplicar una funci√≥n $f(x)$ y despu√©s aplicar una funci√≥n $g(x)$ se denota $g(f(x))=(g\circ f)(x)$.
+		Cuando varias funciones se aplican una detr·s de la otra decimos que realizamos la operaciÛn de \textit{composiciÛn de funciones}. Se representa con el sÌ≠mbolo $\circ$. La imagen de la primera funciÛn ser· el dominio de la segunda, y asÌ≠ sucesivamente. Por ejemplo, aplicar una funciÛn $f(x)$ y despuÈs aplicar una funciÛn $g(x)$ se denota $g(f(x))=(g\circ f)(x)$.
 		
-		Una \emph{permutaci√≥n} $\sigma$(X) es una funci√≥n sobre un conjunto X que asocia sus elementos a los elementos del mismo conjunto X de manera un√≠voca. Es decir, asocia cada elemento a uno, y solo uno, de los elementos de su mismo conjunto ($\sigma:\mbox{X}\to \mbox{X}$).
+		Una \emph{permutaciÛn} $\sigma$(X) es una funciÛn sobre un conjunto $X$ que asocia sus elementos a los elementos del mismo conjunto $X$ de manera unÌ≠voca. Es decir, asocia cada elemento a uno, y solo uno, de los elementos de su mismo conjunto. 
 
-		El conjunto de todas las posibles permutaciones sobre un determinado conjunto X, junto con la operaci√≥n de composici√≥n de funciones ($\circ$), forma un grupo denotado por S$_{\mbox{x}}$. Para probarlo, se debe comprobar que cumple todas las propiedades de los grupos.
+		El conjunto de todas las posibles permutaciones sobre un determinado conjunto $X$, junto con la operaciÛn de composiciÛn de funciones ($\circ$), forma un grupo denotado por $S_x$. Para probarlo, se debe comprobar que cumple todas las propiedades de los grupos.
 
 		\begin{enumerate}
-			\item{Permutar dos veces es tambi√©n una permutaci√≥n.}
-			\item{La composici√≥n de funciones es asociativa.}
-			\item{La permutaci√≥n que asigna un elemento a s√≠ mismo es la funci√≥n identidad.}
-			\item{Como las permutaciones son biyectivas, cada una tiene una inversa que es tambi√©n una permutaci√≥n.}		
+			\item{Permutar dos veces es tambiÈn una permutaciÛn.}
+			\item{La composiciÛn de funciones es asociativa.}
+			\item{La permutaciÛn que asigna un elemento a sÌ≠ mismo es la funciÛn identidad.}
+			\item{Como las permutaciones son biyectivas, cada una tiene una inversa que es tambiÈn una permutaciÛn.}		
 		\end{enumerate}
 
-		Cuando X es el conjunto de n√∫meros naturales desde 1 hasta $n$, el grupo S$_{\mbox{x}}$ se representa como S$_n$ y se le denomina el grupo sim√©trico de orden $n$. El n√∫mero de elementos en S$_n$, es decir, de posibles permutaciones de $n$ n√∫meros, es $n!$. 
+		Cuando $X$ es el conjunto de n˙meros naturales desde 1 hasta $n$, el grupo $S_x$ se representa como $S_n$ y se le denomina el grupo simÈtrico de orden $n$. El n˙mero de elementos en $S_n$, es decir, de posibles permutaciones de $n$ n˙meros es $n!$. 
 		
-		En los ejemplos musicales de este texto, los conjuntos estar√°n numerados desde 0 hasta $n-1$, siendo $n$ el n√∫mero de elementos a permutar, en vez de desde 1 hasta $n$. Seguir√°n siendo grupos sim√©tricos de orden $n$, pero con una numeraci√≥n distinta.
+		En los ejemplos musicales de este texto, los conjuntos estar·n numerados desde 0 hasta $n-1$, siendo $n$ el n˙mero de elementos a permutar, en vez de desde 1 hasta $n$. Seguir·n siendo grupos simÈtricos de orden $n$, pero con una numeraciÛn distinta.
 		
-		La notaci√≥n utilizada para representar una permutaci√≥n $\sigma$ perteneciente a S$_n$ con la numeraci√≥n desde 0 y con $\sigma(m)$ siendo el elemento asociado a $m$ mediante $\sigma$, es:
+		La notaciÛn utilizada para representar una permutaciÛn $\sigma$ perteneciente a S$_n$ con la numeraciÛn desde 0 y con $\sigma(m)$ siendo el elemento asociado a $m$ mediante $\sigma$, es:
 		\[\sigma=\left(\begin{matrix}0&1&2&&n-3&n-2&n-1\\\sigma\left(0\right)&\sigma\left(1\right)&\sigma\left(2\right)&\cdots&\sigma\left(n-3\right)&\sigma\left(n-2\right)&\sigma\left(n-1\right)\\\end{matrix}\right)\]
 		
-	\subsection{Aritm√©tica modular}
-		Fijado un $n\in\mathbb{N}$, se dice que $a$ y $b$ son \emph{congruentes} (o equivalentes) m√≥dulo $n$ si tienen el mismo resto al dividirlos entre $n$; es decir, que todos los n√∫meros con el mismo resto se agrupan y se toman como equivalentes. Se expresa como $a\equiv b$ (mod. $n$).
+	\subsection{AritmÈtica modular}
+		Fijado un $n\in\mathbb{N}$, se dice que $a$ y $b$ son \emph{congruentes} (o equivalentes) mÛdulo $n$ si tienen el mismo resto al dividirlos entre $n$; es decir, que todos los n˙meros con el mismo resto se agrupan y se toman como equivalentes. Se expresa como $a\equiv b$ (mod. $n$).
 	
-		De esta forma se pueden operar entre s√≠ los n√∫meros del 0 al $n-1$, ya que se conservan las operaciones de los n√∫meros enteros, y si un resultado es $\geq n$ se puede seguir dividiendo entre $n$ para que cumpla $0\leq r<n$.
+		De esta forma se pueden operar entre sÌ≠ los n˙meros del 0 al $n-1$, ya que se conservan las operaciones de los n˙meros enteros, y si un resultado es $\geq n$ se puede seguir dividiendo entre $n$ para que cumpla $0\leq r<n$.
 		
-		Se conserva la suma (y la resta), ya que si $a=nq_a+r_a$ y $b=nq_b+r_b$, entonces $a+b=(nq_a+r_a)+(nq_b+r_b)=n(q_a+q_b)+(r_a+r_b)$, as√≠ que el resto de $a+b$ es igual al de $r_a+r_b$.
+		Se conserva la suma (y la resta), ya que si $a=nq_a+r_a$ y $b=nq_b+r_b$, entonces $a+b=(nq_a+r_a)+(nq_b+r_b)=n(q_a+q_b)+(r_a+r_b)$, asÌ≠ que el resto de $a+b$ es igual al de $r_a+r_b$.
 		
-		La {aritm√©tica modular} tambi√©n se llama aritm√©tica del reloj, porque funciona de la misma manera que las horas en un reloj. Como el 3 tiene el mismo resto entre 12 que el 15, las 15h son las 3h: $3\equiv15$ (mod. $12$). O, por ejemplo, 2 horas despu√©s de las 11 dan las 13, es decir, la 1: $2+11=13\equiv1$ (mod. $12$). 
+		La {aritmÈtica modular} tambiÈn se llama aritmÈtica del reloj, porque funciona de la misma manera que las horas en un reloj. Como el 3 tiene el mismo resto entre 12 que el 15, las 15h son las 3h: $3\equiv15$ (mod. $12$). O, por ejemplo, 2 horas despuÈs de las 11 dan las 13, es decir, la 1: $2+11=13\equiv1$ (mod. $12$). 
 		
-		Tambi√©n se conserva la multiplicaci√≥n: si $a=nq_a+r_a$ y $b=nq_b+r_b$, entonces $ab=(nq_a+r_a)(nq_b+r_b)=n^2q_aq_b+nq_ar_b+nq_br_a+r_ar_b=n(nq_aq_b+q_ar_b+q_br_a)+r_ar_b$, as√≠ que el resto de $ab$ es igual al de $r_ar_b$.
+		TambiÈn se conserva la multiplicaciÛn: si $a=nq_a+r_a$ y $b=nq_b+r_b$, entonces $ab=(nq_a+r_a)(nq_b+r_b)=n^2q_aq_b+nq_ar_b+nq_br_a+r_ar_b=n(nq_aq_b+q_ar_b+q_br_a)+r_ar_b$, asÌ≠ que el resto de $ab$ es igual al de $r_ar_b$.
 		
-		En m√∫sica, la aritm√©tica modular se puede encontrar en las escalas: todas las notas Do se toman como equivalentes, por ejemplo, y al sumarle 12 semitonos (una octava) se vuelve a obtener un Do. Si se asocian los n√∫meros del 0 al 11 a las notas crom√°ticas del Do al Si, entonces $0+12=12\equiv0$ (mod. $12$). Entonces se dice que un n√∫mero $k$ pertenece al conjunto \{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11\}, con las propiedades indicadas, de esta manera: $k\in\mathbb{Z}_{12}$.
+		En m˙sica, la aritmÈtica modular se puede encontrar en las escalas: todas las notas Do se toman como equivalentes, por ejemplo, y al sumarle 12 semitonos (una octava) se vuelve a obtener un Do. Si se asocian los n˙meros del 0 al 11 a las notas crom·ticas del Do al Si, entonces $0+12=12\equiv0$ (mod. $12$). Entonces se dice que un n˙mero $k$ pertenece al conjunto \{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11\}, con las propiedades indicadas, de esta manera: $k\in\mathbb{Z}_{12}$.

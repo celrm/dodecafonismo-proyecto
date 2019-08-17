@@ -1,0 +1,55 @@
+\documentclass[]{article}
+
+\usepackage{parskip}
+\usepackage{microtype}
+%\usepackage[T1]{fontenc} % dejar solo para html
+%\usepackage[utf8]{inputenc}
+\usepackage[latin1]{inputenc}
+\usepackage[a4paper]{geometry}
+
+\usepackage{graphicx}
+\graphicspath{{Fotos/}}
+
+\usepackage{cancel}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{harmony}
+\usepackage{wasysym}
+
+\input{ddphonism.sty}
+
+\usepackage{multicol}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage{hyperref}
+
+\newcommand{\cita}[2][Tomado de]{{\footnotesize (#1 #2)}}
+
+\title{Dodecafonismo y matem�ticas - I}
+\author{Celia Rubio}
+\date{Septiembre de 2019}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+	
+Introducci\'on de Paco:
+
+En las siguientes entregas de Divulgamat tendremos a una autora invitada, Celia Rubio, quien ha escrito una serie sobre el dodecafonismo y matem�ticas. Celia Rubio est� cursando el doble grado de Matem�ticas e Inform�tica en la Universidad Complutense de Madrid y tiene estudios de m�sica en el Conservatorio de Madrid (su instrumento es la flauta de pico y el canto).  
+	
+	
+\section{Introducci�n}
+
+	Este artículo es el primero de una colección sobre el serialismo musical y sobre las matemáticas que lo rodean. Las músicas serialistas se basan en la repetición de secuencias de elementos musicales. Es decir, un compositor serialista cogerá una secuencia de notas, dinámicas o timbres y la usará como el bloque constructivo de su obra. Además puede serializar más de un tipo de elemento, o incluso pretender serializar todo lo que pueda. Estas músicas se pueden describir matemáticamente mediante permutaciones y grupos.
+	
+	En estas estructuras se centrará esta serie de artículos, y más específicamente en el \textit{dodecafonismo}, el primer sistema compositivo serialista. En este primer artículo hablaremos sobre sus \hyperref[ch:historia]{orígenes} y sobre los \hyperref[ch:dodecafonismo]{postulados} matemáticos que lo definieron, y \hyperref[ch:suite]{analizaremos} una obra como ejemplo. Más adelante generalizaremos las definiciones dodecafónicas matemáticamente, descubriremos la historia del \textit{serialismo integral}, y contaremos el número de posibles series distintas -- o, más bien, de \textit{espectros seriales} -- que un compositor puede utilizar. En definitiva, será un compendio de lo que se puede estudiar sobre el serialismo.
+	
+	Los textos irán dirigidos tanto a matemáticos como a músicos; en todas las entregas habrá secciones más matemáticas y secciones más musicales o históricas. Las matemáticas serán avanzadas, pero siempre se definirá todo lo que se utilice y se probará todo lo que se afirme. Algunas de las definiciones matemáticas más comunes se encuentran en el apartado \ref{ch:permutaciones}.
+	
+	\include{01.Historia}%
+	\include{02.Dodecafonismo}%
+	\include{03.Suite}%
+	\include{00.Permutaciones}%
+	
+	\include{Referencias}
+
+\end{document}
