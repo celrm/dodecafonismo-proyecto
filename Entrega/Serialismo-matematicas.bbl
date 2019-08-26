@@ -19,6 +19,7 @@ Pierre Boulez.
 J.~de~Aixquivel.
 \newblock {\em Memorias de Historia Antigua}.
 \newblock Universidad de Oviedo, 1989.
+\newblock \url{https://books.google.es/books?id=m6zZrpltkzYC}.
 
 \bibitem{dominguez}
 Manuel Domínguez~Romero.
@@ -33,6 +34,13 @@ Alicia Díaz de~la Fuente.
 \newblock PhD thesis, Universidad Nacional de Educación a Distancia,
   Departamento de Filosofía, 2005.
 \newblock \url{https://www2.uned.es/dpto_fim/publicaciones/alicia_1.pdf}.
+
+\bibitem{cons}
+World~Heritage Encyclopedia.
+\newblock Consonance and dissonance.
+\newblock
+  \url{http://self.gutenberg.org/articles/eng/Consonance_and_dissonance}, 2017.
+\newblock Consultado en agosto de 2019.
 
 \bibitem{hyde}
 Peter Farindon.
@@ -71,6 +79,7 @@ Knud Jeppesen.
 \newblock {\em Counterpoint: The Polyphonic Vocal Style of the Sixteenth
   Century}.
 \newblock (The Prentice-Hall music series). Dover Publications, 1992.
+\newblock \url{https://books.google.es/books?id=OcSVGkug58gC}.
 
 \bibitem{kinney}
 James~P. Kinney.
@@ -81,17 +90,22 @@ James~P. Kinney.
 
 \bibitem{scho}
 Arnold Schoenberg.
-\newblock Composition with twelve tones, 1923.
+\newblock Composition with twelve tones.
+\newblock
+  \url{http://music.ucsc.edu/sites/default/files/14.SchoenbergTwelveTone.pdf},
+  1923.
 \newblock Publicado en {\it Style and Idea}.
 
 \bibitem{hauer}
 Arnold Schoenberg.
-\newblock Hauer's theories, 1923.
+\newblock Hauer's theories.
+\newblock \url{https://books.google.cz/books?id=jbXtxJezk5cC}, 1923.
 \newblock Publicado en {\it Style and Idea}.
 
 \bibitem{wagner}
 Richard Wagner.
-\newblock Oper und drama, 1851.
+\newblock Oper und drama.
+\newblock \url{http://users.skynet.be/johndeere/wlpdf/wlpr0063.pdf}, 1851.
 
 \bibitem{xiao}
 June Xiao.

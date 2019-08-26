@@ -2,7 +2,7 @@
 \section{El sistema dodecafónico de Schoenberg}\label{ch:dodecafonismo}
 
 	\subsection{Los postulados del dodecafonismo}
-		El dodecafonismo es un sistema compositivo que predetermina la melodía y la armonía a partir de una ordenación de las doce notas de la escala cromática, que se llama \textbf{serie}. Esta y algunas de sus transformaciones son los ladrillos con los que se construyen las alturas de las notas; son el único material que se puede utilizar. El resto de elementos de la pieza, como el número de instrumentos, el ritmo, el carácter, la textura o las dinámicas, se deja a discreción del compositor. No serializar todos los conjuntos será la principal crítica al dodecafonismo por parte de los compositores serialistas que sucedieron a su creador, Arnold Schoenberg. Para los serialistas integrales, como Pierre Boulez, aquello restaba cohesión al modelo compositivo; para los dodecafonistas, aportaba libertad~\cite{boulez}.
+		El dodecafonismo es un sistema compositivo que predetermina la melodía y la armonía a partir de una ordenación de las doce notas de la escala cromática, que se llama serie. Esta y algunas de sus transformaciones son los ladrillos con los que se construyen las alturas de las notas; son el único material que se puede utilizar. El resto de elementos de la pieza, como el número de instrumentos, el ritmo, el carácter, la textura o las dinámicas, se deja a discreción del compositor. No serializar todos los conjuntos será la principal crítica al dodecafonismo por parte de los compositores serialistas que sucedieron a su creador, Arnold Schoenberg. Para los serialistas integrales, como Pierre Boulez, aquello restaba cohesión al modelo compositivo; para los dodecafonistas, aportaba libertad~\cite{boulez}.
 		
 		Precisamente la predeterminación dodecafónica, aunque parece limitante, permite realizaciones musicales y estilos de composición muy diferentes: Schoenberg daba un tratamiento tradicional a sus obras, ya que aun admiraba las formas clásicas; Alban Berg iba más allá al utilizar series que recordaban a las tríadas tonales; y, en cambio, Anton Webern evitaba radicalmente cualquier asociación con la tradición. 
 		
@@ -87,13 +87,12 @@ Los otros dos postulados restantes son:
 	\subsubsection{Inversión}
 		La \textbf{inversión} consiste en cambiar la dirección \textemdash de ascendente a descendente y viceversa\textemdash~de los intervalos entre cada nota de la serie. Si el primer intervalo en la serie original $\sigma$ es de $+k$, el primer intervalo en la serie invertida $I$ será de $-k$ (siempre módulo 12), por lo que debemos cambiar el signo de $\sigma$ para construir $I$. Además, queremos que la primera nota de ambas series, $I(\sigma(0))$ y $\sigma(0)$, coincidan, así que debemos transportar la serie $(-\sigma)$ un número $\lambda$ de semitonos para que esta condición se cumpla:
 		\begin{align*}
-		I(\sigma(0))=-\sigma(0)+\lambda&=\sigma(0)\\
-		\implies \lambda&=2\sigma(0)
+		I(\sigma(0))=-\sigma(0)+\lambda&=\sigma(0) \implies \lambda=2\sigma(0)
 		\end{align*}
 		Por tanto, la serie invertida se construye de esta forma:
-		\[I(\sigma(m))=-\sigma(m)+2\sigma(0)\]
-		
-		\[I=\left(\begin{matrix}0&1&2&&10&11\\\sigma(0)&-\sigma(1)+2\sigma(0)&-\sigma(2)+2\sigma(0)&\ldots&-\sigma(10)+2\sigma(0)&-\sigma(11)+2\sigma(0)\\\end{matrix}\right)\]
+		$$I(\sigma(m))=-\sigma(m)+2\sigma(0)$$
+		\vspace{-6pt}
+		$$I=\left(\begin{matrix}0&1&2&&10&11\\\sigma(0)&-\sigma(1)+2\sigma(0)&-\sigma(2)+2\sigma(0)&\ldots&-\sigma(10)+2\sigma(0)&-\sigma(11)+2\sigma(0)\\\end{matrix}\right)$$
 		
 		La serie invertida sobre la permutación $\sigma$ de la Suite Op. 25 es la siguiente serie $I$:
 		\[I=\drow{4,3,1,7,2,5,0,6,9,8,11,10}\]		
