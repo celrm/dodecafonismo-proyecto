@@ -1,0 +1,24 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
+\doTocEntry\tocsection{1}{\csname a:TocLink\endcsname{1}{x1-10001}{QQ2-1-1}{Introducci\'on}}{3}\relax 
+\doTocEntry\tocsection{2}{\csname a:TocLink\endcsname{1}{x1-20002}{QQ2-1-2}{Introducci\'on hist\'orica del dodecafonismo}}{4}\relax 
+\doTocEntry\tocsubsection{2.1}{\csname a:TocLink\endcsname{1}{x1-30002.1}{QQ2-1-3}{La historia de la disonancia}}{4}\relax 
+\doTocEntry\tocsubsection{2.2}{\csname a:TocLink\endcsname{1}{x1-40002.2}{QQ2-1-4}{Wagner, Mahler y la emancipaci\'on de la disonancia}}{5}\relax 
+\doTocEntry\toclof{1}{\csname a:TocLink\endcsname{1}{x1-40011}{}{\ignorespaces Richard Wagner (1813\textemdash 1883); figura tomada de \href  {https://www.nationalgeographic.com.es/historia/actualidad/richard-wagner-nacimiento-y-muerte_7014}{National Geographic}.}}{figure}\relax 
+\doTocEntry\toclof{2}{\csname a:TocLink\endcsname{1}{x1-40022}{}{\ignorespaces Gustav Mahler (1860\textemdash 1911); figura tomada de \href  {http://www.planethugill.com/2018/09/mahler-distilled-iain-farrington-and.html}{Planet Hugill}.}}{figure}\relax 
+\doTocEntry\tocsubsection{2.3}{\csname a:TocLink\endcsname{1}{x1-50002.3}{QQ2-1-7}{Hacia el atonalismo de Schoenberg}}{11}\relax 
+\doTocEntry\toclof{3}{\csname a:TocLink\endcsname{1}{x1-50013}{}{\ignorespaces Arnold Schoenberg (1874\textemdash 1951); figura tomada de \href  {http://es.nextews.com/59ce14c7/}{Nextews}.}}{figure}\relax 
+\doTocEntry\tocsubsection{2.4}{\csname a:TocLink\endcsname{1}{x1-60002.4}{QQ2-1-9}{El surgimiento del sistema dodecaf\'onico}}{15}\relax 
+\doTocEntry\tocsection{3}{\csname a:TocLink\endcsname{1}{x1-70003}{QQ2-1-10}{El sistema dodecaf\'onico de Schoenberg}}{16}\relax 
+\doTocEntry\tocsubsection{3.1}{\csname a:TocLink\endcsname{1}{x1-80003.1}{QQ2-1-11}{Los postulados del dodecafonismo}}{16}\relax 
+\doTocEntry\tocsubsection{3.2}{\csname a:TocLink\endcsname{1}{x1-90003.2}{QQ2-1-12}{Las transformaciones de una serie}}{18}\relax 
+\doTocEntry\tocsubsubsection{3.2.1}{\csname a:TocLink\endcsname{1}{x1-100003.2.1}{QQ2-1-13}{Transposiciones}}{18}\relax 
+\doTocEntry\tocsubsubsection{3.2.2}{\csname a:TocLink\endcsname{1}{x1-110003.2.2}{QQ2-1-14}{Retrogradaci\'on}}{19}\relax 
+\doTocEntry\tocsubsubsection{3.2.3}{\csname a:TocLink\endcsname{1}{x1-120003.2.3}{QQ2-1-15}{Inversi\'on}}{20}\relax 
+\doTocEntry\tocsubsection{3.3}{\csname a:TocLink\endcsname{1}{x1-130003.3}{QQ2-1-16}{Matrices dodecaf\'onicas}}{22}\relax 
+\doTocEntry\tocsection{4}{\csname a:TocLink\endcsname{1}{x1-140004}{QQ2-1-17}{An\'alisis de una obra dodecaf\'onica: el opus 25}}{26}\relax 
+\doTocEntry\tocsubsection{4.1}{\csname a:TocLink\endcsname{1}{x1-150004.1}{QQ2-1-18}{Series de la Suite op. 25}}{26}\relax 
+\doTocEntry\tocsubsection{4.2}{\csname a:TocLink\endcsname{1}{x1-160004.2}{QQ2-1-19}{Descripci\'on de la Suite op. 25}}{31}\relax 
+\doTocEntry\tocsubsection{4.3}{\csname a:TocLink\endcsname{1}{x1-170004.3}{QQ2-1-20}{An\'alisis de la Musette}}{32}\relax 
+\doTocEntry\toclof{4}{\csname a:TocLink\endcsname{1}{x1-170024}{}{\ignorespaces An\'alisis de la Musette (I)}}{figure}\relax 
+\doTocEntry\toclof{5}{\csname a:TocLink\endcsname{1}{x1-170035}{}{\ignorespaces An\'alisis de la Musette (II)}}{figure}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-180004.3}{QQ2-1-23}{Bibliograf\IeC {\'\i }a}}{41}\relax 

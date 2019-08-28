@@ -2,7 +2,7 @@
 \section{El sistema dodecafónico de Schoenberg}\label{ch:dodecafonismo}
 
 	\subsection{Los postulados del dodecafonismo}
-		El dodecafonismo es un sistema compositivo que predetermina la melodía y la armonía a partir de una ordenación de las doce notas de la escala cromática, que se llama serie. Esta y algunas de sus transformaciones son los ladrillos con los que se construyen las alturas de las notas; son el único material que se puede utilizar. El resto de elementos de la pieza, como el número de instrumentos, el ritmo, el carácter, la textura o las dinámicas, se deja a discreción del compositor. No serializar todos los conjuntos será la principal crítica al dodecafonismo por parte de los compositores serialistas que sucedieron a su creador, Arnold Schoenberg. Para los serialistas integrales, como Pierre Boulez, aquello restaba cohesión al modelo compositivo; para los dodecafonistas, aportaba libertad~\cite{boulez}.
+		El dodecafonismo es un sistema compositivo que predetermina la melodía y la armonía a partir de una ordenación de las doce notas de la escala cromática, que se llama {\bf serie}. Esta y algunas de sus transformaciones son los ladrillos con los que se construyen las alturas de las notas; son el único material que se puede utilizar. El resto de elementos de la pieza, como el número de instrumentos, el ritmo, el carácter, la textura o las dinámicas, se deja a discreción del compositor. No serializar todos los conjuntos será la principal crítica al dodecafonismo por parte de los compositores serialistas que sucedieron a su creador, Arnold Schoenberg. Para los serialistas integrales, como Pierre Boulez, aquello restaba cohesión al modelo compositivo; para los dodecafonistas, aportaba libertad~\cite{boulez}.
 		
 		Precisamente la predeterminación dodecafónica, aunque parece limitante, permite realizaciones musicales y estilos de composición muy diferentes: Schoenberg daba un tratamiento tradicional a sus obras, ya que aun admiraba las formas clásicas; Alban Berg iba más allá al utilizar series que recordaban a las tríadas tonales; y, en cambio, Anton Webern evitaba radicalmente cualquier asociación con la tradición. 
 		
@@ -17,24 +17,42 @@
 \rm
 	
 	Los dos primeros postulados expresan que una obra dodecafónica fundamenta su estructura sobre una permutación de la escala de doce semitonos. Dicha permutación $\sigma$ es una biyección del conjunto numerado de las doce notas \{Do = 0, Do\# = 1, Re = 2, Re\# = 3, Mi = 4, Fa = 5, F\# = 6, Sol = 7, Sol\# = 8, La = 9, La\# = 10, Si = 11\} consigo mismo, y se representa de esta forma:
-		
-	\[\drow{
-		\sigma(0),\sigma(1),\sigma(2),\sigma(3),\sigma(4),\sigma(5),\sigma(6),\sigma(7),\sigma(8),\sigma(9),\sigma(10),\sigma(11)
-	}\]
+
+$$\left(
+\begin{array}{cccccccccccc}
+0  & 1  &  2  & 3  & 4   & 5  &  6   & 7  & 8  & 9   & 10  & 11  \\
+\sigma(0) &\sigma(1) &\sigma(2) &\sigma(3) &\sigma(4) &\sigma(5) &\sigma(6) &\sigma(7) &\sigma(8) &\sigma(9) &\sigma(10)&\sigma(11)
+\end{array}
+\right)
+$$
+%	\[\drow{
+%		\sigma(0),\sigma(1),\sigma(2),\sigma(3),\sigma(4),\sigma(5),\sigma(6),\sigma(7),\sigma(8),\sigma(9),\sigma(10),\sigma(11)
+%	}\]
 		
 	La permutación $\sigma(m)$, con $m\in \mathbb{Z} / (12)$, pertenece al grupo simétrico de orden 12, $S_{12}$. Por ejemplo, en la Suite para piano Op. 25 Schoenberg utiliza como serie original en todos los movimientos de la obra la siguiente permutación $\sigma$:
-		
-	\[\sigma=\drow{4,5,7,1,6,3,8,2,11,0,9,10}\]	
+$$
+\sigma=\left(
+\begin{array}{cccccccccccc}
+0  & 1  &  2  & 3  & 4   & 5  &  6   & 7  & 8  & 9   & 10  & 11  \\
+4  & 5  &  6  & 1  & 6   & 3  &  8  & 2  & 11  & 0  & 9  & 10
+\end{array}
+\right)
+$$
 	\begin{center}
 		\includegraphics[width=12.1cm]{1.png}
 	\end{center}
+
+%	\[\sigma=\drow{4,5,7,1,6,3,8,2,11,0,9,10}\]	
+%	\begin{center}
+%		\includegraphics[width=12.1cm]{1.png}
+%	\end{center}
 
 Los otros dos postulados restantes son:
 
 \it
 \begin{enumerate}
 \setcounter{enumi}{2}
-\item La serie será expuesta en cualquiera de sus aspectos lineales: original, inversión, retrogradación de la original y retrogradación de la inversión.
+\item La serie se puede exponer en cualquiera de sus aspectos lineales: serie original, inversión, retrogradación de la original y retrogradación de la inversión.
 		 
 \item La serie puede usarse en sus cuatro aspectos desde cualquier nota de la escala.
 \end{enumerate}
@@ -45,7 +63,7 @@ Los otros dos postulados restantes son:
 		
 	\subsection{Las transformaciones de una serie}
 		\label{transPsi}
-		Transformar una serie es matemáticamente equivalente a aplicar una {función} sobre la serie, y que asocie esa permutación a la permutación transformada. Por tanto, cualquier función transformativa $\Psi$ se aplica sobre el conjunto de las permutaciones, $S_{12}$.
+		Transformar una serie es matemáticamente equivalente a aplicar una {función} sobre la serie, y que asocie esa permutación a la permutación transformada. Por tanto, cualquier función $\Psi$ se aplica sobre el conjunto de las permutaciones, $S_{12}$.
 		
 	\subsubsection{Transposiciones}
 		La \textbf{transposición}, mencionada en el cuarto postulado, consiste en subir o bajar la serie original un número determinado de semitonos. Por tanto, no se modifican los intervalos entre las notas, sino solamente la altura a la que está la serie. Ya que consideraremos todas las octavas equivalentes, debemos trabajar {módulo} 12.
@@ -63,23 +81,52 @@ Los otros dos postulados restantes son:
 		
 		A su vez, $T^k$ se forma al componer $k$ transposiciones de 1 semitono: $T^k=T^1\circ T^1\circ\ldots\circ T^1$, $k$ veces. Debido a que $k$ es en realidad el exponente en la potencia de $T$, se coloca este número como superíndice.
 		
-		Históricamente, la notación $\Psi_k$, $\Psi^k$ o $\Psi(k)$ se ha usado en sustitución de la composición de la transposición $T^k$ y otra función $\Psi$, en el respectivo orden: $\Psi^k=\Psi \circ T^k = \Psi(T^k)$. Sin embargo, esta notación es especialmente ambigua y confusa, sobre todo al trabajar con funciones no conmutativas \textemdash cuando importa el orden en el que estén $T$ y $\Psi$\textemdash. Por ello, es preferible ceñirse a la notación estrictamente matemática; es decir, a la composición de funciones, aun omitiendo el símbolo $\circ$, de esta manera: $\Psi T^{k}$.
+		Históricamente, la notación $\Psi_k$, $\Psi^k$ o también $\Psi(k)$ se ha usado en sustitución de la composición de la transposición $T^k$ y otra función $\Psi$, en el respectivo orden: $\Psi^k=\Psi \circ T^k = \Psi(T^k)$. Sin embargo, esta notación es especialmente ambigua y confusa, sobre todo al trabajar con funciones no conmutativas \textemdash cuando importa el orden en el que estén $T$ y $\Psi$\textemdash. Por ello, es preferible ceñirse a la notación estrictamente matemática; es decir, a la composición de funciones, aun omitiendo el símbolo $\circ$, de esta manera: $\Psi T^{k}$.
 		
 		Una posible serie transportada sobre la permutación $\sigma$ de la Suite para piano Op. 25, con $k=6$, es la siguiente serie $T^6$:
-		\[T^6=\drow{10,11,1,7,0,9,2,8,5,6,3,4}\]	
+$$
+T^6=\left(
+\begin{array}{cccccccccccc}
+0  & 1  &  2  & 3  & 4   & 5  &  6   & 7  & 8  & 9   & 10  & 11  \\
+10  & 11  &  1  & 7  & 0   & 9  & 2  & 8  & 5  & 6  & 3  & 4
+\end{array}
+\right)
+$$
 		\begin{center}
 			\includegraphics[width=12.1cm]{2.png}
 		\end{center}
+		
+%		\[T^6=\drow{10,11,1,7,0,9,2,8,5,6,3,4}\]	
+%		\begin{center}
+%			\includegraphics[width=12.1cm]{2.png}
+%		\end{center}
 
 %===================
 	\subsubsection{Retrogradación}
 	
 		La \textbf{retrogradación} consiste en leer la serie original desde la nota final hacia atrás, es decir, aplicar a la serie una simetría especular. De este modo, la primera nota irá al último puesto, la segunda al penúltimo, y así sucesivamente. La serie retrógrada se construye según la siguiente fórmula:
 		\[R(\sigma(m))=\sigma(11-m)\]
-		\[{R=\drow{\sigma(11),\sigma(10),\sigma(9),\sigma(8),\sigma(7),\sigma(6),\sigma(5),\sigma(4),\sigma(3),\sigma(2),\sigma(1),\sigma(0)}}\]
+$$
+R=\left(
+\begin{array}{cccccccccccc}
+0  & 1  &  2  & 3  & 4   & 5  &  6   & 7  & 8  & 9   & 10  & 11  \\
+\sigma(11) &\sigma(10) &\sigma(9) &\sigma(8) &\sigma(7) &\sigma(6) &\sigma(5) &\sigma(4) &\sigma(3) &\sigma(2) &\sigma(1)&\sigma(0)
+\end{array}
+\right)
+$$
+		
+%		\[{R=\drow{\sigma(11),\sigma(10),\sigma(9),\sigma(8),\sigma(7),\sigma(6),\sigma(5),\sigma(4),\sigma(3),\sigma(2),\sigma(1),\sigma(0)}}\]
 			
-		La serie retrógrada sobre la permutación $\sigma$ de la Suite Op. 25 es la siguiente serie $R$:	
-		\[R=\drow{10,9,0,11,2,8,3,6,1,7,5,4}\]		
+		La serie retrógrada sobre la permutación $\sigma$ de la Suite Op. 25 es la siguiente serie $R$:
+$$
+R=\left(
+\begin{array}{cccccccccccc}
+0  & 1  &  2  & 3  & 4   & 5  &  6   & 7  & 8  & 9   & 10  & 11  \\
+10  & 9  & 0  & 11  & 2   & 8  &  3   & 6  & 1  & 7   & 5  & 4 
+\end{array}
+\right)
+$$
+%		\[R=\drow{10,9,0,11,2,8,3,6,1,7,5,4}\]		
 		\begin{center}
 			\includegraphics[width=12.1cm]{3.png}
 		\end{center}
@@ -95,7 +142,15 @@ Los otros dos postulados restantes son:
 		$$I=\left(\begin{matrix}0&1&2&&10&11\\\sigma(0)&-\sigma(1)+2\sigma(0)&-\sigma(2)+2\sigma(0)&\ldots&-\sigma(10)+2\sigma(0)&-\sigma(11)+2\sigma(0)\\\end{matrix}\right)$$
 		
 		La serie invertida sobre la permutación $\sigma$ de la Suite Op. 25 es la siguiente serie $I$:
-		\[I=\drow{4,3,1,7,2,5,0,6,9,8,11,10}\]		
+$$
+I=\left(
+\begin{array}{cccccccccccc}
+0  & 1  &  2  & 3  & 4   & 5  &  6   & 7  & 8  & 9   & 10  & 11  \\
+4  & 3  & 1  & 7  & 2   & 5  &  0   & 6  & 9  & 8   & 11  & 10 
+\end{array}
+\right)
+$$
+%		\[I=\drow{4,3,1,7,2,5,0,6,9,8,11,10}\]		
 		\begin{center}
 			\includegraphics[width=12.1cm]{4.png}
 		\end{center}
@@ -155,13 +210,34 @@ Los otros dos postulados restantes son:
 		&RI_{0}&RI_{1}&RI_{3}&RI_{9}&RI_{2}&RI_{11}&RI_{4}&RI_{10}&RI_{7}&RI_{8}&RI_{5}&RI_{6}&
 		\end{array}\]
 	
-		Por otro lado, he escrito un comando en el propio lenguaje \LaTeX{} que crea esta misma tabla con el comando \verb|\dmatrix|, y tiene cualquier serie como argumento: \verb|\dmatrix{4,5,7,1,6,3,8,2,11,0,9,10}|.
+		Por otro lado, he escrito un comando en el propio lenguaje \LaTeX{} que crea esta misma tabla con el comando \verb|\dmatrix|, y tiene cualquier serie como argumento: %\verb|\dmatrix{4,5,7,1,6,3,8,2,11,0,9,10}|.
+			
 		El comando se encuentra en el paquete de \LaTeX{} \texttt{ddphonism}, disponible en el enlace \url{https://www.ctan.org/pkg/ddphonism}.
 		La tabla aparece sin el orlado de nomenclaturas:
 
+%\begin{center}
+%		\dmatrix{4,5,7,1,6,3,8,2,11,0,9,10}
+%\end{center}		
+
+\setlength{\tabcolsep}{9pt}
+\begin{table}[!h]
 \begin{center}
-		\dmatrix{4,5,7,1,6,3,8,2,11,0,9,10}
-\end{center}		
+\begin{tabular}{lllllllllllll}
+4  & 5  & 7  & 1  & 6  & 3  & 8  & 2  & 11 & 0  & 9  & 10 &  \\
+3  & 4  & 6  & 0  & 5  & 2  & 7  & 1  & 10 & 11 & 8  & 9  &  \\
+1  & 2  & 4  & 10 & 3  & 0  & 5  & 11 & 8  & 9  & 6  & 7  &  \\
+7  & 8  & 10 & 4  & 9  & 6  & 11 & 5  & 2  & 3  & 0  & 1  &  \\
+2  & 3  & 5  & 11 & 4  & 1  & 6  & 0  & 9  & 10 & 7  & 8  &  \\
+5  & 6  & 8  & 2  & 7  & 4  & 9  & 3  & 0  & 1  & 10 & 11 &  \\
+0  & 1  & 3  & 9  & 2  & 11 & 4  & 10 & 7  & 8  & 5  & 6  &  \\
+6  & 7  & 9  & 3  & 8  & 5  & 10 & 4  & 1  & 2  & 11 & 0  &  \\
+9  & 10 & 0  & 6  & 11 & 8  & 1  & 7  & 4  & 5  & 2  & 3  &  \\
+8  & 9  & 11 & 5  & 10 & 7  & 0  & 6  & 3  & 4  & 1  & 2  &  \\
+11 & 0  & 2  & 8  & 1  & 10 & 3  & 9  & 6  & 7  & 4  & 5  &  \\
+10 & 11 & 1  & 7  & 0  & 9  & 2  & 8  & 5  & 6  & 3  & 4  & 
+\end{tabular}
+\end{center}
+\end{table}
 
 		También he creado una página interactiva que genera matrices de cualquier serie para cualquier longitud serial, además de generar series aleatorias. Permite escoger entre dos numeraciones y dos nomenclaturas. Está escrita en Elm y el código puede encontrarse en \url{https://gitlab.com/dodecafonismo/matrices}.
 			
