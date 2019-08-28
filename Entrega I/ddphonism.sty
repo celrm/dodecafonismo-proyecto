@@ -5,7 +5,7 @@
 %% This program can be redistributed and/or modified under the terms
 %% of the LaTeX Project Public License Distributed from CTAN archives
 %% in directory macros/latex/base/lppl.txt.
- 
+
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{ddphonism}
 [2019/08/10 v0.2 Dodecaphonic diagrams: twelve-tone matrices, clock diagrams, etc.]
@@ -51,11 +51,11 @@
 	\setcounter{Dmod}{#1}%
 	\loop%
 	\ifnum\theDmod>\Evaluation{\theDsize-1}%		
-		\setcounter{Dmod}{\Evaluation{\theDmod-\theDsize}}%
-		\repeat%
+	\setcounter{Dmod}{\Evaluation{\theDmod-\theDsize}}%
+	\repeat%
 	\ifnum\theDmod<0%
-		\setcounter{Dmod}{\Evaluation{\theDmod+\theDsize}}%
-		\repeat%
+	\setcounter{Dmod}{\Evaluation{\theDmod+\theDsize}}%
+	\repeat%
 	\theDmod%
 }
 
@@ -69,14 +69,14 @@
 	/dmatrix/.is family
 	, /dmatrix
 	, default/.style = 
-		{ lines = false
+	{ lines = false
 		, outside lines = false
 		, inside lines = false
 		, sep = 1
 		, vsep = 1
 		, hsep = 1
 		, no tikz = false
-		}
+	}
 	, no tikz/.is if=dmatrixTikz
 	, lines/.is if=dmatrixLines
 	, outside lines/.is if=dmatrixOutside
@@ -147,10 +147,10 @@
 		\DLOV\DLIV
 		\fi
 	}%
-%
-\ifdmatrixTikz\else%
-\end{tikzpicture}%
-\fi%
+	%
+	\ifdmatrixTikz\else%
+	\end{tikzpicture}%
+	\fi%
 }
 
 
@@ -159,35 +159,32 @@
 
 \usetikzlibrary{shapes,arrows,decorations.markings,shapes.misc}
 
-\tikzstyle ddiagramArrow=[decoration=
-		{markings,mark=at position 0.25 with
-			{\arrow[scale=1.25,>=triangle 45]{>}}},
-	postaction={decorate}]
-
 \tikzstyle{ddiagram}=[minimum height=0pt,inner sep=0pt,outer sep=0pt,scale=0.65]
 
 \newif\ifddiagramTikz
-\newif\ifddiagramNum
-\newif\ifddiagramArr
+\newif\ifddiagramNoNum
+\newif\ifddiagramNoArr
 \pgfkeys{
 	/ddiagram/.is family
 	, /ddiagram
 	, default/.style = 
-		{ name =\empty%
+	{ name =\empty%
 		, up =\empty%
 		, no tikz = false
 		, no numbers = false
 		, no arrow = false
 		, xshift = 0
 		, yshift = 0
-		}
+		, arrow shift = 2.5
+	}
 	, no tikz/.is if=ddiagramTikz
-	, no numbers/.is if=ddiagramNum
-	, no arrow/.is if=ddiagramArr
+	, no numbers/.is if=ddiagramNoNum
+	, no arrow/.is if=ddiagramNoArr
 	, name/.estore in=\ddiagramName
 	, up/.estore in=\ddiagramUp
 	, xshift/.estore in=\ddiagramX
 	, yshift/.estore in=\ddiagramY
+	, arrow shift/.estore in=\ddiagramArrS
 }
 
 \newcounter{Dprev}
@@ -206,7 +203,7 @@
 	\begin{tikzpicture}[ddiagram,rotate=360*\Dvar/\theDsize]%
 	\fi%
 	\foreach \x in {0,...,\Evaluation{\theDsize-1}} {%
-		\ifddiagramNum\else
+		\ifddiagramNoNum\else
 		\node [xshift=\ddiagramX,yshift=\ddiagramY] at (90-360*\x/\theDsize:2) {\x};%
 		\fi
 		\node [xshift=\ddiagramX,yshift=\ddiagramY] (\x) at (90-360*\x/\theDsize:1.6) {};%
@@ -215,11 +212,16 @@
 	\setcounter{Dprev}{-1}%
 	\foreach \x in {#2}{%
 		\ifnum \theDprev=\theDfirst%
-			\ifddiagramArr
-			\draw [xshift=\ddiagramX,yshift=\ddiagramY] (\theDprev) -- (\x);%
-			\else
-			\draw [style=ddiagramArrow,xshift=\ddiagramX,yshift=\ddiagramY] (\theDprev) -- (\x);%
-			\fi
+		\ifddiagramNoArr
+		\draw [xshift=\ddiagramX,yshift=\ddiagramY] (\theDprev) -- (\x);%
+		\else
+		\draw [xshift=\ddiagramX,yshift=\ddiagramY,
+		decoration=
+		{markings,mark=at position 0.099*\ddiagramArrS with
+			{\arrow[scale=1.25,>=triangle 45]{>}}},
+		postaction={decorate}
+		] (\theDprev) -- (\x);%
+		\fi
 		\else \ifnum \theDprev=-1 \else%
 		\draw [xshift=\ddiagramX,yshift=\ddiagramY] (\theDprev) -- (\x);%
 		\fi\fi%
@@ -240,8 +242,8 @@
 % Dihedral diagrams
 
 \tikzstyle ddihedralArrow=[decoration=
-		{markings,mark=at position 1 with {\arrow[scale=1.5,>=angle 60]{>}}},
-	postaction={decorate}]
+{markings,mark=at position 1 with {\arrow[scale=1.5,>=angle 60]{>}}},
+postaction={decorate}]
 
 \tikzstyle{ddihedral}=[inner sep=0,minimum height=18pt]
 
@@ -302,19 +304,19 @@
 	\darrows[no tikz]{#2}%
 	%
 	\node at (0,0) [very thin,draw,circle, fill=white] {%
-		\ifnum\ddihedralV=0%
+		\ifodd\ddihedralV%
+		 $V$\else
 		\ifnum\ddihedralC=0%
-		\ifnum\ddihedralS=0%
+		\ifodd\ddihedralS\else%
 		\ifnum\ddihedralT=0%
-		P%
-		\fi\fi\fi%
-		\else V\fi%
+		$T^0$%
+		\fi\fi\fi\fi%
 		\ifnum\ddihedralC=0%
-		\else C$^{\ddihedralC}$\fi%
-		\ifnum\ddihedralS=0%
-		\else S\fi%
+		\else $C^{\ddihedralC}$\fi%
+		\ifodd\ddihedralS%
+		$S$\fi%
 		\ifnum\ddihedralT=0%
-		\else T$^{\ddihedralT}$\fi%
+		\else $T^{\ddihedralT}$\fi%
 	};%
 	\ifddihedralTikz\else%
 	\end{tikzpicture}%
@@ -334,7 +336,7 @@
 \long\def\addto#1#2{\expandafter\def\expandafter#1\expandafter{#1#2}}
 \newcounter{myDDcntr}
 \newlength{\Dvarr}
-	
+
 \newcommand{\drow}[2][]{%
 	\DsizeMake{#2}%
 	%

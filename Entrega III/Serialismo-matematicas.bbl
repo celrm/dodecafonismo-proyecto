@@ -1,0 +1,24 @@
+\begin{thebibliography}{1}
+
+\bibitem{armstrong}
+Mark~A. Armstrong.
+\newblock {\em {Groups and Symmetry}}.
+\newblock Undergraduate Texts in Mathematics. Springer New York, 2013.
+\newblock Chapter 6: ``Permutations''. Chapter 17: ``Actions, Orbits, and
+  Stabilizers''. Chapter 18: ``Counting Orbits''.
+  \url{https://books.google.es/books?id=f2AFCAAAQBAJ}.
+
+\bibitem{polygons}
+S.~W. Golomb and L.~R. Welch.
+\newblock {On the enumeration of polygons}.
+\newblock {\em The American Mathematical Monthly}, 67:349--353, 04 1960.
+\newblock \url{https://oeis.org/A000939/a000939.pdf}.
+
+\bibitem{reiner}
+David~L. Reiner.
+\newblock {Enumeration in Music Theory}.
+\newblock {\em The American Mathematical Monthly}, 92:51--54, 01 1985.
+\newblock
+  \url{https://eclass.uoa.gr/modules/document/file.php/MATH379/2.%20%CE%86%CF%81%CE%B8%CF%81%CE%B1%3A%20American%20Mathematical%20Monthly/Enumeration%20in%20Music%20Theory.pdf}.
+
+\end{thebibliography}
