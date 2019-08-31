@@ -183,13 +183,21 @@ File: Fotos/8.png
 --- needs --- Serialismo-matematicas.idv[39] ==> Serialismo-matematicas24x.png ---
 File: Fotos/9.jpg
 File: Fotos/10.jpg
+--- needs --- Serialismo-matematicas.idv[41] ==> Serialismo-matematicas25x.png ---
+--- needs --- Serialismo-matematicas.idv[43] ==> Serialismo-matematicas26x.png ---
+--- needs --- Serialismo-matematicas.idv[44] ==> Serialismo-matematicas27x.png ---
+--- needs --- Serialismo-matematicas.idv[45] ==> Serialismo-matematicas28x.png ---
+--- needs --- Serialismo-matematicas.idv[47] ==> Serialismo-matematicas29x.png ---
+tex4ht.c error: 21
 --- characters ---
 Font("cmr","10","10","100")
 Font("cmr","10","10","109")
+Font("musix","13","12","100")
 Font("cmr","17","17","100")
 Font("cmr","12","12","100")
 Font("cmr","8","8","100")
 Font("cmmi","8","8","100")
+Font("cmsy","8","8","100")
 Font("cmti","10","10","109")
 Font("cmtt","10","10","109")
 Font("cmbx","10","10","109")

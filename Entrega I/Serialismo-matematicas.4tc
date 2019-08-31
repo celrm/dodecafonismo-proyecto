@@ -21,4 +21,8 @@
 \doTocEntry\tocsubsection{4.3}{\csname a:TocLink\endcsname{1}{x1-170004.3}{QQ2-1-20}{An\'alisis de la Musette}}{32}\relax 
 \doTocEntry\toclof{4}{\csname a:TocLink\endcsname{1}{x1-170024}{}{\ignorespaces An\'alisis de la Musette (I)}}{figure}\relax 
 \doTocEntry\toclof{5}{\csname a:TocLink\endcsname{1}{x1-170035}{}{\ignorespaces An\'alisis de la Musette (II)}}{figure}\relax 
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-180004.3}{QQ2-1-23}{Bibliograf\IeC {\'\i }a}}{41}\relax 
+\doTocEntry\tocsection{5}{\csname a:TocLink\endcsname{1}{x1-180005}{QQ2-1-23}{Definiciones matem\'aticas}}{41}\relax 
+\doTocEntry\tocsubsection{5.1}{\csname a:TocLink\endcsname{1}{x1-190005.1}{QQ2-1-24}{Conjuntos y grupos}}{41}\relax 
+\doTocEntry\tocsubsection{5.2}{\csname a:TocLink\endcsname{1}{x1-200005.2}{QQ2-1-25}{Funciones y permutaciones}}{42}\relax 
+\doTocEntry\tocsubsection{5.3}{\csname a:TocLink\endcsname{1}{x1-210005.3}{QQ2-1-26}{Aritm\'etica modular}}{43}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-220005.3}{QQ2-1-27}{Bibliograf\IeC {\'\i }a}}{44}\relax 

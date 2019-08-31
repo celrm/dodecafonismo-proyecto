@@ -5,12 +5,13 @@ Pierre Boulez.
 \newblock {Schoenberg is dead}.
 \newblock \url{http://www.ubu.com/papers/Boulez-Schoenberg+Is+Dead.pdf}, 1952.
 \newblock Publicado en la revista {\it The Score} originalmente; consultado en
-  l\'inea en agosto de 2019.
+  agosto de 2019.
 
 \bibitem{cyclic}
 David~John Headlam.
 \newblock {\em The Music of Alban Berg}.
 \newblock Composers of the twentieth century. Yale University Press, 1996.
+\newblock \url{https://books.google.es/books?id=0bTkoNwLb5AC}.
 
 \bibitem{hunter}
 David J.~Hunter and Paul T.~von Hippel.
@@ -29,10 +30,9 @@ Robin Maconie.
 
 \bibitem{entartete}
 Vicent Minguet.
-\newblock {Las reglas de la m\'usica y las leyes del Estado: la ``Entartete
+\newblock {Las reglas de la música y las leyes del Estado: la ``Entartete
   Musik'' y el Tercer Reich}.
-\newblock {\em Quodlibet: revista de especializaci\'on musical}, 69:9--29,
-  2018.
+\newblock {\em Quodlibet: revista de especialización musical}, 69:9--29, 2018.
 \newblock \url{https://ebuah.uah.es/dspace/handle/10017/38020}.
 
 \bibitem{perle}
@@ -40,5 +40,11 @@ George Perle.
 \newblock {\em {Twelve-tone Tonality}}.
 \newblock University of California Press, 1977.
 \newblock \url{https://books.google.es/books?id=Vw3IeMkt8KAC}.
+
+\bibitem{celia1}
+Celia Rubio~Madrigal.
+\newblock {Serialismo y matemáticas - I}.
+\newblock {\em Divulgamat}, septiembre de 2019.
+\newblock \url{url}.
 
 \end{thebibliography}

@@ -3,44 +3,44 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Serialismo-matematicas.aux
 The style file: plain.bst
 Database file #1: Serialismo-matematicas.bib.bib
-You've used 3 entries,
+You've used 5 entries,
             2118 wiz_defined-function locations,
-            522 strings with 4708 characters,
-and the built_in function-call counts, 860 in all, are:
-= -- 88
-> -- 27
+            530 strings with 4839 characters,
+and the built_in function-call counts, 1286 in all, are:
+= -- 132
+> -- 41
 < -- 0
-+ -- 11
-- -- 8
-* -- 53
-:= -- 156
-add.period$ -- 13
-call.type$ -- 3
-change.case$ -- 12
++ -- 17
+- -- 12
+* -- 69
+:= -- 238
+add.period$ -- 21
+call.type$ -- 5
+change.case$ -- 20
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 34
-empty$ -- 73
-format.name$ -- 8
-if$ -- 180
+cite$ -- 5
+duplicate$ -- 54
+empty$ -- 107
+format.name$ -- 12
+if$ -- 266
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 4
-newline$ -- 21
-num.names$ -- 6
-pop$ -- 8
+int.to.str$ -- 5
+missing$ -- 6
+newline$ -- 33
+num.names$ -- 10
+pop$ -- 14
 preamble$ -- 1
-purify$ -- 10
+purify$ -- 16
 quote$ -- 0
-skip$ -- 21
+skip$ -- 35
 stack$ -- 0
-substring$ -- 51
-swap$ -- 3
+substring$ -- 61
+swap$ -- 5
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 10
+type$ -- 18
 warning$ -- 0
-while$ -- 8
-width$ -- 4
-write$ -- 41
+while$ -- 12
+width$ -- 6
+write$ -- 65

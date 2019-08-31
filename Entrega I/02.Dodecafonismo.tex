@@ -155,7 +155,7 @@ $$
 			\includegraphics[width=12.1cm]{4.png}
 		\end{center}
 				
-		En total, obtendremos 48 series -- aunque no obligatoriamente distintas entre sí -- pertenecientes a un solo espectro serial. Hay 12 series originales sobre cada una de las doce notas, 12 series retrógradas, 12 invertidas y 12 series sobre las que se aplica tanto la retrogradación como la inversión. A continuación se muestra la sintaxis simple junto a la matemática:
+		En total, obtendremos 48 series \textemdash aunque no obligatoriamente distintas entre sí\textemdash~pertenecientes a un solo espectro serial. Hay 12 series originales sobre cada una de las doce notas, 12 series retrógradas, 12 invertidas y 12 series sobre las que se aplica tanto la retrogradación como la inversión. A continuación se muestra la sintaxis simple junto a la matemática:
 		
 		\begin{multicols}{2}
 			\underline{Sintaxis simple}
@@ -210,8 +210,14 @@ $$
 		&RI_{0}&RI_{1}&RI_{3}&RI_{9}&RI_{2}&RI_{11}&RI_{4}&RI_{10}&RI_{7}&RI_{8}&RI_{5}&RI_{6}&
 		\end{array}\]
 	
-		Por otro lado, he escrito un comando en el propio lenguaje \LaTeX{} que crea esta misma tabla con el comando \verb|\dmatrix|, y tiene cualquier serie como argumento: %\verb|\dmatrix{4,5,7,1,6,3,8,2,11,0,9,10}|.
-			
+		Por otro lado, he escrito un comando en el propio lenguaje \LaTeX{} que crea esta misma tabla con el comando \verb|\dmatrix|, y tiene cualquier serie como argumento. Su sintaxis es \newline
+\verb|\dmatrix{4,5,7,1,6,3,8,2,11,0,9,10}|.
+%		 \begin{center}
+%		  \begin{verbatim}
+%		 \dmatrix{4,5,7,1,6,3,8,2,11,0,9,10}.
+%		 		 \end{verbatim}
+%		 		 \end{center}
+				 			
 		El comando se encuentra en el paquete de \LaTeX{} \texttt{ddphonism}, disponible en el enlace \url{https://www.ctan.org/pkg/ddphonism}.
 		La tabla aparece sin el orlado de nomenclaturas:
 
