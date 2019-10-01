@@ -8,7 +8,7 @@
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{ddphonism}
-[2019/08/10 v0.2 Dodecaphonic diagrams: twelve-tone matrices, clock diagrams, etc.]
+[2019/09/01 v0.2 Dodecaphonic diagrams: twelve-tone matrices, clock diagrams, etc.]
 
 \RequirePackage{etoolbox}
 \RequirePackage{xparse}
@@ -248,14 +248,25 @@ postaction={decorate}]
 \tikzstyle{ddihedral}=[inner sep=0,minimum height=18pt]
 
 \newif\ifddihedralTikz
+\newif\ifddihedralItalics
 \pgfkeys{
 	/ddihedral/.is family, /ddihedral,
-	default/.style = {t = 0, c = 0, s = 0, v = 0, no tikz=false},
+	default/.style = 
+		{ t = 0, c = 0, s = 0, v = 0
+		, no tikz=false
+		, new t = T, new c = C, new s = S, new v = V
+		, no italics = false
+		},
 	no tikz/.is if=ddihedralTikz,
 	t/.estore in = \ddihedralT,
 	c/.estore in = \ddihedralC,
 	s/.estore in = \ddihedralS,
 	v/.estore in = \ddihedralV,
+	no italics/.is if=ddihedralItalics,
+	new t/.estore in = \ddihedralNewT,
+	new c/.estore in = \ddihedralNewC,
+	new s/.estore in = \ddihedralNewS,
+	new v/.estore in = \ddihedralNewV,
 }
 
 \newif\ifdarrowsTikz
@@ -304,19 +315,20 @@ postaction={decorate}]
 	\darrows[no tikz]{#2}%
 	%
 	\node at (0,0) [very thin,draw,circle, fill=white] {%
+	{\ifddihedralItalics\else\it\fi%
 		\ifodd\ddihedralV%
-		 $V$\else
+		\ddihedralNewV\else%
 		\ifnum\ddihedralC=0%
 		\ifodd\ddihedralS\else%
 		\ifnum\ddihedralT=0%
-		$T^0$%
+		\ddihedralNewT$^0$%
 		\fi\fi\fi\fi%
 		\ifnum\ddihedralC=0%
-		\else $C^{\ddihedralC}$\fi%
+		\else \ddihedralNewC$^{\ddihedralC}$\fi%
 		\ifodd\ddihedralS%
-		$S$\fi%
+		\ddihedralNewS\fi%
 		\ifnum\ddihedralT=0%
-		\else $T^{\ddihedralT}$\fi%
+		\else \ddihedralNewT$^{\ddihedralT}$\fi}%
 	};%
 	\ifddihedralTikz\else%
 	\end{tikzpicture}%
