@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="iso-8859-1" ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<!--http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd-->  
+<html xmlns="http://www.w3.org/1999/xhtml"  
+> 
+<head><title>Serialismo y matemticas - II</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- xhtml,fn-in,html --> 
+<meta name="src" content="Serialismo-matematicas-II.tex" /> 
+<link rel="stylesheet" type="text/css" href="Serialismo-matematicas-II.css" /> 
+</head><body 
+>
+    <div class="maketitle">
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+
+<h2 class="titleHead">Serialismo y matemáticas - II</h2>
+<div class="author" ><span 
+class="cmr-12">Celia Rubio Madrigal</span></div>
+<br />
+<div class="date" ><span 
+class="cmr-12">Octubre de 2019</span></div>
+    </div>
+    <h3 class="sectionHead"><span class="titlemark">1   </span> <a 
+ id="x1-10001"></a>Introducción</h3>
+<!--l. 70--><p class="noindent" >Este artículo es el segundo de la colección <span 
+class="cmti-10x-x-109">Serialismo y matem</span><span 
+class="cmti-10x-x-109">áticas</span>. Las músicas serialistas son aquellas
+que permiten construir castillos con un solo grano de arena: una serie particular, una permutación de
+notas, dinámicas o timbres. La serie se coloca en la obra secuencialmente, siempre igual o
+con alguna modificación que la adorne. Y es que para esta música, la serie es el ladrillo y las
+matemáticas son la pintura con la que decorarlos, ya que las transformaciones que se le puede
+aplicar a una serie forman preciosas estructuras matemáticas enmarcadas en la Teoría de
+Grupos.
+</p><!--l. 74--><p class="indent" >    En el primer artículo&#x00A0;<span class="cite">[<a 
+href="#Xcelia1">7</a>]</span> nos centramos en el dodecafonismo, en sus orígenes y en comentar una de
+sus obras. En este segundo artículo, ampliaremos las definiciones dodecafónicas para descubrir
+bajo ellas, con ayuda de diagramas, el <span 
+class="cmbx-10x-x-109">grupo di</span><span 
+class="cmbx-10x-x-109">édrico </span>(<a 
+href="#x1-20002">sección 2</a>); y contaremos quiénes
+fueron los discípulos y sucesores de Schoenberg y cómo provocaron la creación del <span 
+class="cmbx-10x-x-109">serialismo</span>
+<span 
+class="cmbx-10x-x-109">integral </span>(<a 
+href="#x1-70003">sección 3</a>). Más adelante proporcionaremos las herramientas matemáticas para
+después contar el número de espectros seriales que un compositor puede utilizar. En definitiva,
+haremos un recorrido a fondo por el serialismo y exploraremos sus posibilidades musicales y
+matemáticas.
+</p><!--l. 1--><p class="noindent" >
+</p>
+    <h3 class="sectionHead"><span class="titlemark">2   </span> <a 
+ id="x1-20002"></a>El grupo de las transformaciones</h3>
+                                                                                         
+                                                                                         
+<!--l. 2--><p class="noindent" >
+</p>
+    <h4 class="subsectionHead"><span class="titlemark">2.1   </span> <a 
+ id="x1-30002.1"></a>Nuevas definiciones y nuevas transformaciones</h4>
+<!--l. 3--><p class="noindent" >Como vimos en el anterior artículo&#x00A0;<span class="cite">[<a 
+href="#Xcelia1">7</a>]</span>, las fórmulas de las transformaciones dodecafónicas habituales son:
+</p>
+<div class="center" 
+>
+<!--l. 4--><p class="noindent" >
+</p><!--l. 5--><p class="noindent" ><span 
+class="cmmi-10x-x-109">I</span>(<span 
+class="cmmi-10x-x-109">&#x03C3;</span>(<span 
+class="cmmi-10x-x-109">m</span>)) = <span 
+class="cmsy-10x-x-109">-</span><span 
+class="cmmi-10x-x-109">&#x03C3;</span>(<span 
+class="cmmi-10x-x-109">m</span>) + 2<span 
+class="cmmi-10x-x-109">&#x03C3;</span>(0)<br />
+<span 
+class="cmmi-10x-x-109">T</span><sup><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-10x-x-109">&#x03C3;</span>(<span 
+class="cmmi-10x-x-109">m</span>)) = <span 
+class="cmmi-10x-x-109">&#x00A0;&#x03C3;</span>(<span 
+class="cmmi-10x-x-109">m</span>) + <span 
+class="cmmi-10x-x-109">k</span><br />
+<span 
+class="cmmi-10x-x-109">R</span>(<span 
+class="cmmi-10x-x-109">&#x03C3;</span>(<span 
+class="cmmi-10x-x-109">m</span>)) = <span 
+class="cmmi-10x-x-109">&#x00A0;&#x03C3;</span>(<span 
+class="cmsy-10x-x-109">-</span>1 <span 
+class="cmsy-10x-x-109">- </span><span 
+class="cmmi-10x-x-109">m</span>)</p></div>
+<!--l. 10--><p class="indent" >    Sin embargo, la importancia de estas definiciones radica en qué espectro serial forman, y no en cómo
+se nombra cada serie específica. No es distinguible a un nivel musical y, de hecho, hay más de un
+convenio para ello.<span 
+class="cmbx-10x-x-109">[</span><span class="marginpar"><span 
+class="cmbx-10x-x-109">xxx</span></span><span 
+class="cmbx-10x-x-109">Explica esto un poco mejor; creo que para el lector no se</span>
+<span 
+class="cmbx-10x-x-109">entiende bien el problema que hay con los nombres. Dale m</span><span 
+class="cmbx-10x-x-109">ás claridad a esto</span>
+<span 
+class="cmbx-10x-x-109">:-)]</span>
+</p><!--l. 12--><p class="indent" >    Han surgido a lo largo de la historia al menos dos métodos para nombrar las series. El primero, el
+método tradicional, se ha usado desde al menos 1945. El segundo, el método de tonos absolutos, fue
+concebido por George Perle&#x00A0;<span class="cite">[<a 
+href="#Xperle">6</a>]</span> en su libro <span 
+class="cmti-10x-x-109">Twelve-Tone Tonality </span>en 1977.
+</p><!--l. 14--><p class="indent" >    En el método tradicional, <span 
+class="cmmi-10x-x-109">T</span><sub><span 
+class="cmr-8">0</span></sub> se usa para la primera serie que se encuentra en la composición; es
+decir, la serie original. En cambio, el método de tonos absolutos nombra las series <span 
+class="cmmi-10x-x-109">T </span>basándose solamente
+en la nota en la que comienzan: <span 
+class="cmmi-10x-x-109">T</span><sub><span 
+class="cmr-8">0</span></sub> se usa para la serie que comienza por un do, <span 
+class="cmmi-10x-x-109">T</span><sup><span 
+class="cmr-8">1</span></sup> para el re, y así
+sucesivamente. En ambas, las series transpuestas se nombran como &#x03A8;<sub><span 
+class="cmmi-8">k</span></sub>.<span 
+class="cmbx-10x-x-109">[</span><span class="marginpar"><span 
+class="cmbx-10x-x-109">xxx</span></span><span 
+class="cmbx-10x-x-109">Aqu</span><span 
+class="cmbx-10x-x-109">í deber</span><span 
+class="cmbx-10x-x-109">ía ser </span><span 
+class="cmmi-10x-x-109">T</span><sup><span 
+class="cmr-8">0</span></sup><span 
+class="cmbx-10x-x-109">,</span>
+<span 
+class="cmbx-10x-x-109">¿no?] </span>Estas nomenclaturas no caracterizan adecuadamente el objeto matemático que deben
+representar, es decir, funciones aplicadas a las series. Son nombres arbitrarios que además producen
+ambigüedad al añadir otras funciones &#8212;por ejemplo, si no conmutan&#8212;&#x00A0;o al intentar describirlo
+matemáticamente.
+</p><!--l. 16--><p class="indent" >    En todo caso, cualquier convenio de notación tendrá fórmulas matemáticas distintas al resto, pero
+todas preservan el material compositivo de la obra. Eso quiere decir que se pueden redefinir algunas de las
+transformaciones siempre que preserven el sentido musical. Por ejemplo, la inversión puede prescindir de
+ser transportada para que la primera nota coincida con la original. Para distinguirla de la primera
+definición, ésta se llamará <span 
+class="cmmi-10x-x-109">S </span>de simetría: <span 
+class="cmmi-10x-x-109">S</span>(<span 
+class="cmmi-10x-x-109">&#x03C3;</span>(<span 
+class="cmmi-10x-x-109">m</span>)) = <span 
+class="cmsy-10x-x-109">-</span><span 
+class="cmmi-10x-x-109">&#x03C3;</span>(<span 
+class="cmmi-10x-x-109">m</span>). E igual que la inversión es el cambio de
+signo por fuera, la retrogradación puede convertirse simplemente en el cambio de signo por dentro. Ésta se
+llamará <span 
+class="cmmi-10x-x-109">V </span>de volteo: <span 
+class="cmmi-10x-x-109">V </span>(<span 
+class="cmmi-10x-x-109">&#x03C3;</span>(<span 
+class="cmmi-10x-x-109">m</span>)) = <span 
+class="cmmi-10x-x-109">&#x03C3;</span>(<span 
+class="cmsy-10x-x-109">-</span><span 
+class="cmmi-10x-x-109">m</span>).
+</p><!--l. 18--><p class="indent" >    Así quedan dos transformaciones que se asemejan a reflexiones: una por <span 
+class="cmti-10x-x-109">dentro </span>y otra por <span 
+class="cmti-10x-x-109">fuera</span>; y
+una adición por <span 
+class="cmti-10x-x-109">fuera</span>. Aquí <span 
+class="cmti-10x-x-109">dentro </span>significa <span 
+class="cmti-10x-x-109">antes </span>de aplicar <span 
+class="cmmi-10x-x-109">&#x03C3; </span>y <span 
+class="cmti-10x-x-109">fuera </span>significa <span 
+class="cmti-10x-x-109">despu</span><span 
+class="cmti-10x-x-109">és </span>de
+                                                                                         
+                                                                                         
+aplicar <span 
+class="cmmi-10x-x-109">&#x03C3;</span>, ya que no se debe olvidar que <span 
+class="cmmi-10x-x-109">&#x03C3;</span>, la permutación, es una función en sí misma. Y
+ahora surge una cuestión natural: ¿cuál sería entonces el resultado de sumar <span 
+class="cmti-10x-x-109">dentro</span>, es decir,
+<span 
+class="cmti-10x-x-109">antes</span>?
+</p><!--l. 20--><p class="indent" >    Esta nueva transformación, cuya aparición resulta natural tras las otras tres, se llama <span 
+class="cmti-10x-x-109">desplazamiento</span>
+<span 
+class="cmti-10x-x-109">c</span><span 
+class="cmti-10x-x-109">íclico</span>. Inventada y usada por Alban Berg&#x00A0;<span class="cite">[<a 
+href="#Xcyclic">2</a>]</span>, y en algunas de las primeras obras de Schoenberg, <span 
+class="cmmi-10x-x-109">C</span><sup><span 
+class="cmmi-8">k</span></sup>
+desplaza el comienzo de la serie <span 
+class="cmmi-10x-x-109">k </span>posiciones más allá:
+</p>
+    <center class="math-display" >
+<img 
+src="Serialismo-matematicas-II0x.png" alt="Ck (&#x03C3;(m )) = &#x03C3;(m + k)
+" class="math-display"  /></center>
+<!--l. 21--><p class="nopar" >
+</p>
+    <center class="math-display" >
+<img 
+src="Serialismo-matematicas-II1x.png" alt="      (                                                            )
+  k       0      1         2             9         10        11
+C  =    &#x03C3;(k)  &#x03C3;(k + 1)  &#x03C3;(k + 2) &#x22C5;&#x22C5;&#x22C5;  &#x03C3;(k + 9) &#x03C3; (k + 10)  &#x03C3;(k + 11)
+" class="math-display"  /></center>
+<!--l. 26--><p class="nopar" >
+</p><!--l. 28--><p class="indent" >    La serie 4-cíclica sobre la permutación <span 
+class="cmmi-10x-x-109">P </span>de la Suite Op. 25 es la siguiente serie <span 
+class="cmmi-10x-x-109">C</span><sup><span 
+class="cmr-8">4</span></sup>:
+</p>
+    <center class="math-display" >
+<img 
+src="Serialismo-matematicas-II2x.png" alt="     ( 0  1  2  3   4  5  6   7  8  9  10  11 )
+C4 =
+       6  3  8  2  11  0  9  10  4  5  7   1
+" class="math-display"  /></center>
+<div class="center" 
+>
+<!--l. 38--><p class="noindent" >
+
+</p><!--l. 39--><p class="noindent" ><img 
+src="Fotos/13.png" alt="PIC"  
+ /></p></div>
+<!--l. 42--><p class="indent" >    Si no se añade la transformación <span 
+class="cmmi-10x-x-109">C</span>, entonces <span 
+class="cmmi-10x-x-109">V </span>no conserva el espectro serial de <span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">I,</span><span 
+class="cmmi-10x-x-109">&#x00A0;T,</span><span 
+class="cmmi-10x-x-109">&#x00A0;R</span><span 
+class="cmsy-10x-x-109">}</span>; pero si
+                                                                                         
+                                                                                         
+se añade sí se conserva ya que <span 
+class="cmmi-10x-x-109">V </span>es composición de <span 
+class="cmmi-10x-x-109">C </span>y <span 
+class="cmmi-10x-x-109">R</span>.
+</p><!--l. 44--><p class="indent" >    En resumen, se puede trabajar con un nuevo sistema de definiciones que mantienen el significado
+musical del serialismo, pero varían la notación con la que se trabaja. Estas son las nuevas fórmulas de las
+transformaciones:
+</p>
+    <div class="columns-2">
+<!--l. 47--><p class="indent" >
+</p><table 
+class="align-star">
+                                   <tr><td 
+class="align-odd"><span 
+class="cmmi-10x-x-109">S</span>(<span 
+class="cmmi-10x-x-109">&#x03C3;</span>(<span 
+class="cmmi-10x-x-109">m</span>))</td>                                    <td 
+class="align-even"> = <span 
+class="cmsy-10x-x-109">-</span><span 
+class="cmmi-10x-x-109">&#x03C3;</span>(<span 
+class="cmmi-10x-x-109">m</span>)</td>                                     <td 
+class="align-label"></td>                                   <td 
+class="align-label">
+                                   </td></tr><tr><td 
+class="align-odd"><span 
+class="cmmi-10x-x-109">T</span><sup><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-10x-x-109">&#x03C3;</span>(<span 
+class="cmmi-10x-x-109">m</span>))</td>                                   <td 
+class="align-even"> = <span 
+class="cmmi-10x-x-109">&#x03C3;</span>(<span 
+class="cmmi-10x-x-109">m</span>) + <span 
+class="cmmi-10x-x-109">k</span></td>                                   <td 
+class="align-label"></td>                                   <td 
+class="align-label"></td></tr></table>
+<!--l. 52--><p class="indent" >
+</p><table 
+class="align-star">
+                                   <tr><td 
+class="align-odd"><span 
+class="cmmi-10x-x-109">V </span>(<span 
+class="cmmi-10x-x-109">&#x03C3;</span>(<span 
+class="cmmi-10x-x-109">m</span>))</td>                                    <td 
+class="align-even"> = <span 
+class="cmmi-10x-x-109">&#x03C3;</span>(<span 
+class="cmsy-10x-x-109">-</span><span 
+class="cmmi-10x-x-109">m</span>)</td>                                     <td 
+class="align-label"></td>                                   <td 
+class="align-label">
+                                   </td></tr><tr><td 
+class="align-odd"><span 
+class="cmmi-10x-x-109">C</span><sup><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-10x-x-109">&#x03C3;</span>(<span 
+class="cmmi-10x-x-109">m</span>))</td>                                   <td 
+class="align-even"> = <span 
+class="cmmi-10x-x-109">&#x03C3;</span>(<span 
+class="cmmi-10x-x-109">m </span>+ <span 
+class="cmmi-10x-x-109">k</span>)</td>                                   <td 
+class="align-label"></td>                                   <td 
+class="align-label"></td></tr></table>
+                                                                                         
+                                                                                         
+    </div>
+<!--l. 61--><p class="noindent" >
+</p>
+    <h4 class="subsectionHead"><span class="titlemark">2.2   </span> <a 
+ id="x1-40002.2"></a>Diagramas de reloj</h4>
+<!--l. 63--><p class="noindent" >Para visualizar mejor cómo actúan las distintas transformaciones, las series se pueden representar
+mediante <span 
+class="cmbx-10x-x-109">diagramas de reloj</span>&#x00A0;<span class="cite">[<a 
+href="#Xhunter">3</a>]</span>: una sucesión de aristas con una orientación establecida que conecta
+los vértices de un dodecágono en el orden de la serie. Ya que el desplazamiento cíclico actúa como si la
+serie fuese circular, hay una arista extra que une la última nota a la primera. El comienzo de la serie y su
+orientación se marcan con una flecha.
+</p>
+    <hr class="figure" /><div class="figure" 
+>
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+<div class="center" 
+>
+<!--l. 66--><p class="noindent" >
+</p><!--l. 67--><p class="noindent" ><img 
+src="Fotos/Serialismo-matematicas-diagrama-2-1.png" alt="PIC"  
+ /></p></div>
+                                                                                         
+                                                                                         
+    </div><hr class="endfigure" />
+<!--l. 72--><p class="indent" >    Arriba se incluye el diagrama de la serie original <span 
+class="cmmi-10x-x-109">&#x03C3; </span>de la Suite Op. 25. Se pueden distinguir las
+características de la serie, como las tres diagonales, que son los tres intervalos de tritono. A continuación
+se incluyen los diagramas de las transformaciones dodecafónicas originales: la transposición, la inversión y
+la retrogradación; así como el nuevo desplazamiento cíclico.
+</p>
+<div class="center" 
+>
+<!--l. 74--><p class="noindent" >
+</p><!--l. 75--><p class="noindent" ><img 
+src="Fotos/Serialismo-matematicas-diagrama-2-2.png" alt="PIC"  
+ /></p></div>
+<!--l. 84--><p class="indent" >    La transposición es una rotación en el sentido en el que apunta la flecha; la inversión es una reflexión
+con el eje de simetría en la diagonal que pasa por la flecha; la retrogradación es un cambio de orientación
+de la flecha; y el desplazamiento cíclico es el avance interno de la flecha por el recorrido de la
+serie.
+</p><!--l. 86--><p class="indent" >    La diferencia entre las inversiones <span 
+class="cmmi-10x-x-109">I </span>y <span 
+class="cmmi-10x-x-109">S </span>es precisamente la transposición de 2<span 
+class="cmmi-10x-x-109">&#x03C3;</span>(0) = 8
+semitonos en este ejemplo. Comparando <span 
+class="cmmi-10x-x-109">S </span>con <span 
+class="cmmi-10x-x-109">T</span><sup><span 
+class="cmr-8">0</span></sup> se puede además observar que <span 
+class="cmmi-10x-x-109">S </span>es una
+reflexión con el eje de simetría en 0, en vez de que el eje dependa de la propia permutación.
+</p>
+<div class="center" 
+>
+<!--l. 88--><p class="noindent" >
+</p><!--l. 89--><p class="noindent" ><img 
+src="Fotos/Serialismo-matematicas-diagrama-2-3.png" alt="PIC"  
+ /></p></div>
+<!--l. 97--><p class="indent" >    Por otro lado, la comparación entre las retrogradaciones <span 
+class="cmmi-10x-x-109">R </span>y <span 
+class="cmmi-10x-x-109">V </span>muestra que, aunque en principio más
+arbitraria, <span 
+class="cmmi-10x-x-109">V </span>es una transformación más natural, ya que deja fija la flecha. La diferencia entre ellas es en
+realidad un desplazamiento cíclico de -1.
+</p>
+<div class="center" 
+>
+<!--l. 99--><p class="noindent" >
+</p><!--l. 100--><p class="noindent" ><img 
+src="Fotos/Serialismo-matematicas-diagrama-2-4.png" alt="PIC"  
+ /></p></div>
+<!--l. 108--><p class="indent" >    He creado una página interactiva que genera diagramas de reloj de cualquier serie para cualquier
+longitud serial, además de generar series aleatorias. También se pueden aplicar las transformaciones a la
+serie, tanto las originales como las del nuevo sistema, para ver cómo se comporta el diagrama. Está escrita
+en Elm y el código puede encontrarse en <a 
+href="https://gitlab.com/dodecafonismo/diagramas" class="url" ><span 
+class="cmtt-10x-x-109">https://gitlab.com/dodecafonismo/diagramas</span></a>.
+                                                                                         
+                                                                                         
+</p><!--l. 113--><p class="indent" >    En el enlace <a 
+href="https://diagramas.netlify.com" class="url" ><span 
+class="cmtt-10x-x-109">https://diagramas.netlify.com</span></a> se accede a la aplicación web. Sus instrucciones
+de uso se encuentran al final de la página. Además, he creado un comando en <span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span> que
+dibuja estos diagramas dada su serie, y opcionalmente su nombre y el número que está arriba:
+</p>
+<div class="center" 
+>
+<!--l. 114--><p class="noindent" >
+</p><!--l. 115--><p class="noindent" ><img 
+src="Fotos/Figura-ddmark.png" alt="PIC"  
+ /></p></div>
+<!--l. 118--><p class="noindent" >y en este caso <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10x-x-109">up=4</span></span></span> no es necesario, ya que por defecto se coloca arriba la primera nota de la
+serie. El comando se encuentra en el paquete de <span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span> <span 
+class="cmtt-10x-x-109">ddphonism</span>, disponible en el enlace
+<a 
+href="https://www.ctan.org/pkg/ddphonism" class="url" ><span 
+class="cmtt-10x-x-109">https://www.ctan.org/pkg/ddphonism</span></a>.
+</p>
+    <h4 class="subsectionHead"><span class="titlemark">2.3   </span> <a 
+ id="x1-50002.3"></a>El grupo: <span 
+class="cmmi-10x-x-109">D</span><sub><span 
+class="cmr-8">12</span></sub> <span 
+class="cmsy-10x-x-109">&#x00D7; </span><span 
+class="cmmi-10x-x-109">D</span><sub><span 
+class="cmr-8">12</span></sub></h4>
+<!--l. 126--><p class="noindent" >El conjunto de transformaciones <span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">S,</span><span 
+class="cmmi-10x-x-109">&#x00A0;T,</span><span 
+class="cmmi-10x-x-109">&#x00A0;V,</span><span 
+class="cmmi-10x-x-109">&#x00A0;C</span><span 
+class="cmsy-10x-x-109">} </span>está compuesto por dos parejas con semejanzas entre sí.
+<span 
+class="cmmi-10x-x-109">S </span>es una reflexión y <span 
+class="cmmi-10x-x-109">T </span>una rotación de orden 12 &#8212;es decir, que al aplicarla 12 veces se vuelve a la
+identidad&#8212;&#x00A0;y ambas se aplican a la figura entera; es como mover el diagrama por el papel. En cambio, <span 
+class="cmmi-10x-x-109">V</span>
+es una reflexión de la flecha en sí, y <span 
+class="cmmi-10x-x-109">C </span>una rotación &#8212;también de orden 12&#8212;&#x00A0;de la flecha sobre la línea;
+ambas aplicadas al interior de la figura.
+</p><!--l. 132--><p class="indent" >    Cada pareja genera un grupo muy conocido: el <span 
+class="cmbx-10x-x-109">grupo di</span><span 
+class="cmbx-10x-x-109">édrico </span>o <span 
+class="cmbx-10x-x-109">diedral</span>. Se denota por <span 
+class="cmmi-10x-x-109">D</span><sub><span 
+class="cmr-8">12</span></sub> y
+representa el grupo de simetrías de un polígono regular; en este caso, un dodecágono. En otros ámbitos,
+<span 
+class="cmmi-10x-x-109">D</span><sub><span 
+class="cmmi-8">n</span></sub> también se denota por <span 
+class="cmmi-10x-x-109">D</span><sub><span 
+class="cmr-8">2</span><span 
+class="cmmi-8">n</span></sub>, ya que 2 <span 
+class="cmsy-10x-x-109">* </span><span 
+class="cmmi-10x-x-109">n </span>es el número de elementos que tiene el grupo. Por ejemplo,
+aquí se muestran todas las simetrías de un octógono, que son los 16 elementos de <span 
+class="cmmi-10x-x-109">D</span><sub><span 
+class="cmr-8">8</span></sub>, aplicados a una
+señal de STOP.
+</p>
+<div class="center" 
+>
+<!--l. 134--><p class="noindent" >
+</p><!--l. 135--><p class="noindent" ><img 
+src="Fotos/Serialismo-matematicas-diagrama-2-5.png" alt="PIC"  
+ /></p></div>
+<!--l. 144--><p class="indent" >    De igual manera, el conjunto de series de un espectro serial se consigue aplicando a la serie las
+distintas funciones transformativas; se obtiene entonces un grupo diédrico para ambas parejas de
+funciones.
+</p><!--l. 146--><p class="indent" >    Al haber dos parejas distintas que actúan por separado dentro y fuera de la figura, el grupo completo
+                                                                                         
+                                                                                         
+que forman las cuatro transformaciones es el producto directo de dos copias del diédrico:
+<span 
+class="cmmi-10x-x-109">D</span><sub><span 
+class="cmr-8">12</span></sub> <span 
+class="cmsy-10x-x-109">&#x00D7; </span><span 
+class="cmmi-10x-x-109">D</span><sub><span 
+class="cmr-8">12</span></sub>.
+</p><!--l. 148--><p class="indent" >    Podemos observarlo claramente si representamos la serie de una segunda forma: como la
+correspondencia entre vértices de dos dodecágonos. La serie original, que es en realidad una
+permutación de 12 elementos, se representa como una función: los vértices del dodecágono
+interno se envían biyectivamente a los vértices externos. Así, <span 
+class="cmmi-10x-x-109">m</span><img 
+src="Serialismo-matematicas-II3x.png" alt="&#x21A6;- &#x2192;"  class="longmapsto"  /><span 
+class="cmmi-10x-x-109">&#x03C3;</span>(<span 
+class="cmmi-10x-x-109">m</span>). Este diagrama es
+similar al matricial pero enroscado en sí mismo, de tal forma que se aprecia la permutación
+escogida mediante las flechas, que son fijas, y facilita un significado del antes y el después de
+aplicarla.
+</p><!--l. 150--><p class="indent" >    Las dos primeras figuras describen esto mismo: la representación de la serie original y la
+representación de la permutación mediante las flechas, que se mantendrán constantes en el resto de
+figuras.
+</p>
+<div class="center" 
+>
+<!--l. 152--><p class="noindent" >
+</p><!--l. 153--><p class="noindent" ><img 
+src="Fotos/Serialismo-matematicas-diagrama-2-6.png" alt="PIC"  
+ /></p></div>
+<!--l. 162--><p class="indent" >    Las cuatro siguientes figuras representan las cuatro funciones transformativas, que son en realidad la
+reflexión y la rotación del grupo diédrico de cada dodecágono. Aplicarlo al de dentro es aplicarlo antes de
+las flechas; antes de la permutación. Aplicarlo fuera es transformar después de las flechas; después de la
+permutación.
+</p>
+<div class="center" 
+>
+<!--l. 166--><p class="noindent" >
+</p><!--l. 167--><p class="noindent" ><img 
+src="Fotos/Serialismo-matematicas-diagrama-2-7.png" alt="PIC"  
+ /></p></div>
+<!--l. 195--><p class="indent" >    He creado un comando en <span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span> que dibuja estos diagramas diédricos dada su serie original y las
+funciones aplicadas a ella: <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10x-x-109">t</span></span></span>, <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10x-x-109">s</span></span></span>, <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10x-x-109">c</span></span></span> y <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10x-x-109">v</span></span></span>. Se aplican en ese mismo orden, y por defecto están a 0.
+<span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10x-x-109">\ddihedral[c=2,t=3,s=1]{4,5,7,1,6,3,8,2,11,0,9,10}</span></span></span>. El comando se encuentra en el paquete de
+<span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span> <span 
+class="cmtt-10x-x-109">ddphonism</span>, disponible en el enlace <a 
+href="https://www.ctan.org/pkg/ddphonism" class="url" ><span 
+class="cmtt-10x-x-109">https://www.ctan.org/pkg/ddphonism</span></a>.
+</p><!--l. 198--><p class="noindent" >
+                                                                                         
+                                                                                         
+</p>
+    <h4 class="subsectionHead"><span class="titlemark">2.4   </span> <a 
+ id="x1-60002.4"></a>Conmutatividad entre los elementos del grupo</h4>
+<!--l. 200--><p class="noindent" >La rotación, <span 
+class="cmmi-10x-x-109">r</span>, y la reflexión, <span 
+class="cmmi-10x-x-109">s</span>, de un grupo diédrico no conmutan, sino que cumplen la relación
+<span 
+class="cmmi-10x-x-109">r </span><span 
+class="cmsy-10x-x-109">&#x22C5; </span><span 
+class="cmmi-10x-x-109">s </span>= <span 
+class="cmmi-10x-x-109">s </span><span 
+class="cmsy-10x-x-109">&#x22C5; </span><span 
+class="cmmi-10x-x-109">r</span><sup><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sup>. Por otro lado, en los productos directos los elementos de un lado conmutan con los
+del otro. Así, <span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">S,</span><span 
+class="cmmi-10x-x-109">&#x00A0;T</span><span 
+class="cmsy-10x-x-109">} </span>y <span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">V,</span><span 
+class="cmmi-10x-x-109">&#x00A0;C</span><span 
+class="cmsy-10x-x-109">} </span>no conmutan, pero el resto de parejas sí. La verificación
+de estas afirmaciones, que confirman que el grupo generado es <span 
+class="cmmi-10x-x-109">D</span><sub><span 
+class="cmr-8">12</span></sub> <span 
+class="cmsy-10x-x-109">&#x00D7; </span><span 
+class="cmmi-10x-x-109">D</span><sub><span 
+class="cmr-8">12</span></sub>, se encuentran a
+continuación:
+</p>
+<div class="center" 
+>
+<!--l. 203--><p class="noindent" >
+</p><!--l. 204--><p class="noindent" ><img 
+src="Fotos/Serialismo-matematicas-diagrama-2-8.png" alt="PIC"  
+ /></p></div>
+<div class="center" 
+>
+<!--l. 207--><p class="noindent" >
+</p><!--l. 208--><p class="noindent" ><img 
+src="Fotos/Serialismo-matematicas-diagrama-2-9.png" alt="PIC"  
+ /></p></div>
+<!--l. 340--><p class="indent" >    Volviendo a las definiciones originales <span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">I,</span><span 
+class="cmmi-10x-x-109">&#x00A0;T,</span><span 
+class="cmmi-10x-x-109">&#x00A0;R,</span><span 
+class="cmmi-10x-x-109">&#x00A0;C</span><span 
+class="cmsy-10x-x-109">}</span>, su estructura interna es bien distinta. El
+problema de <span 
+class="cmmi-10x-x-109">I </span>es que depende de la permutación escogida, por lo que a veces tiene unas propiedades y a
+veces otras. En cambio, la definición de <span 
+class="cmmi-10x-x-109">V </span>con respecto a <span 
+class="cmmi-10x-x-109">R </span>es meramente estética: ya que no depende de
+la permutación, su conmutatividad se mantiene invariante.
+</p><!--l. 342--><p class="indent" >    Viendo cómo conmutan los elementos de este sistema se aprecia la dificultad de <span 
+class="cmmi-10x-x-109">I</span>. Curiosamente, la
+conmutatividad de <span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">I,</span><span 
+class="cmmi-10x-x-109">&#x00A0;R</span><span 
+class="cmsy-10x-x-109">} </span>e <span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">I,</span><span 
+class="cmmi-10x-x-109">&#x00A0;C</span><span 
+class="cmsy-10x-x-109">} </span>se pierde, pero se gana la de <span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">I,</span><span 
+class="cmmi-10x-x-109">&#x00A0;T</span><span 
+class="cmsy-10x-x-109">}</span>. Así, <span 
+class="cmmi-10x-x-109">T </span>conmuta con todo en el
+sistema. Esto muestra una ventaja de la definición de <span 
+class="cmmi-10x-x-109">I</span>.
+</p>
+<div class="center" 
+>
+<!--l. 344--><p class="noindent" >
+</p><!--l. 345--><p class="noindent" ><img 
+src="Fotos/Serialismo-matematicas-diagrama-2-10.png" alt="PIC"  
+ /></p></div>
+<!--l. 368--><p class="indent" >    Los únicos casos en los que podrían conmutar ocurrirían cuando </p>
+                                                                                         
+                                                                                         
+<div class="center" 
+>
+<!--l. 369--><p class="noindent" >
+</p><!--l. 370--><p class="noindent" ><img 
+src="Fotos/Serialismo-matematicas-diagrama-2-12.png" alt="PIC"  
+ /></p></div>
+<!--l. 380--><p class="indent" >    Es decir, cuando la primera y la última nota de la serie original se distancian en 6 semitonos, como es
+el caso de la permutación en la Suite Op. 25:
+</p><!--l. 382--><p class="indent" >
+</p>
+    <center class="math-display" >
+<img 
+src="Serialismo-matematicas-II4x.png" alt="           (                                        )
+              0   1  2  3  4  5  6  7  8  9  10  11
+IR = RI  =   10  11  8  9  6  0  5  2  7  1  3   4
+" class="math-display"  /></center>
+<div class="center" 
+>
+<!--l. 391--><p class="noindent" >
+</p><!--l. 392--><p class="noindent" ><img 
+src="Fotos/5.png" alt="PIC"  
+ /></p></div>
+<div class="center" 
+>
+<!--l. 404--><p class="noindent" >
+</p><!--l. 405--><p class="noindent" ><img 
+src="Fotos/Serialismo-matematicas-diagrama-2-11.png" alt="PIC"  
+ /></p></div>
+<!--l. 427--><p class="indent" >    Los únicos casos en los que podrían conmutar son cuando
+</p>
+                                                                                         
+                                                                                         
+<div class="center" 
+>
+<!--l. 429--><p class="noindent" >
+</p><!--l. 430--><p class="noindent" ><img 
+src="Fotos/Serialismo-matematicas-diagrama-2-14.png" alt="PIC"  
+ /></p></div>
+<!--l. 442--><p class="indent" >    Es decir, cuando la primera y la segunda nota de la serie original se distancian en 6 semitonos.
+</p><!--l. 444--><p class="indent" >    Si se echan las cuentas con <span 
+class="cmmi-10x-x-109">C</span><sup><span 
+class="cmmi-8">k</span></sup> en vez de con <span 
+class="cmmi-10x-x-109">C</span><sup><span 
+class="cmr-8">1</span></sup>, pueden conmutar si <span 
+class="cmmi-10x-x-109">&#x03C3;</span>(<span 
+class="cmmi-10x-x-109">k</span>) <span 
+class="cmsy-10x-x-109">-</span><span 
+class="cmmi-10x-x-109">&#x03C3;</span>(0) = 6. Como <span 
+class="cmmi-10x-x-109">&#x03C3; </span>es una
+permutación, devuelve todos los valores de 0 a 11 y solamente una vez cada uno. Por tanto, también
+devuelve 6 + <span 
+class="cmmi-10x-x-109">&#x03C3;</span>(0), así que <span 
+class="cmbx-10x-x-109">siempre existe un </span><span 
+class="cmbx-10x-x-109">único </span><span 
+class="cmmi-10x-x-109">k </span><span 
+class="cmbx-10x-x-109">para el que </span><span 
+class="cmmi-10x-x-109">I </span><span 
+class="cmbx-10x-x-109">y </span><span 
+class="cmmi-10x-x-109">C</span><sup><span 
+class="cmmi-8">k</span></sup> <span 
+class="cmbx-10x-x-109">conmutan</span>. En el
+caso de la permutación de la Suite Op. 25, como <span 
+class="cmmi-10x-x-109">&#x03C3;</span>(0) = 4 hay que encontrar el <span 
+class="cmmi-10x-x-109">k </span>para el
+que <span 
+class="cmmi-10x-x-109">&#x03C3;</span>(<span 
+class="cmmi-10x-x-109">k</span>) = 4 + 6 = 10. En este caso, <span 
+class="cmmi-10x-x-109">k </span>= 11, pero depende por completo de la permutación
+original.<br 
+class="newline" />
+</p>
+<div class="center" 
+>
+<!--l. 446--><p class="noindent" >
+</p><!--l. 447--><p class="noindent" ><img 
+src="Fotos/Serialismo-matematicas-diagrama-2-13.png" alt="PIC"  
+ /></p></div>
+<!--l. 1--><p class="noindent" >
+</p>
+    <h3 class="sectionHead"><span class="titlemark">3   </span> <a 
+ id="x1-70003"></a>El surgimiento del serialismo integral</h3>
+<!--l. 2--><p class="noindent" >
+</p>
+    <h4 class="subsectionHead"><span class="titlemark">3.1   </span> <a 
+ id="x1-80003.1"></a>Alban Berg y Anton Webern: la Segunda Escuela de Viena</h4>
+<!--l. 4--><p class="noindent" >Además de Schoenberg, hubo dos compositores más que contribuyeron al desarrollo del dodecafonismo y
+que demostraron con sus diferentes estilos la versatilidad del sistema. Éstos fueron los discípulos de
+Schoenberg: Alban Berg y Anton Webern.
+</p><!--l. 6--><p class="indent" >    El maestro y sus dos alumnos formaron la autodenominada Segunda Escuela de Viena, llamada así
+en honor a los miembros de la Primera: Haydn, Mozart y Beethoven. Aparte del hecho de que
+Schoenberg, Berg y Webern nacieron y se formaron en Viena, el nombre también simboliza su
+                                                                                         
+                                                                                         
+autoproclamación como herederos legítimos de la tradición musical alemana proveniente del siglo
+XVIII.
+</p><!--l. 8--><p class="indent" >    La Segunda Escuela de Viena formó parte de las vanguardias artísticas europeas, opuestas a la
+tendencia neoclásica de Stravinsky o Prokofiev<span 
+class="cmbx-10x-x-109">[</span><span class="marginpar"><span 
+class="cmbx-10x-x-109">xxx</span></span><span 
+class="cmbx-10x-x-109">Aqu</span><span 
+class="cmbx-10x-x-109">í tengo una pega. Stravinsky tuvo un</span>
+<span 
+class="cmbx-10x-x-109">periodo neocl</span><span 
+class="cmbx-10x-x-109">ásico, pero transit</span><span 
+class="cmbx-10x-x-109">ó por otros periodos tambi</span><span 
+class="cmbx-10x-x-109">én, como su periodo ruso o</span>
+<span 
+class="cmbx-10x-x-109">incluso el serialista. Sugiero reformular esto para que no d</span><span 
+class="cmbx-10x-x-109">é la sensaci</span><span 
+class="cmbx-10x-x-109">ón de que</span>
+<span 
+class="cmbx-10x-x-109">Stravinsky fue solo neocl</span><span 
+class="cmbx-10x-x-109">ásico.]</span>. Los tres integrantes siguieron carreras compositivas similares en
+cuanto a estilo y concepción artística: una época tonal, una ruptura atonal y un desarrollo
+dodecafónico.
+</p><!--l. 10--><p class="indent" >    Con el ascenso del nazismo, Schoenberg, que era judío, se vio obligado a exiliarse a Estados Unidos.
+Sus discípulos se quedaron en Austria, pero pasaron penurias económicas debido a la censura
+impuesta por el gobierno: la música dodecafónica se descalificó como <span 
+class="cmti-10x-x-109">Entartete Kunst</span>&#x00A0;<span class="cite">[<a 
+href="#Xentartete">5</a>]</span> (&#8220;arte
+degenerado&#8221;).
+</p>
+    <hr class="figure" /><div class="figure" 
+>
+                                                                                         
+                                                                                         
+<a 
+ id="x1-80011"></a>
+                                                                                         
+                                                                                         
+<div class="center" 
+>
+<!--l. 13--><p class="noindent" >
+
+</p><!--l. 14--><p class="noindent" ><img 
+src="Fotos/Alban_Berg.jpg" alt="PIC"  
+ /><br />
+<br /> </p><div class="caption" 
+><span class="id">Figura&#x00A0;1: </span><span  
+class="content">Alban Berg (1885&#8212;1935); figura tomada de <a 
+href="https://www.dw.com/pt-br/berg-concerto-para-violino/a-4219906" >Deutsche Welle</a>.</span></div><!--tex4ht:label?: x1-80011 -->
+</div>
+                                                                                         
+                                                                                         
+    </div><hr class="endfigure" />
+<!--l. 19--><p class="indent" >    Alban Berg se centró en la efusión emocional y el interés por lo humano, utilizando el método
+dodecafónico libremente y acercándose a formatos tonales. Su etapa atonal fue especialmente relevante, ya
+que compuso entonces su primera obra dramática, <span 
+class="cmti-10x-x-109">Wozzeck </span>(1925). Es una ópera basada en la pieza
+teatral de Georg Büchner, en la cual Berg plasmó parte de sus propias experiencias como soldado en la
+Primera Guerra Mundial. Su segunda ópera, <a 
+href="https://www.youtube.com/watch?v=bLuLsFjnCjI" >Lulú</a>, quedó inconclusa debido a su muerte por septicemia en
+1935, a los 50 años. A continuación el lector podrá escuchar parte de <span 
+class="cmti-10x-x-109">Und ist kein Betrug</span>, la primera
+escena del tercer acto de Wozzeck:
+</p><!--l. 22--><p class="indent" >    <a 
+href="https://www.youtube.com/watch?v=6o8lwrXiXxo" class="url" ><span 
+class="cmtt-10x-x-109">https://www.youtube.com/watch?v=6o8lwrXiXxo</span></a>
+</p><!--l. 24--><p class="indent" >    Anton Webern fue un compositor más riguroso en cuanto a las formas, siempre leal al sistema
+dodecafónico y a su maestro. Se deleitaba en los procedimientos formales más sutiles, aquellos que solo
+podían ser descubiertos al estudiar detenidamente la obra. Esto quedó reflejado en su dodecafónico
+Concierto para 9 instrumentos, op. 24 (1934), cuya serie está construida por segmentos derivados de las
+tres primeras notas de la obra. Además, muestra tendencias a asignar duraciones, timbres y articulaciones
+a segmentos aislados, lo que más tarde inspiraría el serialismo integral. A continuación el lector podrá
+escuchar el Concierto op. 24:
+</p><!--l. 27--><p class="indent" >    <a 
+href="https://www.youtube.com/watch?v=BqFetTU05wE" class="url" ><span 
+class="cmtt-10x-x-109">https://www.youtube.com/watch?v=BqFetTU05wE</span></a>
+</p><!--l. 29--><p class="indent" >    Durante la ocupación de Viena, Webern salió de su casa una noche tras el toque de queda, y
+un soldado norteamericano, probablemente en estado de embriaguez, lo mató a tiros. Así,
+Schoenberg, el maestro y el más mayor de los tres, sobrevivió a sus dos alumnos exiliado en Estados
+Unidos.
+</p>
+    <h4 class="subsectionHead"><span class="titlemark">3.2   </span> <a 
+ id="x1-90003.2"></a>La escuela de Darmstadt</h4>
+<!--l. 32--><p class="noindent" >Tras la Segunda Guerra Mundial, el mundo artístico estaba totalmente destruido. La violencia, la censura
+y la incomunicación habían impedido cualquier posible desarrollo creativo, y los artistas de la generación
+anterior se habían aislado, exiliado o habían fallecido. Volver a construir los pilares del arte era el
+cometido de la nueva generación de artistas, quienes compartían la sensación de que el mundo había
+renacido tras la tragedia.
+</p><!--l. 34--><p class="indent" >    En 1946 se crearon los Cursos de Verano de Darmstadt, fundados por Wolfgang Steinecke y
+patrocinados por las fuerzas americanas, con el objetivo de retomar la actividad musical en la Alemania
+de la posguerra. Se centraron en dar a conocer las técnicas compositivas de las generaciones anteriores.
+Aunque el primer año estuvo enfocado en el movimiento neoclásico, fue en los años posteriores cuando se
+desarrolló un mayor interés por las técnicas serialistas.
+</p><!--l. 36--><p class="indent" >    Los cursos resultaron en la aparición de una nueva escuela de compositores cuya finalidad artística
+era crear un lenguaje musical distinto y alejado de la tradición para, de esta forma, obtener una mayor
+libertad compositiva. Como dijo Karlheinz Stockhausen:
+</p><!--l. 38--><p class="indent" >
+                                                                                         
+                                                                                         
+     </p><div class="quote">
+     <!--l. 39--><p class="noindent" ><span 
+class="cmti-10x-x-109">Los  m</span><span 
+class="cmti-10x-x-109">étodos  nuevos  cambian  la  experiencia,  y  las  experiencias  nuevas  cambian  al</span>
+     <span 
+class="cmti-10x-x-109">hombre.</span><br 
+class="newline" /><span 
+class="cmr-9">Stockhausen en el documental autobiogr</span><span 
+class="cmr-9">áfico </span><span 
+class="cmti-9">Tuning In</span><span 
+class="cmr-9">&#x00A0;</span><span class="cite"><span 
+class="cmr-9">[</span><a 
+href="#Xstockhausen"><span 
+class="cmr-9">4</span></a><span 
+class="cmr-9">]</span></span><span 
+class="cmr-9">.</span></p></div>
+<!--l. 43--><p class="indent" >    Esta escuela tomó el nombre de la ciudad donde se realizaban los cursos: se llamó la Escuela de
+Darmstadt. El término fue acuñado por el compositor Luigi Nono en una de sus clases magistrales en
+1957, y con él se describía a sí mismo y a sus compañeros compositores: Pierre Boulez, Karlheinz
+Stockhausen y Bruno Maderna. Para estos compositores, la tradición artística estaba demasiado
+relacionada con los fracasos políticos y las penurias sociales pasadas, y precisamente por ello creían
+necesario romper con todos los vínculos heredados. Sin embargo, para crear aquel nuevo lenguaje no
+tomaron como referencia el dodecafonismo de Schoenberg, ya que él veía su sistema como parte de la
+tradición musical, como un elemento más en la evolución de la música. Se centraron, en cambio, en la
+formalidad y abstracción del serialismo de Anton Webern, y desarrollaron a partir de sus métodos el
+denominado <span 
+class="cmbx-10x-x-109">serialismo integral</span>.
+</p>
+    <hr class="figure" /><div class="figure" 
+>
+                                                                                         
+                                                                                         
+<a 
+ id="x1-90012"></a>
+                                                                                         
+                                                                                         
+<div class="center" 
+>
+<!--l. 47--><p class="noindent" >
+
+</p><!--l. 48--><p class="noindent" ><img 
+src="Fotos/Anton_Webern.jpg" alt="PIC"  
+ /><br />
+<br /> </p><div class="caption" 
+><span class="id">Figura&#x00A0;2: </span><span  
+class="content">Anton Webern (1883&#8212;1945); figura tomada de <a 
+href="https://www.francemusique.fr/personne/anton-webern" >France Musique</a>.</span></div><!--tex4ht:label?: x1-90012 -->
+</div>
+                                                                                         
+                                                                                         
+    </div><hr class="endfigure" />
+<!--l. 53--><p class="indent" >    Para la Escuela de Viena el estilo compositivo de Webern era tan solo un posible enfoque del
+amplio abanico que abarcaba el dodecafonismo, pero en Darmstadt se consideró un avance de
+este.
+</p><!--l. 55--><p class="indent" >    El <span 
+class="cmbx-10x-x-109">serialismo integral </span>es un sistema de composición musical que predetermina los materiales
+compositivos &#8212;la melodía, la armonía, el ritmo, el timbre&#8212;&#x00A0;a partir de la ordenación serial de los
+diferentes parámetros musicales: alturas, intensidades, duraciones, ataques o instrumentos, entre
+otros.
+</p><!--l. 57--><p class="indent" >    Es un desarrollo del serialismo dodecafónico de Schoenberg, que serializa solamente las alturas, hacia
+los demás parámetros sonoros. Tiene, por tanto, un alto grado de planificación pre-composicional: se
+pretende que la determinación compositiva sea absoluta; y se tiende al automatismo del arte y sus formas,
+alejándolo de cualquier evocación decimonónica.
+</p><!--l. 59--><p class="indent" >    Desde sus comienzos, el serialismo integral suscitó numerosas críticas, incluso desde el propio
+colectivo vanguardista. Una de ellas fue la falta de elección del intérprete a la hora de transmitir la obra.
+El intérprete serialista debe reproducir con total exactitud cada detalle de la partitura, y, por tanto, no
+puede aportar carácter alguno.
+</p><!--l. 61--><p class="indent" >    Otra de las críticas más extendidas fue la incapacidad para interpretar estas obras correctamente
+debido a su complejidad técnica. Además, los detalles que precisamente las hacen complejas son, en su
+mayor parte, inapreciables por parte del oyente.
+</p>
+    <h4 class="subsectionHead"><span class="titlemark">3.3   </span> <a 
+ id="x1-100003.3"></a>Pierre Boulez</h4>
+<!--l. 65--><p class="noindent" >El compositor que creó y utilizó por primera vez el serialismo integral, además de instruirlo y difundirlo a
+los demás compositores de Darmstadt, fue el compositor francés Pierre Boulez. Otros músicos habían
+compuesto obras con tendencias serialistas y elementos predeterminados, como Olivier Messiaen en <a 
+href="https://www.youtube.com/watch?v=Rz_KRRqvID4" ><span 
+class="cmti-10x-x-109">Mode</span>
+<span 
+class="cmti-10x-x-109">de valeurs et d&#8217;intensit</span><span 
+class="cmti-10x-x-109">és</span></a>, pero fue Boulez quien sentó sus bases y su técnica. De hecho, los compositores
+precedentes influyeron prominentemente en la música de Boulez gracias a las clases impartidas en los
+cursos de Darmstadt.
+</p>
+    <hr class="figure" /><div class="figure" 
+>
+                                                                                         
+                                                                                         
+<a 
+ id="x1-100013"></a>
+                                                                                         
+                                                                                         
+<div class="center" 
+>
+<!--l. 68--><p class="noindent" >
+
+</p><!--l. 69--><p class="noindent" ><img 
+src="Fotos/Pierre_Boulez.jpg" alt="PIC"  
+ /><br />
+<br /> </p><div class="caption" 
+><span class="id">Figura&#x00A0;3: </span><span  
+class="content">Pierre Boulez (1925&#8212;2016); figura tomada de <a 
+href="http://kultur-im-radio.de/blog/pierre-boulez-ich-bin-ein-wiener" >Kultur im Radio</a>.</span></div><!--tex4ht:label?: x1-100013 -->
+</div>
+                                                                                         
+                                                                                         
+    </div><hr class="endfigure" />
+<!--l. 74--><p class="indent" >    Boulez consideraba necesaria y evidente la extensión de elementos a predeterminar más allá de la
+melodía, y le parecía incoherente el sistema dodecafónico de Schoenberg, que para él estaba incompleto.
+En su controvertido ensayo <span 
+class="cmti-10x-x-109">Schoenberg ha muerto</span>&#x00A0;<span class="cite">[<a 
+href="#Xboulez">1</a>]</span>, publicado un año después de la muerte del
+compositor, comentó:
+     </p><div class="quote">
+     <!--l. 76--><p class="noindent" ><span 
+class="cmti-10x-x-109">En primer lugar, la exploraci</span><span 
+class="cmti-10x-x-109">ón del campo serial ha sido conducida unilateralmente: all</span><span 
+class="cmti-10x-x-109">í</span>
+     <span 
+class="cmti-10x-x-109">falta el plano r</span><span 
+class="cmti-10x-x-109">ítmico, e incluso el plano sonoro propiamente dicho: las intensidades y</span>
+     <span 
+class="cmti-10x-x-109">los ataques. </span>[<span 
+class="cmmi-10x-x-109">&#x2026;</span>]
+     </p><!--l. 78--><p class="noindent" ><span 
+class="cmti-10x-x-109">Pero  la  causa  esencial  de  su  fracaso  reside  en  el  desconocimiento  profundo  de  las</span>
+     <span 
+class="cmti-10x-x-109">FUNCIONES seriales propiamente dichas, las funciones engendradas por el principio</span>
+     <span 
+class="cmti-10x-x-109">mismo de la serie.</span></p></div>
+<!--l. 80--><p class="indent" >    Es decir, que para ampliar el concepto de serialismo se debía primeramente conocer el fundamento
+matemático de las series y sus funciones transformativas. Además de ser músico y compositor, Boulez
+había estudiado matemáticas, lo que le llevó a querer analizar matemáticamente el sistema compositivo y
+generalizarlo para series de longitudes arbitrarias. Para él, el serialismo no debía ser un mero recurso
+compositivo, sino la ley que rige todos los elementos de la obra. De hecho, más adelante en su ensayo
+declaró:
+     </p><div class="quote">
+     <!--l. 82--><p class="noindent" >[&#x2026;] <span 
+class="cmti-10x-x-109">desde el descubrimiento de la Escuela de Viena, todo compositor alejado de los</span>
+     <span 
+class="cmti-10x-x-109">experimentos seriales ha resultado in</span><span 
+class="cmti-10x-x-109">útil.</span></p></div>
+<!--l. 84--><p class="indent" >    Su obra <span 
+class="cmti-10x-x-109">Structures I </span>(1952), para dos pianos, fue compuesta siguiendo las técnicas de serialismo
+integral: tiene series de doce alturas, doce ataques, doce duraciones y doce tipos dinámicos,
+aunque más tarde reduciría algunas a diez. A continuación el lector podrá escuchar Structures
+I:
+</p><!--l. 86--><p class="indent" >    <a 
+href="https://www.youtube.com/watch?v=QUF3XPTIlJo" class="url" ><span 
+class="cmtt-10x-x-109">https://www.youtube.com/watch?v=QUF3XPTIlJo</span></a>
+</p>
+    <h3 class="likesectionHead"><a 
+ id="x1-110003.3"></a>Bibliografía</h3>
+<!--l. 1--><p class="noindent" >
+   </p><div class="thebibliography">
+                                                                                         
+                                                                                         
+   <p class="bibitem" ><span class="biblabel">
+ [1]<span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span><a 
+ id="Xboulez"></a>Pierre                                                                                                      Boulez.
+   Schoenberg is dead.  <a 
+href="http://www.ubu.com/papers/Boulez-Schoenberg+Is+Dead.pdf" class="url" ><span 
+class="cmtt-10x-x-109">http://www.ubu.com/papers/Boulez-Schoenberg+Is+Dead.pdf</span></a>, 1952.
+   Publicado en la revista <span 
+class="cmti-10x-x-109">The Score </span>originalmente; consultado en agosto de 2019.
+   </p>
+   <p class="bibitem" ><span class="biblabel">
+ [2]<span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span><a 
+ id="Xcyclic"></a>David&#x00A0;John Headlam. <span 
+class="cmti-10x-x-109">The Music of Alban Berg</span>. Composers of the twentieth century. Yale
+   University Press, 1996. <a 
+href="https://books.google.es/books?id=0bTkoNwLb5AC" class="url" ><span 
+class="cmtt-10x-x-109">https://books.google.es/books?id=0bTkoNwLb5AC</span></a>.
+   </p>
+   <p class="bibitem" ><span class="biblabel">
+ [3]<span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span><a 
+ id="Xhunter"></a>David  J.&#x00A0;Hunter  and  Paul  T.&#x00A0;von  Hippel.     How  Rare  Is  Symmetry  in  Musical
+   12-Tone   Rows?         <span 
+class="cmti-10x-x-109">The   American   Mathematical   Monthly</span>,   110:124&#8211;132,   02   2003.
+   <a 
+href="https://www.researchgate.net/publication/322881117_How_Rare_Is_Symmetry_in_Musical_12-Tone_Rows" class="url" ><span 
+class="cmtt-10x-x-109">https://www.researchgate.net/publication/322881117_How_Rare_Is_Symmetry_in_Musical_12-Tone_Rows</span></a>.
+   </p>
+   <p class="bibitem" ><span class="biblabel">
+ [4]<span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span><a 
+ id="Xstockhausen"></a>Robin    Maconie.          Tuning    In    &#8212;&#x00A0;A    Film    about    Karlheinz    Stockhausen.
+   <a 
+href="https://soulvlog.blogspot.com/2018/12/tuning-in-karlheinz-stockhausen-maconie.html" class="url" ><span 
+class="cmtt-10x-x-109">https://soulvlog.blogspot.com/2018/12/tuning-in-karlheinz-stockhausen-maconie.html</span></a>,
+   1981. Producido por Barrie Gavin para la serie de BBC &#8220;Horizon&#8221;.
+   </p>
+   <p class="bibitem" ><span class="biblabel">
+ [5]<span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span><a 
+ id="Xentartete"></a>Vicent  Minguet.     Las  reglas  de  la  música  y  las  leyes  del  Estado:  la  &#8220;Entartete
+   Musik&#8221;  y  el  Tercer  Reich.    <span 
+class="cmti-10x-x-109">Quodlibet:  revista  de  especializaci</span><span 
+class="cmti-10x-x-109">ón  musical</span>,  69:9&#8211;29,  2018.
+   <a 
+href="https://ebuah.uah.es/dspace/handle/10017/38020" class="url" ><span 
+class="cmtt-10x-x-109">https://ebuah.uah.es/dspace/handle/10017/38020</span></a>.
+   </p>
+   <p class="bibitem" ><span class="biblabel">
+ [6]<span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span><a 
+ id="Xperle"></a>George   Perle.       <span 
+class="cmti-10x-x-109">Twelve-tone   Tonality</span>.       University   of   California   Press,   1977.
+   <a 
+href="https://books.google.es/books?id=Vw3IeMkt8KAC" class="url" ><span 
+class="cmtt-10x-x-109">https://books.google.es/books?id=Vw3IeMkt8KAC</span></a>.
+   </p>
+   <p class="bibitem" ><span class="biblabel">
+ [7]<span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span><a 
+ id="Xcelia1"></a>Celia Rubio&#x00A0;Madrigal. Serialismo y matemáticas - I. <span 
+class="cmti-10x-x-109">Divulgamat</span>, septiembre de 2019. <a 
+href="url" class="url" ><span 
+class="cmtt-10x-x-109">url</span></a>.
+</p>
+   </div>
+     
+</body></html> 
+
+                                                                                         
+
+
