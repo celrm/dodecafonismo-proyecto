@@ -1,15 +1,16 @@
 \section{Escalas y funciones del experimento}\label{ch:escalas}	
 	\subsection{Escalas interválicas, escalas y funciones}
 	
-		Una \textbf{escala interválica} es una secuencia ordenada de números naturales -- una secuencia de intervalos entre notas -- tales que la suma de todos ellos da 12. Así solo se consideran válidas las escalas equivalentes octava a octava: todos los intervalos de la escala deben sumar el número de semitonos de una octava. Esto debe ocurrir para poder considerar transformaciones de la escala cromática en escalas menores, aunque es generalizable a cualquier longitud. Diremos entonces que la escala cromática es la \textbf{súper-escala} de las \textbf{sub-escalas} con las que trabajaremos. Por ejemplo, la escala diatónica jónica (o escala mayor) tiene como secuencia (2, 2, 1, 2, 2, 2, 1).
+		Una \textbf{escala interválica} es una secuencia ordenada de números naturales -- una secuencia de intervalos entre notas -- tales que la suma de todos ellos da 12. Así solo consideramos válidas las escalas equivalentes octava a octava%: todos los intervalos de la escala deben sumar el número de semitonos de una octava
+		. Esto debe ocurrir para poder considerar transformaciones de la escala cromática en escalas menores, aunque es generalizable a cualquier longitud. Diremos entonces que la escala cromática es la \textbf{súper-escala} de las \textbf{sub-escalas} con las que trabajaremos. Por ejemplo, la escala diatónica jónica (o escala mayor) tiene como secuencia (2, 2, 1, 2, 2, 2, 1).
 		
 		Dada una escala interválica de longitud L y una nota fija inicial, la secuencia de intervalos se convierte en una secuencia de notas de longitud L+1. Se construye comenzando por la nota inicial y sumando cada intervalo para conseguir la nota siguiente.
 		
 		Con la escala mayor y la nota Re se consigue (Re, Mi, Fa$\#$, Sol, La, Si, Do$\#$, Re), ya que es equivalente a (2, 2+\textbf{2}=4, 4+\textbf{2}=6, 6+\textbf{1}=7, 7+\textbf{2}=9, 9+\textbf{2}=11, 11+\textbf{2}=13, 13+\textbf{1}=14). Por construcción, la última nota debe ser equivalente a la primera, ya que en el último paso habremos sumado a la nota inicial todos los términos de la secuencia interválica, y por definición suman 12.
 		
-		De esta forma, se puede definir una \textbf{escala-\textit{k}} como el conjunto de notas generadas por una escala interválica desde la nota $k$. Por ejemplo, el conjunto anterior sería la escala-2 mayor; es decir, la escala de Re mayor. Una escala generada por una secuencia de intervalos con longitud L tiene L notas, ya que como la última es repetida no hay por qué considerarla. La longitud $\text{L}\leq 12$, ya que una escala-\textit{k} definida de esta forma siempre es un subconjunto de la escala cromática: $E_k\subseteq\mathbb{Z}/(12)$. Al generalizarlo a cualquier súper-escala, habría que considerar las notas distintas según su escala o formular otras definiciones más adecuadas.
+		De esta forma, se puede definir una \textbf{escala-\textit{k}} como el conjunto de notas generadas por una escala interválica desde la nota $k$. Por ejemplo, el conjunto anterior sería la escala-2 mayor; es decir, la escala de Re mayor. Una escala generada por una secuencia de intervalos con longitud L tiene L notas, ya que como la última es repetida no hay por qué considerarla. Su longitud $\text{L}\leq 12$, ya que una escala-\textit{k} definida de esta forma siempre es un subconjunto de la escala cromática: $E_k\subseteq\mathbb{Z}/(12)$. Al generalizarlo a cualquier súper-escala, habría que considerar las notas distintas según su escala o formular otras definiciones más adecuadas.
 		
-		Una \textbf{función a una escala-\textit{k}} es una función $f$ que transforma cada nota de la escala cromática a un valor de la escala $E_k$. Entonces $f : \mathbb{Z}/(12) \rightarrow E_k$ reduce las notas de una melodía a solamente la escala escogida. Las funciones a escalas se representan de la siguiente manera, con la primera fila representando el dominio de $f$ (la escala cromática), la segunda su imagen (la escala $E_k$), y la tercera su secuencia interválica:
+		Una \textbf{función a una escala-\textit{k}} es una función $f$ que transforma cada nota de la escala cromática a un valor de la escala $E_k$. Entonces $f : \mathbb{Z}/(12) \rightarrow E_k^*$ reduce las notas de una melodía a solamente la escala escogida, donde $E_k^*$ está formado por las notas de $E_k$ pero quizás en octavas distintas. Las funciones a escalas se representan de la siguiente manera, con la primera fila representando el dominio de $f$ (la escala cromática), la segunda su imagen (la escala $E_k^*$), y la tercera su secuencia interválica:
 		
 		\[\left.\begin{matrix}
 		0&1&2&\ldots&10&11\\
@@ -17,11 +18,11 @@
 		f(1)-f(0)&f(2)-f(1)&f(3)-f(2)&\ldots&f(11)-f(10)&12+f(0)-f(11)
 		\end{matrix}\right.\]
 		
-		En realidad, la $k$ de la escala-$k$ no es especialmente relevante, porque una escala-$k+1$ es la transportada de una $k$. Se puede escoger sin pérdida de generalidad $k=0$ a partir de ahora, y así todas comenzarán en Do.
+%		En realidad, la $k$ de la escala-$k$ no es especialmente relevante, porque una escala-$(k+1)$ es la transportada de una $k$. Se puede escoger sin pérdida de generalidad $k=0$ a partir de ahora, y así todas comenzarán en Do.
 		
 		El proceso verdaderamente interesante está en averiguar, dada una escala $E$, cuál es la mejor función que transforma melodías cromáticas en melodías en $E$. Estas son las \textbf{funciones \textit{E}-inducidas}.
 		
-		¿Cuáles serán las características de esas funciones óptimas? Deben conservar la estructura serial y deben conservar el parecido con la melodía original.
+		¿Cuáles serán las características de esas funciones óptimas? Deben ser sobreyectivas: si no, la música resultante tendría una escala más reducida de la deseada. Pero además deben conservar la estructura serial y deben conservar el parecido con la melodía original. 
 		
 	\subsection{Funciones bien distribuidas}
 		
@@ -44,48 +45,47 @@
 		c(q+r) + r =
 		c|E| + r = 12$, lo cual se cumple por el algoritmo de la división, que asegura que al dividir 12 entre $|E|$ existen su cociente $c$ y su resto $r\geq0$. $\square$
 		
-		El siguiente gráfico describe, para cada posible $|E|$ en cada fila, la frecuencia óptima de sus elementos. Las columnas representan las frecuencias de los elementos, y los números de dentro son cada $q$ y $r$ (cuando es 0 no se escribe: no hay notas con esa frecuencia).
-	
-		\[\begin{array}{l|rrrrrrrrrrrr}
-		&1&2&3&4&5&6&7&8&9&10&11&12\\\hline
-		1&&&&&&&&&&&&1\\\hline
-		2&&&&&&2\\\hline
-		3&&&&3\\\hline
-		4&&&4\\\hline
-		5&&3&2\\\hline
-		6&&6\\\hline
-		7&2&5\\\hline
-		8&4&4\\\hline
-		9&6&3\\\hline
-		10&8&2\\\hline
-		11&10&1\\\hline
-		12&12&\\
-		\end{array}\]
+		Estas funciones forman parte del numeroso conjunto de elementos musicales de \textbf{máxima regularidad}. Un ejemplo importante de ellos son los ritmos euclídeos \textemdash para más información ver \cite{euclides}.
 		
-%		Si Euclides lo supiese... se sentiría orgulloso. Artículo digital, noviembre de 2009.
-%		\url{http://www.upm.es/sfs/Rectorado/Vicerrectorado%20de%20Investigacion/Oficina%20de%20Transferencia%20de%20Resultados%20de%20Investigacion%20(OTRI)/Divulgacion/documentos/Si_Euclides.pdf}
+%		El siguiente gráfico describe, para cada posible $|E|$ en cada fila, la frecuencia óptima de sus elementos. Las columnas representan las frecuencias de los elementos, y los números de dentro son cada $q$ y $r$ (cuando es 0 no se escribe: no hay notas con esa frecuencia).
+%	
+%		\[\begin{array}{l|rrrrrrrrrrrr}
+%		&1&2&3&4&5&6&7&8&9&10&11&12\\\hline
+%		1&&&&&&&&&&&&1\\\hline
+%		2&&&&&&2\\\hline
+%		3&&&&3\\\hline
+%		4&&&4\\\hline
+%		5&&3&2\\\hline
+%		6&&6\\\hline
+%		7&2&5\\\hline
+%		8&4&4\\\hline
+%		9&6&3\\\hline
+%		10&8&2\\\hline
+%		11&10&1\\\hline
+%		12&12&\\
+%		\end{array}\]
 		
 		
 	\subsection{Funciones E-inducidas}
 		
-		Hay que pedir más requisitos a $f$ para que no solo modifique las notas, sino que además las imágenes se parezcan lo máximo posible a sus preimágenes, a las notas originales.
+		Hay que pedir más requisitos a $f$ para que no solo modifique las notas, sino que además las imágenes se parezcan lo máximo posible a sus preimágenes, a las notas originales. En esencia, lo que se busca es una escala a \textbf{distancia mínima} en cuanto a unos criterios concretos.
 		
-		\begin{enumerate}
-		\item $f$ debe ser sobreyectiva: si no, la música resultante tendría una escala más reducida de la deseada.
+		La manera matemática de formalizar esos criterios es definir una \textbf{métrica} para estas funciones; es decir, una manera de medirlas para poder compararlas, y así encontrar cuál de ellas es la menor.
 		
-		\item $f$ debe ser creciente: si no, las dos notas decrecientes se deberían intercambiar. También se podrá sumar o restar 12 a las notas que lo requieran. La monotonía debe conservarse, además, en todas las octavas, por lo que las funciones deben acabar o por la nota con la que se empieza $+12$ o por una menor a ella.
+%		\begin{enumerate}
+%		\item $f$ debe ser creciente: si no, las dos notas decrecientes se deberían intercambiar. También se podrá sumar o restar 12 a las notas que lo requieran. La monotonía debe conservarse, además, en todas las octavas, por lo que las funciones deben acabar o por la nota con la que se empieza $+12$ o por una menor a ella.
 
-		\item $f$ debe tener el mayor número de puntos fijos posible: las notas que puedan mantenerse estables al aplicar $f$ deben quedarse igual. Existen escalas para las que no se puede tener buena distribución, monotonía creciente y todas sus notas fijas, así que este criterio es menos prioritario. 
+%		\item $f$ debe tener el mayor número de puntos fijos posible: las notas que puedan mantenerse estables al aplicar $f$ deben quedarse igual. Existen escalas para las que no se puede tener buena distribución, monotonía creciente y todas sus notas fijas, así que este criterio es menos prioritario. 
 		
-		Por ejemplo, para la escala \{0, 1, 2\}, si se fijan las tres notas, $f$ empezaría con 0 1 2. Por (2), la nota asociada al 12 debe ser un 12. Entonces los otros tres 1's que faltan no se pueden asignar, ya que después del 2 no puede ir un 1 y antes del 12 no puede ir un 13. Por tanto, $f$ no estaría bien distribuida. La solución es que solo se fijen dos de las tres notas.
+%		Por ejemplo, para la escala \{0, 1, 2\}, si se fijan las tres notas, $f$ empezaría con 0 1 2. Por (2), la nota asociada al 12 debe ser un 12. Entonces los otros tres 1's que faltan no se pueden asignar, ya que después del 2 no puede ir un 1 y antes del 12 no puede ir un 13. Por tanto, $f$ no estaría bien distribuida. La solución es que solo se fijen dos de las tres notas.
 		\[\left.\begin{array}{*{14}c}
 		\text{Cromática}&0&1&2&3&4&5&6&7&8&9&10&11&(12)\\
 		\text{Escala E}&0&1&2&&&\text{\cancel{1}}&&&\text{\cancel{13}}&&&&(12)\\
 		\end{array}\right.\]
 		
-		\item Por último, de entre las $f$ que queden, se escogerán aquellas cuya distancia a la cromática sea menor. Se calculará para todo $i$ la expresión $|f(i)-i|$, y se sumarán todos los resultados. Esa suma será la \textit{puntuación} de dicha $f$. Las funciones con menor puntuación son las funciones de mejor ajuste.
+%		\item Por último, de entre las $f$ que queden, se escogerán aquellas cuya distancia a la cromática sea menor. Se calculará para todo $i$ la expresión $|f(i)-i|$, y se sumarán todos los resultados. Esa suma será la \textit{puntuación} de dicha $f$. Las funciones con menor puntuación son las funciones de mejor ajuste.
 		
-		\end{enumerate}
+%		\end{enumerate}
 		
 		Si aún quedan varias $f$ que cumplen todos los requisitos, se escogerá la más grave, la menor de ellas. De esta manera, dada cualquier escala E, la función E-inducida queda unívocamente determinada.
 		

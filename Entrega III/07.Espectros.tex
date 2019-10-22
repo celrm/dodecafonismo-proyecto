@@ -1,9 +1,9 @@
 \section{Conteo de espectros seriales}\label{ch:espectros}
-	\subsection{Espectros de las funciones \{I, T, R\}}
-		\label{espec}
+	\subsection{Espectros de las funciones $\{I,\ T,\ R\}$}
+		\label{s:itr}
 		Es interesante conocer el número de espectros seriales distintos que un compositor puede escoger. Al fin y al cabo, es irrelevante qué serie se escoge como la original dentro de su espectro serial, ya que produce el mismo material compositivo que cualquiera de su mismo espectro.
 		
-		Para calcular el número de espectros seriales se redefinirán las funciones transformativas para una longitud serial arbitraria, $n$, que será mayor que 2. Para $n=0,\ 1$ y 2 se realizará el cálculo en el apartado \ref{monodi}.
+		Para calcular el número de espectros seriales se redefinirán las funciones transformativas para una longitud serial arbitraria, $n$, que será mayor que 2. Para $n=0,\ 1$ y 2 se realizará el cálculo en el apartado \ref{s:trivcase}.
 	
 		Además, como las transposiciones siempre son distintas entre sí, siempre pertenecen al mismo espectro. Se tomarán a partir de ahora todas ellas como equivalentes, de manera que solo se necesita hacer el cálculo para $\{I,\ R\}$.
 		
@@ -21,17 +21,18 @@
 		Como los estabilizadores son subgrupos, por el teorema de Lagrange su tamaño debe ser divisor del tamaño del grupo total. Entonces se pueden agrupar los estabilizadores por sus tamaños: 1, 2 o 4, y así calcular $\sum|{Stab}(\sigma)|$ agrupando todas las permutaciones con igual tamaño de estabilizador. Si $\#\sigma_i$ es el número de permutaciones cuyos estabilizadores tienen tamaño $i$:		
 		\[\sum_{\sigma\in{S}_n}|{Stab}(\sigma)|=1\cdot(\#\sigma_1)+2\cdot(\#\sigma_2)+4\cdot(\#\sigma_4)\]
 	
-		Primero, se ha de ver que una permutación nunca va a ser igual ni equivalente mediante transposiciones a su inversa.\label{inversano}
-			\begin{align*}
-			-\sigma(m)&\equiv\sigma(m)\Longleftrightarrow\\
-			0&\equiv2\sigma(m)\Longleftrightarrow\\
-			n&\equiv2\sigma(m)\Longleftrightarrow\\
-			\frac{n}{2}&\equiv\sigma(m)
-			\end{align*}
+		Primero, se ha de ver que una permutación nunca va a ser igual ni equivalente mediante transposiciones a su inversa.
+
+		\begin{align*}
+		-\sigma(m)&\equiv\sigma(m)\Longleftrightarrow\\
+		0&\equiv2\sigma(m)\Longleftrightarrow\\
+		n&\equiv2\sigma(m)\Longleftrightarrow\\
+		\frac{n}{2}&\equiv\sigma(m)
+		\end{align*}
 		
 		Así, $\sigma(m)$ sería constante para todo $m\in \mathbb{Z} / (n)$, lo cual es imposible. Esto implica que ninguna permutación va a tener a $I$ en su estabilizador, por lo que $\#\sigma_4=0$. Queda entonces calcular cuántas permutaciones son equivalentes a su retrogradación y cuántas a su retrogradación inversa. La suma de ambas dará $\#\sigma_2$.
 	
-	\subsubsection[Elementos estables mediante $R$]{Elementos estables mediante $\bm{R}$}
+	\subsubsection[Elementos estables mediante $R$]{Elementos estables mediante ${R}$}
 		Las permutaciones que coinciden con alguna transposición de su retrogradación cumplen, para $\gamma$ constante:
 		
 		\hspace*{8.5\bigskipamount} $\gamma+\sigma(m) = {R}(m) = \sigma(-1-m)$
@@ -54,7 +55,7 @@
 		
 		Por definición, si $n$ es par $n!!=n(n-2)(n-4)\ldots4\cdot2$ y si $n$ es impar $n!!=n(n-2)(n-4)\ldots3\cdot1$.
 
-	\subsubsection[Elementos estables mediante $RI$]{Elementos estables mediante $\bm{RI}$}
+	\subsubsection[Elementos estables mediante $RI$]{Elementos estables mediante ${RI}$}
 		Las permutaciones que coinciden con alguna transposición de su retrogradación inversa cumplen, para un $\gamma$ constante:
 		\[\sigma(m)={RI}(\sigma(m))+\gamma=-\sigma(-1-m)+\gamma\]
 		\[\gamma=\sigma(m)+\sigma(-1-m)\]
@@ -105,9 +106,9 @@
 		Así, con la fórmula para $n$ impar, se obtiene que hay 192 espectros seriales con series de longitud 7.
 	
 	
-	\subsection[Espectros del grupo $D_n\times D_n$]{Espectros del grupo $\bm{D_n\times D_n}$}
+	\subsection{Espectros del grupo ${D_n\times D_n}$}\label{s:stvc}
 	
-		Este apartado es una explicación detallada del artículo \cite{polygons}. La secuencia de números dada por las fórmulas que obtendremos se encuentra en la OEIS: \url{https://oeis.org/A000940}.
+		Este apartado es una explicación detallada del artículo \cite{polygons} y aplicada al caso musical. La secuencia de números dada por las fórmulas que obtendremos se encuentra en la OEIS: \url{https://oeis.org/A000940}.
 	
 		\begin{figure}[h]
 			\begin{center}
@@ -124,7 +125,7 @@
 		Ahora hay que averiguar para cada elemento de ${D}_{n}\times{D}_{n}$ cuántas series estabiliza. Por ejemplo, trivialmente no hay permutaciones estables mediante $C$ y $V$ solamente.
 		
 		
-		\subsubsection[Elementos estables mediante $T$]{Elementos estables mediante $\bm{T}$}
+		\subsubsection[Elementos estables mediante $T$]{Elementos estables mediante ${T}$}
 		
 		Los elementos estables mediante $T^{k}$ son a los que, tras aplicar una rotación de $\uptheta_{k}=\frac{2\pi k}{n}$, para $1\leq k\leq n$, quedan igual. Por tanto, los sumandos que aportan a la suma total son $\sum\limits_{k=1}^{n}{Fij}(\uptheta_{k})$.
 		
@@ -149,7 +150,8 @@
 		Por ejemplo, si $d=2$ y $n=8$, supongamos que escogemos el punto 0$^{(0)}$ como el primero. Después, si cogiéramos alguno de los puntos 0$^{(*)}$ luego no podríamos tener simetría al rotarlo un ángulo de $\uptheta_2$. Entonces hay que escoger alguno de los 1$^{(*)}$. Supongamos que es 1$^{(1)}$. En este ejemplo nuestro \textit{ciclo} quedaría de la siguiente manera:
 		
 %		\begin{figure}[h]
-			\begin{tikzpicture}
+			\begin{center}
+				\begin{tikzpicture}
 			\node [draw,circle,inner sep=0,minimum height=2cm] at (0,0) {};
 			\foreach\y in {0,1,2,3} {
 				\foreach\x in {0,1} {
@@ -158,35 +160,38 @@
 			}
 			\draw (90:1) -- (-45:1);
 			\end{tikzpicture}
+			\end{center}
 %		\end{figure}
 		
 		Para escoger el segundo ciclo, su primera nota debe caer en el conjunto de vértices múltiplos de $d$ \textemdash de los que hay $\frac{n}{d}$. En el ejemplo serían los 0$^{(*)}$. Sin embargo, no podría ser cualquier múltiplo, ya que si se escoge uno con posición no coprima, el polígono se cerraría antes de tiempo sin pasar por todos los vértices. Entonces hay que escoger entre los vértices coprimos, de los que hay $\varphi\left(\frac{n}{d}\right)$. Tras esto el polígono está totalmente determinado, y se puede formar de $\sum\limits_{d|n}\left(\varphi^2(\frac{n}{d})\cdot\left(\frac{n}{d}\right)^d\cdot d!\right)$ maneras.
 		
 		En nuestro ejemplo, si escogemos el siguiente comienzo del ciclo como el 0$^{(2)}$, como 2 no es coprimo con $\frac{n}{d}=4$, quedaría de esta manera:
 		
-		\begin{multicols}{2}
-			
-			\begin{tikzpicture}
-			\node [draw,circle,inner sep=0,minimum height=2cm] at (0,0) {};
-			\foreach\y in {0,1,2,3} {
-				\foreach\x in {0,1} {
-					\draw[thin] (90-45*\x-90*\y:0.85) -- (90-45*\x-90*\y:1.35) node[fill=white,inner sep=0pt] {\x$^{(\y)}$};
+		\begin{center}
+			\begin{multicols}{2}
+				\begin{tikzpicture}
+				\node [draw,circle,inner sep=0,minimum height=2cm] at (0,0) {};
+				\foreach\y in {0,1,2,3} {
+					\foreach\x in {0,1} {
+						\draw[thin] (90-45*\x-90*\y:0.85) -- (90-45*\x-90*\y:1.35) node[fill=white,inner sep=0pt] {\x$^{(\y)}$};
+					}
 				}
-			}
-			\draw (90:1) -- (-45:1) -- (-90:1);
-			\end{tikzpicture}
-			
-			\begin{tikzpicture}
-			\node [draw,circle,inner sep=0,minimum height=2cm] at (0,0) {};
-			\foreach\y in {0,1,2,3} {
-				\foreach\x in {0,1} {
-					\draw[thin] (90-45*\x-90*\y:0.85) -- (90-45*\x-90*\y:1.35) node[fill=white,inner sep=0pt] {\x$^{(\y)}$};
+				\draw (90:1) -- (-45:1) -- (-90:1);
+				\end{tikzpicture}
+				
+				\begin{tikzpicture}
+				\node [draw,circle,inner sep=0,minimum height=2cm] at (0,0) {};
+				\foreach\y in {0,1,2,3} {
+					\foreach\x in {0,1} {
+						\draw[thin] (90-45*\x-90*\y:0.85) -- (90-45*\x-90*\y:1.35) node[fill=white,inner sep=0pt] {\x$^{(\y)}$};
+					}
 				}
-			}
-			\draw (90:1) -- (-45:1) -- (-90:1);
-			\draw[rotate=-180] (90:1) -- (-45:1) -- (-90:1);
-			\end{tikzpicture}
-	\end{multicols}
+				\draw (90:1) -- (-45:1) -- (-90:1);
+				\draw[rotate=-180] (90:1) -- (-45:1) -- (-90:1);
+				\end{tikzpicture}
+			\end{multicols}
+		\end{center}
+
 		Efectivamente, el diagrama se cierra antes de pasar por todos los vértices. En cambio, si escogemos 0$^{(1)}$:
 		\begin{multicols}{4}			
 			\begin{tikzpicture}
@@ -392,7 +397,7 @@
 		Se escoge el primer punto de entre $\frac{n}{2}$ posibilidades. No son $n$ ya que saldría la misma figura si se escoge el punto antipodal.
 		Con una rotación de $\uptheta_{{n}/{2}}$, el primer ciclo se escoge igual que antes, de $\left(\frac{n}{n/2}\right)^{\frac{n}{2}}\cdot \frac{n}{2}!=2^{\frac{n}{2}}\cdot \frac{n}{2}!$ maneras. Y con esto ya queda la figura determinada. Esto lleva a las $\frac{n}{2}\cdot2^{\frac{n}{2}}\cdot\frac{n}{2}!$ formas de dibujar un polígono con las características buscadas.
 		
-		\subsubsection[Elementos estables mediante $S$]{Elementos estables mediante $\bm{S}$}
+		\subsubsection[Elementos estables mediante $S$]{Elementos estables mediante ${S}$}
 		
 		Los elementos estables mediante $S$ son aquellos que quedan invariantes mediante reflexiones. En este punto se ha de separar por paridad de $n$. 
 		
@@ -423,7 +428,7 @@
 		\def\arraystretch{1}
 		
 	\subsection{Medefonismo, monofonismo y difonismo}
-	\label{monodi}
+	\label{s:trivcase}
 		Con $n=0$ se da el caso de medefonismo. El grupo simétrico de orden 0 tiene $0!=1$ elemento. Por tanto, hay una sola posible serie, $\sigma$, que es la que no tiene ninguna nota. El medefonismo es comúnmente llamado silencio.
 		
 		\[\sigma=\drow{}
@@ -450,7 +455,7 @@
 			&{RI}_{0}&
 		\end{array}\]
 	
-		Con $n=2$ se da el caso de difonismo. Tiene dos posibles notas, así que su grupo simétrico, el de orden 2, tiene $2!=2$ elementos. Por tanto, hay dos series distintas, $\sigma_0$ y $\sigma_1$. Se puede observar que ambas pertenecen al mismo espectro serial, dado que $\sigma_1={T}^1(\sigma_0)$. Además, al igual que en el monofonismo, ambas coinciden con sus inversas, incumpliendo la regla general para $n>2$ probada en el apartado \ref{inversano}.
+		Con $n=2$ se da el caso de difonismo. Tiene dos posibles notas, así que su grupo simétrico, el de orden 2, tiene $2!=2$ elementos. Por tanto, hay dos series distintas, $\sigma_0$ y $\sigma_1$. Se puede observar que ambas pertenecen al mismo espectro serial, dado que $\sigma_1={T}^1(\sigma_0)$. Además, al igual que en el monofonismo, ambas coinciden con sus inversas, incumpliendo la regla general para $n>2$ probada en el apartado \ref{s:itr}.
 		\[\sigma_0=\drow{0,1}
 		\qquad\qquad
 		\begin{array}{l|cc|r}

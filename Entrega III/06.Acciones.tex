@@ -6,7 +6,7 @@
 		\begin{enumerate}
 			\item{Para todo $x\in X$, $e\cdot x=x$, siendo $e$ el elemento neutro del grupo.}
 		
-			\item{Para todo $x\in X$ y para todo par $g,h\in$ G, se debe cumplir que $(g*h)\cdot x=g\cdot (h\cdot x)$. La primera operación ($*$) es la interna del grupo G, y la segunda operación ($\cdot$) es la acción.}
+			\item{Para todo $x\in X$ y para todo par $g,h\in G$, se debe cumplir que $(g*h)\cdot x=g\cdot (h\cdot x)$. La primera operación ($*$) es la interna del grupo $G$, y la segunda operación ($\cdot$) es la acción.}
 		\end{enumerate}
 		Como ya se ha visto, las funciones $\{S,\ T,\ V,\ C\}$ forman el grupo diédrico ${D}_{n}\times{D}_{n}$, con $n$ la longitud de la serie. Se podrá definir entonces la acción $\phi$ de este grupo sobre el conjunto de permutaciones de orden $n$, tal que $\phi(\Psi,\ \sigma)=\Psi\circ\sigma=\Psi(\sigma)=\tau$, con $\Psi\in{D}_{n}\times{D}_{n}$ y $\sigma,\tau\in{S}_n$.
 		
@@ -19,14 +19,16 @@
 		Por ejemplo, dada una permutación $\sigma$, todas las permutaciones a las que se llega desde $\sigma$ mediante algún $\Psi\in{D}_{n}\times{D}_{n}$
 		conforman la órbita de $\sigma$. Por definición, las series a las que se puede llegar desde una serie original conforman su espectro serial, por lo que \textbf{la órbita es en realidad el espectro serial}.
 	
-		Para el mismo $x_0$ se define su \emph{estabilizador} como el conjunto de elementos $g\in G$ que fijan $x_0$, es decir, que mandan $x_0$ a sí mismo. Mientras que una órbita es un subconjunto de $X$, un estabilizador es un subgrupo de $G$. Trivialmente, $e\in Stab(x)\ \forall x\in X$, porque el elemento identidad fija cualquier otro elemento por definición.
+		Para el mismo $x_0$ se define su \emph{estabilizador} como el conjunto de elementos $g\in G$ que fijan $x_0$, es decir, que mandan $x_0$ a sí mismo. Mientras que una órbita es un subconjunto de $X$, un estabilizador es un subgrupo de $G$. Trivialmente, $e\in Stab(x)\ \forall x\in X$, porque el elemento identidad fija cualquier otro elemento por definición.\\
 		\[Stab(x_0)=\{g\in {G}\ :\ g\cdot x_0 =x_0 \}\]
 	
-		Si cada $g\in G$ llevara a $x_0$ a un $x$ distinto, el número de elementos de $Orb(x_0)$ sería igual al número de elementos de $G$. Sin embargo, si un elemento $g_0\in G$ fija $x_0$, entonces no dará nuevos elementos en la órbita de $x$. Por tanto, intuitivamente el tamaño de la órbita disminuye. De hecho,  el teorema de Órbita--Estabilizador dice que el tamaño de una órbita ($|Orb(x_0)|$) será el tamaño de $G$ $(|G|)$ entre el número de elementos que fijan $x_0$; es decir, el tamaño de su estabilizador ($|Stab(x_0)|$). Además, es cierto para todo $x\in X$.
+		Si cada $g\in G$ llevara a $x_0$ a un $x$ distinto, el número de elementos de $Orb(x_0)$ sería igual al número de elementos de $G$. Sin embargo, si un elemento $g_0\in G$ fija $x_0$, entonces no dará nuevos elementos en la órbita de $x$. Por tanto, intuitivamente el tamaño de la órbita disminuye. De hecho,  el teorema de Órbita--Estabilizador dice que el tamaño de una órbita ($|Orb(x_0)|$) será el tamaño de $G$ $(|G|)$ entre el número de elementos que fijan $x_0$; es decir, el tamaño de su estabilizador ($|Stab(x_0)|$). Además, es cierto para todo $x\in X$.\\
 		\[|Orb(x)|=\frac{|{G}|}{|Stab(x)|}\mbox{, o lo que es lo mismo, }|{G}|=|Orb(x)||Stab(x)|\]
 		
 		\def\arraystretch{1.5}
+		Para ver una explicación más detallada y una prueba rigurosa del teorema, ver \cite{orb-est}.
 		Este teorema implica que los tamaños de cada órbita y cada estabilizador son divisores del tamaño del grupo. Por ejemplo, como el tamaño del grupo $\Xi$ es 4, cualquier estabilizador y cualquier órbita tendrán tamaño 1, 2 o 4. En concreto, como $Id$ está siempre en el estabilizador, para  todo $\sigma$ será de una de estas formas:
+		
 		\[\begin{array}{*{5}c}
 		|Stab|=1&&&\{{Id}\}&\\
 		\hline|Stab|=2&&\{Id,\ I\}&\{Id,\ R\}&\{Id,\ IR\}\\
@@ -49,3 +51,5 @@
 		\[\sum_{x\in X}\frac{1}{|Orb(x)|}=\sum_{{O}\in\mbox{Órbitas}}\left(\sum_{x\in{O}}\frac{1}{|{O}|}\right)=\sum_{O\in\mbox{Órbitas}}1=\#Orb \qquad\square\]	
 	
 		Este lema permite calcular el número de posibles espectros seriales distintos, ya que el espectro de una serie es igual al espectro de sus series transformadas. Un compositor serialista debe entonces escoger no una serie original, sino el espectro con el que construir la obra. O, más bien, si escoge una serie original está escogiendo el mismo material que si escogiera otra serie de ese mismo espectro.
+		
+		Para más aplicaciones de acciones en el ámbito de la teoría musical, ver \cite{actions}.
