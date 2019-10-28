@@ -1,0 +1,134 @@
+\section{Modificación de partituras serialistas}\label{ch:modif}
+\subsection{Escalas utilizadas}
+
+Las escalas escogidas para este experimento son cuatro escalas de distintos tamaños y sonoridades; desde el sonido oriental hasta el occidental clásico, pasando por el jazz moderno y el impresionismo.
+Son la escala pentatónica, la escala de tonos enteros, la escala heptafónica de do mayor y la escala octotónica. Estas son las funciones inducidas de dichas escalas según el algoritmo:
+
+\[\left.\begin{array}{*{13}c}
+\text{Cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
+\text{Pentatónica (5):}&0&0&2&2&4&4&7&7&7&9&9&12\\
+\text{Intervalos:}&&2&&2&&3&&&2&&3&\\
+\end{array}\right.\]		
+\[\left.\begin{array}{*{13}c}
+\text{Cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
+\text{Tonos enteros (6):}&0&0&2&2&4&4&6&6&8&8&10&10\\
+\text{Intervalos:}&&2&&2&&2&&2&&2&&2\\
+\end{array}\right.\]
+\[\left.\begin{array}{*{13}c}
+\text{Cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
+\text{Diatónica en do (7):}&0&0&2&2&4&5&5&7&7&9&9&11\\
+\text{Intervalos:}&&2&&2&1&&2&&2&&2&1\\
+\end{array}\right.\]        
+\[\left.\begin{array}{*{13}c}
+\text{Cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
+\text{Octotónica (8):}&0&0&2&3&3&5&6&6&8&9&9&11\\
+\text{Intervalos:}&&2&1&&2&1&&2&1&&2&1\\
+\end{array}\right.\]
+
+	\subsection{Obras modificadas}
+	
+	Ahora se describirán las obras que pasarán por la modificación. Para abarcar distintos estilos compositivos y hacer este estudio más amplio, he escogido obras de los tres principales compositores dodecafónicos: Schoenberg, Berg y Webern.
+	
+	Sin embargo, no se han escogido obras de compositores posteriores ni serialistas integrales. Uno de los motivos es porque interesa en este estudio la relación entre los sonidos: no se modifican más que las alturas de las notas, y por tanto no se tiene en cuenta el resto de elementos musicales. Que estén compuestos serialmente no afecta a las conclusiones de este experimento.
+	
+	Por otro lado, los compositores posteriores a Schoenberg todavía no han pasado al dominio público. Eso impide, por desgracia, que se pueda trabajar libremente con su música.
+	
+	Por último, el hecho de que cada nota tenga su propia dinámica, su propia articulación o su propio timbre hace de las obras serialistas integrales difíciles de manipular. Además, como los audios están hechos mediante ordenador y no con intérpretes reales, la calidad y la intención musical de estas partituras tan complicadas nunca podrían plasmarse a la perfección.
+	
+	La primera obra que pasará por el algoritmo de modificación serial es la \textit{Suite para piano}, Op. 25 de Schoenberg. Un análisis de esta pieza y de su contexto histórico se puede encontrar en \cite{celia1}.
+	
+	Su \href{http://www.ccarh.org/publications/data/humdrum/tonerow/files/schoenberg/schoenberg04.pc.krn}{serie principal} es: \drow{4,5,7,1,6,3,8,2,11,0,9,10}
+\begin{center}
+		\ddiagram{4,5,7,1,6,3,8,2,11,0,9,10}
+\end{center}
+	
+	La segunda obra es un arreglo para soprano y piano de una de las arias más destacadas de la segunda ópera de Alban Berg, \textit{Lulu}. El libreto de la obra está basado en dos tragedias de Frank Wedekind: ``El espíritu de la tierra'' y ``La Caja de Pandora''.
+	
+	El aria, llamada \textit{Lied der Lulu}, es parte de una dramática disputa entre Lulu y su marido por las infidelidades de ella, que acaba con el homicidio accidental de él.
+	
+	La \href{http://www.ccarh.org/publications/data/humdrum/tonerow/files/berg/berg10.pc.krn}{serie} de Lulu es:
+		\drow{0,4,5,2,7,9,6,8,11,10,3,1}
+\begin{center}
+		\ddiagram{0,4,5,2,7,9,6,8,11,10,3,1}
+\end{center}
+	
+%	La tercera, \textit{Der Wein}, es un aria de concierto para soprano y orquesta compuesta por Berg en 1929. La letra es una traducción al alemán de los tres poemas de Charles Baudelaire ``\textit{Le Vin}''. Son una celebración del vino y de la felicidad de quienes lo toman.
+%	
+%	La pieza evoca aires tonales, ya que su serie está compuesta por la escala de Re menor y la de Sol bemol Mayor. Es una pieza simétrica que evoca también la forma sonata, con los tres poemas formando una exposición, un desarrollo y una recapitulación.
+%	
+%	{Su serie original\footnote{\href{http://www.ccarh.org/publications/data/humdrum/tonerow/files/berg/berg09.pc.krn}{ \texttt{\textasciitilde/berg/berg09.pc.krn} }} es:        	
+%		\drow{2,4,5,7,9,10,1,6,8,0,11,3}}
+%	\ddiagram{2,4,5,7,9,10,1,6,8,0,11,3}
+	
+	La tercera, de 1936, es la única obra publicada de Anton Webern para piano solo: \textit{Variationen für Klavier}, Op. 27, y se compone de tres movimientos: \textit{Sehr mässig}, \textit{Sehr schnell} y \textit{Ruhig fliessend}.
+	
+	Su \href{http://www.ccarh.org/publications/data/humdrum/tonerow/files/webern/webern17.pc.krn}{serie principal} es:
+		\drow{3,11,10,2,1,0,6,4,7,5,9,8}
+\begin{center}
+		\ddiagram{3,11,10,2,1,0,6,4,7,5,9,8}
+\end{center}
+	
+%	Por último, \textit{3 Lieder}, Op. 18, compuesta por Webern en 1925, es un tríptico de Lieder para voz, clarinete y guitarra. Los Lieder, junto con sus respectivas series, son:
+%	
+%	\textit{Schatzerl Klein}\footnote{\href{http://www.ccarh.org/publications/data/humdrum/tonerow/files/webern/webern06.pc.krn}{ \texttt{\textasciitilde/webern/webern06.pc.krn} }}: \hfill
+%	\drow{0,11,5,8,10,9,3,4,1,7,2,6}
+%	\ddiagram{0,11,5,8,10,9,3,4,1,7,2,6}
+%	
+%	\textit{Erlosung}\footnote{\href{http://www.ccarh.org/publications/data/humdrum/tonerow/files/webern/webern07.pc.krn}{ \texttt{\textasciitilde/webern/webern07.pc.krn} }}: \hfill
+%	\drow{6,9,5,8,4,7,3,11,2,10,1,0}
+%	\ddiagram{6,9,5,8,4,7,3,11,2,10,1,0}
+%	
+%	\textit{Ave, Regina Coelorum}\footnote{\href{http://www.ccarh.org/publications/data/humdrum/tonerow/files/webern/webern08.pc.krn}{ \texttt{\textasciitilde/webern/webern08.pc.krn} }}: \hfill
+%	\drow{4,3,7,6,5,11,10,2,1,0,9,8}
+%	\ddiagram{4,3,7,6,5,11,10,2,1,0,9,8}
+    
+    \subsection{Programa \textit{online} de modificación de partituras}
+	He creado una página web \textit{online} que transforma cada nota de una partitura a cualquier nota requerida, una a una. Este \textit{software} sirve para no tener que modificar a mano las partituras del experimento, pero también puede servir para otros propósitos. Por ejemplo, para cambiar una partitura de mayor a menor, o viceversa.
+	
+	\includegraphics[width=15cm]{whiteweb2.jpg}
+	
+	El programa solo admite partituras con formato \textit{Archivo Musescore sin Comprimir} (\textit{.mscx}) del software libre \href{https://musescore.org/}{\textit{Musescore}}. En caso de tener la partitura en otro formato, debe abrirse en \textit{Musescore} y guardarse en el formato correcto. Está escrita en Elm y el código puede encontrarse \href{https://gitlab.com/dodecafonismo/modificaciones}{aquí}.
+	
+   	 La aplicación web se encuentra en el siguiente enlace: \url{https://modificaciones.netlify.com/}. Sus instrucciones de uso se encuentran al final de la página web.
+    
+    \subsection{Conclusiones}
+    Todas las conclusiones que se pueden extraer de este experimento son enteramente subjetivas. El objetivo de realizarlo es poder seguir investigando con las propiedades matemáticas de la música, y analizar el impacto emocional que éstas pueden causar.
+    
+    No se puede afirmar que la transformación mejore o empeore ninguna obra. En todo caso podemos interpretar qué transformaciones tienen un determinado sentido musical o estético, dependiendo de la escala utilizada o del estilo con el que estén compuestas.     
+    Tampoco debemos olvidar que el cromatismo siempre aportará a las obras una dimensión añadida, un elemento extra que ha impulsado gran parte de la innovación en la historia de la música. Quitarlo por completo es, en realidad, retroceder en la evolución del arte.
+   	
+   	En general, las transformaciones hexatónica y octotónica siguen conservando mucho del cromatismo que tiene la partitura original. Siguen sonando ajenas al oído tonal del oyente medio. Vamos a comentar algunas de las impresiones que generan las otras dos transformaciones en cada una de las obras.
+   	
+    \subsubsection{Obra de Berg: Lied der Lulu}
+	El estilo compositivo de Berg busca, en su mayor parte, acercarse a las formas tonales; maneja la falta de tonalidad serialista sin deshacerse de muchos elementos de la tradición musical. Sus melodías son fluidas y su fraseo inicia a conversar. Así, la transformación pentatónica (5) queda demasiado simplista y repetitiva, y es en cambio la heptatónica (7) la que nos traslada a sonoridades más familiares.
+	
+    \url{https://soundcloud.com/celiarubio/sets/berg-lied-der-lulu}
+    
+    \subsubsection{Obra de Webern: Variationen op. 27}
+    El estilo compositivo de Webern es rompedor y enigmático. Tanto fue así que su música sirvió de inspiración para el serialismo integral de los años 50. Sus melodías suenan fragmentadas y están llenas de intervalos de más de una octava. Es, por tanto, muy difícil que cualquier transformación que conserve similitudes melódicas con la partitura original pueda acercarse a músicas más convencionales. La esencia de esta obra está precisamente en su peculiaridad.
+    
+    \url{https://soundcloud.com/celiarubio/sets/webern-op27-variations}
+    
+    
+    \subsubsection{Obra de Schoenberg: Suite op. 25}
+    El estilo compositivo de Schoenberg en la Suite es tradicional, aunque busca nuevas sonoridades. Su principal objetivo es conservar la estructura formal anterior, y por ello lo único que aleja a la obra es el uso del serialismo en la altura de las notas.
+    
+    La obra es, en general, más armónica que melódica, ya que pretende simular texturas instrumentales del periodo barroco. Además, que se centre tanto en la formalidad de la pieza aporta una riqueza separada del uso del serialismo. Por ello, la transformación pentatónica (5) no acaba siendo monótona, sino sugestiva.
+    
+    Por otro lado, la elección concreta de la función transformativa, que hace predominar las notas do y sol \textemdash que aparecen en la serie una vez más que el resto\textemdash~provoca que, en muchos casos, la obra simule estar en do mayor. Como en la partitura original predomina el intervalo de tritono re $\flat$ \textendash~sol, la transformación da peso al intervalo de quinta justa, que es la base de la armonía tradicional.
+    
+    La transformación heptatónica todavía deja alguna disonancia intensa, debido a la existencia de semitonos entre las notas mi \textendash~fa y si \textendash~ do, y al tritono en fa \textendash~si.
+    
+    \url{https://soundcloud.com/celiarubio/sets/schoenberg-op25-1-prelude}
+    
+    \url{https://soundcloud.com/celiarubio/sets/schoenberg-op25-2a-gavotte}
+    
+    \url{https://soundcloud.com/celiarubio/sets/schoenberg-op25-2b-musette}
+    
+    \url{https://soundcloud.com/celiarubio/sets/schoenberg-op25-3-intermezzo}
+    
+    \url{https://soundcloud.com/celiarubio/sets/schoenberg-op25-4a-menuet}
+    
+    \url{https://soundcloud.com/celiarubio/sets/schoenberg-op25-4b-trio}
+    
+    \url{https://soundcloud.com/celiarubio/sets/schoenberg-op25-5-gigue}

@@ -1,5 +1,12 @@
 \begin{thebibliography}{1}
 
+\bibitem{adorno}
+T.W. Adorno.
+\newblock {\em {Disonancias. Introducci{\'o}n a la sociolog{\'\i}a de la
+  m{\'u}sica}}.
+\newblock 1973.
+\newblock \url{https://books.google.es/books?id=6uBiDwAAQBAJ}.
+
 \bibitem{euclides}
 Paco Gómez.
 \newblock Ritmos euclídeos y ritmos equilibrados.
@@ -14,6 +21,20 @@ George~A. Miller.
   Capacity for Processing Information}.
 \newblock {\em Psychological Review}, 63, 1956.
 \newblock \url{http://psychclassics.yorku.ca/Miller/}.
+
+\bibitem{celia2}
+Celia Rubio~Madrigal.
+\newblock {Serialismo y matemáticas - II}.
+\newblock {\em Divulgamat}, octubre de 2019.
+\newblock
+  \url{http://vps280516.ovh.net/divulgamat15/index.php?option=com_content&view=article&id=18227:101-octubre-2019-serialismo-y-matematicas-ii&catid=67:ma-y-matemcas&directory=67}.
+
+\bibitem{celia1}
+Celia Rubio~Madrigal.
+\newblock {Serialismo y matemáticas - I}.
+\newblock {\em Divulgamat}, septiembre de 2019.
+\newblock
+  \url{http://vps280516.ovh.net/divulgamat15/index.php?option=com_content&view=article&id=18209:100-septiembre-2019-serialismo-y-matematicas-i&catid=67:ma-y-matemcas&directory=67}.
 
 \bibitem{scho}
 Arnold Schoenberg.
