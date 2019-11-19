@@ -1,8 +1,7 @@
 \section{Escalas y funciones del experimento}\label{ch:escalas}	
 	\subsection{Escalas interválicas, escalas y funciones}
 	
-		Una \textbf{escala interválica} es una secuencia ordenada de números naturales -- una secuencia de intervalos entre notas -- tales que la suma de todos ellos da 12. Así solo consideramos válidas las escalas equivalentes octava a octava%: todos los intervalos de la escala deben sumar el número de semitonos de una octava
-		. Esto debe ocurrir para poder considerar transformaciones de la escala cromática en escalas menores, aunque es generalizable a cualquier longitud. Diremos entonces que la escala cromática es la \textbf{súper-escala} de las \textbf{sub-escalas} con las que trabajaremos. Por ejemplo, la escala diatónica jónica (o escala mayor) tiene como secuencia (2, 2, 1, 2, 2, 2, 1).
+		Una \textbf{escala interválica} es una secuencia ordenada de números naturales -- una secuencia de intervalos entre notas -- tales que la suma de todos ellos da 12. Así solo consideramos válidas las escalas equivalentes octava a octava. Esto debe ocurrir para poder considerar transformaciones de la escala cromática en escalas menores, aunque es generalizable a cualquier longitud. Diremos entonces que la escala cromática es la \textbf{súper-escala} de las \textbf{sub-escalas} con las que trabajaremos. Por ejemplo, la escala diatónica jónica (o escala mayor) tiene como secuencia (2, 2, 1, 2, 2, 2, 1).
 		
 		Dada una escala interválica de longitud $\ell$ y una nota fija inicial, la secuencia de intervalos se convierte en una secuencia de notas de longitud $\ell$+1. Se construye comenzando por la nota inicial y sumando cada intervalo para conseguir la nota siguiente.
 		
@@ -17,8 +16,6 @@
 		f(0)&f(1)&f(2)&\ldots&f(10)&f(11)\\
 		f(1)-f(0)&f(2)-f(1)&f(3)-f(2)&\ldots&f(11)-f(10)&12+f(0)-f(11)
 		\end{matrix}\right.\]
-		
-%		En realidad, la $k$ de la escala-$k$ no es especialmente relevante, porque una escala-$(k+1)$ es la transportada de una $k$. Se puede escoger sin pérdida de generalidad $k=0$ a partir de ahora, y así todas comenzarán en Do.
 		
 		El proceso verdaderamente interesante está en averiguar, dada una escala $E$, cuál es la mejor función que transforma melodías cromáticas en melodías en $E$. Estas son las \textbf{funciones \textit{E}-inducidas}.
 		
