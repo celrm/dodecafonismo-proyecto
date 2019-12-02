@@ -1,49 +1,66 @@
 \section{Escalas y funciones del experimento}\label{ch:escalas}	
 	\subsection{Escalas interválicas, escalas y funciones}
 	
-		Una \textbf{escala interválica} es una secuencia ordenada de números naturales -- una secuencia de intervalos entre notas -- tales que la suma de todos ellos da 12. Así solo consideramos válidas las escalas equivalentes octava a octava. Esto debe ocurrir para poder considerar transformaciones de la escala cromática en escalas menores, aunque es generalizable a cualquier longitud. Diremos entonces que la escala cromática es la \textbf{súper-escala} de las \textbf{sub-escalas} con las que trabajaremos. Por ejemplo, la escala diatónica jónica (o escala mayor) tiene como secuencia (2, 2, 1, 2, 2, 2, 1).
+		Una \textbf{escala interválica} es una secuencia ordenada de números naturales -- una secuencia de intervalos entre notas -- tales que la suma de todos ellos da 12. Así solo consideramos válidas las escalas equivalentes octava a octava. Esto debe ocurrir para poder considerar transformaciones de la escala cromática en escalas menores, aunque es generalizable a cualquier longitud. Diremos entonces que la escala cromática es la \textbf{súper-escala} de las \textbf{sub-escalas} con las que trabajaremos. Por ejemplo, la escala diatónica jónica (o escala mayor) tiene como secuencia de distancias (2, 2, 1, 2, 2, 2, 1) cuando se miden en semitonos.
 		
 		Dada una escala interválica de longitud $\ell$ y una nota fija inicial, la secuencia de intervalos se convierte en una secuencia de notas de longitud $\ell$+1. Se construye comenzando por la nota inicial y sumando cada intervalo para conseguir la nota siguiente.
 		
 		Con la escala mayor y la nota Re se consigue (Re, Mi, Fa$\#$, Sol, La, Si, Do$\#$, Re), ya que es equivalente a (2, 2+\textbf{2}=4, 4+\textbf{2}=6, 6+\textbf{1}=7, 7+\textbf{2}=9, 9+\textbf{2}=11, 11+\textbf{2}=13, 13+\textbf{1}=14). Por construcción, la última nota debe ser equivalente a la primera, ya que en el último paso habremos sumado a la nota inicial todos los términos de la secuencia interválica, y por definición suman 12.
 		
 		De esta forma, se puede definir una \textbf{escala-\textit{k}} como el conjunto de notas generadas por una escala interválica desde la nota $k$. Por ejemplo, el conjunto anterior sería la escala-2 mayor; es decir, la escala de Re mayor. Una escala generada por una secuencia de intervalos con longitud $\ell$ tiene $\ell$ notas, ya que como la última es repetida no hay por qué considerarla. Su longitud $\ell\leq 12$, ya que una escala-\textit{k} definida de esta forma siempre es un subconjunto de la escala cromática: $E_k\subseteq\mathbb{Z}/(12)$. Al generalizarlo a cualquier súper-escala, habría que considerar las notas distintas según su escala o formular otras definiciones más adecuadas.
-		
+
+
 		Una \textbf{función a una escala-\textit{k}} es una función $f$ que transforma cada nota de la escala cromática a un valor de la escala $E_k$. Entonces $f : \mathbb{Z}/(12) \rightarrow E_k^*$ reduce las notas de una melodía a solamente la escala escogida, donde $E_k^*$ está formado por las notas de $E_k$ pero quizás en octavas distintas. Las funciones a escalas se representan de la siguiente manera, con la primera fila representando el dominio de $f$ (la escala cromática); la segunda su imagen (la escala con repeticiones y en distintas octavas, $E_k^*$); y la tercera su secuencia interválica, que es de interés, ya que coincide con la escala interválica de partida salvo en los valores nulos.
-		
-		\[\left.\begin{matrix}
-		0&1&2&\ldots&10&11\\
-		f(0)&f(1)&f(2)&\ldots&f(10)&f(11)\\
-		f(1)-f(0)&f(2)-f(1)&f(3)-f(2)&\ldots&f(11)-f(10)&12+f(0)-f(11)
-		\end{matrix}\right.\]
+
+
+
+
+\begin{center}
+\includegraphics[width=14cm]{Fotos/Re-escalando-musica-fig-1.png}
+\end{center}
+	
+%		\[\left.\begin{matrix}
+%		0&1&2&\ldots&10&11\\
+%		f(0)&f(1)&f(2)&\ldots&f(10)&f(11)\\
+%		f(1)-f(0)&f(2)-f(1)&f(3)-f(2)&\ldots&f(11)-f(10)&12+f(0)-f(11)
+%		\end{matrix}\right.\]
 		
 		El proceso verdaderamente interesante está en averiguar, dada una escala $E$, cuál es la mejor función que transforma melodías cromáticas en melodías en $E$. Estas son las \textbf{funciones \textit{E}-inducidas}.
 		
 		¿Cuáles serán las características de esas funciones óptimas? Deben ser sobreyectivas: si no, la música resultante tendría una escala más reducida de la deseada. Pero además deben conservar la estructura serial y deben conservar el parecido con la melodía original. 
 		
+	
+
+
 	\subsection{Funciones bien distribuidas}
 		
 		La mayor prioridad es conservar la estructura serial de las piezas; por tanto, todas las notas deben aparecer con la menor frecuencia posible, y se debe evitar jerarquías entre las notas en la medida de lo posible. Si $|E|<12$, $f$ no puede ser inyectiva, por lo que va a haber elementos repetidos en la imagen. Queremos la $f$ que mejor distribuya esas repeticiones, que distribuya las notas de $E$ a lo largo de la escala cromática.
 		
 		Lo óptimo sería que todas tuvieran la misma frecuencia. Eso solo pasará cuando $|E|$ divida a 12. Por ejemplo, si $E = \{a_1,a_2,a_3,a_4,a_5,a_6\}$ (entonces $|E|=6$), existen funciones tales que cada nota de la imagen se repite exactamente 2 veces. La siguiente función $E$-inducida $f$ cumpliría la condición de buena distribución:
-				
-		\[\left.\begin{array}{*{13}c}
-		\text{Cromática}&0&1&2&3&4&5&6&7&8&9&10&11\\
-		\text{Escala }E&a_1&a_1&a_2&a_2&a_3&a_3&a_4&a_4&a_5&a_5&a_6&a_6\\
-		\text{Intervalos}&&&&&&\ldots\\
-		\end{array}\right.\]
-		
+			
+			
+\begin{center}
+\includegraphics[width=12cm]{Fotos/Re-escalando-musica-fig-2.png}
+\end{center}
+
+	
+%		\[\left.\begin{array}{*{13}c}
+%		\text{Cromática}&0&1&2&3&4&5&6&7&8&9&10&11\\
+%		\text{Escala }E&a_1&a_1&a_2&a_2&a_3&a_3&a_4&a_4&a_5&a_5&a_6&a_6\\
+%		\text{Intervalos}&&&&&&\ldots\\
+%		\end{array}\right.\]
+
+
+	
 		En cambio, si $|E|$ no divide a 12 no hay funciones $E$-inducidas totalmente distribuidas. No existe una sola frecuencia que puedan compartir todas las notas de $E$. Sin embargo, sí se pueden encontrar dos frecuencias consecutivas, $c$ y $c+1$, tales que todos los elementos de $E$ tengan o frecuencia $c$ o frecuencia $c+1$. Esto es lo más parecido a que todas tengan la misma frecuencia, y se va a probar a continuación que siempre es posible. 
 		
-		La situación es equivalente a que $E$ se pueda dividir en dos subconjuntos disjuntos $Q$ y $R$, con $|Q|=q$ y $|R|=r$ (entonces $q+r=|E|$), tales que la frecuencia de las notas en Q es $c$ y la frecuencia de las notas en $R$ es $c+1$. En resumen, para probar que $Q$ y $R$ existen, debemos encontrar un $c$, un $q$ y un $r$ naturales para los que $cq + (c+1)r=12$.
-		
-		$cq + (c+1)r =
-		cq + cr + r =
-		c(q+r) + r =
-		c|E| + r = 12$, lo cual se cumple por el algoritmo de la división, que asegura que al dividir 12 entre $|E|$ existen su cociente $c$ y su resto $r\geq0$. $\square$
+		La situación es equivalente a que $E$ se pueda dividir en dos subconjuntos disjuntos $Q$ y $R$, con $|Q|=q$ y $|R|=r$ (entonces $q+r=|E|$), tales que la frecuencia de las notas en Q es $c$ y la frecuencia de las notas en $R$ es $c+1$. En resumen, para probar que $Q$ y $R$ existen, debemos encontrar un $c$, un $q$ y un $r$ naturales para los que $cq + (c+1)r=12$. En efecto:
+$$cq + (c+1)r = cq + cr + r =c(q+r) + r =	c|E| + r = 12$$
+ lo cual se cumple por el algoritmo de la división, que asegura que al dividir 12 entre $|E|$ existen su cociente $c$ y su resto $r\geq0$, como queríamos probar.
 		
 		La siguiente tabla describe, para cada posible $|E|$ en cada fila, la frecuencia óptima de sus elementos. Las columnas representan las frecuencias de los elementos, y los números de dentro son cada $q$ y $r$ (cuando es 0 no se escribe: no hay notas con esa frecuencia).
-	
+
+\newpage
 		\[\begin{array}{l|rrrrrrrrrrrr}
 		&1&2&3&4&5&6&7&8&9&10&11&12\\\hline
 		1&&&&&&&&&&&&1\\\hline
