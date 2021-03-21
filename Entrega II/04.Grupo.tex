@@ -1,0 +1,551 @@
+\section{El grupo de las transformaciones}\label{ch:grupo}
+\subsection{Nuevas definiciones y nuevas transformaciones}
+Como vimos en el anterior artículo~\cite{celia1}, las fórmulas de las transformaciones dodecafónicas habituales son:
+      	\begin{center}
+		$I(\sigma(m))= -\sigma(m) + 2\sigma(0)$\\
+		$T^{k}(\sigma(m))=\ \sigma(m) + k$\\
+		$R(\sigma(m))=\ \sigma(-1-m)$
+		\end{center}
+        
+		Sin embargo, la importancia de estas definiciones radica en qué espectro serial forman, y no en cómo se nombra cada serie específica. No importa si la segunda serie que se usa en una obra se llama $I_6$ o $RI_{10}$, sino cuál es y qué relación tiene con la primera. La nomenclatura no es distinguible a un nivel auditivo, pero es, sin embargo, una útil herramienta para la teoría musical. Es por ello por lo que la forma en la que se nombran las series tiene relevancia y debería ser un reflejo de lo que significan. Aun así, sigue sin haber un convenio predominante y, de hecho, hay al menos dos que se usan a menudo.
+		El primero, el método tradicional, se ha usado desde al menos 1945. El segundo, el método de tonos absolutos, fue concebido por George Perle~\cite{perle} en su libro \emph{Twelve-Tone Tonality} en 1977.
+		
+		En el método tradicional, $T_0$ se usa para la primera serie que se encuentra en la composición; es decir, es la serie original. En cambio, el método de tonos absolutos nombra las series $T$ basándose solamente en la nota en la que comienzan: $T_0$ se usa para la serie que comienza por un do, $T_1$ para el re, y así sucesivamente. En ambas, las series transpuestas $k$ semitonos de $T_0$ \textemdash sea cual sea esta\textemdash~se nombran como $T_{k}$. La composición de esta con otra función $\Psi$ se escribe como $\Psi_k$. 
+		
+		Estas nomenclaturas no caracterizan adecuadamente el objeto matemático que deben representar, es decir, funciones aplicadas a las series. Son nombres arbitrarios que además producen ambigüedad al añadir otras funciones \textemdash por ejemplo, si no conmutan\textemdash~o al intentar describirlo matemáticamente. Es por ello por lo que en este texto se usa la composición de funciones como convenio de notación.
+		
+		En todo caso, cualquier convenio tendrá fórmulas distintas al resto, pero todas preservan el material compositivo de la obra. Eso quiere decir que se pueden redefinir algunas de las transformaciones siempre que preserven el sentido musical.  Por ejemplo, la inversión puede prescindir de ser transportada para que la primera nota coincida con la original. Para distinguirla de la primera definición, ésta se llamará $S$ de simetría: $S(\sigma(m)) = -\sigma(m)$. E igual que la inversión es el cambio de signo por fuera, la retrogradación puede convertirse simplemente en el cambio de signo por dentro. Ésta se llamará $V$ de volteo: $V(\sigma(m)) = \sigma(-m)$.
+		
+		Así quedan dos transformaciones que se asemejan a reflexiones: una por \textit{dentro} y otra por \textit{fuera}; y una adición por \textit{fuera}. Aquí \textit{dentro} significa \textit{antes} de aplicar $\sigma$ y \textit{fuera} significa \textit{después} de aplicar $\sigma$, ya que no se debe olvidar que $\sigma$, la permutación, es una función en sí misma. Y ahora surge una cuestión natural: ¿cuál sería entonces el resultado de sumar \textit{dentro}, es decir, \textit{antes}?
+		
+		Esta nueva transformación, cuya aparición resulta natural tras las otras tres, se llama \textit{desplazamiento cíclico}. Inventada y usada por Alban Berg~\cite{cyclic} \textemdash de quien se hablará en la \hyperref[ch:serialismo]{sección 3}\textemdash~y en algunas de las primeras obras de Schoenberg, $C^{k}$ desplaza el comienzo de la serie $k$ posiciones más allá:
+		\[C^{k}(\sigma(m))=\sigma(m+k)\]			
+		\[C^{k}=
+		\left(\begin{array}{*{7}c}
+		0&1&2&&9&10&11\\
+		\sigma(k)&\sigma(k+1)&\sigma(k+2)&\cdots&\sigma(k+9)&\sigma(k+10)&\sigma(k+11)\\
+		\end{array}\right)\]
+		 
+		 La serie 4-cíclica sobre la permutación $P$ de la Suite Op. 25 es la siguiente serie $C^4$:	
+%		\[C^4=\drow{6,3,8,2,11,0,9,10,4,5,7,1}\]		
+		$$
+C^4=\left(
+\begin{array}{cccccccccccc}
+0  & 1  &  2  & 3  & 4   & 5  &  6   & 7  & 8  & 9   & 10  & 11  \\
+6  & 3  & 8  & 2  & 11   & 0  &  9 & 10  & 4  & 5   & 7  & 1 
+\end{array}
+\right)
+$$
+		\begin{center}
+			\includegraphics[width=12.1cm]{13.png}
+		\end{center}
+				
+		Si no se añade la transformación $C$, entonces $V$ no conserva el espectro serial de $\{I,\ T,\ R\}$; pero si se añade sí se conserva ya que $V$ es composición de $C$ y $R$.
+		
+		En resumen, se puede trabajar con un nuevo sistema de definiciones que mantienen el significado musical del serialismo, pero varían la notación con la que se trabaja. Estas son las nuevas fórmulas de las transformaciones:
+		
+		\begin{multicols}{2}
+		\begin{align*}
+		S(\sigma(m)) &= -\sigma(m)\\
+		T^{k}(\sigma(m)) &= \sigma(m) + k
+		\end{align*}
+		
+		\begin{align*}
+		V(\sigma(m)) &= \sigma(-m)\\
+		C^{k}(\sigma(m)) &= \sigma(m+k)
+		\end{align*}
+		\end{multicols}
+
+
+
+
+	\subsection{Diagramas de reloj}
+	
+		Para visualizar mejor cómo actúan las distintas transformaciones, las series se pueden representar mediante \textbf{diagramas de reloj}~\cite{hunter}: una sucesión de aristas con una orientación establecida que conecta los vértices de un dodecágono en el orden de la serie. Ya que el desplazamiento cíclico actúa como si la serie fuese circular, hay una arista extra que une la última nota a la primera. El comienzo de la serie y su orientación se marcan con una flecha.
+		
+		\begin{figure}[h]
+			\begin{center}			
+				
+				\includegraphics[scale=1.28]{other/Serialismo-matematicas-diagrama-2-1.png}
+%			\includegraphics[scale=0.5]{Serialismo-matematicas-diagrama-2-1.png}
+			%\ddiagram[name=$T^0$, arrow shift=4]{4,5,7,1,6,3,8,2,11,0,9,10}
+			\end{center}
+		\end{figure} 
+
+		Arriba se incluye el diagrama de la serie original $\sigma$ de la Suite Op. 25. Se pueden distinguir las características de la serie, como las tres diagonales, que son los tres intervalos de tritono. A continuación se incluyen los diagramas de las transformaciones dodecafónicas originales: la transposición, la inversión y la retrogradación; así como el nuevo desplazamiento cíclico.
+		
+	\begin{center}
+		\includegraphics{other/Serialismo-matematicas-diagrama-2-2.png}
+%				\includegraphics[scale=0.4]{Serialismo-matematicas-diagrama-2-2.png}
+%		\begin{multicols}{4}
+%		\ddiagram[up=4, name=$T^1$, arrow shift=4]{5,6,8,2,7,4,9,3,0,1,10,11}
+%		\ddiagram[name=$I$, arrow shift=4]{4,3,1,7,2,5,0,6,9,8,11,10}
+%		\ddiagram[up=4, name=$R$, arrow shift=4]{10,9,0,11,2,8,3,6,1,7,5,4}
+%		\ddiagram[up=4, name=$C^1$]{5,7,1,6,3,8,2,11,0,9,10,4}
+%	\end{multicols}
+	\end{center}
+		
+		La transposición es una rotación en el sentido en el que apunta la flecha; la inversión es una reflexión con el eje de simetría en la diagonal que pasa por la flecha; la retrogradación es un cambio de orientación de la flecha; y el desplazamiento cíclico es el avance interno de la flecha por el recorrido de la serie.		
+		
+		La diferencia entre las inversiones $I$ y $S$ es precisamente la transposición de $2\sigma(0)=8$ semitonos en este ejemplo. Comparando $S$ con $T^0$ se puede además observar que $S$ es una reflexión con el eje de simetría en 0, en vez de que el eje dependa de la propia permutación.
+%				\newpage
+		\begin{center}
+			\includegraphics{other/Serialismo-matematicas-diagrama-2-3.png}
+%			\includegraphics[scale=0.4]{Serialismo-matematicas-diagrama-2-3.png}
+%			\begin{multicols}{2}				
+%				\ddiagram[name=$I$, arrow shift=4]{4,3,1,7,2,5,0,6,9,8,11,10}		
+%				
+%				\ddiagram[up=4, name=$S$, arrow shift=4]{8,7,5,11,6,9,4,10,1,0,3,2}
+%			\end{multicols}
+		\end{center}
+	
+		Por otro lado, la comparación entre las retrogradaciones $R$ y $V$ muestra que, aunque en principio más arbitraria, $V$ es una transformación más natural, ya que deja fija la flecha. La diferencia entre ellas es en realidad un desplazamiento cíclico de -1.
+
+		\begin{center}
+		\includegraphics{other/Serialismo-matematicas-diagrama-2-4.png}
+%			\includegraphics[scale=0.4]{Serialismo-matematicas-diagrama-2-4.png}
+%			\begin{multicols}{2}
+%				\ddiagram[up=4, name=$R$, arrow shift=4]{10,9,0,11,2,8,3,6,1,7,5,4}			
+%				
+%				\ddiagram[name=$V$, arrow shift=1]{4,10,9,0,11,2,8,3,6,1,7,5}
+%			\end{multicols}
+		\end{center}
+
+		He creado una página interactiva que genera diagramas de reloj de cualquier serie para cualquier longitud serial, además de generar series aleatorias. También se pueden aplicar las transformaciones a la serie, tanto las originales como las del nuevo sistema, para ver cómo se comporta el diagrama. Está escrita en Elm y el código puede encontrarse en \url{https://gitlab.com/dodecafonismo/diagramas}.
+
+
+
+
+	En el enlace \url{https://diagramas.netlify.com} se accede a la aplicación web. Sus instrucciones de uso se encuentran al final de la página. Además, he creado un comando en \LaTeX{} que dibuja estos diagramas dada su serie, y opcionalmente su nombre y el número que está arriba:
+\begin{center}
+\includegraphics{other/Figura-ddmark.png}
+%\includegraphics[scale=0.45]{Figura-ddmark.png}
+% \verb|\ddiagram[up=4, name=$T^0$]{4,5,7,1,6,3,8,2,11,0,9,10}|
+\end{center}
+\noindent y en este caso \texttt{up=4} no es necesario, ya que por defecto se coloca arriba la primera nota de la serie. El comando se encuentra en el paquete de \LaTeX{} \texttt{ddphonism}, disponible en el enlace \url{https://www.ctan.org/pkg/ddphonism}.
+		
+
+		
+		
+%	\subsection[El grupo: $D_{12}\times D_{12}$]{El grupo: $\bm{D_{12}\times D_{12}}$}
+	\subsection{El grupo: $D_{12}\times D_{12}$}
+	
+		El conjunto de transformaciones $\{S,\ T,\ V,\ C\}$ está compuesto por dos parejas con semejanzas entre sí. $S$ es una reflexión y $T$ una rotación de orden 12 \textemdash es decir, que al aplicarla 12 veces se vuelve a la identidad\textemdash~y ambas se aplican a la figura entera; es como mover el diagrama por el papel. En cambio, $V$ es una reflexión de la flecha en sí, y $C$ una rotación \textemdash también de orden 12\textemdash~de la flecha sobre la línea; ambas aplicadas al interior de la figura.
+
+		
+
+
+
+		Cada pareja genera un grupo muy conocido: el {\bf grupo diédrico} o {\bf diedral}. Se denota por $D_{12}$ y representa el grupo de simetrías de un polígono regular; en este caso, un dodecágono. En otros ámbitos, $D_n$ también se denota por $D_{2n}$, ya que $2*n$ es el número de elementos que tiene el grupo. Por ejemplo, aquí se muestran todas las simetrías de un octógono, que son los 16 elementos de $D_{8}$, aplicados a una señal de STOP.
+		
+		\begin{center}
+		\includegraphics{other/Serialismo-matematicas-diagrama-2-5.png}
+%		\includegraphics[scale=0.5]{Serialismo-matematicas-diagrama-2-5.png}
+%		\begin{tikzpicture}[scale=2, inner sep=0]
+%		\foreach \i in {0,...,7}
+%		\node[regular polygon,regular polygon sides=8,draw,rotate=-45*\i] at (\i,1) {STOP};
+%		\foreach \i in {0,...,7}
+%		\node[regular polygon,regular polygon sides=8,draw,rotate=-45*\i,xscale=-1] at (\i,0) {STOP};		
+%		\end{tikzpicture}
+		\end{center}
+	
+		De igual manera, el conjunto de series de un espectro serial se consigue aplicando a la serie las distintas funciones transformativas; se obtiene entonces un grupo diédrico para ambas parejas de funciones. 
+		
+		Al haber dos parejas distintas que actúan por separado dentro y fuera de la figura, el grupo completo que forman las cuatro transformaciones es el producto directo de dos copias del diédrico: $D_{12}\times D_{12}$.
+		
+		Podemos observarlo claramente si representamos la serie de una segunda forma: como la correspondencia entre vértices de dos dodecágonos. La serie original, que es en realidad una permutación de 12 elementos, se representa como una función: los vértices del dodecágono interno se envían biyectivamente a los vértices externos. Así, $m \longmapsto \sigma(m)$. Este diagrama es similar al matricial pero enroscado en sí mismo, de tal forma que se aprecia la permutación escogida mediante las flechas, que son fijas, y facilita un significado del antes y el después de aplicarla.
+		
+		Las dos primeras figuras describen esto mismo: la representación de la serie original y la representación de la permutación mediante las flechas, que se mantendrán constantes en el resto de figuras.
+		
+			\begin{center}
+				\includegraphics{other/Serialismo-matematicas-diagrama-2-6.png}
+%			\includegraphics[scale=0.5]{Serialismo-matematicas-diagrama-2-6.png}
+%				\begin{multicols}{2}
+%				\ddihedral{4,5,7,1,6,3,8,2,11,0,9,10}
+%				
+%				\darrows{4,5,7,1,6,3,8,2,11,0,9,10}
+%			\end{multicols}
+			\end{center}
+
+
+		Las cuatro siguientes figuras representan las cuatro funciones transformativas, que son en realidad la reflexión y la rotación del grupo diédrico de cada dodecágono. Aplicarlo al de dentro es aplicarlo antes de las flechas; antes de la permutación. Aplicarlo fuera es transformar después de las flechas; después de la permutación.
+		
+%		\tikzstyle rotateArrow=[decoration={markings,mark=at position 0.9999 with {\arrow[scale=1,>=triangle 45]{>}}},postaction={decorate}]
+		
+		\begin{center}
+				\includegraphics{other/Serialismo-matematicas-diagrama-2-7a.png}
+				
+				\includegraphics{other/Serialismo-matematicas-diagrama-2-7b.png}
+%				\includegraphics[scale=0.5]{Serialismo-matematicas-diagrama-2-7.png}
+%			\begin{multicols}{2}
+%			\begin{tikzpicture}[ddihedral]
+%			\ddihedral[s=1, no tikz]{4,5,7,1,6,3,8,2,11,0,9,10}
+%			\draw [very thick,dash pattern={on 1pt off 4pt on 10pt off 3pt}] (0,-3.5) -- (0,-0.5);
+%			\draw [very thick,dash pattern={on 1pt off 4pt on 10pt off 3pt}] (0,0.5) -- (0,3.5);
+%			\end{tikzpicture}
+%			
+%			\begin{tikzpicture}[ddihedral]
+%			\ddihedral[t=1, no tikz]{4,5,7,1,6,3,8,2,11,0,9,10}			
+%			\draw [style=rotateArrow,thick,dashed] (90:3) to [bend right=45] (180:3);
+%			\end{tikzpicture}
+%		\end{multicols}
+%		
+%		\begin{multicols}{2}
+%			\begin{tikzpicture}[ddihedral]
+%			\ddihedral[v=1, no tikz]{4,5,7,1,6,3,8,2,11,0,9,10}			
+%			\draw [very thick,dash pattern={on 1pt off 3pt on 7pt off 2pt}] (0,-2) -- (0,-0.5);
+%			\draw [very thick,dash pattern={on 1pt off 3pt on 7pt off 2pt}] (0,0.5) -- (0,2);
+%			\end{tikzpicture}
+%			
+%			\begin{tikzpicture}[ddihedral]
+%			\ddihedral[c=1, no tikz]{4,5,7,1,6,3,8,2,11,0,9,10}			
+%			\draw [style=rotateArrow,thick,dashed] (90:1.75) to [bend left=45] (0:1.75);
+%			\end{tikzpicture}
+%		\end{multicols}
+		\end{center}
+	
+	He creado un comando en \LaTeX{} que dibuja estos diagramas diédricos dada su serie original y las funciones aplicadas a ella: \texttt{t}, \texttt{s}, \texttt{c} y \texttt{v}. Se aplican en ese mismo orden, y por defecto están a 0. 
+	\begin{center}
+		\includegraphics{other/Figura-ddmark2.png}
+		%\includegraphics[scale=0.45]{Figura-ddmark.png}
+		% \verb|\ddiagram[up=4, name=$T^0$]{4,5,7,1,6,3,8,2,11,0,9,10}|
+	\end{center}
+	\noindent
+	El comando se encuentra en el paquete de \LaTeX{} \texttt{ddphonism}, disponible en el enlace \url{https://www.ctan.org/pkg/ddphonism}.
+	
+
+	\subsection{Conmutatividad entre los elementos del grupo}
+		
+		La rotación, $r$, y la reflexión, $s$, de un grupo diédrico no conmutan, sino que cumplen la relación $r\cdot s=s\cdot r^{-1}$. Por otro lado, en los productos directos los elementos de un lado conmutan con los del otro. Así, $\{S,\ T\}$ y $\{V,\ C\}$ no conmutan, pero el resto de parejas sí. La verificación de estas afirmaciones, que confirman que el grupo generado es $D_{12}\times{D}_{12}$, se encuentran a continuación:
+
+
+\begin{center}
+	\includegraphics{other/Serialismo-matematicas-2-8a.png}
+	
+	\includegraphics{other/Serialismo-matematicas-2-8b.png}
+	
+	\includegraphics{other/Serialismo-matematicas-2-8c.png}
+	
+	\includegraphics{other/Serialismo-matematicas-2-9a.png}
+	
+	\includegraphics{other/Serialismo-matematicas-2-9b.png}
+	
+	\includegraphics{other/Serialismo-matematicas-2-9c.png}
+%		\includegraphics[scale=0.5]{Serialismo-matematicas-diagrama-2-8.png}
+\end{center}		
+
+%\begin{center}
+%		\includegraphics[scale=0.5]{Serialismo-matematicas-diagrama-2-9.png}
+%\end{center}
+
+		
+%		\newenvironment{absolutelynopagebreak}
+%		{\par\nobreak\vfil\penalty0\vfilneg
+%			\vtop\bgroup}
+%		{\par\xdef\tpd{\the\prevdepth}\egroup
+%			\prevdepth=\tpd}
+%		
+%			\begin{center}
+%			\begin{absolutelynopagebreak}
+%				\begin{multicols}{3}
+%					\ \linebreak
+%					\begin{align*}
+%					&\ S\circ T(\sigma(m))\\
+%					=&\ S(\sigma(m)+1)\\
+%					=&\ -(\sigma(m)+1)\\
+%					=&\ -\sigma(m)-1
+%					\end{align*}
+%					
+%					\underline{$S$ y $T$ no conmutan:}
+%					
+%					\begin{align*}
+%					&\ T\circ S(\sigma(m))\\
+%					=&\ T(-\sigma(m))\\
+%					=&\ -\sigma(m)+1
+%					\end{align*}			
+%					
+%					\ \linebreak				
+%					\begin{align*}
+%					&\ S\circ T^{-1}(\sigma(m))\\
+%					=&\ S(\sigma(m)-1)\\
+%					=&\ -(\sigma(m)-1)\\
+%					=&\ -\sigma(m)+1
+%					\end{align*}
+%				\end{multicols}
+%			\end{absolutelynopagebreak}
+%			
+%			\begin{multicols}{3}
+%				\ \linebreak				
+%				\begin{align*}
+%				&\ V\circ C(\sigma(m))\\
+%				=&\ V(\sigma(m+1))\\
+%				=&\ \sigma(-(m+1))\\
+%				=&\ \sigma(-m-1)
+%				\end{align*}
+%				
+%				\underline{$V$ y $C$ no conmutan:}
+%				
+%				\begin{align*}
+%				&\ C\circ V(\sigma(m))\\
+%				=&\ C(\sigma(-m))\\
+%				=&\ \sigma(-m+1)
+%				\end{align*}
+%				
+%				\ \linebreak
+%				\begin{align*}
+%				&\ V\circ C^{-1}(\sigma(m))\\
+%				=&\ V(\sigma(m-1))\\
+%				=&\ \sigma(-(m-1))\\
+%				=&\ \sigma(-m+1)
+%				\end{align*}
+%			\end{multicols}
+%			
+%			\begin{multicols}{3}
+%				\begin{align*}
+%				&\ S\circ V(\sigma(m))\\
+%				=&\ S(\sigma(-m))\\
+%				=&\ -\sigma(-m)
+%				\end{align*}
+%				
+%				\underline{$S$ y $V$ conmutan:}
+%				
+%				\begin{align*}
+%				&\ V\circ S(\sigma(m))\\
+%				=&\ V(-\sigma(m))\\
+%				=&\ -\sigma(-m)
+%				\end{align*}
+%			\end{multicols}
+%			
+%			\begin{multicols}{3}
+%				\begin{align*}
+%				&\ S\circ C(\sigma(m))\\
+%				=&\ S(\sigma(m+1))\\
+%				=&\ -\sigma(m+1)
+%				\end{align*}
+%				
+%				\underline{$S$ y $C$ conmutan:}
+%				
+%				\begin{align*}
+%				&\ C\circ S(\sigma(m))\\
+%				=&\ C(-\sigma(m))\\
+%				=&\ -\sigma(m+1)
+%				\end{align*}
+%			\end{multicols}
+%			
+%			\begin{multicols}{3}
+%				\begin{align*}
+%				&\ T\circ V(\sigma(m))\\
+%				=&\ T(\sigma(-m))\\
+%				=&\ \sigma(-m)+1
+%				\end{align*}
+%				
+%				\underline{$T$ y $V$ conmutan:}
+%				
+%				\begin{align*}
+%				&\ V\circ T(\sigma(m))\\
+%				=&\ V(\sigma(m)+1)\\
+%				=&\ \sigma(-m)+1
+%				\end{align*}
+%			\end{multicols}
+%			
+%			\begin{multicols}{3}
+%				\begin{align*}
+%				&\ T\circ C(\sigma(m))\\
+%				=&\ T(\sigma(m+1))\\
+%				=&\ \sigma(m+1)+1
+%				\end{align*}
+%				
+%				\underline{$T$ y $C$ conmutan:}
+%				
+%				\begin{align*}
+%				&\ C\circ T(\sigma(m))\\
+%				=&\ V(\sigma(m)+1)\\
+%				=&\ \sigma(m+1)+1
+%				\end{align*}
+%			\end{multicols}
+%		\end{center}
+
+
+		Volviendo a las definiciones originales $\{I,\ T,\ R,\ C\}$, su estructura interna es bien distinta. El problema de $I$ es que depende de la permutación escogida, por lo que a veces tiene unas propiedades y a veces otras. En cambio, la definición de $V$ con respecto a $R$ es meramente estética: ya que no depende de la permutación, su conmutatividad se mantiene invariante. 
+		
+		Viendo cómo conmutan los elementos de este sistema se aprecia la dificultad de $I$. Curiosamente, la conmutatividad de $\{I,\ R\}$ e $\{I,\ C\}$ se pierde, pero se gana la de $\{I,\ T\}$. Así, $T$ conmuta con todo en el sistema. Esto muestra una ventaja de la definición de $I$.
+
+\begin{center}
+%		\includegraphics[scale=0.6]{Serialismo-matematicas-diagrama-2-10.png}
+		\includegraphics{other/Serialismo-matematicas-2-10.png}
+\end{center}
+
+%		\begin{multicols}{3}
+%			\begin{align*}
+%		&\ I\circ R(\sigma(m))\\
+%		=&\ I(R(\sigma(m)))\\
+%		=&\ -R(\sigma(m))+2R(\sigma(0))\\
+%		=&\ -\sigma(-1-m)+2\sigma(-1-0)\\
+%		=&\ -\sigma(-1-m)+2\sigma(-1)
+%		\end{align*}
+%		
+%		\underline{$I$ y $R$ ya no conmutan:}
+%		
+%		\begin{align*}
+%		&\ R\circ I(\sigma(m))\\
+%		=&\ R(I(\sigma(m)))\\
+%		=&\ R(-\sigma(m)+2\sigma(0))\\
+%		=&\ R(-\sigma(m))+2\sigma(0)\\
+%		=&\ -\sigma(-1-m)+2\sigma(0)
+%		\end{align*}
+%		\end{multicols}
+		
+		Los únicos casos en los que podrían conmutar ocurrirían cuando
+		\begin{center}
+		\includegraphics{other/Serialismo-matematicas-2-12.png}
+%		\includegraphics[scale=0.6]{Serialismo-matematicas-diagrama-2-12.png}
+\end{center}
+
+%		\begin{align*}
+%		2\sigma(0)\equiv2\sigma(-1)\ \mbox{(mod. 12)}&\impliedby\\
+%		12+2\sigma(0)=2\sigma(-1)&\Longleftrightarrow\\
+%		6+\sigma(0)=\sigma(-1)&\Longleftrightarrow\\
+%		\sigma(-1)-\sigma(0)=6&
+%		\end{align*}
+		
+		Es decir, cuando la primera y la última nota de la serie original se distancian en 6 semitonos, como es el caso de la permutación en la Suite Op. 25:
+		
+				$$
+		IR=RI=\left(
+\begin{array}{cccccccccccc}
+0  & 1  &  2  & 3  & 4   & 5  &  6   & 7  & 8  & 9   & 10  & 11  \\
+10  & 11  & 8  & 9  & 6   & 0  &  5 & 2  & 7  & 1   & 3  & 4 
+\end{array}
+\right)
+$$
+
+\begin{center}
+		\includegraphics[scale=0.35]{5.png}
+\end{center}
+
+
+%		\[
+%		IR=RI=\drow{10,11,8,9,6,0,5,2,7,1,3,4}
+%		\]	
+%		
+%		\begin{center}
+%		\includegraphics[width=12.1cm]{5.png}
+%		\end{center}
+
+\begin{center}
+		\includegraphics{other/Serialismo-matematicas-2-11.png}
+\end{center}
+
+
+		
+%		\begin{multicols}{3}
+%			\begin{align*}
+%			&\ I\circ C(\sigma(m))\\
+%			=&\ I(\sigma(m+1))\\
+%			=&\ -\sigma(m+1)+2\sigma(1)
+%			\end{align*}
+%			
+%			\underline{$I$ y $C$ ya no conmutan:}
+%			
+%			\begin{align*}
+%			&\ C\circ I(\sigma(m))\\
+%			=&\ C(-\sigma(m)+2\sigma(0))\\
+%			=&\ C(-\sigma(m))+2\sigma(0)\\
+%			=&\ -\sigma(m+1)+2\sigma(0)
+%			\end{align*}
+%		\end{multicols}
+		
+		Los únicos casos en los que podrían conmutar son cuando
+		
+		\begin{center}
+		\includegraphics{other/Serialismo-matematicas-2-14.png}
+%		\includegraphics[scale=0.6]{Serialismo-matematicas-diagrama-2-14.png}
+\end{center}
+
+
+
+%		\begin{align*}
+%		2\sigma(0)\equiv2\sigma(1)\ \mbox{(mod. 12)}&\impliedby\\
+%		12+2\sigma(0)=2\sigma(1)&\Longleftrightarrow\\
+%		6+\sigma(0)=\sigma(1)&\Longleftrightarrow\\
+%		\sigma(1)-\sigma(0)=6&
+%		\end{align*}
+		
+		Es decir, cuando la primera y la segunda nota de la serie original se distancian en 6 semitonos.
+		
+		Si se echan las cuentas con $C^{k}$ en vez de con $C^1$, pueden conmutar si $\sigma(k)-\sigma(0)=6$. Como $\sigma$ es una permutación, devuelve todos los valores de 0 a 11 y solamente una vez cada uno. Por tanto, también devuelve 6 + $\sigma(0)$, así que \textbf{siempre existe un único $k$ para el que $I$ y $C^{k}$ conmutan}. En el caso de la permutación de la Suite Op. 25, como $\sigma(0)=4$ hay que encontrar el $k$ para el que $\sigma(k)=4+6=10$. En este caso, $k=11$, pero depende por completo de la permutación original.\\
+
+		\begin{center}
+		\includegraphics{other/Serialismo-matematicas-2-13.png}
+%		\includegraphics[scale=0.6]{Serialismo-matematicas-diagrama-2-13.png}
+\end{center}
+
+
+
+%		\begin{multicols}{3}
+%			\begin{align*}
+%			&\ I\circ T(\sigma(m))\\
+%			=&\ I(\sigma(m)+1)\\
+%			=&\ -(\sigma(m)+1) + 2(\sigma(0)+1)\\
+%			=&\ -\sigma(m)-1+2\sigma(0)+2\\
+%			=&\ -\sigma(m)+2\sigma(0)+1
+%			\end{align*}
+%			
+%			\underline{$I$ y $T$ ahora sí conmutan:}\\\columnbreak
+%			
+%			\begin{align*}
+%			&\ T\circ I(\sigma(m))\\
+%			=&\ T(-\sigma(m)+2\sigma(0))\\
+%			=&\ -\sigma(m)+2\sigma(0)+1
+%			\end{align*}
+%		\end{multicols}
+%		
+%		\begin{multicols}{3}
+%		\begin{align*}
+%		&\ R\circ C(\sigma(m))\\
+%		=&\ R(\sigma(m+1))\\
+%		=&\ \sigma(-(m+1)-1)\\
+%		=&\ \sigma(-m-2)
+%		\end{align*}
+%		
+%		\underline{$R$ y $C$ no conmutan:}
+%		
+%		\begin{align*}
+%		&\ C\circ R(\sigma(m))\\
+%		=&\ C(\sigma(-m-1))\\
+%		=&\ \sigma(-m-1+1)\\
+%		=&\ \sigma(-m)
+%		\end{align*}
+%		\end{multicols}
+%		
+%		\begin{multicols}{3}
+%			\begin{align*}
+%			&\ T\circ R(\sigma(m))\\
+%			=&\ T(\sigma(-m-1))\\
+%			=&\ \sigma(-m-1)+1
+%			\end{align*}
+%			
+%			\underline{$T$ y $R$ conmutan:}
+%			
+%			\begin{align*}
+%			&\ R\circ T(\sigma(m))\\
+%			=&\ R(\sigma(m)+1)\\
+%			=&\ \sigma(-m-1)+1
+%			\end{align*}
+%		\end{multicols}
+%	
+%		\begin{multicols}{3}
+%			\begin{align*}
+%			&\ T\circ C(\sigma(m))\\
+%			=&\ T(\sigma(m+1))\\
+%			=&\ \sigma(m+1)+1
+%			\end{align*}
+%			
+%			\underline{$T$ y $C$ conmutan:}
+%			
+%			\begin{align*}
+%			&\ C\circ T(\sigma(m))\\
+%			=&\ V(\sigma(m)+1)\\
+%			=&\ \sigma(m+1)+1
+%			\end{align*}
+%		\end{multicols}

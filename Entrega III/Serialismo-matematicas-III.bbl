@@ -1,0 +1,52 @@
+\begin{thebibliography}{1}
+
+\bibitem{armstrong}
+Mark~A. Armstrong.
+\newblock {\em {Groups and Symmetry}}.
+\newblock Undergraduate Texts in Mathematics. Springer New York, 2013.
+\newblock Chapter 6: ``Permutations''. Chapter 17: ``Actions, Orbits, and
+  Stabilizers''. Chapter 18: ``Counting Orbits''.
+  \url{https://books.google.es/books?id=f2AFCAAAQBAJ}.
+
+\bibitem{actions}
+Alissa~S. Crans, Thomas~M. Fiore, and Ramon Satyendra.
+\newblock {Musical Actions of Dihedral Groups}.
+\newblock {\em The American Mathematical Monthly}, 116:479--495, 06 2009.
+\newblock \url{https://doi.org/10.1080/00029890.2009.11920965}.
+
+\bibitem{polygons}
+S.~W. Golomb and L.~R. Welch.
+\newblock {On the enumeration of polygons}.
+\newblock {\em The American Mathematical Monthly}, 67:349--353, 04 1960.
+\newblock \url{https://oeis.org/A000939/a000939.pdf}.
+
+\bibitem{orb-est}
+Timothy Gowers.
+\newblock {Group actions II: the orbit-stabilizer theorem}.
+\newblock
+  \url{https://gowers.wordpress.com/2011/11/09/group-actions-ii-the-orbit-stabilizer-theorem/},
+  2011.
+\newblock Consultado en octubre de 2019.
+
+\bibitem{reiner}
+David~L. Reiner.
+\newblock {Enumeration in Music Theory}.
+\newblock {\em The American Mathematical Monthly}, 92:51--54, 01 1985.
+\newblock
+  \url{https://eclass.uoa.gr/modules/document/file.php/MATH379/2.%20%CE%86%CF%81%CE%B8%CF%81%CE%B1%3A%20American%20Mathematical%20Monthly/Enumeration%20in%20Music%20Theory.pdf}.
+
+\bibitem{celia2}
+Celia Rubio~Madrigal.
+\newblock {Serialismo y matemáticas - II}.
+\newblock {\em Divulgamat}, octubre de 2019.
+\newblock
+  \url{http://vps280516.ovh.net/divulgamat15/index.php?option=com_content&view=article&id=18227:101-octubre-2019-serialismo-y-matematicas-ii&catid=67:ma-y-matemcas&directory=67}.
+
+\bibitem{celia1}
+Celia Rubio~Madrigal.
+\newblock {Serialismo y matemáticas - I}.
+\newblock {\em Divulgamat}, septiembre de 2019.
+\newblock
+  \url{http://vps280516.ovh.net/divulgamat15/index.php?option=com_content&view=article&id=18209:100-septiembre-2019-serialismo-y-matematicas-i&catid=67:ma-y-matemcas&directory=67}.
+
+\end{thebibliography}

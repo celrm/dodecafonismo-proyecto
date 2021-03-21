@@ -1,5 +1,5 @@
-\chapter{ESCALAS Y FUNCIONES DEL EXPERIMENTO}\label{ch:escalas}	
-	\section{Escalas interválicas, escalas y funciones}
+\section{ESCALAS Y FUNCIONES DEL EXPERIMENTO}\label{ch:escalas}	
+	\subsection{Escalas interválicas, escalas y funciones}
 	
 		Una \textit{escala interválica} es una secuencia ordenada de números naturales -- una secuencia de intervalos entre notas -- tales que la suma de todos ellos da 12. Así solo se consideran válidas las escalas equivalentes octava a octava: todos los intervalos de la escala deben sumar el número de semitonos de una octava. Por ejemplo, la escala diatónica jónica (o escala mayor) tiene como secuencia (2, 2, 1, 2, 2, 2, 1).
 		
@@ -11,11 +11,11 @@
 		
 		Una \textit{función a una escala-k} es una función $f$ que transforma cada nota de la escala cromática a un valor de la escala E$_k$. Entonces $f : \mathbb{Z}/(12) \rightarrow \text{E}_k$ reduce las notas de una melodía a solamente la escala escogida. Las funciones a escalas se representan de la siguiente manera, con la primera fila representando el dominio de $f$ (la escala cromática), la segunda su imagen (la escala E$_k$), y la tercera su secuencia interválica:
 		
-		\full{$\left.\begin{matrix}
+		\[\left.\begin{matrix}
 		0&1&2&\ldots&10&11\\
 		f(0)&f(1)&f(2)&\ldots&f(10)&f(11)\\
 		f(1)-f(0)&f(2)-f(1)&f(3)-f(2)&\ldots&f(11)-f(10)&12+f(0)-f(11)
-		\end{matrix}\right.$}
+		\end{matrix}\right.\]
 		
 		En realidad, la $k$ de la escala-$k$ no es especialmente relevante, porque una escala-$k+1$ es la transportada de una $k$. Se puede escoger sin pérdida de generalidad $k=0$ a partir de ahora, y así todas comenzarán en Do.
 		
@@ -23,17 +23,17 @@
 		
 		¿Cuáles serán las características de esas funciones óptimas? Deben conservar la estructura serial y deben conservar el parecido con la melodía original.
 		
-	\section{Funciones bien distribuidas}
+	\subsection{Funciones bien distribuidas}
 		
 		La mayor prioridad es conservar la estructura serial de las piezas; por tanto, todas las notas deben aparecer con la menor frecuencia posible, y se debe evitar jerarquías entre las notas en la medida de lo posible. Si $|\text{E}|<12$, $f$ no puede ser inyectiva, por lo que va a haber elementos repetidos en la imagen. Queremos la $f$ que mejor distribuya esas repeticiones, que distribuya las notas de E a lo largo de la escala cromática.
 		
 		Lo óptimo sería que todas tuvieran la misma frecuencia. Eso solo pasará cuando $|\text{E}|$ divida a 12. Por ejemplo, si E = \{$a_1,a_2,a_3,a_4,a_5,a_6$\} (entonces $|\text{E}|=6$), existen funciones tales que cada nota de la imagen se repite exactamente 2 veces. La siguiente función E-inducida $f$ cumpliría la condición de buena distribución:
 				
-		\[\left.\begin{matrix}
+		\[\left.\begin{array}{*{13}c}
 		\text{Cromática}&0&1&2&3&4&5&6&7&8&9&10&11\\
 		\text{Escala E}&a_1&a_1&a_2&a_2&a_3&a_3&a_4&a_4&a_5&a_5&a_6&a_6\\
 		\text{Intervalos}&&&&&&\ldots\\
-		\end{matrix}\right.\]
+		\end{array}\right.\]
 		
 		En cambio, si $|\text{E}|$ no divide a 12 no hay funciones E-inducidas totalmente distribuidas. No existe una sola frecuencia que puedan compartir todas las notas de E. Sin embargo, sí se pueden encontrar dos frecuencias consecutivas, $c$ y $c+1$, tales que todos los elementos de E tengan o frecuencia $c$ o frecuencia $c+1$. Esto es lo más parecido a que todas tengan la misma frecuencia, y se va a probar a continuación que siempre es posible. 
 		
@@ -42,7 +42,7 @@
 		$cq + (c+1)r =
 		cq + cr + r =
 		c(q+r) + r =
-		c|\text{E}| + r = 12$, lo cual se cumple por el algoritmo de la división, que asegura que al dividir 12 entre $|\text{E}|$ existen su cociente $c$ y su resto $r\geq0$. \qed
+		c|\text{E}| + r = 12$, lo cual se cumple por el algoritmo de la división, que asegura que al dividir 12 entre $|\text{E}|$ existen su cociente $c$ y su resto $r\geq0$. $\square$
 		
 		El siguiente gráfico describe, para cada posible $|\text{E}|$ en cada fila, la frecuencia óptima de sus elementos. Las columnas representan las frecuencias de los elementos, y los números de dentro son cada $q$ y $r$ (cuando es 0 no se escribe: no hay notas con esa frecuencia).
 		
@@ -75,7 +75,7 @@
 		\end{array}\]
 		
 		
-	\section{Funciones E-inducidas}
+	\subsection{Funciones E-inducidas}
 		
 		Hay que pedir más requisitos a $f$ para que no solo modifique las notas, sino que además las imágenes se parezcan lo máximo posible a sus preimágenes, a las notas originales.
 		
@@ -87,10 +87,10 @@
 		\item $f$ debe tener el mayor número de puntos fijos posible: las notas que puedan mantenerse estables al aplicar $f$ deben quedarse igual. Existen escalas para las que no se puede tener buena distribución, monotonía creciente y todas sus notas fijas, así que este criterio es menos prioritario. 
 		
 		Por ejemplo, para la escala \{0, 1, 2\}, si se fijan las tres notas, $f$ empezaría con 0 1 2. Por (2), la nota asociada al 12 debe ser un 12. Entonces los otros tres 1's que faltan no se pueden asignar, ya que después del 2 no puede ir un 1 y antes del 12 no puede ir un 13. Por tanto, $f$ no estaría bien distribuida. La solución es que solo se fijen dos de las tres notas.
-		\[\left.\begin{matrix}
+		\[\left.\begin{array}{*{14}c}
 		\text{Cromática}&0&1&2&3&4&5&6&7&8&9&10&11&(12)\\
 		\text{Escala E}&0&1&2&&&\text{\cancel{1}}&&&\text{\cancel{13}}&&&&(12)\\
-		\end{matrix}\right.\]
+		\end{array}\right.\]
 		
 		\item Por último, de entre las $f$ que queden, se escogerán aquellas cuya distancia a la cromática sea menor. Se calculará para todo $i$ la expresión $|f(i)-i|$, y se sumarán todos los resultados. Esa suma será la \textit{puntuación} de dicha $f$. Las funciones con menor puntuación son las funciones de mejor ajuste.
 		
@@ -98,30 +98,30 @@
 		
 		Si aún quedan varias $f$ que cumplen todos los requisitos, se escogerá la más grave, la menor de ellas. De esta manera, dada cualquier escala E, la función E-inducida queda unívocamente determinada.
 		
-		En el Anexo \ref{app:function}, página \pageref{app:function}, se encuentra el código en Haskell de un programa que, dado una escala, produce su función inducida óptima con las propiedades descritas anteriormente. También puede encontrarse en \url{https://gitlab.com/dodecafonismo/f-inducida}.
+		En el enlace \url{https://gitlab.com/dodecafonismo/f-inducida} se encuentra el código en Haskell de un programa que, dado una escala, produce su función inducida óptima con las propiedades descritas anteriormente.
 		
-		\section{Escalas utilizadas}
+		\subsection{Escalas utilizadas}
 		
 		Las escalas escogidas para este experimento son cuatro escalas de distintos tamaños y sonoridades; desde el sonido oriental hasta el occidental clásico, pasando por el jazz moderno y el impresionismo.
 		
-		Son la escala pentatónica, la escala de tonos enteros, la escala heptafónica de Do Mayor y la escala octotónica. Estas son las funciones inducidas de dichas escalas según el algoritmo del Anexo \ref{app:function}:
-		\[\left.\begin{matrix}
+		Son la escala pentatónica, la escala de tonos enteros, la escala heptafónica de Do Mayor y la escala octotónica. Estas son las funciones inducidas de dichas escalas según el algoritmo:
+		\[\left.\begin{array}{*{13}c}
 		\text{Cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
 		\text{Pentatónica (5):}&0&0&2&2&4&4&7&7&7&9&9&0\\
 		\text{Intervalos:}&&2&&2&&3&&&2&&3&\\
-		\end{matrix}\right.\]		
-		\[\left.\begin{matrix}
+		\end{array}\right.\]		
+		\[\left.\begin{array}{*{13}c}
 		\text{Cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
 		\text{Tonos enteros (6):}&0&0&2&2&4&4&6&6&8&8&10&10\\
 		\text{Intervalos:}&&2&&2&&2&&2&&2&&2\\
-		\end{matrix}\right.\]
-		\[\left.\begin{matrix}
+		\end{array}\right.\]
+		\[\left.\begin{array}{*{13}c}
 		\text{Cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
 		\text{Diatónica en Do (7):}&0&0&2&2&4&5&5&7&7&9&9&11\\
 		\text{Intervalos:}&&2&&2&1&&2&&2&&2&1\\
-		\end{matrix}\right.\]        
-		\[\left.\begin{matrix}
+		\end{array}\right.\]        
+		\[\left.\begin{array}{*{13}c}
 		\text{Cromática:}&0&1&2&3&4&5&6&7&8&9&10&11\\
 		\text{Octotónica (8):}&0&0&2&3&3&5&6&6&8&9&9&11\\
 		\text{Intervalos:}&&2&1&&2&1&&2&1&&2&1\\
-		\end{matrix}\right.\]
+		\end{array}\right.\]
